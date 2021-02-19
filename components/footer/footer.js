@@ -4,6 +4,24 @@
 var script1 = document.createElement('script');
 script1.src = '/components/img/img.js';
 document.head.appendChild(script1);
+// IMPORT IMG GALLERY 
+var scriptImgGallery = document.createElement('script');
+scriptImgGallery.src = '/components/img-gallery/img-gallery.js';
+document.head.appendChild(scriptImgGallery);
+
+// var cssId = 'myCss';  // you could encode the css path itself to generate id..
+// if (!document.getElementById(cssId))
+// {
+//     var head  = document.getElementsByTagName('head')[0];
+//     var link  = document.createElement('link');
+//     link.id   = cssId;
+//     link.rel  = 'stylesheet';
+//     link.type = 'text/css';
+//     link.href = 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css';
+//     link.media = 'all';
+//     head.appendChild(link);
+// }
+
 
 
 const template = document.createElement('template');
