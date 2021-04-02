@@ -61,8 +61,3 @@ class TopMenu extends HTMLElement {
 }
 window.customElements.define('top-menu', TopMenu);
 
-
-/*
-    document.querySelector("a[href='#new-intervention']"
-
-    "a[href='#itemOne']"*/
