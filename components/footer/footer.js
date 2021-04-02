@@ -33,12 +33,17 @@ document.head.appendChild(scriptTopMenu);
 const template = document.createElement('template');
 
 
-var styleLink = '<link rel="stylesheet" href="./components/footer/footer.css">';
-createTemplate(styleLink);
+var styleBase = '<link rel="stylesheet" href="./css/style.css">';
+createTemplate(styleBase);
+
+var styleFooter = '<link rel="stylesheet" href="./components/footer/footer.css">';
+createTemplate(styleFooter);
 
 
 var bootstrapLink = '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" ></link>';
 createTemplate(bootstrapLink);
+
+
 
 if (currentTemplate) {
   if (currentTemplate === "Visualization-Almendra-Display") {
@@ -48,9 +53,14 @@ if (currentTemplate) {
   }
 }
 
+
+var allStyles = bootstrapLink + styleBase + templateStyle;
+
+
+
 //WRITE THE HTML FOR EACH COMPONENT HERE
 function createTemplate(link) {
-  template.innerHTML = styleLink + templateStyle + bootstrapLink + `
+  template.innerHTML = styleFooter + allStyles + `
   <div id="footer">
   <div>
     <h1></h1>
@@ -66,13 +76,16 @@ class Footer extends HTMLElement {
     this.showInfo = true;
     this.attachShadow({ mode: 'open' });
     if (this.getAttribute('base') === "false") {
-
-      styleLink = '<link rel="stylesheet" href="/../../components/footer/footer.css">';//../../components/footer/footer.css
+      styleBase = '<link rel="stylesheet" href="../../css/style.css">'
+      styleFooter = '<link rel="stylesheet" href="/../../components/footer/footer.css">';//../../components/footer/footer.css
       if (currentTemplate === "Visualization-Almendra-Display") {
         templateStyle = '<link rel="stylesheet" href="../../css/Visualization-Almendra-Display.css">';
       }
-      createTemplate(styleLink);
+
+      createTemplate(styleFooter);
       createTemplate(templateStyle);
+      createTemplate(styleBase);
+      allStyles = styleBase  + bootstrapLink + templateStyle;
     }
 
     this.shadowRoot.appendChild(template.content.cloneNode(true));

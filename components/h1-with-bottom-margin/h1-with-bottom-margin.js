@@ -1,7 +1,14 @@
 const H1WithBottomMarginTemplate = document.createElement('template');
-H1WithBottomMarginTemplate.innerHTML = templateStyle + bootstrapLink+ `
+H1WithBottomMarginTemplate.innerHTML = allStyles + `
 <style>
+h1 {
+  font-size: 100px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 88px;
+  margin-bottom: 46px;
 
+}
 </style>
 <div  class="container d-flex justify-content-center">
 <h1></h1>
