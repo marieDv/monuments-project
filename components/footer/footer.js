@@ -4,6 +4,14 @@
 var script1 = document.createElement('script');
 script1.src = '/components/img/img.js';
 document.head.appendChild(script1);
+//IMPORT H2-WITH-BOTTOM-MARGIN
+var scriptH2WithBottomMargin = document.createElement('script');
+scriptH2WithBottomMargin.src = '/components/h2-with-bottom-margin/h2-with-bottom-margin.js';
+document.head.appendChild(scriptH2WithBottomMargin);
+//IMPORT H3-WITH-BOTTOM-MARGIN
+var scriptH3WithBottomMargin = document.createElement('script');
+scriptH3WithBottomMargin.src = '/components/h3-with-bottom-margin/h3-with-bottom-margin.js';
+document.head.appendChild(scriptH3WithBottomMargin);
 // IMPORT IMG GALLERY 
 var scriptImgGallery = document.createElement('script');
 scriptImgGallery.src = '/components/img-gallery/img-gallery.js';
@@ -12,6 +20,7 @@ document.head.appendChild(scriptImgGallery);
 var scriptTopMenu = document.createElement('script');
 scriptTopMenu.src = '/components/top_menu/top_menu.js';
 document.head.appendChild(scriptTopMenu);
+
 
 
 // var cssId = 'myCss';  // you could encode the css path itself to generate id..
