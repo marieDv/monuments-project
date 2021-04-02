@@ -24,8 +24,6 @@
   <h1>Dr Karl Lueger</h1>
   <a href="../../index.html">back</a>
 
-  <m-img imgPath="./media/car.png"></m-img>
-
   
   <p>This is a text that is gonna be rendered in serif.</p>
  
@@ -41,13 +39,20 @@
   text="This is headline 3... 
   It continues on two lines">
 </h3-with-bottom-margin>
+
+<img-full-width-var-height ImgPath="./media/car.png" altImg="photo of a car" Caption="This is an image"></img-full-width-var-height>
   
   <!--FOOTER COMPONENT-->
   <m-footer base="false" title="This footer contains all links to the other components"></m-footer>
 </body>
 <footer>
   <!--FOOTER COMPONENT MUST BE INCLUDED HERE-->
+  <script>
+    var currentTemplate = '';
+  </script>
+
   <script src="../../components/footer/footer.js"></script>
+
 </footer>
 
 </html>
