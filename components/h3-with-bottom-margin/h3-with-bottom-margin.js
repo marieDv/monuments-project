@@ -3,14 +3,14 @@ const h3WithBottomMargin = document.createElement("template");
 
 
 // TEMPLATE FOR OUR COMPONENT
-h3WithBottomMargin.innerHTML = `
+h3WithBottomMargin.innerHTML = templateStyle + `
 <style>
 
 #container {
     top: 200px;
 
 }
-#h3-with-bottom-margin {
+#h3 {
     color: black;
     margin-bottom: 28px;
 }

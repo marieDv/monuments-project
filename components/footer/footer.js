@@ -15,6 +15,7 @@ document.head.appendChild(h1WithBottomMargin);
 var scriptH2WithBottomMargin = document.createElement('script');
 scriptH2WithBottomMargin.src = '/components/h2-with-bottom-margin/h2-with-bottom-margin.js';
 document.head.appendChild(scriptH2WithBottomMargin);
+
 //IMPORT H3-WITH-BOTTOM-MARGIN
 var scriptH3WithBottomMargin = document.createElement('script');
 scriptH3WithBottomMargin.src = '/components/h3-with-bottom-margin/h3-with-bottom-margin.js';
@@ -24,6 +25,12 @@ document.head.appendChild(scriptH3WithBottomMargin);
 var scriptImgGallery = document.createElement('script');
 scriptImgGallery.src = '/components/img-gallery/img-gallery.js';
 document.head.appendChild(scriptImgGallery);
+
+// IMPORT IMG GALLERY 
+var scriptImageFullWidthVarHeight = document.createElement('script');
+scriptImageFullWidthVarHeight.src = '/components/image-full-width-var-height/image-full-width-var-height.js';
+document.head.appendChild(scriptImageFullWidthVarHeight);
+
 // IMPORT Script top menu
 var scriptTopMenu = document.createElement('script');
 scriptTopMenu.src = '/components/top_menu/top_menu.js';
