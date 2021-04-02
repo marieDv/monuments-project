@@ -8,6 +8,11 @@ document.head.appendChild(script1);
 var scriptImgGallery = document.createElement('script');
 scriptImgGallery.src = '/components/img-gallery/img-gallery.js';
 document.head.appendChild(scriptImgGallery);
+// IMPORT IMG GALLERY 
+var scriptTopMenu = document.createElement('script');
+scriptTopMenu.src = '/components/top_menu/top_menu.js';
+document.head.appendChild(scriptTopMenu);
+
 
 // var cssId = 'myCss';  // you could encode the css path itself to generate id..
 // if (!document.getElementById(cssId))
