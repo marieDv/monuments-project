@@ -1,5 +1,11 @@
+@font-face {
+  font-family: "Arial";
+  src: url('../fonts/Arial/arial.ttf');
+}
+
+
 body {
-  font-family:Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 
 hr {
