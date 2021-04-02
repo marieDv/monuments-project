@@ -1,12 +1,11 @@
 const H1WithBottomMarginTemplate = document.createElement('template');
-H1WithBottomMarginTemplate.innerHTML = templateStyle + `
+H1WithBottomMarginTemplate.innerHTML = templateStyle + bootstrapLink+ `
 <style>
 
 </style>
-
-<h1>
-
-</h1>
+<div  class="container d-flex justify-content-center">
+<h1></h1>
+</div>
 `;
 
 class H1WithBottomMargin extends HTMLElement {

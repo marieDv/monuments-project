@@ -37,25 +37,15 @@ scriptTopMenu.src = '/components/top_menu/top_menu.js';
 document.head.appendChild(scriptTopMenu);
 
 
-
-// var cssId = 'myCss';  // you could encode the css path itself to generate id..
-// if (!document.getElementById(cssId))
-// {
-//     var head  = document.getElementsByTagName('head')[0];
-//     var link  = document.createElement('link');
-//     link.id   = cssId;
-//     link.rel  = 'stylesheet';
-//     link.type = 'text/css';
-//     link.href = 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css';
-//     link.media = 'all';
-//     head.appendChild(link);
-// }
-
-
-
 const template = document.createElement('template');
+
+
 var styleLink = '<link rel="stylesheet" href="./components/footer/footer.css">';
 createTemplate(styleLink);
+
+
+var bootstrapLink = '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" ></link>';
+createTemplate(bootstrapLink);
 
 if (currentTemplate) {
   if (currentTemplate === "Visualization-Almendra-Display") {
@@ -67,7 +57,7 @@ if (currentTemplate) {
 
 //WRITE THE HTML FOR EACH COMPONENT HERE
 function createTemplate(link) {
-  template.innerHTML = styleLink + templateStyle + `
+  template.innerHTML = styleLink + templateStyle + bootstrapLink + `
   <div id="footer">
   <div>
     <h1></h1>
@@ -83,7 +73,7 @@ class Footer extends HTMLElement {
     this.showInfo = true;
     this.attachShadow({ mode: 'open' });
     if (this.getAttribute('base') === "false") {
-      console.log("false")
+
       styleLink = '<link rel="stylesheet" href="/../../components/footer/footer.css">';//../../components/footer/footer.css
       if (currentTemplate === "Visualization-Almendra-Display") {
         templateStyle = '<link rel="stylesheet" href="../../css/Visualization-Almendra-Display.css">';
