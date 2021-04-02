@@ -8,12 +8,15 @@ imgGallery.innerHTML = `
 img {
   width: 100%;
   border: 2px solid red;
+  height: auto;
 } 
 </style>
-<div class="container">
-<img class="col-3" id="imgOne" src="" alt="">
-<img id="imgTwo" src="" alt="">
-<img id="imgThree" src="" alt="">
+<div class="container-fluid">
+<div class="row">
+<img class="col-4" id="imgOne" src="" alt="">
+<img id="imgTwo" src="" alt="" class="col-4">
+<img id="imgThree" src="" alt="" class="col-4">
+</div>
 </div>
 `;
 

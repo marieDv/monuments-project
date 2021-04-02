@@ -3,8 +3,6 @@ imgTemplate.innerHTML = `
 <style>
 #img {
 width: 100%;
-
-
 color: white;
 }
 img {
@@ -20,16 +18,13 @@ img {
 `;
 
 class Img extends HTMLElement {
-  constructor(){
+  constructor() {
     super();
 
     this.showInfo = true;
-    this.attachShadow({mode: 'open'});
+    this.attachShadow({ mode: 'open' });
     this.shadowRoot.appendChild(imgTemplate.content.cloneNode(true));
-    
     this.shadowRoot.querySelector('img').src = this.getAttribute('imgPath');
-    console.log(this.getAttribute('name'))
-    //this.getAttribute('name');
   }
 }
 

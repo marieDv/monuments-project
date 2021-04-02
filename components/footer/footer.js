@@ -36,7 +36,7 @@ function createTemplate(link) {
   <div id="footer">
   <div>
     <h1></h1>
-    <p>This is made by ID1 not K&V</p>
+    <p>footer</p>
     </div>
   </div>
   `;
