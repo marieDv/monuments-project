@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Almendra";
+  src: url('../fonts/AlmendraDisplay/AlmendraDisplay-Regular.ttf') format("ttf");
+}
+
 * {
-  font-family: sans-serif;
+  font-family: 'Almendra', sans-serif;
 }
