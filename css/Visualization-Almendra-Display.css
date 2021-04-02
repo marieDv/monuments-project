@@ -5,10 +5,11 @@
 
 h1, h2 {
   font-family: 'Almendra', sans-serif;
+  color: pink !important;
 }
 
 .header-bg {
-  background: linear-gradient(180deg, #E24E43 85.78%, rgba(229, 229, 229, 0) 94.11%);
+  background: linear-gradient(180deg, #E24E43 85.78%, rgba(97, 91, 91, 0) 94.11%);
   height: 100vh;
   width: 100%;
 }

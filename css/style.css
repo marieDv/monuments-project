@@ -1,4 +1,9 @@
 @font-face {
+  font-family: "Almendra";
+  src: url('../fonts/AlmendraDisplay/AlmendraDisplay-Regular.ttf');
+}
+
+@font-face {
   font-family: "Arial";
   src: url('../fonts/Arial/arial.ttf');
 }
@@ -10,4 +15,9 @@ body {
 
 hr {
   border: 0; border-top: 1px solid #000;
+}
+
+h1, h2 {
+  font-family: 'Almendra', sans-serif;
+  /* color: red; */
 }

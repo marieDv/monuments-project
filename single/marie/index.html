@@ -10,15 +10,14 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 
-
+  <link rel="stylesheet" href="../../css/Visualization-Almendra-Display.css">
   <!-- LINK TO MAIN STYLESHEET-->
   <link rel="stylesheet" href="../../css/style.css">
-  <link rel="stylesheet" href="../../css/Visualization-Almendra-Display.css">
-  <!-- <link rel="stylesheet" href="../../css/template-serif.css"> -->
   <!--LINK TO LOCAL STYLESHEET-->
   <link rel="stylesheet" href="./style.css">
 
 </head>
+
 
 <body>
 
@@ -26,6 +25,9 @@
 
   <div class="header-bg">
     <h1>Dr Karl Lueger</h1>
+    <h1-with-bottom-margin title="This is my beautiful headline">
+      <m-img imgPath="./media/car.png"></m-img>
+    </h1-with-bottom-margin>
   </div>
   <!-- <m-img imgPath="./media/car.png"></m-img> -->
 
@@ -36,11 +38,17 @@
   ></img-gallery> -->
   <!--FOOTER COMPONENT-->
   <m-footer base="false" title="This footer contains all links to the other components"></m-footer>
-  <top-menu itemOneName="Case Study" linkOne="https://www.facebook.com/" itemTwoName="Time of events" linkTwo="https://www.google.com/" itemThreeName="Montage of history" linkThree="https://www.twitter.com/" itemFourName="Stories" linkFour="https://www.youtube.com/"></top-menu>
+  <top-menu itemOneName="Case Study" linkOne="https://www.facebook.com/" itemTwoName="Time of events"
+    linkTwo="https://www.google.com/" itemThreeName="Montage of history" linkThree="https://www.twitter.com/"
+    itemFourName="Stories" linkFour="https://www.youtube.com/"></top-menu>
 
 </body>
 <footer>
   <!--FOOTER COMPONENT MUST BE INCLUDED HERE-->
+  <script>
+    var currentTemplate = 'Visualization-Almendra-Display';
+  </script>
+
   <script src="../../components/footer/footer.js"></script>
 </footer>
 
