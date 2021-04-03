@@ -7,6 +7,7 @@ h1 {
   font-weight: 400;
   line-height: 88px;
   margin-bottom: 46px;
+  text-transform: uppercase;
 
 }
 </style>
