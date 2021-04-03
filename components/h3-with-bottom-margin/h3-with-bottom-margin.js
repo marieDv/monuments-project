@@ -3,7 +3,7 @@ const h3WithBottomMargin = document.createElement("template");
 
 
 // TEMPLATE FOR OUR COMPONENT
-h3WithBottomMargin.innerHTML = templateStyle + `
+h3WithBottomMargin.innerHTML = allStyles + `
 <style>
 
 #container {

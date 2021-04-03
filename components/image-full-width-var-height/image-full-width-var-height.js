@@ -3,7 +3,7 @@ const imgFullWidthVarHeight = document.createElement("template");
 
 
 // TEMPLATE FOR OUR COMPONENT
-imgFullWidthVarHeight.innerHTML = templateStyle + `
+imgFullWidthVarHeight.innerHTML = allStyles + `
 <style>
 img {
     width: 100%;
