@@ -1,6 +1,9 @@
 
 
-// IMPORT EVERY NEW COMPONENT HERE
+// START IMPORT BASE COMPONENTS
+// ******************************
+
+
 var script1 = document.createElement('script');
 script1.src = '/components/img/img.js';
 document.head.appendChild(script1);
@@ -21,12 +24,18 @@ var scriptH3WithBottomMargin = document.createElement('script');
 scriptH3WithBottomMargin.src = '/components/h3-with-bottom-margin/h3-with-bottom-margin.js';
 document.head.appendChild(scriptH3WithBottomMargin);
 
+
+
+
+// START IMPORT COMMON COMPONENTS
+// ******************************
+
 // IMPORT IMG GALLERY 
 var scriptImgGallery = document.createElement('script');
 scriptImgGallery.src = '/components/img-gallery/img-gallery.js';
 document.head.appendChild(scriptImgGallery);
 
-// IMPORT IMG GALLERY 
+// IMPORT image-full-width-var-height
 var scriptImageFullWidthVarHeight = document.createElement('script');
 scriptImageFullWidthVarHeight.src = '/components/image-full-width-var-height/image-full-width-var-height.js';
 document.head.appendChild(scriptImageFullWidthVarHeight);
@@ -35,6 +44,18 @@ document.head.appendChild(scriptImageFullWidthVarHeight);
 var scriptTopMenu = document.createElement('script');
 scriptTopMenu.src = '/components/top_menu/top_menu.js';
 document.head.appendChild(scriptTopMenu);
+
+// IMPORT Header 
+var scriptHeaderSingle = document.createElement('script');
+scriptHeaderSingle.src = '/components/header-single/header-single.js';
+document.head.appendChild(scriptHeaderSingle);
+
+
+
+
+//END IMPORTS
+
+
 
 
 const template = document.createElement('template');
