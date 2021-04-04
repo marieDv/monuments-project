@@ -40,7 +40,7 @@ document.head.appendChild(scriptTopMenu);
 const template = document.createElement('template');
 
 
-var styleBase = '<link rel="stylesheet" href="./css/style.css">';
+var styleBase = '<link rel="stylesheet" href="./css/baseStyle.css">';
 createTemplate(styleBase);
 
 var styleFooter = '<link rel="stylesheet" href="./components/footer/footer.css">';
@@ -53,10 +53,13 @@ createTemplate(bootstrapLink);
 
 
 if (currentTemplate) {
+  if(currentTemplate === "Standard"){
+    var templateStyle = '<style></style>';
+    createTemplate(templateStyle);
+  }
   if (currentTemplate === "Visualization-Almendra-Display") {
     var templateStyle = '<link rel="stylesheet" href="./css/Visualization-Almendra-Display.css">';
     createTemplate(templateStyle);
-    console.log(templateStyle)
   }
 }
 
@@ -67,7 +70,7 @@ var allStyles = bootstrapLink + styleBase + templateStyle;
 
 //WRITE THE HTML FOR EACH COMPONENT HERE
 function createTemplate(link) {
-  template.innerHTML = styleFooter + allStyles + `
+  template.innerHTML = styleFooter + bootstrapLink + `
   <div id="footer">
   <div>
     <h1></h1>
@@ -83,7 +86,7 @@ class Footer extends HTMLElement {
     this.showInfo = true;
     this.attachShadow({ mode: 'open' });
     if (this.getAttribute('base') === "false") {
-      styleBase = '<link rel="stylesheet" href="../../css/style.css">'
+      styleBase = '<link rel="stylesheet" href="./../../css/baseStyle.css">'
       styleFooter = '<link rel="stylesheet" href="/../../components/footer/footer.css">';//../../components/footer/footer.css
       if (currentTemplate === "Visualization-Almendra-Display") {
         templateStyle = '<link rel="stylesheet" href="../../css/Visualization-Almendra-Display.css">';

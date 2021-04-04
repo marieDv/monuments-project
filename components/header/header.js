@@ -15,12 +15,16 @@ h1 {
   width: 100%;
 }
 </style>
-<div class="container d-flex justify-content-center header-bg">
-<span>this is a subheadline</span>
+<div class="">
+aasdsad
 </div>
 `;
-
-class Header extends HTMLElement {
+//<div class="container d-flex justify-content-center header-bg">
+/* <h1-with-bottom-margin title="I am the headline of the header">
+</h1-with-bottom-margin>
+<span>this is a subheadline</span>
+</div> */
+class HeaderSingle extends HTMLElement {
   constructor() {
     super();
 
@@ -31,4 +35,4 @@ class Header extends HTMLElement {
   }
 }
 
-window.customElements.define('header-single', Header);
+window.customElements.define('header-single', HeaderSingle);

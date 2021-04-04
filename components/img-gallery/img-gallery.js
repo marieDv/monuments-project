@@ -3,7 +3,7 @@ const imgGallery = document.createElement("template");
 
 
 // TEMPLATE FOR OUR COMPONENT
-imgGallery.innerHTML = `
+imgGallery.innerHTML = allStyles + `
 <style>
 img {
   width: 100%;
