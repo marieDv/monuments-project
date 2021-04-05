@@ -13,8 +13,11 @@ h1 {
 </style>
 <div class="container d-flex justify-content-center">
   <h1>
-    <slot name="content"></slot>
+    <slot name="title"></slot>
   </h1>
+  <p>
+
+
 </div>
 `;
 

@@ -24,16 +24,20 @@
   <a href="../../index.html">back</a>
 
 
-  <h1-with-bottom-margin title="I am a header :)">
-    <span slot="content">I AM A NEW HEADLINE TEST</span>
+  <h1-with-bottom-margin title="">
+    <span slot="title">This is my new ehadline createed via slots</span>
   </h1-with-bottom-margin>
-
+  <h2-with-bottom-margin>
+    <span slot="title">I am a H2 aren't I pretty</span>
+  </h2-with-bottom-margin>
 
   <header-single title="I am finally working!" colWidth="col-6" h2Title="this is the title for my h2"
     imgPath="./media/car.png" altImg="photo of a car">
   </header-single>
 
-
+<h2-with-bottom-margin>
+  <span slot="title">I am a H2 aren't I pretty</span>
+</h2-with-bottom-margin>
   <variable-text>
     <span slot="h2">I AM ANOTHER H2</span>
     <span slot="h1-content">I should not exist asdasd</span>
@@ -51,11 +55,9 @@
 
   <!-- <m-img imgPath="./media/car.png"></m-img> -->
   <!-- <h1-with-bottom-margin title="I am a header :)"></h1-with-bottom-margin> -->
-  <!-- <ImgGallery></ImgGallery> -->
+
   <p>This is a text that is gonna be rendered in serif.</p>
-  <img-gallery images="3" imgPathOne="../../media/Image_1.jpg" imgPathTwo="../../media/Image_2.jpg"
-    imgPathThree="../../media/Image_3.jpg" altImgOne="dogs with party hats" altImgTwo="husky" altImgThree="Sausage Dog">
-  </img-gallery>
+
   <!--FOOTER COMPONENT-->
   <m-footer base="false" title="This footer contains all links to the other components"></m-footer>
   <top-menu itemOneName="Case Study" linkOne="https://www.facebook.com/" itemTwoName="Time of events"

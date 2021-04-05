@@ -3,7 +3,6 @@ VariableTextTemplate.innerHTML = allStyles + `
 <style>
 span {
   display: block;
-  color: red;
 }
 
 </style>
@@ -34,10 +33,10 @@ class VariableText extends HTMLElement {
         slotsForTemplate +="<p>"+this.getElementsByTagName('span')[i].innerHTML+"</p>";
       }
       if (this.getElementsByTagName('span')[i].slot === "h2") {
-        slotsForTemplate +="<h2>"+this.getElementsByTagName('span')[i].innerHTML+"</h2>";
+        slotsForTemplate +="<h2-with-bottom-margin><span slot='title'>"+this.getElementsByTagName('span')[i].innerHTML+"</span></h2-with-bottom-margin>";
       }
       if(this.getElementsByTagName('span')[i].slot === "h1-content"){
-        slotsForTemplate +="<h1-with-bottom-margin><span slot='content'>"+this.getElementsByTagName('span')[i].innerHTML+"</span></h1-with-bottom-margin>";
+        slotsForTemplate +="<h1-with-bottom-margin><span slot='title'>"+this.getElementsByTagName('span')[i].innerHTML+"</span></h1-with-bottom-margin>";
       }
     }
     this.shadowRoot.getElementById('variable-text-base').innerHTML = slotsForTemplate;
