@@ -27,7 +27,7 @@ document.head.appendChild(scriptH3WithBottomMargin);
 
 
 
-// START IMPORT COMMON COMPONENTS
+// START IMPORT FULL WIDTH COMPONENTS
 // ******************************
 
 // IMPORT IMG GALLERY 
@@ -67,7 +67,6 @@ createTemplate(styleBase);
 var styleFooter = '<link rel="stylesheet" href="./components/footer/footer.css">';
 createTemplate(styleFooter);
 
-
 var bootstrapLink = '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" ></link>';
 createTemplate(bootstrapLink);
 
@@ -86,7 +85,6 @@ if (currentTemplate) {
 
 
 var allStyles = bootstrapLink + styleBase + templateStyle;
-
 
 
 //WRITE THE HTML FOR EACH COMPONENT HERE
