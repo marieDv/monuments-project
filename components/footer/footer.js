@@ -24,7 +24,15 @@ var scriptH3WithBottomMargin = document.createElement('script');
 scriptH3WithBottomMargin.src = '/components/h3-with-bottom-margin/h3-with-bottom-margin.js';
 document.head.appendChild(scriptH3WithBottomMargin);
 
+//PULL-QUOTE-WITH-BOTTOM-MARGIN-VAR-WIDTH
+var scriptPullQuoteWithBottomMarginVarWidth = document.createElement('script');
+scriptPullQuoteWithBottomMarginVarWidth.src = '/components/pull-quote-with-bottom-margin-var-width/pull-quote-with-bottom-margin-var-width.js';
+document.head.appendChild(scriptPullQuoteWithBottomMarginVarWidth);
 
+//BUTTON
+var scriptButton = document.createElement('script');
+scriptButton.src = '/components/button/button.js';
+document.head.appendChild(scriptButton);
 
 
 // START IMPORT FULL WIDTH COMPONENTS
