@@ -1,9 +1,9 @@
 //CREATING THE VARIABLE THAT HOLDS THE TEMPLATE
-const imgFullWidthVarHeight = document.createElement("template");
+const twoImgsSameVarHeight = document.createElement("template");
 
 
 // TEMPLATE FOR OUR COMPONENT
-imgFullWidthVarHeight.innerHTML = allStyles + `
+twoImgsSameVarHeight.innerHTML = allStyles + `
 <style>
 img {
     width: 100%;
@@ -17,17 +17,27 @@ p {
   margin-left: 16px;
 }
 
+.container-fluid {
+  padding: 0px;
+  background-color: red;
+}
+
 </style>
 
-<div class="container-fluid">
+<div class="container-fluid p-0">
+<div class="row">
+    <div class="col-6">
     <img id="imgOne" src="" alt="">
     <p class="col-4" id="captionOne"></p>
+    </div>
+    <img id="imgTwo" src="" alt="">
+    <p class="col-4" id="captionTwo"></p>
 </div>
-
+</div>
 `;
 
 //initializing our class
-class ImgFullWidthVarHeight extends HTMLElement {
+class TwoImgsSameVarHeight extends HTMLElement {
   constructor(){
     super();
 
@@ -36,15 +46,13 @@ class ImgFullWidthVarHeight extends HTMLElement {
     this.attachShadow({ mode: 'open' }); //open shadow root
     //add bootstrap-stylesheet
     this.shadowRoot.innerHTML += `<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"></link>`;
-    this.shadowRoot.appendChild(imgFullWidthVarHeight.content.cloneNode(true));//attach template
+    this.shadowRoot.appendChild(twoImgsSameVarHeight.content.cloneNode(true));//attach template
 
     //access the h1 element inside our template
     this.shadowRoot.querySelector('#imgOne').src = this.getAttribute('ImgPath');
     this.shadowRoot.querySelector('#imgOne').alt = this.getAttribute('AltImg');
     this.shadowRoot.querySelector('#captionOne').innerText = this.getAttribute('Caption');
     
-    //VARIABLE WITH CODE  this.shadowRoot.getElementById('variable-column').classList.add(this.getAttribute("colWidth"));
-
   }
 }
-window.customElements.define('img-full-width-var-height', ImgFullWidthVarHeight);
+window.customElements.define('two-images-same-var-height', TwoImgsSameVarHeight);
