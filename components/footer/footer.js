@@ -4,9 +4,7 @@
 // ******************************
 
 
-var script1 = document.createElement('script');
-script1.src = '/components/img/img.js';
-document.head.appendChild(script1);
+
 
 
 var h1WithBottomMargin = document.createElement('script');
@@ -24,6 +22,7 @@ var scriptH3WithBottomMargin = document.createElement('script');
 scriptH3WithBottomMargin.src = '/components/h3-with-bottom-margin/h3-with-bottom-margin.js';
 document.head.appendChild(scriptH3WithBottomMargin);
 
+
 //PULL-QUOTE-WITH-BOTTOM-MARGIN-VAR-WIDTH
 var scriptPullQuoteWithBottomMarginVarWidth = document.createElement('script');
 scriptPullQuoteWithBottomMarginVarWidth.src = '/components/pull-quote-with-bottom-margin-var-width/pull-quote-with-bottom-margin-var-width.js';
@@ -35,18 +34,32 @@ scriptButton.src = '/components/button/button.js';
 document.head.appendChild(scriptButton);
 
 
+// 
+var BlockQuoteWithLeftAndBottomMarginVarWidthScript = document.createElement('script');
+BlockQuoteWithLeftAndBottomMarginVarWidthScript.src = '/components/block-quote-with-left-and-bottom-margin-var-width/block-quote-with-left-and-bottom-margin-var-width.js';
+document.head.appendChild(BlockQuoteWithLeftAndBottomMarginVarWidthScript);
+
+
+
+
+
 // START IMPORT FULL WIDTH COMPONENTS
 // ******************************
+// VARIABLE TEXT
+var variableTextScript = document.createElement('script');
+variableTextScript.src = '/components/variable-text/variable-text.js';
+document.head.appendChild(variableTextScript);
 
-// IMPORT IMG GALLERY 
-var scriptImgGallery = document.createElement('script');
-scriptImgGallery.src = '/components/img-gallery/img-gallery.js';
-document.head.appendChild(scriptImgGallery);
 
 // IMPORT image-full-width-var-height
 var scriptImageFullWidthVarHeight = document.createElement('script');
 scriptImageFullWidthVarHeight.src = '/components/image-full-width-var-height/image-full-width-var-height.js';
 document.head.appendChild(scriptImageFullWidthVarHeight);
+
+// IMPORT image-6-columns-var-height
+var scriptImgSixColumnsVarHeight = document.createElement('script');
+scriptImgSixColumnsVarHeight.src = '/components/image-six-columns-var-height/image-six-columns-var-height.js';
+document.head.appendChild(scriptImgSixColumnsVarHeight);
 
 // IMPORT Script top menu
 var scriptTopMenu = document.createElement('script');
@@ -59,6 +72,13 @@ scriptHeaderSingle.src = '/components/header-single/header-single.js';
 document.head.appendChild(scriptHeaderSingle);
 
 
+// START IMPORT HALF WIDTH COMPONENTS
+// ******************************
+
+// IMPORT TWO IMAGES EQUAL WIDTH
+var scriptTwoImagesSameWidthVarHeight = document.createElement('script');
+scriptTwoImagesSameWidthVarHeight.src = '/components/two-images-same-width-var-height/two-images-same-width-var-height.js';
+document.head.appendChild(scriptTwoImagesSameWidthVarHeight);
 
 
 //END IMPORTS
