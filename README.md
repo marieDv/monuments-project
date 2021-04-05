@@ -1,6 +1,6 @@
-# monuments-project
+# The After Monument
 
-## Naming conventions Development
+## Naming Conventions Development
 
 ###### Slots VS Attributes:
 
