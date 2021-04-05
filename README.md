@@ -1,17 +1,15 @@
 # monuments-project
 
-##Documentation
+## Naming conventions Development
 
-##Naming conventions Development
-
-###Slots VS Attributes:
+###### Slots VS Attributes:
 
 Slots:
 When using any type of text that usually goes directly into the Dom
 Attribues:
 Src / href / alt etc (all native attributes that an element can have)
 
-###Naming:
+###### Naming:
 
 Attributes and slot names are always written in lowercase & CamelCase
 
@@ -21,12 +19,12 @@ Adjustable columns ->  colWidth
 Src of an Image -> imgPath
 Alt attribute of an image -> altImg
 
-###Kebap-case:
+###### Kebap-case:
 css classes
 Id?s
 Component names
 
-###CamelCase:
+###### CamelCase:
 Javascript variables
 Classes
 
