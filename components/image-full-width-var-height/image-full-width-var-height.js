@@ -7,16 +7,22 @@ imgFullWidthVarHeight.innerHTML = allStyles + `
 <style>
 img {
     width: 100%;
-    border: 2px solid red;
     height: auto;
 } 
+
+p {
+  margin-top: 16px;
+  font-size:14px;
+  line-height: 16px;
+}
+
 </style>
 
-<div class="container-fluid">
+<div class="container_fluid p-0">
     <img class="col-12" id="imgOne" src="" alt="">
-    <p id="captionOne"></p>
-</div>
+    <p class="col-4" id="captionOne"></p>
 
+</div>
 `;
 
 //initializing our class
