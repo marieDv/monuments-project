@@ -16,12 +16,10 @@ h2WithBottomMargin.innerHTML = allStyles + `
 }
 
 </style>
-
     <div id="container" class="d-flex justify-content-center">
             <h2 id="h2-with-bottom-margin" class="col-3"></h2>
         </div>
     </div>
-
 `;
 
 //initializing our class
