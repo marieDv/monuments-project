@@ -25,7 +25,10 @@ scriptH3WithBottomMargin.src = '/components/h3-with-bottom-margin/h3-with-bottom
 document.head.appendChild(scriptH3WithBottomMargin);
 
 
-
+// VARIABLE TEXT
+var variableTextScript = document.createElement('script');
+variableTextScript.src = '/components/variable-text/variable-text.js';
+document.head.appendChild(variableTextScript);
 
 // START IMPORT FULL WIDTH COMPONENTS
 // ******************************

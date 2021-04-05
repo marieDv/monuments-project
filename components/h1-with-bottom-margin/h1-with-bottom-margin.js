@@ -11,8 +11,10 @@ h1 {
 
 }
 </style>
-<div  class="container d-flex justify-content-center">
-<h1></h1>
+<div class="container d-flex justify-content-center">
+  <h1>
+    <slot name="content"></slot>
+  </h1>
 </div>
 `;
 
@@ -23,7 +25,9 @@ class H1WithBottomMargin extends HTMLElement {
     this.showInfo = true;
     this.attachShadow({ mode: 'open' });
     this.shadowRoot.appendChild(H1WithBottomMarginTemplate.content.cloneNode(true));
-    this.shadowRoot.querySelector('h1').innerHTML = this.getAttribute('title');
+    if (this.getAttribute('title')) {
+      this.shadowRoot.querySelector('h1').innerHTML = this.getAttribute('title');
+    }
   }
 }
 

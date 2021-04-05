@@ -11,5 +11,5 @@ h1, h2 {
   background: linear-gradient(180deg, #E24E43 85.78%, rgba(97, 91, 91, 0) 94.11%);
 }
 .header-bg h1, a, p {
-  color: #ffffff;
+  /* color: #ffffff; */
 }
