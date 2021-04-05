@@ -17,9 +17,13 @@ p {
   line-height: 16px;
 }
 
+#container {
+  margin-top: 36px;
+}
+
 </style>
 
-<div class="container_fluid p-0">
+<div id="container" class="container_fluid p-0">
     <img class="col-6" id="imgOne" src="" alt="">
     <p class="col-6">
     <slot name="caption"/>

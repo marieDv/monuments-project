@@ -37,9 +37,14 @@ p {
   position: relative;
 }
 
+#container {
+  margin-top: 36px;
+}
+
+
 </style>
 
-<div class="container-fluid">
+<div id="container" class="container-fluid">
   <div class="row">
     <div class="col-6">
       <img id="imgOne" src="" alt="">

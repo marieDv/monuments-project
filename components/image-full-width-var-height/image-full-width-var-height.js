@@ -17,9 +17,13 @@ p {
   margin-left: 16px;
 }
 
+#container {
+  margin-top: 36px;
+}
+
 </style>
 
-<div class="container-fluid">
+<div id="container" class="container-fluid">
     <img id="imgOne" src="" alt="">
     <p class="col-4" id="captionOne"></p>
 </div>

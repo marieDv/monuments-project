@@ -6,13 +6,13 @@ h2WithBottomMargin.innerHTML = allStyles + `
 <style>
 
 #container {
-    top: 200px;
-
+    margin-top: 36px;
 }
 #h2-with-bottom-margin {
     color: black;
     margin-bottom: 64px;
 }
+
 
 </style>
     <div id="container" class="d-flex justify-content-center">
