@@ -36,6 +36,9 @@ p {
 .row {
   position: relative;
 }
+.caption-box {
+  margin: 0;
+  margin-top: 16px;
 
 #container {
   margin-top: 36px;
@@ -48,8 +51,8 @@ p {
   <div class="row">
     <div class="col-6">
       <img id="imgOne" src="" alt="">
-      <p class="col-4">
-      <slot name="CaptionOne"></slot>
+      <p class="col-4 p-0  caption-box">
+      <slot name="captionOne"></slot>
       </p>
     </div>
 
@@ -57,16 +60,13 @@ p {
 
     <div class="col-6">
       <img id="imgTwo" src="" alt="">
-      <p class="col-4">
-      <slot name="CaptionTwo"></slot>
+      <p class="col-4 p-0 caption-box">
+      <slot name="captionTwo"></slot>
       </p>
     </div>
   </div>
 </div>
 
-<p>
-
-</p>
 
 `;
 
@@ -79,7 +79,6 @@ class TwoImgsSameWidthVarHeight extends HTMLElement {
     this.showInfo = true;
     this.attachShadow({ mode: 'open' }); //open shadow root
     //add bootstrap-stylesheet
-    this.shadowRoot.innerHTML += `<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"></link>`;
     this.shadowRoot.appendChild(twoImgsSameWidthVarHeight.content.cloneNode(true));//attach template
 
     //access the img element inside our template

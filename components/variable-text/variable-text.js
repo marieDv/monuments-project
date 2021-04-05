@@ -7,15 +7,12 @@ span {
 
 </style>
 <div id="variable-text-base" class="container-fluid justify-content-center">
-
+<div>
+</div>
 
 </div> 
 `;
-{/* <h2><slot name="h2"/></h2>
-<p><slot name="text"/></p>
-<h1-with-bottom-margin>
-<span slot="content"><slot name="h1-content"></slot></span>
-</h1-with-bottom-margin> */}
+
 var slotsForTemplate = "";
 
 class VariableText extends HTMLElement {
@@ -35,8 +32,11 @@ class VariableText extends HTMLElement {
       if (this.getElementsByTagName('span')[i].slot === "h2") {
         slotsForTemplate +="<h2-with-bottom-margin><span slot='title'>"+this.getElementsByTagName('span')[i].innerHTML+"</span></h2-with-bottom-margin>";
       }
-      if(this.getElementsByTagName('span')[i].slot === "h1-content"){
+      if(this.getElementsByTagName('span')[i].slot === "h1"){
         slotsForTemplate +="<h1-with-bottom-margin><span slot='title'>"+this.getElementsByTagName('span')[i].innerHTML+"</span></h1-with-bottom-margin>";
+      }
+      if(this.getElementsByTagName('span')[i].slot === "h3"){
+        slotsForTemplate +="<h3-with-bottom-margin><span slot='title'>"+this.getElementsByTagName('span')[i].innerHTML+"</span></h3-with-bottom-margin>";
       }
     }
     this.shadowRoot.getElementById('variable-text-base').innerHTML = slotsForTemplate;
