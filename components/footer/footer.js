@@ -4,9 +4,7 @@
 // ******************************
 
 
-var script1 = document.createElement('script');
-script1.src = '/components/img/img.js';
-document.head.appendChild(script1);
+
 
 
 var h1WithBottomMargin = document.createElement('script');
@@ -25,15 +23,15 @@ scriptH3WithBottomMargin.src = '/components/h3-with-bottom-margin/h3-with-bottom
 document.head.appendChild(scriptH3WithBottomMargin);
 
 
-
+// VARIABLE TEXT
+var variableTextScript = document.createElement('script');
+variableTextScript.src = '/components/variable-text/variable-text.js';
+document.head.appendChild(variableTextScript);
 
 // START IMPORT FULL WIDTH COMPONENTS
 // ******************************
 
-// IMPORT IMG GALLERY 
-var scriptImgGallery = document.createElement('script');
-scriptImgGallery.src = '/components/img-gallery/img-gallery.js';
-document.head.appendChild(scriptImgGallery);
+
 
 // IMPORT image-full-width-var-height
 var scriptImageFullWidthVarHeight = document.createElement('script');
