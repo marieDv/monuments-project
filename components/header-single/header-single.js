@@ -8,8 +8,8 @@ HeaderTemplate.innerHTML = allStyles + `
 }
 </style>
 <div class="container-fluid d-flex justify-content-center header-bg">
-<span id="slot-h1"></span>
-<span id="slot-img"></span>
+<span class="mt-5" id="slot-h1"></span>
+<!--<span id="slot-img"></span>-->
 </div> 
 `;
 
