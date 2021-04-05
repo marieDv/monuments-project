@@ -4,9 +4,10 @@
 
 ###### Slots VS Attributes:
 
-Slots:
+**Slots:**
 When using any type of text that usually goes directly into the Dom
-Attribues:
+
+**Attribues:**
 Src / href / alt etc (all native attributes that an element can have)
 
 ###### Naming:
@@ -20,11 +21,11 @@ Attributes and slot names are always written in lowercase & CamelCase
 * Alt attribute of an image -> **altImg**
 
 ###### Kebap-case:
-css classes
-Id?s
-Component names
+* css classes
+* Ids
+* Component names
 
 ###### CamelCase:
-Javascript variables
-Classes
+* Javascript variables
+* Classes
 
