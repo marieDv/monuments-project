@@ -36,7 +36,7 @@ class H3WithBottomMargin extends HTMLElement {
   
   //  this.shadowRoot.innerHTML += `<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"></link>`;
     this.shadowRoot.appendChild(h3WithBottomMargin.content.cloneNode(true));//attach template
-    this.shadowRoot.querySelector('#h3-with-bottom-margin').innerText = this.getAttribute("text");
+    this.shadowRoot.querySelector('#h3-with-bottom-margin').innerText = this.getAttribute("title");
 
 
     

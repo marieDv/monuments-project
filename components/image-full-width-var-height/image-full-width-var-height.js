@@ -14,14 +14,21 @@ p {
   margin-top: 16px;
   font-size:14px;
   line-height: 16px;
+  margin-left: 16px;
+}
+
+.container-fluid {
+  padding: 0px;
+  background-color: red;
 }
 
 </style>
 
-<div class="container_fluid p-0">
-    <img class="col-12" id="imgOne" src="" alt="">
+<div class="container-fluid p-0">
+<div class="row">
+    <img id="imgOne" src="" alt="">
     <p class="col-4" id="captionOne"></p>
-
+</div>
 </div>
 `;
 
@@ -41,6 +48,9 @@ class ImgFullWidthVarHeight extends HTMLElement {
     this.shadowRoot.querySelector('#imgOne').src = this.getAttribute('ImgPath');
     this.shadowRoot.querySelector('#imgOne').alt = this.getAttribute('AltImg');
     this.shadowRoot.querySelector('#captionOne').innerText = this.getAttribute('Caption');
+    
+    //VARIABLE WITH CODE  this.shadowRoot.getElementById('variable-column').classList.add(this.getAttribute("colWidth"));
+
   }
 }
 window.customElements.define('img-full-width-var-height', ImgFullWidthVarHeight);
