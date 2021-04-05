@@ -40,6 +40,11 @@ var scriptImageFullWidthVarHeight = document.createElement('script');
 scriptImageFullWidthVarHeight.src = '/components/image-full-width-var-height/image-full-width-var-height.js';
 document.head.appendChild(scriptImageFullWidthVarHeight);
 
+// IMPORT image-6-columns-var-height
+var scriptImgSixColumnsVarHeight = document.createElement('script');
+scriptImgSixColumnsVarHeight.src = '/components/image-six-columns-var-height/image-six-columns-var-height.js';
+document.head.appendChild(scriptImgSixColumnsVarHeight);
+
 // IMPORT Script top menu
 var scriptTopMenu = document.createElement('script');
 scriptTopMenu.src = '/components/top_menu/top_menu.js';
