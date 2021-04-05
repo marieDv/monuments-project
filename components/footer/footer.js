@@ -23,14 +23,27 @@ scriptH3WithBottomMargin.src = '/components/h3-with-bottom-margin/h3-with-bottom
 document.head.appendChild(scriptH3WithBottomMargin);
 
 
+// 
+var BlockQuoteWithLeftAndBottomMarginVarWidthScript = document.createElement('script');
+BlockQuoteWithLeftAndBottomMarginVarWidthScript.src = '/components/block-quote-with-left-and-bottom-margin-var-width/block-quote-with-left-and-bottom-margin-var-width.js';
+document.head.appendChild(BlockQuoteWithLeftAndBottomMarginVarWidthScript);
+
+
+
+
+
+
+
+
+
+
+
+// START IMPORT FULL WIDTH COMPONENTS
+// ******************************
 // VARIABLE TEXT
 var variableTextScript = document.createElement('script');
 variableTextScript.src = '/components/variable-text/variable-text.js';
 document.head.appendChild(variableTextScript);
-
-// START IMPORT FULL WIDTH COMPONENTS
-// ******************************
-
 
 
 // IMPORT image-full-width-var-height
