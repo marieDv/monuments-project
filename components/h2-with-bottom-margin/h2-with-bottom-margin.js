@@ -15,7 +15,7 @@ h2WithBottomMargin.innerHTML = allStyles + `
 }
 
 </style>
-    <div id="container" class="d-flex justify-content-center">
+    <div id="container" class="d-flex">
             <h2 id="h2-with-bottom-margin">
             <slot name="title"></slot>
             </h2>

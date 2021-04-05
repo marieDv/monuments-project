@@ -17,7 +17,7 @@ h3WithBottomMargin.innerHTML = allStyles + `
 
 </style>
 
-    <div id="container" class="d-flex justify-content-center">
+    <div id="container" class="">
             <h3 id="h3-with-bottom-margin" class="">
             <slot name="title"></slot>
             </h3>
