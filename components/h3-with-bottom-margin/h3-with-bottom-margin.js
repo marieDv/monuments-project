@@ -7,8 +7,7 @@ h3WithBottomMargin.innerHTML = allStyles + `
 <style>
 
 #container {
-    top: 200px;
-
+    margin-top: 36px;
 }
 #h3 {
     color: black;

@@ -23,16 +23,21 @@ scriptH3WithBottomMargin.src = '/components/h3-with-bottom-margin/h3-with-bottom
 document.head.appendChild(scriptH3WithBottomMargin);
 
 
+//PULL-QUOTE-WITH-BOTTOM-MARGIN-VAR-WIDTH
+var scriptPullQuoteWithBottomMarginVarWidth = document.createElement('script');
+scriptPullQuoteWithBottomMarginVarWidth.src = '/components/pull-quote-with-bottom-margin-var-width/pull-quote-with-bottom-margin-var-width.js';
+document.head.appendChild(scriptPullQuoteWithBottomMarginVarWidth);
+
+//BUTTON
+var scriptButton = document.createElement('script');
+scriptButton.src = '/components/button/button.js';
+document.head.appendChild(scriptButton);
+
+
 // 
 var BlockQuoteWithLeftAndBottomMarginVarWidthScript = document.createElement('script');
 BlockQuoteWithLeftAndBottomMarginVarWidthScript.src = '/components/block-quote-with-left-and-bottom-margin-var-width/block-quote-with-left-and-bottom-margin-var-width.js';
 document.head.appendChild(BlockQuoteWithLeftAndBottomMarginVarWidthScript);
-
-
-
-
-
-
 
 
 
