@@ -13,11 +13,11 @@ Src / href / alt etc (all native attributes that an element can have)
 
 Attributes and slot names are always written in lowercase & CamelCase
 
-content of headlines -> title
-content of other text -> text
-Adjustable columns ->  colWidth
-Src of an Image -> imgPath
-Alt attribute of an image -> altImg
+* content of headlines -> **title**
+* content of other text -> **text**
+* Adjustable columns ->  **colWidth**
+* Src of an Image -> **imgPath**
+* Alt attribute of an image -> **altImg**
 
 ###### Kebap-case:
 css classes
