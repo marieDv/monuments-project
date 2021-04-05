@@ -51,6 +51,13 @@ scriptHeaderSingle.src = '/components/header-single/header-single.js';
 document.head.appendChild(scriptHeaderSingle);
 
 
+// START IMPORT HALF WIDTH COMPONENTS
+// ******************************
+
+// IMPORT TWO IMAGES EQUAL WIDTH
+var scriptTwoImagesSameWidthVarHeight = document.createElement('script');
+scriptTwoImagesSameWidthVarHeight.src = '/components/two-images-same-width-var-height/two-images-same-width-var-height.js';
+document.head.appendChild(scriptTwoImagesSameWidthVarHeight);
 
 
 //END IMPORTS
