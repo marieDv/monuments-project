@@ -38,5 +38,9 @@ Attributes and slot names are always written in lowercase & CamelCase
 
 ###### CamelCase:
 * Javascript variables
-* Classes
+* Classes!
+
+
+[Screenshot 2021-04-12 at 17 23 2](https://user-images.githubusercontent.com/25203646/115879268-bf100c80-a449-11eb-86da-491c1b81ed9b.png)
+
 
