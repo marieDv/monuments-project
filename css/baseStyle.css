@@ -13,3 +13,13 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
+#render-timeline-here {
+  border: 1px solid black;
+  height: 600px;
+}
+.vis-item {
+  font-family: "Arial" !important;
+  border: none !important;
+  background-color: #E2FA61 !important;
+  font-size: 14px !important;
+}

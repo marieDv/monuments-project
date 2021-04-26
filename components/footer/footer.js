@@ -1,4 +1,10 @@
+var scriptVis = document.createElement('script');
+scriptVis.src = 'https://unpkg.com/vis-network/standalone/umd/vis-network.min.js';
+document.head.appendChild(scriptVis);
 
+var scriptVisTimeline = document.createElement('script');
+scriptVisTimeline.src = 'https://visjs.github.io/vis-timeline/standalone/umd/vis-timeline-graph2d.min.js';
+document.head.appendChild(scriptVisTimeline);
 
 // START IMPORT BASE COMPONENTS
 // ******************************
@@ -71,6 +77,11 @@ var scriptHeaderSingle = document.createElement('script');
 scriptHeaderSingle.src = '/components/header-single/header-single.js';
 document.head.appendChild(scriptHeaderSingle);
 
+
+// IMPORT Timeline 
+var scriptTimeline = document.createElement('script');
+scriptTimeline.src = '/components/timeline/timeline.js';
+document.head.appendChild(scriptTimeline);
 
 // START IMPORT HALF WIDTH COMPONENTS
 // ******************************
