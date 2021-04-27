@@ -1,16 +1,15 @@
 @font-face {
   font-family: "Almendra";
-  src: url('../fonts/AlmendraDisplay/AlmendraDisplay-Regular.ttf');
+  src: url("../fonts/AlmendraDisplay/AlmendraDisplay-Regular.ttf");
 }
 
 @font-face {
   font-family: "Arial";
-  src: url('../fonts/Arial/arial.ttf');
+  src: url("../fonts/Arial/arial.ttf");
 }
 
-
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 #render-timeline-here {
@@ -19,7 +18,38 @@ body {
 }
 .vis-item {
   font-family: "Arial" !important;
-  border: none !important;
-  background-color: #E2FA61 !important;
-  font-size: 14px !important;
+  /* border: none !important; */
+  /* background-color: #e2fa61 !important; */
+  font-size: 16px !important;
+
+  color: white !important;
+  background: #383636 !important;
+  border-radius: 4px !important;
+  text-align: left !important;
+}
+.vis-item-content {
+  /* max-width: 200px; */
+}
+.vis-item-content p {
+  line-break: anywhere;
+  white-space: break-spaces;
+  font-size: 11px;
+}
+.vis-item-content span {
+  line-break: anywhere;
+  white-space: break-spaces;
+  font-size: 8px;
+}
+.vis-item.vis-line {
+  border-color: #a1a3aa;
+  
+}
+.vis-item.vis-dot {
+  border-color: #a1a3aa;
+  
+  /* left: -3.5px; */
+  top: -3px;
+}
+.vis-item-content img {
+  max-height: 80px;
 }
