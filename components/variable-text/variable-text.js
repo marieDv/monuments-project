@@ -8,8 +8,9 @@ span {
 </style>
 
 <div class="container-fluid">
-<div id="variable-text-base">
+<div id="variable-text-base" class="col-5">
 </div>
+<div class="col-1"></div>
 </div> 
 `;
 

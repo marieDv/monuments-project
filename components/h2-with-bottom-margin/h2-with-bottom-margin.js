@@ -7,15 +7,18 @@ h2WithBottomMargin.innerHTML = allStyles + `
 
 #container {
     margin-top: 36px;
+    text-align: center;
+    width: 100%;
 }
 #h2-with-bottom-margin {
     color: black;
     margin-bottom: 64px;
+    font-size: 54px;
 }
 
 
 </style>
-    <div id="container" class="d-flex">
+    <div id="container" class="">
             <h2 id="h2-with-bottom-margin">
             <slot name="title"></slot>
             </h2>

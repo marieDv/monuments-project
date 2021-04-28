@@ -6,11 +6,17 @@ BlockQuoteWithLeftAndBottomMarginVarWidthTemplate.innerHTML = allStyles + `
 #block-quote{
 margin-bottom: 12px;
 }
+p {
+  font-size: 14px;
+  display: block;
+  font-style: italic;
+}
 </style>
 <div id="block-quote" class="container-fluid ">
 <div class="row">
-<div class="col-2"></div>
-  <p class="col-3">
+
+<div class="col-3"></div>
+  <p class="col-8">
     <slot name="text"></slot>
   </p>
   </div>

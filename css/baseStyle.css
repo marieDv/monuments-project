@@ -16,6 +16,11 @@ body {
   border: 1px solid black;
   height: 600px;
 }
+
+.header-bg {
+  /* background: linear-gradient(180deg, #048D3B 94.72%, #E5E5E5 100%); */
+  background: linear-gradient(180deg, #048D3B 85.78%, rgba(97, 91, 91, 0) 94.11%);
+}
 .vis-item {
   font-family: "Arial" !important;
   /* border: none !important; */

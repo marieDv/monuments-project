@@ -44,6 +44,8 @@ class ImgSixColumnsVarHeight extends HTMLElement {
     //add bootstrap-stylesheet
     this.shadowRoot.appendChild(imgSixColumnsVarHeight.content.cloneNode(true));//attach template
 
+    this.shadowRoot.getElementById('imgOne').classList.add(this.getAttribute("colWidth"));
+
     //access the h1 element inside our template
     this.shadowRoot.querySelector('#imgOne').src = this.getAttribute('ImgPath');
     this.shadowRoot.querySelector('#imgOne').alt = this.getAttribute('AltImg');
