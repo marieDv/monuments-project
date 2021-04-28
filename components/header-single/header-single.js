@@ -13,6 +13,13 @@ HeaderTemplate.innerHTML = allStyles + `
 .text {
   text-align: left;
 }
+.spacing {
+  padding: 20px;
+}
+.name {
+  text-transform: uppercase;
+  // padding: 20px 0;
+}
 #caption {
   margin-top: 16px;
 text-align: left;
@@ -26,11 +33,13 @@ text-align: left;
 </style>
 <div class="container-fluid d-flex header-bg">
 <div id="full-bleed-column" class="col-12">
- <span id="nameSlot"></span>
+<span class="spacing"> <span class="name" id="nameSlot"></span></span>
  <span class="mt-5" id="slot-h1"></span>
  <div class="container-fluid">
  <div class="row">
- <p class="text col-5"><slot name="text"></slot></p>
+ <p class="text col-5">
+ <slot  name="text"></slot>
+ </p>
  <div class="col-1"></div>
  
 
