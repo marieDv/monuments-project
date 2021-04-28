@@ -45,11 +45,7 @@ class halvesImageLeftTextRight extends HTMLElement {
     this.attachShadow({ mode: 'open' }); //open shadow root
     //add bootstrap-stylesheet
     this.shadowRoot.appendChild(imageLeftTextRight.content.cloneNode(true));//attach template
-
-    // if (this.getAttribute('ImgPath')) {
-    // slotsForTemplate += "<p>" + this.getElementsByTagName('span')[i].innerHTML + "</p>";
-
-
+    
     let fullImgComponentPath = "<image-six-columns-var-height colWidth='col-12' imgPath='" + this.getAttribute('ImgPath') + "' altImg='" + this.getAttribute('altImg') + "'><span slot='caption'>"+this.getAttribute('caption')+"</span></image-six-columns-var-height>";
     this.shadowRoot.getElementById('imgSlot').innerHTML = fullImgComponentPath;
 

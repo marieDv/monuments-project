@@ -12,7 +12,7 @@ img {
 } 
 
 p {
-  margin-top: 16px;
+  // margin-top: 16px;
   font-size:14px;
   line-height: 16px;
 }
@@ -25,7 +25,7 @@ p {
 
 <div id="container" class="container_fluid p-0">
     <img class="col-6" id="imgOne" src="" alt="">
-    <p class="col-6">
+    <p class="col-6 caption">
     <slot name="caption"/>
     </p>
 

@@ -8,8 +8,20 @@
   src: url("../fonts/Arial/arial.ttf");
 }
 
-body {
+body, h1, h2, h3 {
   font-family: "Arial", sans-serif;
+}
+p {
+  font-family: "Redaction", sans-serif;
+}
+.caption {
+  font-family: "Arial", sans-serif;
+}
+.caption {
+  margin-top: 16px;
+text-align: left;
+  font-size: 12px;
+  line-height: 14px;
 }
 
 #render-timeline-here {
