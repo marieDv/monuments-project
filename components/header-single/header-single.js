@@ -2,14 +2,21 @@ const HeaderTemplate = document.createElement('template');
 HeaderTemplate.innerHTML = allStyles + `
 <style>
 
-.header-bg {
+.container-header {
   
   width: 100%;
   margin-bottom: 160px;
 }
-#full-bleed-column {
+.header-bg {
   height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+#full-bleed-column {
+  min-height: 100vh;
   text-align: center;
+
 }
 .text {
   text-align: left;
@@ -33,20 +40,24 @@ HeaderTemplate.innerHTML = allStyles + `
   text-align: left;
   padding-left: 22px;
 }
+.img-container {
+  margin-top: 204px;
+}
 </style>
-<div class="container-fluid d-flex header-bg">
+<div class="container-fluid d-flex container-header">
+<div class="header-bg"></div>
 <div id="full-bleed-column" class="col-12">
 <span class="spacing"> <span class="name" id="nameSlot"></span></span>
  <span class="mt-5" id="slot-h1"></span>
  <div class="container-fluid">
  <div class="row">
- <p class="text header-text col-5">
+ <p class="text header-text col-sm-12 col-md-5">
  <slot  name="text"></slot>
  </p>
  <div class="col-1"></div>
  
 
- <div id="container" class="container-fluid col-6">
+ <div id="container" class="container-fluid col-sm-12 col-md-6 img-container">
     <img class="col-12" id="imgOne" src="" alt="">
     <p id="caption-box" class="col-6 justify-content-left caption">
     <slot class="" id="caption" name="caption"/>
