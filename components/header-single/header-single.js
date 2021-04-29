@@ -3,15 +3,17 @@ HeaderTemplate.innerHTML = allStyles + `
 <style>
 
 .header-bg {
-  height: 100vh;
+  
   width: 100%;
-  margin-bottom: 64px;
+  margin-bottom: 160px;
 }
 #full-bleed-column {
+  height: 100vh;
   text-align: center;
 }
 .text {
   text-align: left;
+  text-indent: 116px;
 }
 .spacing {
   padding: 20px;
@@ -22,7 +24,7 @@ HeaderTemplate.innerHTML = allStyles + `
 }
 #caption {
   margin-top: 16px;
-text-align: left;
+  text-align: left;
   font-size: 12px;
   line-height: 14px;
 }

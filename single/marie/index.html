@@ -19,7 +19,7 @@
 
 
 <body>
-  <a href="../../index.html">back</a>
+  <a class="link-back" href="../../index.html">back</a>
 
   <header-single title="The dr.Karl Lueger memorial" creatorsName="Marie Dvorzak" colWidth="col-6"
     h2Title="this is the title for my h2" altImg="Intro img" imgPath="./media/intro-img.png">
@@ -31,13 +31,14 @@
     <span slot="caption">The Dr Karl Lueger statue in Vienna</span>
   </header-single>
 
+
+
+
   <!--***********************************************************************************************-->
   <!--YOUR COMPONENTS GO HERE-->
 
-  <h2-with-bottom-margin>
-    <span slot="title">Headline2</span>
-  </h2-with-bottom-margin>
 
+  <!--Halve Image Left Text Right-->
   <halves-image-left-text-right imgPath="./media/test.png" altImg="/" caption="caption">
 
     <span slot="h2">Headline2</span>
@@ -47,6 +48,18 @@
 
   </halves-image-left-text-right>
 
+
+
+
+
+
+
+
+
+
+
+
+
   
 
 
@@ -54,17 +67,19 @@
   <!--***********************************************************************************************-->
   <!--DONT PUT COMPONENTS AFTER THIS LINE :)-->
 
-  <!--FOOTER COMPONENT-->
-  <m-footer base="false" title="This footer contains all links to the other components"></m-footer>
-  <top-menu itemOneName="Case Study" linkOne="https://www.facebook.com/" itemTwoName="Time of events"
-    linkTwo="https://www.google.com/" itemThreeName="Montage of history" linkThree="https://www.twitter.com/"
-    itemFourName="Stories" linkFour="https://www.youtube.com/"></top-menu>
 
+
+
+
+
+
+  <!--FOOTER COMPONENT-->
+  <m-footer base="false" title=""></m-footer>
 </body>
 <footer>
   <script>
-    var currentTemplate = 'Standard';//Visualization-Almendra-Display Standard
-    // var currentTemplate = 'Visualization-Almendra-Display';
+    // var currentTemplate = 'Standard';//Visualization-Almendra-Display Standard
+    var currentTemplate = 'Visualization-Almendra-Display';
   </script>
   <script src="../../components/footer/footer.js"></script>
 </footer>

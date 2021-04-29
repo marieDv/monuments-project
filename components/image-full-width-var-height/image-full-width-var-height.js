@@ -25,7 +25,7 @@ p {
 
 <div id="container" class="container-fluid">
     <img id="imgOne" src="" alt="">
-    <p class="col-4" id="captionOne"></p>
+    <p class="col-4 caption" id="captionOne"></p>
 </div>
 
 `;

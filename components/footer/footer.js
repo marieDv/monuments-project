@@ -136,7 +136,6 @@ function createTemplate(link) {
   <div id="footer">
   <div>
     <h1></h1>
-    <p>footer</p>
     </div>
   </div>
   `;

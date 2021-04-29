@@ -2,6 +2,10 @@
   font-family: "Almendra";
   src: url("../fonts/AlmendraDisplay/AlmendraDisplay-Regular.ttf");
 }
+@font-face {
+  font-family: "Redaction";
+  src: url("../fonts/Redaction/webfonts/Redaction-Regular.woff2");
+}
 
 @font-face {
   font-family: "Arial";
@@ -44,8 +48,12 @@ text-align: left;
   border-radius: 4px !important;
   text-align: left !important;
 }
-.vis-item-content {
-  /* max-width: 200px; */
+.link-back {
+  position: absolute;
+  color: black;
+  text-decoration: underline;
+  padding-left: 49px;
+  padding-top: 24px;
 }
 .vis-item-content p {
   line-break: anywhere;
@@ -59,7 +67,6 @@ text-align: left;
 }
 .vis-item.vis-line {
   border-color: #a1a3aa;
-  
 }
 .vis-item.vis-dot {
   border-color: #a1a3aa;
