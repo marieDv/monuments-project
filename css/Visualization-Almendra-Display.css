@@ -1,18 +1,29 @@
 
 body {
-  color: #000;
+  /* color: #000; */
 }
 h2, h1 {
 font-family: 'Almendra', sans-serif;
 text-transform: uppercase;
 }
+h1 {
+  line-height: 78px;
+}
+h1, .name, .header-text {
+  color: #ffffff;
+}
 h3, .blockquote {
   font-family: 'Redaction', sans-serif;
   text-transform: uppercase;
+  background-color: peachpuff;
   /* color: #ffffff; */
+}
+.name {
+  font-family: 'Arial', sans-serif;
 }
 p {
   font-family: 'Arial', sans-serif;
+  line-height: 115%;
 }
 .header-bg {
   background: linear-gradient(180deg, #E24E43 85.78%, rgba(97, 91, 91, 0) 94.11%);

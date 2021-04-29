@@ -21,6 +21,7 @@ HeaderTemplate.innerHTML = allStyles + `
 .name {
   text-transform: uppercase;
   // padding: 20px 0;
+  font-family: "Arial", sans-serif !important;
 }
 #caption {
   margin-top: 16px;
@@ -39,7 +40,7 @@ HeaderTemplate.innerHTML = allStyles + `
  <span class="mt-5" id="slot-h1"></span>
  <div class="container-fluid">
  <div class="row">
- <p class="text col-5">
+ <p class="text header-text col-5">
  <slot  name="text"></slot>
  </p>
  <div class="col-1"></div>
@@ -69,7 +70,7 @@ class HeaderSingle extends HTMLElement {
     this.shadowRoot.appendChild(HeaderTemplate.content.cloneNode(true));
 
 
-    let headlineName = "<h3-with-bottom-margin><span slot='title'>" + this.getAttribute('creatorsName') + "</span></h3-with-bottom-margin>";
+    let headlineName = "<h4><span slot='title'>" + this.getAttribute('creatorsName') + "</span></h4>";
     this.shadowRoot.getElementById('nameSlot').innerHTML = headlineName;
 
     this.shadowRoot.querySelector('#imgOne').src = this.getAttribute('ImgPath');

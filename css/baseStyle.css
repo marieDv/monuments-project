@@ -12,7 +12,14 @@
   src: url("../fonts/Arial/arial.ttf");
 }
 
-body, h1, h2, h3 {
+* {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+body,
+h1,
+h2,
+h3 {
   font-family: "Arial", sans-serif;
 }
 p {
@@ -23,7 +30,7 @@ p {
 }
 .caption {
   margin-top: 16px;
-text-align: left;
+  text-align: left;
   font-size: 12px;
   line-height: 14px;
 }
@@ -35,7 +42,7 @@ text-align: left;
 
 .header-bg {
   /* background: linear-gradient(180deg, #048D3B 94.72%, #E5E5E5 100%); */
-  background: linear-gradient(180deg, #048D3B 85.78%, rgba(97, 91, 91, 0) 94.11%);
+  background: linear-gradient(180deg, #048d3b 85.78%, rgba(97, 91, 91, 0) 94.11%);
 }
 .vis-item {
   font-family: "Arial" !important;
@@ -54,6 +61,7 @@ text-align: left;
   text-decoration: underline;
   padding-left: 49px;
   padding-top: 24px;
+  z-index: 9999;
 }
 .vis-item-content p {
   line-break: anywhere;
@@ -70,7 +78,7 @@ text-align: left;
 }
 .vis-item.vis-dot {
   border-color: #a1a3aa;
-  
+
   /* left: -3.5px; */
   top: -3px;
 }
