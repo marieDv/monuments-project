@@ -6,6 +6,10 @@ var scriptVisTimeline = document.createElement('script');
 scriptVisTimeline.src = 'https://visjs.github.io/vis-timeline/standalone/umd/vis-timeline-graph2d.min.js';
 document.head.appendChild(scriptVisTimeline);
 
+var functionsFile = document.createElement('script');
+functionsFile.src = '/components/functions.js';
+document.head.appendChild(functionsFile);
+
 // START IMPORT BASE COMPONENTS
 // ******************************
 

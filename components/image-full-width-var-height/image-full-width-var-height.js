@@ -43,9 +43,9 @@ class ImgFullWidthVarHeight extends HTMLElement {
     this.shadowRoot.appendChild(imgFullWidthVarHeight.content.cloneNode(true));//attach template
 
     //access the h1 element inside our template
-    this.shadowRoot.querySelector('#imgOne').src = this.getAttribute('ImgPath');
-    this.shadowRoot.querySelector('#imgOne').alt = this.getAttribute('AltImg');
-    this.shadowRoot.querySelector('#captionOne').innerText = this.getAttribute('Caption');
+    this.shadowRoot.querySelector('#imgOne').src = this.getAttribute('imgPath');
+    this.shadowRoot.querySelector('#imgOne').alt = this.getAttribute('altImg');
+    this.shadowRoot.querySelector('#captionOne').innerText = this.getAttribute('caption');
     
     //VARIABLE WITH CODE  this.shadowRoot.getElementById('variable-column').classList.add(this.getAttribute("colWidth"));
 

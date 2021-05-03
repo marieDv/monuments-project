@@ -58,6 +58,7 @@ HeaderTemplate.innerHTML = allStyles + `
  
 
  <div id="container" class="container-fluid col-sm-12 col-md-6 img-container">
+ 
     <img class="col-12" id="imgOne" src="" alt="">
     <p id="caption-box" class="col-6 justify-content-left caption">
     <slot class="" id="caption" name="caption"/>
@@ -88,9 +89,6 @@ class HeaderSingle extends HTMLElement {
     this.shadowRoot.querySelector('#imgOne').alt = this.getAttribute('AltImg');
 
     this.shadowRoot.getElementById('slot-h1').innerHTML = "<h1-with-bottom-margin id='headline' title='" + this.getAttribute('title') + "' class='mt-5'></h1-with-bottom-margin>";
-    // this.shadowRoot.getElementById('variable-column').classList.add(this.getAttribute("colWidth"));
-    // this.shadowRoot.getElementById('slot-h2').innerHTML = "<h2-with-bottom-margin text='"+this.getAttribute("h2Title")+"'></h2-with-bottom-margin>";
-    // this.shadowRoot.querySelector('img-full-width-var-height').imgPath = this.getAttribute("imgPath");
   }
 }
 
