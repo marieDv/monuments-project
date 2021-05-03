@@ -95,7 +95,7 @@ document.head.appendChild(scriptTwoImagesSameWidthVarHeight);
 
 // IMPORT TWO IMAGES EQUAL WIDTH
 var scriptTwohalvesImageLeftTextRight = document.createElement('script');
-scriptTwohalvesImageLeftTextRight.src = '/components/halves/image-left-text-right.js';
+scriptTwohalvesImageLeftTextRight.src = '/components/halves/image-left-text-right/image-left-text-right.js';
 document.head.appendChild(scriptTwohalvesImageLeftTextRight);
 
 // ******************************************************************************************************************************************************
