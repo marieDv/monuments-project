@@ -28,10 +28,8 @@ button.innerHTML = allStyles + `
 class Button extends HTMLElement {
   constructor() {
     super();
+    setupComponent(this, button);
 
-    this.showInfo = true;
-    this.attachShadow({ mode: 'open' });
-    this.shadowRoot.appendChild(button.content.cloneNode(true));
     this.shadowRoot.querySelector('p.pullquotewithbottommarginvarwidth').innerHTML = this.getAttribute('pull-quote');
     this.shadowRoot.getElementById('variable-column').classList.add(this.getAttribute("colWidth"));
   }

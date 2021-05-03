@@ -22,10 +22,8 @@ p.pullquotewithbottommarginvarwidth {
 class PullQuoteWithBottomMarginVarWidth extends HTMLElement {
   constructor() {
     super();
+    setupComponent(this, pullquotewithbottommarginvarwidth);
 
-    this.showInfo = true;
-    this.attachShadow({ mode: 'open' });
-    this.shadowRoot.appendChild(pullquotewithbottommarginvarwidth.content.cloneNode(true));
     this.shadowRoot.querySelector('p.pullquotewithbottommarginvarwidth').innerHTML = this.getAttribute('pull-quote');
     this.shadowRoot.getElementById('variable-column').classList.add(this.getAttribute("colWidth"));
   }

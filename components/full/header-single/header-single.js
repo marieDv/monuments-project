@@ -77,10 +77,7 @@ class HeaderSingle extends HTMLElement {
 
   constructor() {
     super();
-    this.showInfo = true;
-    this.attachShadow({ mode: 'open' });
-    this.shadowRoot.appendChild(HeaderTemplate.content.cloneNode(true));
-
+    setupComponent(this, HeaderTemplate);
 
     let headlineName = "<h4><span slot='title'>" + this.getAttribute('creatorsName') + "</span></h4>";
     this.shadowRoot.getElementById('nameSlot').innerHTML = headlineName;

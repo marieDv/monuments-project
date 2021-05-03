@@ -26,10 +26,7 @@ p {
 class BlockQuoteWithLeftAndBottomMarginVarWidth extends HTMLElement {
   constructor() {
     super();
-
-    this.showInfo = true;
-    this.attachShadow({ mode: 'open' });
-    this.shadowRoot.appendChild(BlockQuoteWithLeftAndBottomMarginVarWidthTemplate.content.cloneNode(true));
+    setupComponent(this, BlockQuoteWithLeftAndBottomMarginVarWidthTemplate);
   }
 }
 

@@ -40,12 +40,24 @@ p {
 class halvesImageLeftTextRight extends HTMLElement {
   constructor() {
     super();
-    setupComponent(this);
+    setupComponent(this, imageLeftTextRight);
     createNestedComponent(this, 'image-six-columns-var-height', ['imgPath', 'altImg'], 'col-12', ['caption']);//this, name, [array with attributes], columns, [text slot]
     createVariableText(this, 'variable-text-base');
   }
 }
 window.customElements.define('halves-image-left-text-right', halvesImageLeftTextRight);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   // let fullImgComponentPath = "<image-six-columns-var-height colWidth='col-12' imgPath='" + this.getAttribute('ImgPath') + "' altImg='" + this.getAttribute('altImg') + "'><span slot='caption'>" + this.getAttribute('caption') + "</span></image-six-columns-var-height>";

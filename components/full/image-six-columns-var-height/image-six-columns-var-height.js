@@ -37,13 +37,7 @@ p {
 class ImgSixColumnsVarHeight extends HTMLElement {
   constructor(){
     super();
-
-    //initialize the shadow dom
-    this.showInfo = true;
-    this.attachShadow({ mode: 'open' }); //open shadow root
-    //add bootstrap-stylesheet
-    this.shadowRoot.appendChild(imgSixColumnsVarHeight.content.cloneNode(true));//attach template
-
+    setupComponent(this, imgSixColumnsVarHeight);
     this.shadowRoot.getElementById('imgOne').classList.add(this.getAttribute("colWidth"));
 
     //access the h1 element inside our template

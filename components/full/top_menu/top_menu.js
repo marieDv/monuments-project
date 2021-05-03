@@ -3,7 +3,7 @@ const topMenu = document.createElement("template");
 
 
 // TEMPLATE FOR OUR COMPONENT
-topMenu.innerHTML = `
+topMenu.innerHTML = allStyles + `
 <style>
 
 #top-menu-container {
@@ -38,14 +38,8 @@ a:hover {
 class TopMenu extends HTMLElement {
   constructor() {
     super();
-    //initialize the shadow dom 
-    this.showInfo = true;
-    this.attachShadow({ mode: 'open' }); //open shadow root
-    this.shadowRoot.innerHTML += `<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"></link>`;
-    //add bootstrap-stylesheet
-  
-  //  this.shadowRoot.innerHTML += `<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"></link>`;
-    this.shadowRoot.appendChild(topMenu.content.cloneNode(true));//attach template
+    setupComponent(this,topMenu);
+
     this.shadowRoot.querySelector('#itemOne').innerText = this.getAttribute("itemOneName");
     this.shadowRoot.querySelector('#itemTwo').innerText = this.getAttribute("itemTwoName");
     this.shadowRoot.querySelector('#itemThree').innerText = this.getAttribute("itemThreeName");

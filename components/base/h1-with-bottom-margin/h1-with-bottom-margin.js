@@ -24,10 +24,7 @@ h1 {
 class H1WithBottomMargin extends HTMLElement {
   constructor() {
     super();
-
-    this.showInfo = true;
-    this.attachShadow({ mode: 'open' });
-    this.shadowRoot.appendChild(H1WithBottomMarginTemplate.content.cloneNode(true));
+    setupComponent(this, H1WithBottomMarginTemplate);
     if (this.getAttribute('title')) {
       this.shadowRoot.querySelector('h1').innerHTML = this.getAttribute('title');
     }

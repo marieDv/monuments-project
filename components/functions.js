@@ -28,10 +28,10 @@ function createVariableText(base, elementId) {
 }
 
 //*** SETUP A NEW COMPONENT
-function setupComponent(base) {
+function setupComponent(base, name) {
   base.showInfo = true;
   base.attachShadow({ mode: 'open' }); //open shadow root
-  base.shadowRoot.appendChild(imageLeftTextRight.content.cloneNode(true));//attach template
+  base.shadowRoot.appendChild(name.content.cloneNode(true));//attach template
 }
 
 function createElementFromString(base, string, id) {

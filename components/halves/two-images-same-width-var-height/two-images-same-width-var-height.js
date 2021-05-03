@@ -74,13 +74,8 @@ p {
 class TwoImgsSameWidthVarHeight extends HTMLElement {
   constructor(){
     super();
-
-    //initialize the shadow dom
-    this.showInfo = true;
-    this.attachShadow({ mode: 'open' }); //open shadow root
-    //add bootstrap-stylesheet
-    this.shadowRoot.appendChild(twoImgsSameWidthVarHeight.content.cloneNode(true));//attach template
-
+    setupComponent(this, twoImgsSameWidthVarHeight);
+    
     //access the img element inside our template
     this.shadowRoot.querySelector('#imgOne').src = this.getAttribute('ImgPathOne');
     this.shadowRoot.querySelector('#imgOne').alt = this.getAttribute('AltImgOne');

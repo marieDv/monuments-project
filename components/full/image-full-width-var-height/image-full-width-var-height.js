@@ -34,13 +34,8 @@ p {
 class ImgFullWidthVarHeight extends HTMLElement {
   constructor(){
     super();
+    setupComponent(this, imgFullWidthVarHeight);
 
-    //initialize the shadow dom
-    this.showInfo = true;
-    this.attachShadow({ mode: 'open' }); //open shadow root
-    //add bootstrap-stylesheet
-    this.shadowRoot.innerHTML += `<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"></link>`;
-    this.shadowRoot.appendChild(imgFullWidthVarHeight.content.cloneNode(true));//attach template
 
     //access the h1 element inside our template
     this.shadowRoot.querySelector('#imgOne').src = this.getAttribute('imgPath');

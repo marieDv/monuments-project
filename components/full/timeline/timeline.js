@@ -37,7 +37,6 @@ class Timeline extends HTMLElement {
 
 
 
-
     setTimeout(() => {
       var item6 =
         '<strong>Statue gets errected</strong><br><div class="img-container"><img src="./media/car.png"  style="width:48px; height:48px;"></div>';

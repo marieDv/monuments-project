@@ -29,9 +29,7 @@ h2WithBottomMargin.innerHTML = allStyles + `
 class H2WithBottomMargin extends HTMLElement {
   constructor() {
     super();
-    this.showInfo = true;
-    this.attachShadow({ mode: 'open' }); //open shadow root
-    this.shadowRoot.appendChild(h2WithBottomMargin.content.cloneNode(true));//attach template
+    setupComponent(this, h2WithBottomMargin);
   }
 }
 
