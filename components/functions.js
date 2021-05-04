@@ -42,7 +42,7 @@ function createVariableText(base, id, position, container) {
 
 
 
-function createFreeComponents(base, id){
+function createVariableComponents(base, id){
 
   let container = document.getElementById(id);
   let span = container.getElementsByTagName('span');
@@ -127,7 +127,7 @@ console.log(string)
 
 function createComponentFromSlot(base, id) {
   for (let i = 0; i < base.getElementsByTagName('span').length; i++) {
-    if (base.getElementsByTagName('span')[i].getAttribute("name") === id) {
+    if (base.getElementsByTagName('span')[i].getAttribute("id") === id) {
 
       let tempText = (base.getElementsByTagName('span')[i].slot).toString();
 

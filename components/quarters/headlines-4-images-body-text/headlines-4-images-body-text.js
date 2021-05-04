@@ -73,22 +73,22 @@ class headlines4ImagesBodyText extends HTMLElement {
     createComponentFromSlot(this, '1-headline');
     createComponentFromSlot(this, '1-subheadline');
     createComponentFromSlot(this, '1-img');
-    createFreeComponents(this, '1-freeText');
+    createVariableComponents(this, '1-freeText');
 
     createComponentFromSlot(this, '2-headline');
     createComponentFromSlot(this, '2-subheadline');
     createComponentFromSlot(this, '2-img');
-    createFreeComponents(this, '2-freeText');
+    createVariableComponents(this, '2-freeText');
 
     createComponentFromSlot(this, '3-headline');
     createComponentFromSlot(this, '3-subheadline');
     createComponentFromSlot(this, '3-img');
-    createFreeComponents(this, '3-freeText');
+    createVariableComponents(this, '3-freeText');
 
     createComponentFromSlot(this, '4-headline');
     createComponentFromSlot(this, '4-subheadline');
     createComponentFromSlot(this, '4-img');
-    createFreeComponents(this, '4-freeText');
+    createVariableComponents(this, '4-freeText');
   }
 }
 window.customElements.define('headlines-4-images-body-text', headlines4ImagesBodyText);
