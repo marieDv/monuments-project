@@ -29,9 +29,8 @@ h3WithBottomMargin.innerHTML = allStyles + `
 class H3WithBottomMargin extends HTMLElement {
   constructor() {
     super();
-    this.showInfo = true;
-    this.attachShadow({ mode: 'open' });
-    this.shadowRoot.appendChild(h3WithBottomMargin.content.cloneNode(true));//attach template
+    setupComponent(this, h3WithBottomMargin);
+
   }
 }
 

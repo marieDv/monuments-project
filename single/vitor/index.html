@@ -5,48 +5,66 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Vítor's page</title>
+  <title>Vitor's page</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-
-  <!-- <link rel="stylesheet" href="../../css/Visualization-Almendra-Display.css"> -->
-  <!-- LINK TO MAIN STYLESHEET-->
   <link rel="stylesheet" href="../../css/baseStyle.css">
-  <!--LINK TO LOCAL STYLESHEET-->
+
+
+  <!--***********************************************************************************************-->
+  <!--LINK TO YOUR LOCAL STYLESHEET-->
   <link rel="stylesheet" href="./style.css">
 
 </head>
 
 
 <body>
+  <a class="link-back" href="../../index.html">back</a>
 
-  <a href="../../index.html">back</a>
+  <header-single title="The Fascist Weaponizing of Guimarães' Identity" creatorsName="Vítor Serra" colWidth="col-6"
+    h2Title="this is the title for my h2" altImg="Intro img" imgPath="./media/test.png">
+    <span slot="text">Lorem ipsum</span>
+    <span slot="caption">António de Oliveira Salazar, Portugal’s dictator, giving a speech atop the Castle of Guimarães, 1940</span>
+  </header-single>
 
-<h1-with-bottom-margin title="I am a header :)"></h1-with-bottom-margin>
 
-<img-full-width-var-height ImgPath="media/car.png" AltImg="photo of a car" Caption="Very nice Volkswagen Golf"></img-full-width-var-height>
 
-<two-images-same-width-var-height ImgPathOne="media/car.png" AltImgOne="one photo of a car" ImgPathTwo="media/vienna.png" AltImgTwo="another photo of a car" Line?="no">
-  <span slot="CaptionOne">This is my new ehadline createed via slots</span>
-  <span slot="CaptionTwo">This is my new ehadline createed via slots</span>
-</two-images-same-var-height>
+
+  <!--***********************************************************************************************-->
+  <!--YOUR COMPONENTS GO HERE-->
+
+
+  <img-full-width-var-height imgPath="./media/car.png" altImg="car" caption="it's a car"></img-full-width-var-height>
+
+  <h2-section-title>
+    <span slot="title">SOULJA BOY CRANK THAT OOOOOO WATCH ME WHIP WATCH ME OOOOOOOO</span>
+  </h2-section-title>
+
+
+
+
+
+
+
+  <!--***********************************************************************************************-->
+  <!--DONT PUT COMPONENTS AFTER THIS LINE :)-->
+
+
+
+  <top-menu itemOneName="Case Study" linkOne="https://www.facebook.com/" itemTwoName="Time of events" linkTwo="https://www.google.com/" itemThreeName="Montage of history" linkThree="https://www.twitter.com/" itemFourName="Stories" linkFour="https://www.youtube.com/"></top-menu>
+
+
+
 
   <!--FOOTER COMPONENT-->
-  <m-footer base="false" title="This footer contains all links to the other components"></m-footer>
-  <top-menu itemOneName="Case Study" linkOne="https://www.facebook.com/" itemTwoName="Time of events"
-    linkTwo="https://www.google.com/" itemThreeName="Montage of history" linkThree="https://www.twitter.com/"
-    itemFourName="Stories" linkFour="https://www.youtube.com/"></top-menu>
-
+  <m-footer base="false" title=""></m-footer>
 </body>
 <footer>
-  <!--FOOTER COMPONENT MUST BE INCLUDED HERE-->
   <script>
-    var currentTemplate = '';
+    var currentTemplate = 'Standard';
+    // var currentTemplate = 'Visualization-Almendra-Display';
   </script>
-
   <script src="../../components/full/footer/footer.js"></script>
 </footer>
 
 </html>
-
