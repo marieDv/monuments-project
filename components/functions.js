@@ -6,7 +6,7 @@ function createVariableText(base, id, position) {
   for (let i = 0; i < base.getElementsByTagName('span').length; i++) {
 
     let tempText = (base.getElementsByTagName('span')[i].slot).toString(); 
-    if (position === undefined || position === tempText.charAt(0)) {
+    if (position === '' || position === tempText.charAt(0)) {
       console.log(tempText.charAt(0) === '1')
 
       if (tempText.charAt(0) === '1' || tempText.charAt(0) === '2' || tempText.charAt(0) === '3' || tempText.charAt(0) === '4' || tempText.charAt(0) === '5') {

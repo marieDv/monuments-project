@@ -48,7 +48,7 @@ class halvesImageLeftTextRight extends HTMLElement {
     createNestedComponent(this, 'image-six-columns-var-height', ['imgPath', 'altImg'], 'col-4', ['caption']);//this, name, [array with attributes], columns, [text slot]
    
    
-    createVariableText(this,'variable-text-base');
+    createVariableText(this,'variable-text-base', '');
   }
 }
 window.customElements.define('halves-image-left-text-right', halvesImageLeftTextRight);
