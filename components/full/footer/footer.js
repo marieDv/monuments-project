@@ -22,10 +22,10 @@ h1WithBottomMargin.src = '/components/base/h1-with-bottom-margin/h1-with-bottom-
 document.head.appendChild(h1WithBottomMargin);
 
 
-//IMPORT H2-WITH-BOTTOM-MARGIN
-var scriptH2WithBottomMargin = document.createElement('script');
-scriptH2WithBottomMargin.src = '/components/base/h2-with-bottom-margin/h2-with-bottom-margin.js';
-document.head.appendChild(scriptH2WithBottomMargin);
+//IMPORT H2-SECTION-TITLE
+var scriptH2SectionTitle = document.createElement('script');
+scriptH2SectionTitle.src = '/components/base/h2-section-title/h2-section-title.js';
+document.head.appendChild(scriptH2SectionTitle);
 
 //IMPORT H3-WITH-BOTTOM-MARGIN
 var scriptH3WithBottomMargin = document.createElement('script');
