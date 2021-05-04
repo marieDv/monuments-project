@@ -32,15 +32,20 @@ var scriptH3WithBottomMargin = document.createElement('script');
 scriptH3WithBottomMargin.src = '/components/base/h3-with-bottom-margin/h3-with-bottom-margin.js';
 document.head.appendChild(scriptH3WithBottomMargin);
 
-//PULL-QUOTE-WITH-BOTTOM-MARGIN-VAR-WIDTH
+//IMPORT PULL-QUOTE-WITH-BOTTOM-MARGIN-VAR-WIDTH
 var scriptPullQuoteWithBottomMarginVarWidth = document.createElement('script');
 scriptPullQuoteWithBottomMarginVarWidth.src = '/components/base/pull-quote-with-bottom-margin-var-width/pull-quote-with-bottom-margin-var-width.js';
 document.head.appendChild(scriptPullQuoteWithBottomMarginVarWidth);
 
-//BUTTON
+//IMPORT BUTTON
 var scriptButton = document.createElement('script');
 scriptButton.src = '/components/base/button/button.js';
 document.head.appendChild(scriptButton);
+
+//IMPORT H4 WITH BOTTOM MARGIN VAR WIDTH
+var scriptH4WithBottomMarginVarWidth = document.createElement('script');
+scriptH4WithBottomMarginVarWidth.src = '/components/base/h4-with-bottom-margin-var-width/h4-with-bottom-margin-var-width.js';
+document.head.appendChild(scriptH4WithBottomMarginVarWidth);
 
 // 
 var BlockQuoteWithLeftAndBottomMarginVarWidthScript = document.createElement('script');
