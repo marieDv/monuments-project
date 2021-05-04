@@ -48,7 +48,7 @@ HeaderTemplate.innerHTML = allStyles + `
 <div class="header-bg"></div>
 <div id="full-bleed-column" class="col-12">
 <span class="spacing"> <span class="name" id="nameSlot"></span></span>
- <span class="mt-5" id="slot-h1"></span>
+ <span class="mt-5" id="h1-with-bottom-margin"></span>
  <div class="container-fluid">
  <div class="row">
  <p class="text header-text col-sm-12 col-md-5">
@@ -85,7 +85,10 @@ class HeaderSingle extends HTMLElement {
     this.shadowRoot.querySelector('#imgOne').src = this.getAttribute('ImgPath');
     this.shadowRoot.querySelector('#imgOne').alt = this.getAttribute('AltImg');
 
-    this.shadowRoot.getElementById('slot-h1').innerHTML = "<h1-with-bottom-margin id='headline' title='" + this.getAttribute('title') + "' class='mt-5'></h1-with-bottom-margin>";
+    // this.shadowRoot.getElementById('slot-h1').innerHTML = "<h1-with-bottom-margin id='headline' title='" + this.getAttribute('title') + "' class='mt-5'></h1-with-bottom-margin>";
+    createNestedComponent(this, 'h1-with-bottom-margin', ['', ''], 'col-12', ['title']);//this, name, [array with attributes], columns, [text slot]
+
+
   }
 }
 

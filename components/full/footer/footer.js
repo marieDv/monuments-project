@@ -98,6 +98,14 @@ var scriptTwohalvesImageLeftTextRight = document.createElement('script');
 scriptTwohalvesImageLeftTextRight.src = '/components/halves/image-left-text-right/image-left-text-right.js';
 document.head.appendChild(scriptTwohalvesImageLeftTextRight);
 
+
+// ******************************************************************************************************************************************************
+// IMPORT QUARTER COMPONENTS
+
+var scriptHeadlines4ImagesBodyText = document.createElement('script');
+scriptHeadlines4ImagesBodyText.src = '/components/quarters/headlines-4-images-body-text/headlines-4-images-body-text.js';
+document.head.appendChild(scriptHeadlines4ImagesBodyText);
+
 // ******************************************************************************************************************************************************
 // ******************************************************************************************************************************************************
 // ******************************************************************************************************************************************************

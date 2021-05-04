@@ -1,5 +1,6 @@
 // IMAGE LEFT TEXT RIGHT
-// Attributes: altimg, imgPath, caption, variable text slots
+// Attributes: altImg, imgPath, caption
+// components nested: variable text slots
 
 
 const imageLeftTextRight = document.createElement("template");
@@ -24,6 +25,7 @@ p {
 </style>
 
 <div class="container-fluid">
+<span id="h1-with-bottom-margin"></span>
 <div class="row">
 <div id="variable-text-base" class="col-md-5 col-sm-12">
 </div>
@@ -41,8 +43,12 @@ class halvesImageLeftTextRight extends HTMLElement {
   constructor() {
     super();
     setupComponent(this, imageLeftTextRight);
-    createNestedComponent(this, 'image-six-columns-var-height', ['imgPath', 'altImg'], 'col-12', ['caption']);//this, name, [array with attributes], columns, [text slot]
-    createVariableText(this, 'variable-text-base');
+
+    createNestedComponent(this, 'h1-with-bottom-margin', [],'',['caption']);
+    createNestedComponent(this, 'image-six-columns-var-height', ['imgPath', 'altImg'], 'col-4', ['caption']);//this, name, [array with attributes], columns, [text slot]
+   
+   
+    createVariableText(this,'variable-text-base');
   }
 }
 window.customElements.define('halves-image-left-text-right', halvesImageLeftTextRight);
@@ -60,5 +66,3 @@ window.customElements.define('halves-image-left-text-right', halvesImageLeftText
 
 
 
-  // let fullImgComponentPath = "<image-six-columns-var-height colWidth='col-12' imgPath='" + this.getAttribute('ImgPath') + "' altImg='" + this.getAttribute('altImg') + "'><span slot='caption'>" + this.getAttribute('caption') + "</span></image-six-columns-var-height>";
-  // createNestedComponent(this, 'h3-with-bottom-margin', [], 'col-12', ['title']);//this, name, [array with attributes], columns, [text slot]
