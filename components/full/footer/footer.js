@@ -67,10 +67,20 @@ var scriptImageFullWidthVarHeight = document.createElement('script');
 scriptImageFullWidthVarHeight.src = '/components/full/image-full-width-var-height/image-full-width-var-height.js';
 document.head.appendChild(scriptImageFullWidthVarHeight);
 
+// IMPORT image-9-columns-var-height
+var scriptImgNineColumnsVarHeight = document.createElement('script');
+scriptImgNineColumnsVarHeight.src = '/components/full/image-nine-columns-var-height/image-nine-columns-var-height.js';
+document.head.appendChild(scriptImgNineColumnsVarHeight);
+
 // IMPORT image-6-columns-var-height
 var scriptImgSixColumnsVarHeight = document.createElement('script');
 scriptImgSixColumnsVarHeight.src = '/components/full/image-six-columns-var-height/image-six-columns-var-height.js';
 document.head.appendChild(scriptImgSixColumnsVarHeight);
+
+// IMPORT image-3-columns-var-height
+var scriptImgThreeColumnsVarHeight = document.createElement('script');
+scriptImgThreeColumnsVarHeight.src = '/components/full/image-three-columns-var-height/image-three-columns-var-height.js';
+document.head.appendChild(scriptImgThreeColumnsVarHeight);
 
 // IMPORT Script top menu
 var scriptTopMenu = document.createElement('script');
