@@ -32,7 +32,7 @@ p {
 
 <div class="col-1"></div>
 <span id="h3-with-bottom-margin"></span>
-<div class="col-md-6 col-sm-12" id="image-six-columns-var-height"></div>
+<div class="col-md-6 col-sm-12" id="image-full-width-var-height"></div>
 </div>
 </div> 
 
@@ -44,9 +44,9 @@ class halvesImageLeftTextRight extends HTMLElement {
     super();
     setupComponent(this, imageLeftTextRight);
 
-    createSingleNestedComponent(this, 'h1-with-bottom-margin', [],'',['caption']);
-    createSingleNestedComponent(this, 'image-six-columns-var-height', ['imgPath', 'altImg'], 'col-4', ['caption']);//this, name, [array with attributes], columns, [text slot]
-   
+    createNestedComponent(this, 'h1-with-bottom-margin', [],'',['caption']);
+    createNestedComponent(this, 'image-full-width-var-height', ['imgPath', 'altImg'], 'col-4', ['caption']);//this, name, [array with attributes], columns, [text slot]
+
    
     createVariableText(this,'variable-text-base', '');
   }

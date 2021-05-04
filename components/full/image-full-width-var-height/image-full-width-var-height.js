@@ -52,4 +52,4 @@ class ImgFullWidthVarHeight extends HTMLElement {
 
   }
 }
-window.customElements.define('img-full-width-var-height', ImgFullWidthVarHeight);
+window.customElements.define('image-full-width-var-height', ImgFullWidthVarHeight);

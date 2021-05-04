@@ -86,7 +86,7 @@ class HeaderSingle extends HTMLElement {
     this.shadowRoot.querySelector('#imgOne').alt = this.getAttribute('AltImg');
 
     // this.shadowRoot.getElementById('slot-h1').innerHTML = "<h1-with-bottom-margin id='headline' title='" + this.getAttribute('title') + "' class='mt-5'></h1-with-bottom-margin>";
-    createSingleNestedComponent(this, 'h1-with-bottom-margin', ['', ''], 'col-12', ['title']);//this, name, [array with attributes], columns, [text slot]
+    createNestedComponent(this, 'h1-with-bottom-margin', ['', ''], 'col-12', ['title']);//this, name, [array with attributes], columns, [text slot]
 
 
   }

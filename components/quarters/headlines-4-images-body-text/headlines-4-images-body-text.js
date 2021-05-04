@@ -25,18 +25,37 @@ p {
 
 <div class="container-fluid">
 <div class="row">
-<div class="col-4">
-<span id="h3-with-bottom-margin"></span>
-<div id="var1"></div>
-<div id="img1"></div>
+
+<div class="col-md-3 col-sm-12">
+  <div id="1-headline"></div>
+  <div id="1-subheadline"></div>
+  <span id="h3-with-bottom-margin"></span>
+  <div id="1-img"></div>
+  <div id="1-freeText"></div>
 </div>
-<div class="col-4">
-<div id="var2"></div>
-<div id="img2"></div>
+
+<div class="col-md-3 col-sm-12">
+  <div id="2-headline"></div>
+  <div id="2-subheadline"></div>
+  <span id="h3-with-bottom-margin"></span>
+  <div id="2-img"></div>
+  <div id="2-freeText"></div>
 </div>
-<div class="col-4">
-<div id="var3"></div>
-<div id="img3"></div>
+
+<div class="col-md-3 col-sm-12">
+  <div id="3-headline"></div>
+  <div id="3-subheadline"></div>
+  <span id="h3-with-bottom-margin"></span>
+  <div id="3-img"></div>
+  <div id="3-freeText"></div>
+</div>
+
+<div class="col-md-3 col-sm-12">
+  <div id="4-headline"></div>
+  <div id="4-subheadline"></div>
+  <span id="h3-with-bottom-margin"></span>
+  <div id="4-img"></div>
+  <div id="4-freeText"></div>
 </div>
 
 </div>
@@ -51,21 +70,25 @@ class headlines4ImagesBodyText extends HTMLElement {
     super();
     setupComponent(this, headlines4ImagesBodyTextTemplate);
 
-    // createNestedComponent(this, 'image-six-columns-var-height', ['imgPath'],'',['caption'], 'imageOne');
-    // createNestedComponent(this, 'image-six-columns-var-height', ['imgPath'],'',['caption'], 'imageTwo');
-    // createNestedComponent(this, 'image-six-columns-var-height', ['imgPath'],'',['caption'], 'imageThree');
-    // createNestedComponent(this, 'image-six-columns-var-height', ['imgPath'],'',['caption'], 'imageFour');
-    // createNestedComponent(this, 'image-six-columns-var-height', ['imgPath', 'altImg'], 'col-4', ['caption']);//this, name, [array with attributes], columns, [text slot]
+    createComponentFromSlot(this, '1-headline');
+    createComponentFromSlot(this, '1-subheadline');
+    createComponentFromSlot(this, '1-img');
+    createFreeComponents(this, '1-freeText');
 
-    createComponentFromSlot(this, 'img1', '1');
-    createComponentFromSlot(this, 'img2', '2');
-    createComponentFromSlot(this, 'img3', '3');
-    createComponentFromSlot(this, 'img4', '4');
+    createComponentFromSlot(this, '2-headline');
+    createComponentFromSlot(this, '2-subheadline');
+    createComponentFromSlot(this, '2-img');
+    createFreeComponents(this, '2-freeText');
 
-    createSingleNestedComponent(this, 'h3-with-bottom-margin', [], '', ['title']);
-    createVariableText(this, 'var1', '1');
-    createVariableText(this, 'var2', '2');
-    createVariableText(this, 'var3', '3');
+    createComponentFromSlot(this, '3-headline');
+    createComponentFromSlot(this, '3-subheadline');
+    createComponentFromSlot(this, '3-img');
+    createFreeComponents(this, '3-freeText');
+
+    createComponentFromSlot(this, '4-headline');
+    createComponentFromSlot(this, '4-subheadline');
+    createComponentFromSlot(this, '4-img');
+    createFreeComponents(this, '4-freeText');
   }
 }
 window.customElements.define('headlines-4-images-body-text', headlines4ImagesBodyText);
