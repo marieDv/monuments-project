@@ -2,28 +2,39 @@
 //*** createVariableText
 //** the function has 2 parameters 1: "this" refers to the current object(this component) you are programming 
 //**2: is the id that you are rendering the component to in your template **/
-function createVariableText(base, elementId) {
+function createVariableText(base, id, position) {
   for (let i = 0; i < base.getElementsByTagName('span').length; i++) {
-    console.log(base.getElementsByTagName('span')[i].slot);
-    if (base.getElementsByTagName('span')[i].slot === "text") {
-      slotsForTemplate += "<p>" + base.getElementsByTagName('span')[i].innerHTML + "</p>";
-    }
-    if (base.getElementsByTagName('span')[i].slot === "h2") {
-      slotsForTemplate += "<h2-with-bottom-margin><span slot='title'>" + base.getElementsByTagName('span')[i].innerHTML + "</span></h2-with-bottom-margin>";
-    }
-    if (base.getElementsByTagName('span')[i].slot === "h1") {
-      slotsForTemplate += "<h1-with-bottom-margin><span slot='title'>" + base.getElementsByTagName('span')[i].innerHTML + "</span></h1-with-bottom-margin>";
-    }
-    if (base.getElementsByTagName('span')[i].slot === "h3") {
-      slotsForTemplate += "<h3-with-bottom-margin><span slot='title'>" + base.getElementsByTagName('span')[i].innerHTML + "</span></h3-with-bottom-margin>";
-    }
-    if (base.getElementsByTagName('span')[i].slot === "block-quote") {
-      slotsForTemplate += "<block-quote-width-left-and-bottom-margin-var-width><span slot='text'>" + base.getElementsByTagName('span')[i].innerHTML + "</span></block-quote-width-left-and-bottom-margin-var-width>";
+
+    let tempText = (base.getElementsByTagName('span')[i].slot).toString(); 
+    if (position === undefined || position === tempText.charAt(0)) {
+      console.log(tempText.charAt(0) === '1')
+
+      if (tempText.charAt(0) === '1' || tempText.charAt(0) === '2' || tempText.charAt(0) === '3' || tempText.charAt(0) === '4' || tempText.charAt(0) === '5') {
+        tempText = ((base.getElementsByTagName('span')[i].slot).split('-'))[1];
+        console.log(tempText);
+      }
+
+      if (tempText === "text") {
+        slotsForTemplate += "<p>" + base.getElementsByTagName('span')[i].innerHTML + "</p>";
+      }
+      if (tempText === "h2") {
+        slotsForTemplate += "<h2-with-bottom-margin><span slot='title'>" + base.getElementsByTagName('span')[i].innerHTML + "</span></h2-with-bottom-margin>";
+      }
+      if (tempText === "h1") {
+        slotsForTemplate += "<h1-with-bottom-margin><span slot='title'>" + base.getElementsByTagName('span')[i].innerHTML + "</span></h1-with-bottom-margin>";
+      }
+      if (tempText === "h3") {
+        slotsForTemplate += "<h3-with-bottom-margin><span slot='title'>" + base.getElementsByTagName('span')[i].innerHTML + "</span></h3-with-bottom-margin>";
+      }
+      if (tempText === "block-quote") {
+        slotsForTemplate += "<block-quote-width-left-and-bottom-margin-var-width><span slot='text'>" + base.getElementsByTagName('span')[i].innerHTML + "</span></block-quote-width-left-and-bottom-margin-var-width>";
+      }
     }
   }
-
-  base.shadowRoot.getElementById(elementId).innerHTML = slotsForTemplate;
-  base.shadowRoot.getElementById(elementId).classList.add(base.getAttribute("colWidth"));
+  
+  base.shadowRoot.getElementById(id).innerHTML = slotsForTemplate;
+  base.shadowRoot.getElementById(id).classList.add(base.getAttribute("colWidth"));
+  slotsForTemplate = '';
 
 }
 
@@ -50,7 +61,7 @@ function createNestedComponent(base, name, attributes, col, slots) {
   string += ">";
   if (slots) {
     for (let i = 0; i < slots.length; i++) {
-      string += '<span slot='+slots[i]+'>'+base.getAttribute(slots[i])+"</span>";
+      string += '<span slot=' + slots[i] + '>' + base.getAttribute(slots[i]) + "</span>";
     }
   }
   string += "</" + name + ">";
