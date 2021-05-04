@@ -1,9 +1,9 @@
 //CREATING THE VARIABLE THAT HOLDS THE TEMPLATE
-const imgSixColumnsVarHeight = document.createElement("template");
+const imgThreeColumnsVarHeight = document.createElement("template");
 
 
 // TEMPLATE FOR OUR COMPONENT
-imgSixColumnsVarHeight.innerHTML = allStyles + `
+imgThreeColumnsVarHeight.innerHTML = allStyles + `
 
 <style>
 img {
@@ -24,8 +24,8 @@ p {
 </style>
 
 <div id="container" class="container_fluid p-0">
-    <img class="col-md-6  col-sm-12" id="imgOne" src="" alt="">
-    <p class="col-md-6  col-sm-12 caption">
+    <img class="col-md-3  col-sm-12" id="imgOne" src="" alt="">
+    <p class="col-md-3  col-sm-12 caption">
     <slot name="caption"/>
     </p>
 
@@ -34,10 +34,10 @@ p {
 `;
 
 //initializing our class
-class ImgSixColumnsVarHeight extends HTMLElement {
+class ImgThreeColumnsVarHeight extends HTMLElement {
   constructor(){
     super();
-    setupComponent(this, imgSixColumnsVarHeight);
+    setupComponent(this, imgThreeColumnsVarHeight);
     this.shadowRoot.getElementById('imgOne').classList.add(this.getAttribute("colWidth"));
 
     //access the h1 element inside our template
@@ -46,4 +46,4 @@ class ImgSixColumnsVarHeight extends HTMLElement {
     // this.shadowRoot.querySelector('#captionOne').innerText = this.getAttribute('Caption');
   }
 }
-window.customElements.define('image-six-columns-var-height', ImgSixColumnsVarHeight);
+window.customElements.define('image-three-columns-var-height', ImgThreeColumnsVarHeight);
