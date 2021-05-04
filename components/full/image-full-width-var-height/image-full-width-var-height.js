@@ -16,7 +16,10 @@ p {
   line-height: 16px;
   margin-left: 16px;
 }
-
+.caption {
+  margin: 0;
+  margin-top: 16px;
+}
 #container {
   margin-top: 36px;
 }
@@ -25,7 +28,10 @@ p {
 
 <div id="container" class="container-fluid">
     <img id="imgOne" src="" alt="">
-    <p class="col-4 caption" id="captionOne"></p>
+    <p class="col-4 caption p-0" id="captionOne">
+    <slot name="caption"></slot>
+    
+    </p>
 </div>
 
 `;
@@ -40,7 +46,7 @@ class ImgFullWidthVarHeight extends HTMLElement {
     //access the h1 element inside our template
     this.shadowRoot.querySelector('#imgOne').src = this.getAttribute('imgPath');
     this.shadowRoot.querySelector('#imgOne').alt = this.getAttribute('altImg');
-    this.shadowRoot.querySelector('#captionOne').innerText = this.getAttribute('caption');
+    // this.shadowRoot.querySelector('#captionOne').innerText = this.getAttribute('caption');
     
     //VARIABLE WITH CODE  this.shadowRoot.getElementById('variable-column').classList.add(this.getAttribute("colWidth"));
 

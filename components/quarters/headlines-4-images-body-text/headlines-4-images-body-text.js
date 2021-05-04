@@ -26,6 +26,7 @@ p {
 <div class="container-fluid">
 <div class="row">
 <div class="col-4">
+<span id="h3-with-bottom-margin"></span>
 <div id="var1"></div>
 </div>
 <div class="col-4">
@@ -52,7 +53,9 @@ class headlines4ImagesBodyText extends HTMLElement {
     // createNestedComponent(this, 'image-six-columns-var-height', ['imgPath'],'',['caption'], 'imageThree');
     // createNestedComponent(this, 'image-six-columns-var-height', ['imgPath'],'',['caption'], 'imageFour');
     // createNestedComponent(this, 'image-six-columns-var-height', ['imgPath', 'altImg'], 'col-4', ['caption']);//this, name, [array with attributes], columns, [text slot]
-   console.log("attribute: "+this.getAttribute('textColumn'))
+
+    createComponentFromSlot(this, 'h3-with-bottom-margin', [], '', ['title']);
+    createSingleNestedComponent(this, 'h3-with-bottom-margin', [], '', ['title']);
     createVariableText(this, 'var1', '1');
     createVariableText(this, 'var2', '2');
     createVariableText(this, 'var3', '3');

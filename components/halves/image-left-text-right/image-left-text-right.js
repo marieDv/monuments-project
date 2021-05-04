@@ -44,8 +44,8 @@ class halvesImageLeftTextRight extends HTMLElement {
     super();
     setupComponent(this, imageLeftTextRight);
 
-    createNestedComponent(this, 'h1-with-bottom-margin', [],'',['caption']);
-    createNestedComponent(this, 'image-six-columns-var-height', ['imgPath', 'altImg'], 'col-4', ['caption']);//this, name, [array with attributes], columns, [text slot]
+    createSingleNestedComponent(this, 'h1-with-bottom-margin', [],'',['caption']);
+    createSingleNestedComponent(this, 'image-six-columns-var-height', ['imgPath', 'altImg'], 'col-4', ['caption']);//this, name, [array with attributes], columns, [text slot]
    
    
     createVariableText(this,'variable-text-base', '');
