@@ -7,11 +7,11 @@ function createVariableText(base, id, position) {
 
     let tempText = (base.getElementsByTagName('span')[i].slot).toString(); 
     if (position === '' || position === tempText.charAt(0)) {
-      console.log(tempText.charAt(0) === '1')
+      
 
       if (tempText.charAt(0) === '1' || tempText.charAt(0) === '2' || tempText.charAt(0) === '3' || tempText.charAt(0) === '4' || tempText.charAt(0) === '5') {
         tempText = ((base.getElementsByTagName('span')[i].slot).split('-'))[1];
-        console.log(tempText);
+        
       }
 
       if (tempText === "text") {
@@ -70,7 +70,7 @@ function createSingleNestedComponent(base, name, attributes, col, slots) {
     }
   }
   string += "</" + name + ">";
-  console.log(string);
+  
   //** CREATE A NEW ELEMENT **/
   createElementFromString(base, string, name);
 
@@ -80,20 +80,22 @@ function createSingleNestedComponent(base, name, attributes, col, slots) {
 
 function createComponentFromSlot(base, id, position) {
   for (let i = 0; i < base.getElementsByTagName('span').length; i++) {
-    console.log("variable slot is here")
-    console.log(base.getElementsByTagName('span')[i].classList.contains('variableSlot'))
+
     let tempText = (base.getElementsByTagName('span')[i].slot).toString(); 
     if (position === '' || position === tempText.charAt(0)) {
-      console.log(tempText.charAt(0) === '1')
+      
 
       if (tempText.charAt(0) === '1' || tempText.charAt(0) === '2' || tempText.charAt(0) === '3' || tempText.charAt(0) === '4' || tempText.charAt(0) === '5') {
         tempText = ((base.getElementsByTagName('span')[i].slot).split('-'))[1];
-        console.log(tempText);
       }
 
       //SEARCH FOR THE DIFFERENT ELEMENTS
-      if (tempText === "text") {
-        slotsForTemplate += "<p>" + base.getElementsByTagName('span')[i].innerHTML + "</p>";
+      if (tempText === "img") {
+        console.log("create an image")
+        console.log(base.getElementsByTagName('span')[i].getAttribute("imgPath"))
+        slotsForTemplate += "<img-full-width-var-height imgPath='"+base.getElementsByTagName('span')[i].getAttribute("imgPath")+"' ><slot name='caption'>" + base.getElementsByTagName('span')[i].innerHTML + "</slot></img-full-width-var-height>";
+        console.log(slotsForTemplate);
+        // slotsForTemplate += "<p>" + base.getElementsByTagName('span')[i].innerHTML + "</p>";
       }
       if (tempText === "text") {
         slotsForTemplate += "<p>" + base.getElementsByTagName('span')[i].innerHTML + "</p>";
