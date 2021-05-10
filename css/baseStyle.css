@@ -22,6 +22,9 @@ h2,
 h3 {
   font-family: "Arial", sans-serif;
 }
+body {
+  width: 100%;
+}
 p {
   font-family: "Redaction", sans-serif;
 }

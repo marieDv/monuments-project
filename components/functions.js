@@ -42,39 +42,47 @@ function createVariableText(base, id, position, container) {
 
 
 
-function createVariableComponents(base, id){
+function createVariableComponents(base, id) {
+  let containerTemp = base.getElementsByTagName('div');
+  let container;
+  for (let i = 0; i < containerTemp.length; i++) {
+    console.log(containerTemp[i].id)
+    if (containerTemp[i].id === id) {
+      container = containerTemp[i];
+    }
+  }
 
-  let container = document.getElementById(id);
+
   let span = container.getElementsByTagName('span');
 
 
   for (let i = 0; i < span.length; i++) {
     console.log(span)
     let tempText = (span[i].slot).toString();
-  
-      if (tempText.charAt(0) === '1' || tempText.charAt(0) === '2' || tempText.charAt(0) === '3' || tempText.charAt(0) === '4' || tempText.charAt(0) === '5') {
-        tempText = ((span[i].slot).split('-'))[1];
-      }
 
-      if (tempText === "text") {
-        slotsForTemplate += "<p>" + span[i].innerHTML + "</p>";
-      }
-      if (tempText === "h2") {
-        slotsForTemplate += "<h2-section-title><span slot='title'>" + span[i].innerHTML + "</span></h2-section-title>";
-      }
-      if (tempText === "h1") {
-        slotsForTemplate += "<h1-with-bottom-margin><span slot='title'>" + span[i].innerHTML + "</span></h1-with-bottom-margin>";
-      }
-      if (tempText === "h3") {
-        slotsForTemplate += "<h3-with-bottom-margin><span slot='title'>" + span[i].innerHTML + "</span></h3-with-bottom-margin>";
-      }
-      if (tempText === "block-quote") {
-        slotsForTemplate += "<block-quote-width-left-and-bottom-margin-var-width><span slot='text'>" + span[i].innerHTML + "</span></block-quote-width-left-and-bottom-margin-var-width>";
-      }
-      if (tempText === "img") {
-        slotsForTemplate += "<image-full-width-var-height imgPath='" + span[i].getAttribute("imgPath") + "' altImg='"+span[i].getAttribute("altImg")+"' ><span slot='caption'>" + span[i].innerHTML + "</span></image-full-width-var-height>";
-      }
-  
+    if (tempText.charAt(0) === '1' || tempText.charAt(0) === '2' || tempText.charAt(0) === '3' || tempText.charAt(0) === '4' || tempText.charAt(0) === '5') {
+      tempText = ((span[i].slot).split('-'))[1];
+    }
+
+    if (tempText === "text") {
+      slotsForTemplate += "<p>" + span[i].innerHTML + "</p>";
+    }
+    if (tempText === "h2") {
+      slotsForTemplate += "<h2-section-title><span slot='title'>" + span[i].innerHTML + "</span></h2-section-title>";
+    }
+    if (tempText === "h1") {
+      slotsForTemplate += "<h1-with-bottom-margin><span slot='title'>" + span[i].innerHTML + "</span></h1-with-bottom-margin>";
+    }
+    if (tempText === "h3") {
+      slotsForTemplate += "<h3-with-bottom-margin><span slot='title'>" + span[i].innerHTML + "</span></h3-with-bottom-margin>";
+    }
+    if (tempText === "block-quote") {
+      slotsForTemplate += "<block-quote-width-left-and-bottom-margin-var-width><span slot='text'>" + span[i].innerHTML + "</span></block-quote-width-left-and-bottom-margin-var-width>";
+    }
+    if (tempText === "img") {
+      slotsForTemplate += "<image-full-width-var-height imgPath='" + span[i].getAttribute("imgPath") + "' altImg='" + span[i].getAttribute("altImg") + "' ><span slot='caption'>" + span[i].innerHTML + "</span></image-full-width-var-height>";
+    }
+
   }
 
   base.shadowRoot.getElementById(id).innerHTML = slotsForTemplate;
@@ -117,7 +125,7 @@ function createNestedComponent(base, name, attributes, col, slots) {
     }
   }
   string += "</" + name + ">";
-console.log(string)
+  console.log(string)
   //** CREATE A NEW ELEMENT **/
   createElementFromString(base, string, name);
 
@@ -131,32 +139,32 @@ function createComponentFromSlot(base, id) {
 
       let tempText = (base.getElementsByTagName('span')[i].slot).toString();
 
-        if (tempText.charAt(0) === '1' || tempText.charAt(0) === '2' || tempText.charAt(0) === '3' || tempText.charAt(0) === '4' || tempText.charAt(0) === '5') {
-          tempText = ((base.getElementsByTagName('span')[i].slot).split('-'))[1];
-        }
+      if (tempText.charAt(0) === '1' || tempText.charAt(0) === '2' || tempText.charAt(0) === '3' || tempText.charAt(0) === '4' || tempText.charAt(0) === '5') {
+        tempText = ((base.getElementsByTagName('span')[i].slot).split('-'))[1];
+      }
 
 
-        if (tempText === "img") {
-          slotsForTemplate += "<image-full-width-var-height imgPath='" + base.getElementsByTagName('span')[i].getAttribute("imgPath") + "' ><span slot='caption'>" + base.getElementsByTagName('span')[i].innerHTML + "</span></image-full-width-var-height>";
-        }
-        if (tempText === "text") {
-          slotsForTemplate += "<p>" + base.getElementsByTagName('span')[i].innerHTML + "</p>";
-        }
-        if (tempText === "h2") {
-          slotsForTemplate += "<h2-section-title><span slot='title'>" + base.getElementsByTagName('span')[i].innerHTML + "</span></h2-section-title>";
-        }
-        if (tempText === "h1") {
-          slotsForTemplate += "<h1-with-bottom-margin><span slot='title'>" + base.getElementsByTagName('span')[i].innerHTML + "</span></h1-with-bottom-margin>";
-        }
-        if (tempText === "h3") {
-          slotsForTemplate += "<h3-with-bottom-margin><span slot='title'>" + base.getElementsByTagName('span')[i].innerHTML + "</span></h3-with-bottom-margin>";
-        }
-        if (tempText === "h4") {
-          slotsForTemplate += "<h4-with-bottom-margin-var-width><span slot='title'>" + base.getElementsByTagName('span')[i].innerHTML + "</span></h4-with-bottom-margin-var-width>";
-        }
-        if (tempText === "block-quote") {
-          slotsForTemplate += "<block-quote-width-left-and-bottom-margin-var-width><span slot='text'>" + base.getElementsByTagName('span')[i].innerHTML + "</span></block-quote-width-left-and-bottom-margin-var-width>";
-        }
+      if (tempText === "img") {
+        slotsForTemplate += "<image-full-width-var-height imgPath='" + base.getElementsByTagName('span')[i].getAttribute("imgPath") + "' ><span slot='caption'>" + base.getElementsByTagName('span')[i].innerHTML + "</span></image-full-width-var-height>";
+      }
+      if (tempText === "text") {
+        slotsForTemplate += "<p>" + base.getElementsByTagName('span')[i].innerHTML + "</p>";
+      }
+      if (tempText === "h2") {
+        slotsForTemplate += "<h2-section-title><span slot='title'>" + base.getElementsByTagName('span')[i].innerHTML + "</span></h2-section-title>";
+      }
+      if (tempText === "h1") {
+        slotsForTemplate += "<h1-with-bottom-margin><span slot='title'>" + base.getElementsByTagName('span')[i].innerHTML + "</span></h1-with-bottom-margin>";
+      }
+      if (tempText === "h3") {
+        slotsForTemplate += "<h3-with-bottom-margin><span slot='title'>" + base.getElementsByTagName('span')[i].innerHTML + "</span></h3-with-bottom-margin>";
+      }
+      if (tempText === "h4") {
+        slotsForTemplate += "<h4-with-bottom-margin-var-width><span slot='title'>" + base.getElementsByTagName('span')[i].innerHTML + "</span></h4-with-bottom-margin-var-width>";
+      }
+      if (tempText === "block-quote") {
+        slotsForTemplate += "<block-quote-width-left-and-bottom-margin-var-width><span slot='text'>" + base.getElementsByTagName('span')[i].innerHTML + "</span></block-quote-width-left-and-bottom-margin-var-width>";
+      }
 
       // }
 

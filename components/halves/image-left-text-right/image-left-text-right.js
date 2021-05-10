@@ -27,7 +27,7 @@ p {
 <div class="container-fluid">
 <span id="headline"></span>
 <div class="row">
-<div id="text" class="col-md-5 col-sm-12">
+<div id="variable-text-slot" class="col-md-5 col-sm-12">
 </div>
 
 <div class="col-1"></div>
@@ -46,8 +46,7 @@ class halvesImageLeftTextRight extends HTMLElement {
 
     createComponentFromSlot(this, 'headline');
     createComponentFromSlot(this, 'img');
-    createVariableComponents(this, 'text');
-    // createVariableText(this,'variable-text-base', '');
+    createVariableComponents(this, 'variable-text-slot');
   }
 }
 window.customElements.define('halves-image-left-text-right', halvesImageLeftTextRight);

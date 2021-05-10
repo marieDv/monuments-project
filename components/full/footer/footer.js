@@ -113,6 +113,12 @@ var scriptTwohalvesImageLeftTextRight = document.createElement('script');
 scriptTwohalvesImageLeftTextRight.src = '/components/halves/image-left-text-right/image-left-text-right.js';
 document.head.appendChild(scriptTwohalvesImageLeftTextRight);
 
+// ******************************************************************************************************************************************************
+// IMPORT THIRDS COMPONENTS
+
+var script2ColumnTextImageWide = document.createElement('script');
+script2ColumnTextImageWide.src = '/components/thirds/3-column-text-image-wide/3-column-text-image-wide.js';
+document.head.appendChild(script2ColumnTextImageWide);
 
 // ******************************************************************************************************************************************************
 // IMPORT QUARTER COMPONENTS

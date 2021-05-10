@@ -27,7 +27,7 @@ p {
 </style>
 
 <div id="container" class="container-fluid">
-    <img id="imgOne" src="" alt="">
+    <img id="img" src="" alt="">
     <p class="col-4 caption p-0" id="captionOne">
     <slot name="caption"></slot>
     
@@ -42,14 +42,8 @@ class ImgFullWidthVarHeight extends HTMLElement {
     super();
     setupComponent(this, imgFullWidthVarHeight);
 
-
-    //access the h1 element inside our template
-    this.shadowRoot.querySelector('#imgOne').src = this.getAttribute('imgPath');
-    this.shadowRoot.querySelector('#imgOne').alt = this.getAttribute('altImg');
-    // this.shadowRoot.querySelector('#captionOne').innerText = this.getAttribute('caption');
-    
-    //VARIABLE WITH CODE  this.shadowRoot.getElementById('variable-column').classList.add(this.getAttribute("colWidth"));
-
+    this.shadowRoot.querySelector('#img').src = this.getAttribute('imgPath');
+    this.shadowRoot.querySelector('#img').alt = this.getAttribute('altImg');
   }
 }
 window.customElements.define('image-full-width-var-height', ImgFullWidthVarHeight);

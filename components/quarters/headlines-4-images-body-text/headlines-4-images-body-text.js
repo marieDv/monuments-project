@@ -91,7 +91,7 @@ class headlines4ImagesBodyText extends HTMLElement {
     createVariableComponents(this, '4-freeText');
   }
 }
-window.customElements.define('headlines-4-images-body-text', headlines4ImagesBodyText);
+window.customElements.define('quarters-headlines-4-images-body-text', headlines4ImagesBodyText);
 
 
 
