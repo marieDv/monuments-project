@@ -116,9 +116,9 @@ document.head.appendChild(scriptTwohalvesImageLeftTextRight);
 // ******************************************************************************************************************************************************
 // IMPORT THIRDS COMPONENTS
 
-var script2ColumnTextImageWide = document.createElement('script');
-script2ColumnTextImageWide.src = '/components/thirds/3-column-text-image-wide/3-column-text-image-wide.js';
-document.head.appendChild(script2ColumnTextImageWide);
+makeScript('/components/thirds/3-column-text-image-wide/3-column-text-image-wide.js');
+makeScript('/components/thirds/3-headlines-3-images/3-headlines-3-images.js');
+makeScript('/components/thirds/4-images-text/4-images-text.js');
 
 // ******************************************************************************************************************************************************
 // IMPORT QUARTER COMPONENTS
@@ -128,8 +128,17 @@ scriptHeadlines4ImagesBodyText.src = '/components/quarters/headlines-4-images-bo
 document.head.appendChild(scriptHeadlines4ImagesBodyText);
 
 // ******************************************************************************************************************************************************
+// IMPORT DOCS
+makeScript('/components/docs/doc-element.js');
+
 // ******************************************************************************************************************************************************
 // ******************************************************************************************************************************************************
+// ******************************************************************************************************************************************************
+
+
+
+
+
 
 
 
@@ -199,3 +208,16 @@ class Footer extends HTMLElement {
 }
 
 window.customElements.define('m-footer', Footer);
+
+
+
+
+
+
+
+function makeScript(src){
+  let temp = document.createElement('script');
+  temp.src = src;
+  document.head.appendChild(temp);
+
+}

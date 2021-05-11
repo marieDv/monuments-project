@@ -42,6 +42,8 @@ function createVariableText(base, id, position, container) {
 
 
 
+
+
 function createVariableComponents(base, id) {
   let containerTemp = base.getElementsByTagName('div');
   let container;
