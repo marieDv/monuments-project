@@ -120,7 +120,11 @@ makeScript('/components/thirds/3-column-text-image-wide/3-column-text-image-wide
 makeScript('/components/thirds/3-headlines-3-images/3-headlines-3-images.js');
 makeScript('/components/thirds/4-images-text/4-images-text.js');
 makeScript('/components/thirds/text-4-images/text-4-images.js');
+
+makeScript('/components/thirds/image-wide-3-column-text/image-wide-3-column-text.js');
+
 makeScript('/components/thirds/2-columns-text-images-right/2-columns-text-images-right.js');
+
 
 // ******************************************************************************************************************************************************
 // IMPORT QUARTER COMPONENTS
