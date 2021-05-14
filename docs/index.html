@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
+
 
   <title>Maries page</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -25,6 +27,12 @@
 
   <!--***********************************************************************************************-->
 
+
+
+
+ 
+
+
   <doc-element>
     <span slot="h3" id="headline">h3-with-bottom-margin</span>
     <span slot="text" id="description">This element creates a small headline.</span>
@@ -43,6 +51,42 @@
 
   <h3>THIRDS</h3>
   <doc-element>
+    <span slot="h3" id="headline">thirds-2-columns-text-images-right</span>
+    <span slot="text" id="description"></span>
+    <span slot="text" id="names">Elisa / Marie</span>
+    <div id="attributes">
+      <span slot="text" id="attributes">1-variable-text-slot / 2-variable-text-slot / imgPath /imgAlt / caption</span>
+    </div>
+    <span slot="h3" id="code">
+      &ltthirds-2-columns-text-images-right&gt
+      <br>
+      &ltdiv id="1-variable-text-slot"&gt
+      <br>
+      &ltspan slot="text"&gt*&lt/span&gt
+      <br>
+      &lt/div&gt
+      <br>
+      &ltdiv id="2-variable-text-slot"&gt
+      <br>
+      &ltspan slot="text"&gt*&lt/span&gt
+      <br>
+      &lt/div&gt
+      <br>
+      &ltspan slot="img" id="1-img" imgPath="./media/test.png"&gt*&lt/span&gt
+      <br>
+      &ltspan slot="img" id="2-img" imgPath="./media/test.png"&gt*&lt/span&gt
+      <br>
+      &ltspan slot="img" id="3-img" imgPath="./media/test.png"&gt*&lt/span&gt
+      <br>
+      &lt/thirds-2-columns-text-images-right&gt
+
+    </span>
+  </doc-element>
+
+
+
+
+  <doc-element>
     <span slot="h3" id="headline">thirds-3-headlines-3-images</span>
     <span slot="text" id="description"></span>
     <span slot="text" id="names">Elisa / Marie</span>
@@ -50,22 +94,22 @@
       <span slot="text" id="attributes">title</span>
     </div>
     <span slot="h3" id="code">
-    &ltthirds-3-headlines-3-images&gt
-    <br>
-    &ltspan slot="h4" id="1-title"&gt*&lt/span&gt
-    <br>
-    &ltspan slot="img" imgPath="./media/test.png" altImg="alternative text" id="1-img"&gt*&lt/span&gt
-    <br>
-    &ltspan slot="h4" id="2-title"&gt*&lt/span&gt
-    <br>
-    &ltspan slot="img" imgPath="./media/test.png" altImg="alternative text" id="2-img"&gt*&lt/span&gt
-    <br>
-    &ltspan slot="h4" id="3-title"&gt*&lt/span&gt
-    <br>
-    &ltspan slot="img" imgPath="./media/test.png" altImg="alternative text" id="3-img"&gt*&lt/span&gt
-    <br>
-    &lt/thirds-3-headlines-3-images&gt
-  </span>
+      &ltthirds-3-headlines-3-images&gt
+      <br>
+      &ltspan slot="h4" id="1-title"&gt*&lt/span&gt
+      <br>
+      &ltspan slot="img" imgPath="./media/test.png" altImg="alternative text" id="1-img"&gt*&lt/span&gt
+      <br>
+      &ltspan slot="h4" id="2-title"&gt*&lt/span&gt
+      <br>
+      &ltspan slot="img" imgPath="./media/test.png" altImg="alternative text" id="2-img"&gt*&lt/span&gt
+      <br>
+      &ltspan slot="h4" id="3-title"&gt*&lt/span&gt
+      <br>
+      &ltspan slot="img" imgPath="./media/test.png" altImg="alternative text" id="3-img"&gt*&lt/span&gt
+      <br>
+      &lt/thirds-3-headlines-3-images&gt
+    </span>
   </doc-element>
 
 

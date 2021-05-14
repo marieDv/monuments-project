@@ -32,10 +32,6 @@ var scriptH3WithBottomMargin = document.createElement('script');
 scriptH3WithBottomMargin.src = '/components/base/h3-with-bottom-margin/h3-with-bottom-margin.js';
 document.head.appendChild(scriptH3WithBottomMargin);
 
-//IMPORT PULL-QUOTE-WITH-BOTTOM-MARGIN-VAR-WIDTH
-var scriptPullQuoteWithBottomMarginVarWidth = document.createElement('script');
-scriptPullQuoteWithBottomMarginVarWidth.src = '/components/base/pull-quote-with-bottom-margin-var-width/pull-quote-with-bottom-margin-var-width.js';
-document.head.appendChild(scriptPullQuoteWithBottomMarginVarWidth);
 
 //IMPORT BUTTON
 var scriptButton = document.createElement('script');
@@ -56,6 +52,10 @@ document.head.appendChild(BlockQuoteWithLeftAndBottomMarginVarWidthScript);
 var variableTextScript = document.createElement('script');
 variableTextScript.src = '/components/base/variable-text/variable-text.js';
 document.head.appendChild(variableTextScript);
+
+
+makeScript('/components/base/pull-quote-with-bottom-margin-var-width/pull-quote-with-bottom-margin-var-width.js');
+
 
 
 // ************************************************************************************************************************
@@ -119,6 +119,7 @@ document.head.appendChild(scriptTwohalvesImageLeftTextRight);
 makeScript('/components/thirds/3-column-text-image-wide/3-column-text-image-wide.js');
 makeScript('/components/thirds/3-headlines-3-images/3-headlines-3-images.js');
 makeScript('/components/thirds/4-images-text/4-images-text.js');
+makeScript('/components/thirds/2-columns-text-images-right/2-columns-text-images-right.js');
 
 // ******************************************************************************************************************************************************
 // IMPORT QUARTER COMPONENTS
@@ -166,6 +167,10 @@ if (currentTemplate) {
     var templateStyle = '<link rel="stylesheet" href="./css/Visualization-Almendra-Display.css">';
     createTemplate(templateStyle);
   }
+  if (currentTemplate === "VTCMartin") {
+    var templateStyle = '<link rel="stylesheet" href="./css/VTCMartin.css">';
+    createTemplate(templateStyle);
+  }
 }
 
 
@@ -194,15 +199,21 @@ class Footer extends HTMLElement {
       if (currentTemplate === "Visualization-Almendra-Display") {
         templateStyle = '<link rel="stylesheet" href="../../css/Visualization-Almendra-Display.css">';
       }
+      if (currentTemplate === "VTCMartin") {
+        templateStyle = '<link rel="stylesheet" href="../../css/VTCMartin.css">';
+      }
 
       createTemplate(styleFooter);
       createTemplate(templateStyle);
       createTemplate(styleBase);
       allStyles = styleBase  + bootstrapLink + templateStyle;
     }
-
-    this.shadowRoot.appendChild(template.content.cloneNode(true));
-    this.shadowRoot.querySelector('h1').innerText = this.getAttribute('title');
+    // this.shadowRoot.querySelector('h1').innerText = this.getAttribute('title');
+    setTimeout(() => {
+      this.shadowRoot.appendChild(template.content.cloneNode(true));  
+    }, 500);
+    
+    
 
   }
 }

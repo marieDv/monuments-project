@@ -11,6 +11,15 @@
   font-family: "Arial";
   src: url("../fonts/Arial/arial.ttf");
 }
+@font-face {
+  font-family: "VTC-Martin";
+  src: url("../fonts/Martin/MARTIN-Regular.woff");
+}
+
+@font-face {
+  font-family: "Ortica";
+  src: url("../fonts/Ortica/web/Ortica-Light.woff");
+}
 
 * {
   -moz-osx-font-smoothing: grayscale;

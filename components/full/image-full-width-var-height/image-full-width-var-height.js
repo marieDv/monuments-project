@@ -21,7 +21,7 @@ p {
   margin-top: 16px;
 }
 #container {
-  margin-top: 36px;
+  margin-bottom: 36px;
   padding-left: 0;
   padding-right: 0;
 }

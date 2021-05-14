@@ -17,7 +17,7 @@ p {
 
 <div class="col-3"></div>
   <p class="col-8">
-    <slot name="text"></slot>
+    <slot id="style-blockquote" name="text"></slot>
   </p>
   </div>
 </div>
