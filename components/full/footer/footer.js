@@ -125,9 +125,12 @@ makeScript('/components/thirds/2-columns-text-images-right/2-columns-text-images
 // ******************************************************************************************************************************************************
 // IMPORT QUARTER COMPONENTS
 
+
 var scriptHeadlines4ImagesBodyText = document.createElement('script');
 scriptHeadlines4ImagesBodyText.src = '/components/quarters/headlines-4-images-body-text/headlines-4-images-body-text.js';
 document.head.appendChild(scriptHeadlines4ImagesBodyText);
+
+makeScript('/components/quarters/headlines-eight-images/headlines-eight-images.js');
 
 // ******************************************************************************************************************************************************
 // IMPORT DOCS

@@ -1,9 +1,10 @@
-//CREATING THE VARIABLE THAT HOLDS THE TEMPLATE
-const headlinesEightImages = document.createElement("template");
+// IMAGE LEFT TEXT RIGHT
+// Attributes: altimg, imgPath, caption, variable text slots
 
 
-// TEMPLATE FOR OUR COMPONENT
-headlinesEightImages.innerHTML = allStyles + `
+const headlines8ImagesTemplate = document.createElement("template");
+headlines8ImagesTemplate.innerHTML = allStyles + `
+
 <style>
 img {
     width: 100%;
@@ -14,80 +15,157 @@ p {
   margin-top: 16px;
   font-size:14px;
   line-height: 16px;
-  margin-left: 16px;
 }
-
-#line {
-  position: absolute;
-  left: calc(50% - 0.5px);
-  width: 1px;
-  height: 100%;
-  background-color: black;
-}
-
-.yes {
-  display:inline;
-}
-
-.no {
-  display:none;
-}
-
-.row {
-  position: relative;
-}
-.caption-box {
-  margin: 0;
-  margin-top: 16px;
 
 #container {
   margin-top: 36px;
 }
 
-
 </style>
 
-<div id="container" class="container-fluid">
+<div class="container-fluid">
+
   <div class="row">
-    <div class="col-6">
-      <img id="imgOne" src="" alt="">
-      <p class="col-4 p-0  caption-box">
-      <slot name="captionOne"></slot>
-      </p>
+
+    <div class="col-md-3 col-sm-12">
+      <div id="1-headline"></div>
+      <div id="1-subheadline"></div>
+      <span id="h3-with-bottom-margin"></span>
+      <div id="1-img"></div>
+      <div id="1-freeText"></div>
     </div>
 
-    <div id="line"></div>
-
-    <div class="col-6">
-      <img id="imgTwo" src="" alt="">
-      <p class="col-4 p-0 caption-box">
-      <slot name="captionTwo"></slot>
-      </p>
+    <div class="col-md-3 col-sm-12">
+      <div id="2-headline"></div>
+      <div id="2-subheadline"></div>
+      <span id="h3-with-bottom-margin"></span>
+      <div id="2-img"></div>
+      <div id="2-freeText"></div>
     </div>
+
+    <div class="col-md-3 col-sm-12">
+      <div id="3-headline"></div>
+      <div id="3-subheadline"></div>
+      <span id="h3-with-bottom-margin"></span>
+      <div id="3-img"></div>
+      <div id="3-freeText"></div>
+    </div>
+
+    <div class="col-md-3 col-sm-12">
+      <div id="4-headline"></div>
+      <div id="4-subheadline"></div>
+      <span id="h3-with-bottom-margin"></span>
+      <div id="4-img"></div>
+      <div id="4-freeText"></div>
+    </div>
+
   </div>
-</div>
 
+  <!-- BOTTOM ROW -->
+
+  <div class="row">
+
+    <div class="col-md-3 col-sm-12">
+      <div id="5-headline"></div>
+      <div id="5-subheadline"></div>
+      <span id="h3-with-bottom-margin"></span>
+      <div id="5-img"></div>
+      <div id="5-freeText"></div>
+    </div>
+
+    <div class="col-md-3 col-sm-12">
+      <div id="6-headline"></div>
+      <div id="6-subheadline"></div>
+      <span id="h3-with-bottom-margin"></span>
+      <div id="6-img"></div>
+      <div id="6-freeText"></div>
+    </div>
+
+    <div class="col-md-3 col-sm-12">
+      <div id="7-headline"></div>
+      <div id="7-subheadline"></div>
+      <span id="h3-with-bottom-margin"></span>
+      <div id="7-img"></div>
+      <div id="7-freeText"></div>
+    </div>
+
+    <div class="col-md-3 col-sm-12">
+      <div id="8-headline"></div>
+      <div id="8-subheadline"></div>
+      <span id="h3-with-bottom-margin"></span>
+      <div id="8-img"></div>
+      <div id="8-freeText"></div>
+    </div>
+
+  </div>
+
+</div> 
 
 `;
 
 //initializing our class
-class HeadlinesEightImages extends HTMLElement {
-  constructor(){
+class headlines8Images extends HTMLElement {
+  constructor() {
     super();
-    setupComponent(this, headlinesEightImages);
-    
-    //access the img element inside our template
-    this.shadowRoot.querySelector('#imgOne').src = this.getAttribute('ImgPathOne');
-    this.shadowRoot.querySelector('#imgOne').alt = this.getAttribute('AltImgOne');
-    //access the img element inside our template
-    this.shadowRoot.querySelector('#imgTwo').src = this.getAttribute('ImgPathTwo');
-    this.shadowRoot.querySelector('#imgTwo').alt = this.getAttribute('AltImgTwo');
+    setupComponent(this, headlines8ImagesTemplate);
 
-    //LINE OR NO LINE? 
-    this.shadowRoot.getElementById('line').classList.add(this.getAttribute("Line?"));
-  
-    //VARIABLE WITH CODE  
+    createComponentFromSlot(this, '1-headline');
+    createComponentFromSlot(this, '1-subheadline');
+    createComponentFromSlot(this, '1-img');
+    //createVariableComponents(this, '1-freeText');
+
+    createComponentFromSlot(this, '2-headline');
+    createComponentFromSlot(this, '2-subheadline');
+    createComponentFromSlot(this, '2-img');
+    //createVariableComponents(this, '2-freeText');
+
+    createComponentFromSlot(this, '3-headline');
+    createComponentFromSlot(this, '3-subheadline');
+    createComponentFromSlot(this, '3-img');
+    //createVariableComponents(this, '3-freeText');
+
+    createComponentFromSlot(this, '4-headline');
+    createComponentFromSlot(this, '4-subheadline');
+    createComponentFromSlot(this, '4-img');
+    //createVariableComponents(this, '4-freeText');
+
+    // BOTTOM ROW
+
+    //createComponentFromSlot(this, '5-headline');
+    //createComponentFromSlot(this, '5-subheadline');
+    createComponentFromSlot(this, '5-img');
+    //createVariableComponents(this, '5-freeText');
+
+    //createComponentFromSlot(this, '6-headline');
+    //createComponentFromSlot(this, '6-subheadline');
+    createComponentFromSlot(this, '6-img');
+    //createVariableComponents(this, '6-freeText');
+
+    //createComponentFromSlot(this, '7-headline');
+    //createComponentFromSlot(this, '7-subheadline');
+    createComponentFromSlot(this, '7-img');
+    //createVariableComponents(this, '7-freeText');
+
+    //createComponentFromSlot(this, '8-headline');
+    //createComponentFromSlot(this, '8-subheadline');
+    createComponentFromSlot(this, '8-img');
+    //createVariableComponents(this, '8-freeText');
+
 
   }
 }
-window.customElements.define('headlines-eight-images', HeadlinesEightImages);
+window.customElements.define('quarters-headlines-eight-images', headlines8Images);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
