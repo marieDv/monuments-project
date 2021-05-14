@@ -30,6 +30,9 @@ function createVariableText(base, id, position, container) {
       if (tempText === "block-quote") {
         slotsForTemplate += "<block-quote-width-left-and-bottom-margin-var-width><span slot='text'>" + span[i].innerHTML + "</span></block-quote-width-left-and-bottom-margin-var-width>";
       }
+      if (tempText === "pull-quote") {
+        slotsForTemplate += "<pull-quote-with-bottom-margin-var-width><span slot='text'>" + span[i].innerHTML + "</span></pull-quote-with-bottom-margin-var-width>";
+      }
     }
   }
 
@@ -40,7 +43,7 @@ function createVariableText(base, id, position, container) {
 }
 
 
-
+// pull-quote-with-bottom-margin-var-width
 
 
 
@@ -80,6 +83,9 @@ function createVariableComponents(base, id) {
     }
     if (tempText === "block-quote") {
       slotsForTemplate += "<block-quote-width-left-and-bottom-margin-var-width><span slot='text'>" + span[i].innerHTML + "</span></block-quote-width-left-and-bottom-margin-var-width>";
+    }
+    if (tempText === "pull-quote") {
+      slotsForTemplate += "<pull-quote-with-bottom-margin-var-width><span slot='text'>" + span[i].innerHTML + "</span></pull-quote-with-bottom-margin-var-width>";
     }
     if (tempText === "img") {
       slotsForTemplate += "<image-full-width-var-height imgPath='" + span[i].getAttribute("imgPath") + "' altImg='" + span[i].getAttribute("altImg") + "' ><span slot='caption'>" + span[i].innerHTML + "</span></image-full-width-var-height>";
