@@ -1,0 +1,42 @@
+body {
+  /* color: #000; */
+}
+h2,
+h1 {
+  font-family: "VTC-Martin", sans-serif;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 120px;
+  letter-spacing: 0px;
+  line-height: 96px;
+}
+h1,
+.name,
+.header-text {
+  color: #000000;
+}
+
+.name {
+  font-family: "Arial", sans-serif;
+}
+p {
+  font-family: "Redaction", sans-serif;
+  line-height: 115%;
+}
+h3,
+.blockquote {
+  font-family: "Arial", sans-serif;
+  text-transform: uppercase;
+}
+#style-blockquote {
+  font-family: "Arial", sans-serif;
+}
+.header-bg {
+  background: linear-gradient(180deg, #8f7b21 85.78%, rgba(97, 91, 91, 0) 94.11%);
+}
+.header-bg h1,
+a,
+p {
+  /* color: #ffffff; */
+}

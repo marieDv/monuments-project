@@ -1,30 +1,24 @@
-const pullquotewithbottommarginvarwidth = document.createElement('template');
-pullquotewithbottommarginvarwidth.innerHTML = allStyles + `
+const PullQuoteTemplate = document.createElement('template');
+PullQuoteTemplate.innerHTML = allStyles + `
 <style>
-p.pullquotewithbottommarginvarwidth {
+#styleText {
   font-size: 32px;
   letter-spacing: 2%;
-  line-height: 32px;
-
-  text-align: center;
-  font-weight: regular;
-  
-  margin-bottom: 16px;
+  line-height:32px;
   text-transform: uppercase;
+  text-align: center;
 }
 </style>
 
-<div id="variable-column" class="container d-flex justify-content-center">
-    <p class="pullquotewithbottommarginvarwidth"> </p>
+<div id="variable-column" class="container-fluid d-flex justify-content-center">
+    <slot id="styleText" name="text"></slot>
 </div>
 `;
 
 class PullQuoteWithBottomMarginVarWidth extends HTMLElement {
   constructor() {
     super();
-    setupComponent(this, pullquotewithbottommarginvarwidth);
-
-    this.shadowRoot.querySelector('p.pullquotewithbottommarginvarwidth').innerHTML = this.getAttribute('pull-quote');
+    setupComponent(this, PullQuoteTemplate);
     this.shadowRoot.getElementById('variable-column').classList.add(this.getAttribute("colWidth"));
   }
 }
