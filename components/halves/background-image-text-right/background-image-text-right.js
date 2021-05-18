@@ -1,5 +1,5 @@
-const backgroundImageTextLeftTemplate = document.createElement("template");
-backgroundImageTextLeftTemplate.innerHTML = allStyles + `
+const backgroundImageTextRightTemplate = document.createElement("template");
+backgroundImageTextRightTemplate.innerHTML = allStyles + `
 
 <style>
 img {
@@ -25,7 +25,7 @@ p {
 .background-with-overlay > .overlay-of-background-with-overlay {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
 }
 
 .overlay-of-background-with-overlay {
@@ -53,17 +53,17 @@ p {
 `;
 
 //initializing our class
-class halvesBackgroundImageTextLeft extends HTMLElement {
+class halvesBackgroundImageTextRight extends HTMLElement {
   constructor() {
     super();
-    setupComponent(this, backgroundImageTextLeftTemplate);
+    setupComponent(this, backgroundImageTextRightTemplate);
 
     createComponentFromSlot(this, 'headline');
     createComponentFromSlot(this, 'img');
     createVariableComponents(this, 'variable-text-slot');
   }
 }
-window.customElements.define('halves-background-image-text-left', halvesBackgroundImageTextLeft);
+window.customElements.define('halves-background-image-text-right', halvesBackgroundImageTextRight);
 
 
 

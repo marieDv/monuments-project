@@ -25,15 +25,15 @@ p {
 </style>
 
 <div class="container-fluid">
-<span id="headline"></span>
-<div class="row">
-<div id="variable-text-slot" class="col-md-5 col-sm-12">
-</div>
+  <span id="headline"></span>
+  <div class="row">
+    <div id="variable-text-slot" class="col-md-5 col-sm-12">
+  </div>
 
-<div class="col-1"></div>
-<span id="h3-with-bottom-margin"></span>
-<div class="col-md-6 col-sm-12" id="img"></div>
-</div>
+  <div class="col-1"></div>
+    <span id="h3-with-bottom-margin"></span>
+    <div class="col-md-6 col-sm-12" id="img"></div>
+  </div>
 </div> 
 
 `;

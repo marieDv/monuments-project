@@ -115,6 +115,7 @@ scriptTwohalvesImageLeftTextRight.src = '/components/halves/image-left-text-righ
 document.head.appendChild(scriptTwohalvesImageLeftTextRight);
 
 makeScript('/components/halves/background-image-text-left/background-image-text-left.js');
+makeScript('/components/halves/background-image-text-right/background-image-text-right.js');
 
 // ******************************************************************************************************************************************************
 // IMPORT THIRDS COMPONENTS
