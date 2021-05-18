@@ -21,36 +21,95 @@
 
 <body>
 
-  <a href="../../index.html">back</a>
+  <!-- <a href="../../index.html">back</a> -->
 
-<!-- first component -->
-  <pull-quote-with-bottom-margin-var-width pull-quote="This is a pull quote. USE IT TO CALL ATTENTION TO IMPORTANT POINTS OR CATCHY PHRASES IN YOUR ARTICLE. IT IS CENTER- aligned and as wide as the body text that surrounds it." 
-  colWidth="col-5"></pull-quote-with-bottom-margin-var-width>
+<!-- FIRST component -->
+  <!-- <pull-quote-with-bottom-margin-var-width pull-quote="This is a pull quote. USE IT TO CALL ATTENTION TO IMPORTANT POINTS OR CATCHY PHRASES IN YOUR ARTICLE. IT IS CENTER- aligned and as wide as the body text that surrounds it." 
+  colWidth="col-5"></pull-quote-with-bottom-margin-var-width> -->
 
-  <!-- second component -->
-  <a-button> 
-    <span slot="button-name">I am a button</span>> 
-  </a-button>
+  <!-- SECOND component -->
+  <!-- <a-button> 
+    <span slot="button-name">I am a button</span>
+  </a-button> -->
 
-  <!-- third component -->
-  <h4-with-bottom-margin-var-width colWidth="col-3"> 
-    <span slot="title"> This is a headline H4 ... this instance can have varied widths and no defined indent</span>
-  </h4-with-bottom-margin-var-width>
+  <!-- THIRD component -->
+  <!-- <h4-with-bottom-margin-var-width colWidth="col-3"> 
+    <span slot="title"> This is H4 With Bottom Margin Var Width....This is a headline H4 ... this instance can have varied widths and no defined indent</span>
+  </h4-with-bottom-margin-var-width> -->
 
-  <!-- <header-single title="Big Title" h2Title="this is the title for my h2" imgPath="./media/car.png" altImg="photo of a car"></header-single>
-  <m-img imgPath="./media/car.png"></m-img>
-  <h1-with-bottom-margin title="I am a header :)"></h1-with-bottom-margin>
-  <ImgGallery></ImgGallery>
-  <p>This is a text that is gonna be rendered in serif.</p>
-  <img-gallery images="3" imgPathOne="../../media/Image_1.jpg" imgPathTwo="../../media/Image_2.jpg" imgPathThree="../../media/Image_3.jpg" 
-  altImgOne="dogs with party hats" altImgTwo="husky" altImgThree="Sausage Dog"></img-gallery> -->
-  
-  
-  <!--FOOTER COMPONENT-->
-  <!-- <m-footer base="false" title="This footer contains all links to the other components"></m-footer> -->
-  <!-- <top-menu itemOneName="Case Study" linkOne="https://www.facebook.com/" itemTwoName="Time of events"
-    linkTwo="https://www.google.com/" itemThreeName="Montage of history" linkThree="https://www.twitter.com/"
-    itemFourName="Stories" linkFour="https://www.youtube.com/"></top-menu> -->
+  <!-- FOURTH Component -->
+<thirds-images-left-2-columns-text>
+  <div id="image-column">
+    <span slot="1-img" id="1-img" imgPath="./media/car.png">C1 — This is a caption for a 6 column-wide image. If the image occupies up to 4 columns, the caption accompanies it in terms of width. Beyond 4 columns, it stops at the fourth.</span>
+    <span slot="2-img" id="2-img" imgPath="./media/vienna.png">C2 — This is a caption for a 6 column-wide image. If the image occupies up to 4 columns, the caption accompanies it in terms of width. Beyond 4 columns, it stops at the fourth.</span>
+    <span slot="3-img" id="3-img" imgPath="./media/car.png">C3 — This is a caption for a 6 column-wide image. If the image occupies up to 4 columns, the caption accompanies it in terms of width. Beyond 4 columns, it stops at the fourth.</span>
+  </div>
+
+  <div id="variable-text-slot">
+    <span slot="h3">This is Headline 1</span>
+    <div id="1-freetext"> 
+      <span slot="text">
+        paragraoh (1) Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        In massa nulla, fringilla et est vitae, elementum vehicula velit. 
+        Praesent at sem ipsum. Quisque interdum erat mauris, at tincidunt lorem 
+        cursus ut. Morbi in magna non urna sagittis consequat. Integer vulputate dolor
+      </span>
+    </div>
+    <span slot="block-quote">
+      This is a block quote. This is a block quote. 
+      This is a block quote. This is a block quote. 
+    </span>
+    <div id="1-freetext"> 
+      <span slot="text">paragraph (2) Lorem ipsum dolor sit amet, consectetur 
+        adipiscing elit. In massa nulla, fringilla et est vitae, elementum vehicula 
+        velit. Praesent at sem ipsum. Quisque interdum erat mauris, at tincidunt lorem 
+        cursus ut. Morbi in magna non urna sagittis consequat. Integer vulputate dolor
+      </span>
+    </div>
+    <span slot="pull-quote">
+      This is a PULL QUOTE This is a PULL QUOTE 
+    </span>
+  </div>
+
+  <div id="variable-text-slot-2">
+    <span slot="h3">This is Headline 2</span>
+    <div id="2-freetext"> 
+      <span slot="text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        In massa nulla, fringilla et est vitae, elementum vehicula velit. 
+        Praesent at sem ipsum. Quisque interdum erat mauris, at tincidunt lorem 
+        cursus ut. Morbi in magna non urna sagittis consequat. Integer vulputate dolor
+      </span>
+    </div>
+    <span slot="block-quote">
+      Block Quote --- Lorem ipsum dolor sit amet, consectetur adipiscing elit. In massa nulla, 
+      fringilla et est vitae, elementum vehicula velit. 
+    </span>
+    <div id="2-freetext"> 
+      <span slot="text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        In massa nulla, fringilla et est vitae, elementum vehicula velit. 
+        Praesent at sem ipsum. Quisque interdum erat mauris, at tincidunt lorem 
+        cursus ut. Morbi in magna non urna sagittis consequat. Integer vulputate dolor
+      </span>
+    </div>
+    <span slot="pull-quote">
+      This is a PULL QUOTE
+    </span>
+  </div>
+
+</thirds-images-left-2-columns-text>
+
+<!-- test marie's component - 4 images thirds -->
+<!-- <thirds-4-images-text>
+  <div id="variable-text-slot"> 
+    <span slot="h3">Headline</span>
+    <span slot="block-quote"> this is the content stuff here</span>
+    <span slot="block-quote"> blockquote </span>
+  </div> -->
+
+  <!-- <span slot="img" imgPath="media/car.png" altImg="alt text" id="1-img"> </span>
+</thirds-4-images-text> -->
 
 </body>
 
