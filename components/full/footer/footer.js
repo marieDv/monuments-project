@@ -53,6 +53,9 @@ var variableTextScript = document.createElement('script');
 variableTextScript.src = '/components/base/variable-text/variable-text.js';
 document.head.appendChild(variableTextScript);
 
+makeScript('/components/base/space-64/space-64.js');
+
+
 
 makeScript('/components/base/pull-quote-with-bottom-margin-var-width/pull-quote-with-bottom-margin-var-width.js');
 makeScript('/components/base/body-text/body-text.js')
