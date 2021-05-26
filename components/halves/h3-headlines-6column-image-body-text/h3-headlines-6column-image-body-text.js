@@ -15,7 +15,6 @@ H3Headlines6ColumnImageBodyTextTemplate.innerHTML = allStyles + `
 <div class='col-md-6' id='border'>
 <span id='1-h3'></span>
 <span id='img'></span>
-MARIE IS PRETTY
 </div>
 <div class='col-md-6'>
 <span id='2-h3'></span>

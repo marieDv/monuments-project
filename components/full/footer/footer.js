@@ -129,6 +129,7 @@ makeScript('/components/halves/h3-headlines-two-3column-image-body-text/h3-headl
 
 makeScript('/components/halves/h3-headlines-2column-4column-image-body-text/h3-headlines-2column-4column-image-body-text.js');
 
+makeScript('/components/halves/h3-headlines-4column-2column-image-body-text/h3-headlines-4column-2column-image-body-text.js');
 // ******************************************************************************************************************************************************
 // IMPORT THIRDS COMPONENTS
 
