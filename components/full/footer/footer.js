@@ -120,7 +120,7 @@ document.head.appendChild(scriptTwohalvesImageLeftTextRight);
 
 makeScript('/components/halves/background-image-text-left/background-image-text-left.js');
 makeScript('/components/halves/background-image-text-right/background-image-text-right.js');
-
+makeScript('/components/halves/h3-headlines-6column-image-body-text/h3-headlines-6column-image-body-text.js')
 // ******************************************************************************************************************************************************
 // IMPORT THIRDS COMPONENTS
 
