@@ -55,9 +55,10 @@ document.head.appendChild(variableTextScript);
 
 
 makeScript('/components/base/pull-quote-with-bottom-margin-var-width/pull-quote-with-bottom-margin-var-width.js');
-makeScript('/components/base/body-text/body-text.js')
-
-
+makeScript('/components/base/body-text/body-text.js');
+makeScript('/components/base/space-32/space-32.js');
+makeScript('/components/base/space-120/space-120.js');
+makeScript('/components/base/space-360/space-360.js');
 
 // ************************************************************************************************************************
 // IMPORT FULL WIDTH COMPONENTS
