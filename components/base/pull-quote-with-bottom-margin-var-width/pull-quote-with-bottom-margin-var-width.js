@@ -1,7 +1,7 @@
 const PullQuoteTemplate = document.createElement('template');
 PullQuoteTemplate.innerHTML = allStyles + `
 <style>
-#styleText {
+#pull-quote {
   font-size: 32px;
   letter-spacing: 2%;
   line-height:32px;
@@ -11,7 +11,7 @@ PullQuoteTemplate.innerHTML = allStyles + `
 </style>
 
 <div id="variable-column" class="container-fluid d-flex justify-content-center">
-    <slot id="styleText" name="text"></slot>
+    <slot id="pull-quote" name="text"></slot>
 </div>
 `;
 

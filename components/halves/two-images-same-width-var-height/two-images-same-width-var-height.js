@@ -1,14 +1,10 @@
 //CREATING THE VARIABLE THAT HOLDS THE TEMPLATE
-const twoImgsSameWidthVarHeight = document.createElement("template");
+const twoImgsSameWidthVarHeightTemplate = document.createElement("template");
 
 
 // TEMPLATE FOR OUR COMPONENT
-twoImgsSameWidthVarHeight.innerHTML = allStyles + `
+twoImgsSameWidthVarHeightTemplate.innerHTML = allStyles + `
 <style>
-img {
-    width: 100%;
-    height: auto;
-} 
 
 p {
   margin-top: 16px;
@@ -22,7 +18,7 @@ p {
   left: calc(50% - 0.5px);
   width: 1px;
   height: 100%;
-  background-color: black;
+  background-color: pink;
 }
 
 .yes {
@@ -41,6 +37,7 @@ p {
   margin-top: 16px;
 
 #container {
+  background:pink;
   margin-top: 36px;
 }
 
@@ -50,19 +47,13 @@ p {
 <div id="container" class="container-fluid">
   <div class="row">
     <div class="col-6">
-      <img id="imgOne" src="" alt="">
-      <p class="col-4 p-0  caption-box">
-      <slot name="captionOne"></slot>
-      </p>
+    <span id='1-img'></span>
     </div>
 
-    <div id="line"></div>
+    <!-- <div id="line"></div> -->
 
     <div class="col-6">
-      <img id="imgTwo" src="" alt="">
-      <p class="col-4 p-0 caption-box">
-      <slot name="captionTwo"></slot>
-      </p>
+    <span id='2-img'></span>
     </div>
   </div>
 </div>
@@ -74,19 +65,14 @@ p {
 class TwoImgsSameWidthVarHeight extends HTMLElement {
   constructor(){
     super();
-    setupComponent(this, twoImgsSameWidthVarHeight);
+    setupComponent(this, twoImgsSameWidthVarHeightTemplate);
     
-    //access the img element inside our template
-    this.shadowRoot.querySelector('#imgOne').src = this.getAttribute('ImgPathOne');
-    this.shadowRoot.querySelector('#imgOne').alt = this.getAttribute('AltImgOne');
-    //access the img element inside our template
-    this.shadowRoot.querySelector('#imgTwo').src = this.getAttribute('ImgPathTwo');
-    this.shadowRoot.querySelector('#imgTwo').alt = this.getAttribute('AltImgTwo');
-
     //LINE OR NO LINE? 
-    this.shadowRoot.getElementById('line').classList.add(this.getAttribute("Line?"));
+    // this.shadowRoot.getElementById('line').classList.add(this.getAttribute("Line?"));
   
-    //VARIABLE WITH CODE  
+
+    createComponentFromSlot(this, '1-img');
+    createComponentFromSlot(this, '2-img');
 
   }
 }

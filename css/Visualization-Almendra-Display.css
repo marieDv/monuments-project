@@ -1,33 +1,41 @@
-
 body {
   /* color: #000; */
 }
-h2, h1 {
-font-family: 'Almendra', sans-serif;
-text-transform: uppercase;
+h2,
+h1 {
+  font-family: "Almendra", sans-serif;
+  text-transform: uppercase;
 }
 h1 {
-  line-height: 78px;
+  font-size: 120px;
+  letter-spacing: -3.5px;
+  line-height: 100px;
 }
-h1, .name, .header-text {
+h1,
+.name,
+.header-text {
   color: #ffffff;
 }
-h3, .blockquote {
-  font-family: 'Redaction', sans-serif;
+h3{
+  font-family: "Redaction", sans-serif;
   text-transform: uppercase;
-  background-color: peachpuff;
-  /* color: #ffffff; */
+}
+#style-blockquote {
+  font-family: "Redaction", sans-serif;
+}
+#pull-quote {
+  font-family: "Redaction", sans-serif;
 }
 .name {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
 }
 p {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   line-height: 115%;
 }
 .header-bg {
-  background: linear-gradient(180deg, #E24E43 85.78%, rgba(97, 91, 91, 0) 94.11%);
+  background: linear-gradient(180deg, #e24e43 85.78%, rgba(97, 91, 91, 0) 94.11%);
 }
-.header-bg h1, a, p {
-  /* color: #ffffff; */
+.caption {
+  font-family: "Redaction", serif;
 }

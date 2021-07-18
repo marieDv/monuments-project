@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
 
 
-  <title>Maries page</title>
+  <title>The After-Monument Docs</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -42,7 +42,7 @@
       <br>
       &ltspan slot="title"&gt*&lt/span&gt
       <br>
-      &lt;h1-with-bottom-margin/&gt;
+      &lt;/h1-with-bottom-margin&gt;
     </span>
   </doc-element>
 
@@ -59,7 +59,7 @@
       <br>
       &ltspan slot="title"&gt*&lt/span&gt
       <br>
-      &lt;h2-section-title/&gt;
+      &lt;/h2-section-title&gt;
     </span>
   </doc-element>
 
@@ -76,7 +76,7 @@
       <br>
       &ltspan slot="title"&gt*&lt/span&gt
       <br>
-      &lt;h3-with-bottom-margin/&gt;
+      &lt;/h3-with-bottom-margin&gt;
     </span>
   </doc-element>
 
@@ -92,7 +92,7 @@
       <br>
       &ltspan slot="title"&gt*&lt/span&gt
       <br>
-      &lt;h4-with-bottom-margin/&gt;
+      &lt;/h4-with-bottom-margin&gt;
     </span>
   </doc-element>
 
@@ -131,7 +131,8 @@
 
   <doc-element>
     <span slot="h3" id="headline">body-text</span>
-    <span slot="text" id="description">This element creates normal text. You can adjust it's width by changing the colWidth</span>
+    <span slot="text" id="description">This element creates normal text. You can adjust it's width by changing the
+      colWidth</span>
     <span slot="text" id="names">Elisa / Marie</span>
     <div id="attributes">
       <span slot="text" id="attributes">text / colWidth</span>
@@ -141,7 +142,23 @@
       <br>
       &ltspan slot="text"&gt*&lt/span&gt
       <br>
-    &lt/body-text&gt
+      &lt/body-text&gt
+    </span>
+  </doc-element>
+
+  <h3>HALVES</h3>
+  <doc-element>
+    <span slot="h3" id="headline">two-images-same-width-var-height</span>
+    <span slot="text" id="description">This element creates two images next to each other</span>
+    <span slot="text" id="names">Elisa / Vitor</span>
+    <div id="attributes">
+      <span slot="text" id="attributes">text / colWidth</span>
+    </div>
+    <span slot="h3" id="code">
+      &lttwo-images-same-width-var-height&gt<br>
+      &ltspan id="1-img" slot="img" imgPath="./media/test.png" altImg="" &gt*&lt/span&gt<br>
+      &ltspan id="2-img" slot="img" imgPath="./media/test.png" altImg="" &gt*&lt/span&gt<br>
+      &lt/two-images-same-width-var-height&gt<br>
     </span>
   </doc-element>
 
@@ -219,7 +236,7 @@
 </body>
 <footer>
   <script>
-    var currentTemplate = 'Standard';
+    var currentTemplate = 'Arial';
     // var currentTemplate = 'Visualization-Almendra-Display';
   </script>
   <script src="../components/full/footer/footer.js"></script>

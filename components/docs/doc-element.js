@@ -58,12 +58,12 @@ class DocElement extends HTMLElement {
     setupComponent(this, DocElementTemplate);
 
     createComponentFromSlot(this, 'headline');
-    createComponentFromSlot(this, 'code');
     createComponentFromSlot(this, 'names');
     createComponentFromSlot(this, 'attributes');
     createVariableComponents(this, 'attributes');
-    createComponentFromSlot(this, 'description');
-    createVariableComponents(this, 'variable-text-slot');
+    createComponentFromSlot(this, 'code');
+    // createComponentFromSlot(this, 'description');
+    // createVariableComponents(this, 'variable-text-slot');
     // createComponentFromSlot(this, 'img');
 
   }

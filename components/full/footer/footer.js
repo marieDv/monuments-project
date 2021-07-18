@@ -67,6 +67,9 @@ makeScript('/components/base/space-360/space-360.js');
 // IMPORT FULL WIDTH COMPONENTS
 // ******************************
 
+makeScript('/components/full/chapter/chapter.js');
+
+
 // IMPORT image-full-width-var-height
 var scriptImageFullWidthVarHeight = document.createElement('script');
 scriptImageFullWidthVarHeight.src = '/components/full/image-full-width-var-height/image-full-width-var-height.js';
@@ -192,16 +195,20 @@ createTemplate(bootstrapLink);
 
 
 if (currentTemplate) {
-  if(currentTemplate === "Standard"){
+  if(currentTemplate === "Arial"){
     var templateStyle = '<style></style>';
     createTemplate(templateStyle);
   }
-  if (currentTemplate === "Visualization-Almendra-Display") {
+  if (currentTemplate === "Almendra") {
     var templateStyle = '<link rel="stylesheet" href="./css/Visualization-Almendra-Display.css">';
     createTemplate(templateStyle);
   }
   if (currentTemplate === "VTCMartin") {
     var templateStyle = '<link rel="stylesheet" href="./css/VTCMartin.css">';
+    createTemplate(templateStyle);
+  }
+  if (currentTemplate === "Ortica") {
+    var templateStyle = '<link rel="stylesheet" href="./css/Ortica.css">';
     createTemplate(templateStyle);
   }
 }
@@ -229,11 +236,14 @@ class Footer extends HTMLElement {
     if (this.getAttribute('base') === "false") {
       styleBase = '<link rel="stylesheet" href="./../../css/baseStyle.css">'
       styleFooter = '<link rel="stylesheet" href="/../../components/full/footer/footer.css">';
-      if (currentTemplate === "Visualization-Almendra-Display") {
+      if (currentTemplate === "Almendra") {
         templateStyle = '<link rel="stylesheet" href="../../css/Visualization-Almendra-Display.css">';
       }
       if (currentTemplate === "VTCMartin") {
         templateStyle = '<link rel="stylesheet" href="../../css/VTCMartin.css">';
+      }
+      if (currentTemplate === "Ortica") {
+        templateStyle = '<link rel="stylesheet" href="../../css/Ortica.css">';
       }
 
       createTemplate(styleFooter);

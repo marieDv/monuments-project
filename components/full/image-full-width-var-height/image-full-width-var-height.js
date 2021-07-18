@@ -30,7 +30,7 @@ p {
 
 <div id="container" class="container-fluid">
     <img id="img" src="" alt="">
-    <p class="col-4 caption p-0" id="captionOne">
+    <p class="col-12 caption p-0" id="captionOne">
     <slot name="caption"></slot>
     
     </p>
@@ -45,6 +45,7 @@ class ImgFullWidthVarHeight extends HTMLElement {
     setupComponent(this, imgFullWidthVarHeight);
 
     this.shadowRoot.querySelector('#img').src = this.getAttribute('imgPath');
+    
     this.shadowRoot.querySelector('#img').alt = this.getAttribute('altImg');
   }
 }

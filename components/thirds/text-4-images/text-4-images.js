@@ -40,7 +40,6 @@ ThirdsText4ImagesTemplate.innerHTML = allStyles + `
 
 `;
 
-//initializing our class
 class ThirdsText4Images extends HTMLElement {
   constructor() {
     super();

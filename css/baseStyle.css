@@ -31,6 +31,16 @@ h2,
 h3 {
   font-family: "Arial", sans-serif;
 }
+
+h1 {
+  font-size: 120px !important;
+  line-height: 99px !important;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
 body {
   width: 100%;
 }

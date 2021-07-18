@@ -1,0 +1,29 @@
+#yellow-gradient {
+  height: 300px;
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  background: rgb(226, 250, 97);
+  background: linear-gradient(180deg, rgba(226, 250, 97, 1) 0%, rgba(226, 250, 97, 0) 100%);
+}
+
+#text-priority {
+  font-size: 36px;
+  font-family: "Redaction", serif;
+  line-height: 38px;
+}
+
+.headline-h1 {
+  margin-bottom: 46px;
+  
+  text-transform: uppercase;
+  font-size: 120px !important;
+  line-height: 99px !important;
+}
+
+#section-chapters {
+  background: #EEEEEE;
+  width: 100%;
+  height: auto;
+}
+
