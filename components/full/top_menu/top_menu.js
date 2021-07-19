@@ -8,7 +8,11 @@ topMenu.innerHTML = allStyles + `
 
 #top-menu-container {
   position:fixed;
-  top: 10px;
+  top: 0;
+  height: 100px;
+  background: #E2FA61;
+  -webkit-box-shadow: 0px 10px 24px -9px rgba(0,0,0,0.73); 
+box-shadow: 0px 10px 24px -9px rgba(0,0,0,0.73);
 }
 
 a {
@@ -24,12 +28,12 @@ a:hover {
 </style>
   <div id="top-menu-container" class= "container-fluid">
     <div class="row">
-      <div class= "col-7"></div>
-      <a class= "col-1" id="itemOne" href=""></a>
-      <a class= "col-1" id="itemTwo" href=""></a>
-      <a class= "col-1" id="itemThree" href=""></a>
-      <a class= "col-1" id="itemFour" href=""></a>
-      <div class= "col-1"></div>
+      <div class= "col-2"></div>
+      <a class= "col-2" id="itemOne" href=""></a>
+      <a class= "col-2" id="itemTwo" href=""></a>
+      <a class= "col-2" id="itemThree" href=""></a>
+      <a class= "col-2" id="itemFour" href=""></a>
+      <div class= "col-2"></div>
     </div>
   </div>
 `;

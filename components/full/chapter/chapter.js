@@ -8,12 +8,21 @@ const chapterTemplate = document.createElement("template");
 // TEMPLATE FOR OUR COMPONENT
 chapterTemplate.innerHTML = allStyles + `
 <style>
+#container {
+
+}
 #chapter {
   position: relative;
   background-color: #5C23FF;
   color: #fff;
   border-radius: 20px;
-  margin: 0 14px;
+  margin: 0 0 24px;
+}
+.closed {
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .project-preview {
   background: #E2FA61;
@@ -61,13 +70,16 @@ chapterTemplate.innerHTML = allStyles + `
 #expand {
 display: none;
 }
+#variable-column {
+  padding: 0;
+}
 </style>
 
-<div id="chapter" class="container container-fluid">
+<div id="chapter" class="container container-fluid closed">
 <span id="open">+</span>
         <div id="close" class="content content-retracted col-12">
           <p id="headline"></p>
-          
+          <space-32></space-32>
         </div>
 
         <div id="expand" class="content content-expanded col-12 container container-fluid">
@@ -107,11 +119,13 @@ class chapterCard extends HTMLElement {
     createComponentFromSlot(this, 'headline');
     createComponentFromSlot(this, 'text');
     createVariableComponents(this, 'projects');
-    this.shadowRoot.getElementById("open").addEventListener('click', () => {
+    this.shadowRoot.getElementById("chapter").addEventListener('click', () => {
       if (!click) {
         this.shadowRoot.getElementById("expand").style.display = "block";
+        this.shadowRoot.getElementById("chapter").classList.remove("closed");
       } else {
         this.shadowRoot.getElementById("expand").style.display = "none";
+        this.shadowRoot.getElementById("chapter").classList.add("closed");
       }
       click = !click;
     });
