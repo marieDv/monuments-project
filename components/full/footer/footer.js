@@ -220,9 +220,37 @@ var allStyles = bootstrapLink + styleBase + templateStyle;
 //WRITE THE HTML FOR EACH COMPONENT HERE
 function createTemplate(link) {
   template.innerHTML = styleFooter + bootstrapLink + `
+  <style>
+      #footer {
+        background-color: #E2FA61;
+        font-family: "NotCourierSans", sans-serif;
+        bottom: 0;
+        padding: 36px 18px 18px;
+        position: relative;
+        height: 188px;
+      }
+      a {
+        font-size: 16px;
+        color: #000000;
+        padding-right: 32px;
+      }
+      #contact {
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+        z-index: 99px;
+        font-family: "Arial", sans-serif;
+        opacity: 0.4;
+        font-size: 14px;
+      }
+  </style>
   <div id="footer">
   <div>
-    <h1></h1>
+    <a href="">Resources</a>
+    <a href="">idididid Radio</a>
+    <a href="">Instagram</a>
+
+    <p id="contact">Contact Us: <a href="mailto:theaftermonument@gmail.co">theaftermonument@gmail.com</a></p>
     </div>
   </div>
   `;

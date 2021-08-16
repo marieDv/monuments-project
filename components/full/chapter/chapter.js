@@ -19,7 +19,7 @@ chapterTemplate.innerHTML = allStyles + `
   margin: 0 0 24px;
 }
 .closed {
-  height: 90px;
+  height: 72px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -73,13 +73,16 @@ display: none;
 #variable-column {
   padding: 0;
 }
+#headline {
+  margin-top: -18px;
+}
 </style>
 
 <div id="chapter" class="container container-fluid closed">
 <span id="open">+</span>
         <div id="close" class="content content-retracted col-12">
           <p id="headline"></p>
-          <space-32></space-32>
+
         </div>
 
         <div id="expand" class="content content-expanded col-12 container container-fluid">
