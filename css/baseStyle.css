@@ -21,6 +21,11 @@
   src: url("../fonts/Ortica/web/Ortica-Light.woff");
 }
 
+@font-face {
+  font-family: "NotCourierSans";
+  src: url("../fonts/NotCourierSans/otf/NotCourierSans-Bold.otf");
+}
+
 * {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;

@@ -1,5 +1,5 @@
 body {
-  margin-top: 100px;
+  margin-top: 72px;
 }
 
 #yellow-gradient {
@@ -20,10 +20,10 @@ body {
 
 .headline-h1 {
   margin-bottom: 46px;
-  padding: 0 40px;
+  padding: 80px 40px 40px;
   text-transform: uppercase;
-  font-size: 120px !important;
-  line-height: 99px !important;
+  font-size: 142px !important;
+  line-height: 114px !important;
 }
 
 #section-chapters {

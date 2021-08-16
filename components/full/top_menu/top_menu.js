@@ -9,7 +9,9 @@ topMenu.innerHTML = allStyles + `
 #top-menu-container {
   position:fixed;
   top: 0;
-  height: 100px;
+  left: 0;
+  width: 100%;
+  height: 72px;
   background: #E2FA61;
   -webkit-box-shadow: 0px 10px 24px -9px rgba(0,0,0,0.73); 
 box-shadow: 0px 10px 24px -9px rgba(0,0,0,0.73);
@@ -18,22 +20,32 @@ box-shadow: 0px 10px 24px -9px rgba(0,0,0,0.73);
 a {
   font-size: 14pt;
   cursor: pointer;
+  margin-top: 22px;
+  color: #000000;
+  font-family: "NotCourierSans", serif;
+  text-transform: uppercase;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
+#logo {
+  font-family: "Redaction", serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
   
 </style>
   <div id="top-menu-container" class= "container-fluid">
     <div class="row">
-      <div class= "col-2"></div>
+      <div id="logo" class= "col-4">The After Monument</div>
+      <div class= "col-4"></div>
       <a class= "col-2" id="itemOne" href=""></a>
-      <a class= "col-2" id="itemTwo" href=""></a>
-      <a class= "col-2" id="itemThree" href=""></a>
-      <a class= "col-2" id="itemFour" href=""></a>
-      <div class= "col-2"></div>
+      <a class= "col-2" id="itemTwo" href=""></a>    
+      
     </div>
   </div>
 `;
