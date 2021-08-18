@@ -2,11 +2,14 @@ const H1WithBottomMarginTemplate = document.createElement('template');
 H1WithBottomMarginTemplate.innerHTML = allStyles + `
 <style>
 h1 {
-
   text-align: center;
   margin-bottom: 46px;
   text-transform: uppercase;
-
+}
+@media only screen and (max-width: 720px) {
+  h1 {
+    font-size: 42px;
+  }
 }
 </style>
 <div class="container d-flex justify-content-center">

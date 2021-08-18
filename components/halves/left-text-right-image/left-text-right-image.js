@@ -3,8 +3,8 @@
 // components nested: variable text slots
 
 
-const imageLeftTextRight = document.createElement("template");
-imageLeftTextRight.innerHTML = allStyles + `
+const halvesLeftTextRightImageTemp = document.createElement("template");
+halvesLeftTextRightImageTemp.innerHTML = allStyles + `
 
 <style>
 img {
@@ -28,29 +28,29 @@ p {
   <span id="headline"></span>
   <div class="row">
     
-
-
+  <div id="variable-text-slot" class="col-md-5 col-sm-12"></div>
+  <div class="col-1"></div>
     <span id="h3-with-bottom-margin"></span>
     <div class="col-md-6 col-sm-12" id="img"></div>
-    <div class="col-1"></div>
-    <div id="variable-text-slot" class="col-md-5 col-sm-12"></div>
+
+    
   </div>
 </div> 
 
 `;
 
 //initializing our class
-class halvesImageLeftTextRight extends HTMLElement {
+class halvesLeftTextRightImage extends HTMLElement {
   constructor() {
     super();
-    setupComponent(this, imageLeftTextRight);
+    setupComponent(this, halvesLeftTextRightImageTemp);
 
     createComponentFromSlot(this, 'headline');
     createComponentFromSlot(this, 'img');
     createVariableComponents(this, 'variable-text-slot');
   }
 }
-window.customElements.define('halves-image-left-text-right', halvesImageLeftTextRight);
+window.customElements.define('halves-left-text-right-image', halvesLeftTextRightImage);
 
 
 

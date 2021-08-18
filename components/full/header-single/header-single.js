@@ -6,6 +6,7 @@ HeaderTemplate.innerHTML = allStyles + `
   
   width: 100%;
   margin-bottom: 160px;
+  padding: 0;
 }
 .header-box {
   height: 100vh;

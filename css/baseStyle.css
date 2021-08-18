@@ -38,8 +38,14 @@ h3 {
 }
 
 h1 {
-  font-size: 120px !important;
-  line-height: 99px !important;
+  font-size: 120px;
+  line-height: 99px;
+}
+@media only screen and (max-width: 720px) {
+  h1 {
+    font-size: 56px;
+    line-height: 42px !important;
+  }
 }
 
 h3 {

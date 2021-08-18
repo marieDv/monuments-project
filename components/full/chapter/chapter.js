@@ -16,7 +16,7 @@ chapterTemplate.innerHTML = allStyles + `
   background-color: #5C23FF;
   color: #fff;
   border-radius: 20px;
-  margin: 0 0 24px;
+  margin: 0 0 24px 0;
 }
 .closed {
   height: 72px;
@@ -78,7 +78,7 @@ display: none;
 }
 </style>
 
-<div id="chapter" class="container container-fluid closed">
+<div id="chapter" class="container-fluid closed">
 <span id="open">+</span>
         <div id="close" class="content content-retracted col-12">
           <p id="headline"></p>
