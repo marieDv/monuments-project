@@ -13,6 +13,7 @@ DocElementTemplate.innerHTML = allStyles + `
   background-color: #a2a2a2;
   display: block;
   color: yellow;
+  text-transform: lowercase !important;
 }
 p {
   display: inline;
@@ -62,7 +63,7 @@ class DocElement extends HTMLElement {
     createComponentFromSlot(this, 'attributes');
     createVariableComponents(this, 'attributes');
     createComponentFromSlot(this, 'code');
-    // createComponentFromSlot(this, 'description');
+    createComponentFromSlot(this, 'description');
     // createVariableComponents(this, 'variable-text-slot');
     // createComponentFromSlot(this, 'img');
 

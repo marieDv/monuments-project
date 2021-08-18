@@ -27,11 +27,13 @@ body {
 }
 
 #section-chapters {
+  
   background: #EEEEEE;
   width: 100%;
   height: auto;
+  position: relative;
   padding: 2px 40px;
-  cursor: pointer;
+
 }
 
 

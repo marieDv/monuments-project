@@ -37,7 +37,7 @@
     <div id="attributes">
       <span slot="text" id="attributes">title</span>
     </div>
-    <span slot="h3" id="code">
+    <span slot="text" id="code">
       &lt;h1-with-bottom-margin&gt;
       <br>
       &ltspan slot="title"&gt*&lt/span&gt
@@ -71,7 +71,7 @@
     <div id="attributes">
       <span slot="text" id="attributes">title</span>
     </div>
-    <span slot="h3" id="code">
+    <span slot="text" id="code">
       &lt;h3-with-bottom-margin&gt;
       <br>
       &ltspan slot="title"&gt*&lt/span&gt
@@ -87,7 +87,7 @@
     <div id="attributes">
       <span slot="text" id="attributes">title</span>
     </div>
-    <span slot="h3" id="code">
+    <span slot="text" id="code">
       &lt;h4-with-bottom-margin&gt;
       <br>
       &ltspan slot="title"&gt*&lt/span&gt
@@ -103,7 +103,7 @@
     <div id="attributes">
       <span slot="text" id="attributes">text</span>
     </div>
-    <span slot="h3" id="code">
+    <span slot="text" id="code">
       &ltpull-quote-with-bottom-margin-var-width&gt
       <br>
       &ltspan slot="text"&gt*&lt/span&gt
@@ -119,7 +119,7 @@
     <div id="attributes">
       <span slot="text" id="attributes">text</span>
     </div>
-    <span slot="h3" id="code">
+    <span slot="text" id="code">
       &ltblock-quote-width-left-and-bottom-margin-var-width&gt
       <br>
       &ltspan slot="text"&gt*&lt/span&gt
@@ -137,7 +137,7 @@
     <div id="attributes">
       <span slot="text" id="attributes">text / colWidth</span>
     </div>
-    <span slot="h3" id="code">
+    <span slot="text" id="code">
       &ltbody-text colWidth="col-12"&gt
       <br>
       &ltspan slot="text"&gt*&lt/span&gt
@@ -145,8 +145,15 @@
       &lt/body-text&gt
     </span>
   </doc-element>
+    <!-- ************************************************************* -->
+    <h2 style="font-size: 80px; text-align: center;">FULLS</h2>
 
-  <h3>HALVES</h3>
+
+
+
+  <!-- ************************************************************* -->
+  <h2 style="font-size: 80px; text-align: center;">HALVES</h2>
+
   <doc-element>
     <span slot="h3" id="headline">two-images-same-width-var-height</span>
     <span slot="text" id="description">This element creates two images next to each other</span>
@@ -154,7 +161,7 @@
     <div id="attributes">
       <span slot="text" id="attributes">text / colWidth</span>
     </div>
-    <span slot="h3" id="code">
+    <span slot="text" id="code">
       &lttwo-images-same-width-var-height&gt<br>
       &ltspan id="1-img" slot="img" imgPath="./media/test.png" altImg="" &gt*&lt/span&gt<br>
       &ltspan id="2-img" slot="img" imgPath="./media/test.png" altImg="" &gt*&lt/span&gt<br>
@@ -162,9 +169,75 @@
     </span>
   </doc-element>
 
+  <doc-element>
+    <span slot="h3" id="headline">halves-h3-headline-6column-image-body-text</span>
+    <span slot="text" id="description">add border by putting "true" in the hasBorder attribute</span>
+    <span slot="text" id="names"></span>
+    <div id="attributes">
+      <span slot="text" id="attributes"></span>
+    </div>
+    <span slot="text" id="code">
+      &lthalves-h3-headline-6column-image-body-text hasBorder="false"&gt<br>
+      &ltspan slot="h3" id="1-h3"&gt*&lt/span&gt<br>
+      &ltspan slot="img" id="img" imgPath='./media/test.png' altImg="This is my test image"&gt*&lt/span&gt<br>
+      &ltspan slot="h3" id="2-h3"&gt*&lt/span&gt<br>
+      &ltdiv id="variable-text-slot"&gt<br>
+      &ltspan slot="text"&gt*&lt/span&gt<br>
+      &ltspan slot="block-quote"&gt*&lt/span&gt<br>
+      &ltspan slot="pull-quote"&gt*&lt/span&gt<br>
+      &lt/div&gt<br>
+      &lt/halves-h3-headline-6column-image-body-text&gt<br>
+    </span>
+  </doc-element>
 
 
-  <h3>THIRDS</h3>
+  <doc-element>
+    <span slot="h3" id="headline">halves-image-left-text-right</span>
+    <span slot="text" id="description"></span>
+    <span slot="text" id="names"></span>
+    <div id="attributes">
+      <span slot="text" id="attributes"></span>
+    </div>
+    <span slot="text" id="code">
+      &lthalves-image-left-text-right&gt<br>
+      &ltspan id="headline" slot="h1"&gt&lt/span&gt<br>
+      &ltspan id="img" slot="img" imgPath="./media/test.png" altImg="/"&gt*caption*&lt/span&gt<br>
+      &ltdiv id="variable-text-slot"&gt<br>
+      &ltspan slot="h3"&gt*&lt/span&gt<br>
+      &ltspan slot="text"&gt*&lt/span&gt<br>
+      &lt/div&gt<br>
+      &lt/halves-image-left-text-right&gt<br>
+    </span>
+  </doc-element>
+
+  <doc-element>
+    <span slot="h3" id="headline">halves-left-text-right-image</span>
+    <span slot="text" id="description"></span>
+    <span slot="text" id="names"></span>
+    <div id="attributes">
+      <span slot="text" id="attributes"></span>
+    </div>
+    <span slot="text" id="code">
+      &lthalves-left-text-right-image&gt<br>
+      &ltspan id="headline" slot="h1"&gt&lt/span&gt<br>
+      &ltspan id="img" slot="img" imgpath="./media/test.png" altimg="/"&gt*caption*&lt/span&gt<br>
+      &ltdiv id="variable-text-slot"&gt<br>
+      &ltspan slot="text"&gt<br>
+      *<br>
+      &lt/span&gt<br>
+      &lt/div&gt<br>
+      &lt/halves-left-text-right-image&gt<br>
+    </span>
+  </doc-element>
+
+
+
+
+
+
+
+  <!-- ************************************************************* -->
+  <h2 style="font-size: 80px; text-align: center;">THIRDS</h2>
   <doc-element>
     <span slot="h3" id="headline">thirds-2-columns-text-images-right</span>
     <span slot="text" id="description"></span>
@@ -172,7 +245,7 @@
     <div id="attributes">
       <span slot="text" id="attributes">1-variable-text-slot / 2-variable-text-slot / imgPath /imgAlt / caption</span>
     </div>
-    <span slot="h3" id="code">
+    <span slot="text" id="code">
       &ltthirds-2-columns-text-images-right&gt
       <br>
       &ltdiv id="1-variable-text-slot"&gt
@@ -208,7 +281,7 @@
     <div id="attributes">
       <span slot="text" id="attributes">title</span>
     </div>
-    <span slot="h3" id="code">
+    <span slot="text" id="code">
       &ltthirds-3-headlines-3-images&gt
       <br>
       &ltspan slot="h4" id="1-title"&gt*&lt/span&gt
@@ -226,6 +299,65 @@
       &lt/thirds-3-headlines-3-images&gt
     </span>
   </doc-element>
+
+
+
+
+  <!-- ************************************************************* -->
+  <h2 style="font-size: 80px; text-align: center;">SPACING</h2>
+  <doc-element>
+    <span slot="h3" id="headline">space-32</span>
+    <span slot="text" id="description"></span>
+    <span slot="text" id="names">Elisa / Marina</span>
+    <div id="attributes">
+    </div>
+    <span slot="text" id="code">
+      &ltspace-32&gt&lt/space-32&gt
+    </span>
+  </doc-element>
+  <doc-element>
+    <span slot="h3" id="headline">space-32</span>
+    <span slot="text" id="description"></span>
+    <span slot="text" id="names">Elisa / Marina</span>
+    <div id="attributes">
+    </div>
+    <span slot="text" id="code">
+      &ltspace-32&gt&lt/space-32&gt
+    </span>
+  </doc-element>
+  <doc-element>
+    <span slot="h3" id="headline">space-64</span>
+    <span slot="text" id="description"></span>
+    <span slot="text" id="names">Elisa / Marina</span>
+    <div id="attributes">
+    </div>
+    <span slot="text" id="code">
+      &ltspace-64&gt&lt/space-64&gt
+    </span>
+  </doc-element>
+  <doc-element>
+    <span slot="h3" id="headline">space-120</span>
+    <span slot="text" id="description"></span>
+    <span slot="text" id="names">Elisa / Marina</span>
+    <div id="attributes">
+    </div>
+    <span slot="text" id="code">
+      &ltspace-120&gt&lt/space-120&gt
+    </span>
+  </doc-element>
+  <doc-element>
+    <span slot="h3" id="headline">space-360</span>
+    <span slot="text" id="description"></span>
+    <span slot="text" id="names">Elisa / Marina</span>
+    <div id="attributes">
+    </div>
+    <span slot="text" id="code">
+      &ltspace-360&gt&lt/space-360&gt
+    </span>
+  </doc-element>
+
+
+
 
 
   <!--***********************************************************************************************-->
