@@ -194,17 +194,29 @@ function createComponentFromSlot(base, id) {
 
 //**isotope
 
-var elem = document.querySelector('.grid');
-var iso = new Isotope( elem, {
-  // options
-  itemSelector: '.grid-item',
-  layoutMode: 'cellsByRow'
-});
-
-// element argument can be a selector string
-//   for an individual element
+//init Iso
 var iso = new Isotope( '.grid', {
-  // options
+  itemSelector: '.grid-item',
+  layoutMode: 'fitRows'
 });
 
+//location
+var filterFns = {
+  //show if in monument is in Country
+  continent: function( itemElem ) {
+    var continent = 
+    itemElem.querySelector('.continent').textContent;
+    return continent.match();
+  }
+}
+
+//status
+
+//date
+
+// interaciton on tiles
+
+// hover to show title of article
+
+//click to open link to individual page
 ////////////////////////////////////////////////////////////////////////////////////////////////////////

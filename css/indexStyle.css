@@ -44,8 +44,35 @@ body {
 
 .grid-item {
   float: left;
-  height: 100px;
+  height: 200px;
   background: #0D8;
   border: 2px solid #333;
   border-color: hsla(0, 0%, 0%, 0.7);
 }
+
+#isotope {
+  position: relative;
+}
+
+.grid-item .name {
+  position: relative;
+  left: 10px;
+  top: 0px;
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+}
+
+.grid-item .country {
+  
+}
+
+.grid-item .year {
+  
+}
+
+.grid-item.in-place{ 
+  background: #F00; background: hsl(0, 100%, 50%); 
+}
+
+.grid-item.removed { background: #0FF; background: hsl( 180, 100%, 50%); }
