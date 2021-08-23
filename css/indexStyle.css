@@ -38,6 +38,11 @@ body {
 
 }
 
+/*Isotope styling*/
+
+.button.is-checked {
+  background: rgb(226, 250, 97);
+}
 
 .grid-item,
 .grid-sizer {

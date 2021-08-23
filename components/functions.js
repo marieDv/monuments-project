@@ -197,7 +197,10 @@ function createComponentFromSlot(base, id) {
 //init Iso
 var iso = new Isotope( '.grid', {
   itemSelector: '.grid-item',
-  layoutMode: 'fitRows'
+  layoutMode: 'fitRows',
+  getSortData: {
+    year: '.year parseInt',
+  }
 });
 
 //location
@@ -212,7 +215,11 @@ var filterFns = {
 
 //status
 
+
+// bind filter button click
+
 //date
+
 
 // interaciton on tiles
 
