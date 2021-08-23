@@ -9,15 +9,36 @@ var iso = new Isotope( '.grid', {
   }
 });
 
+
+
+
 //location
-var filterFns = {
-  //show if in monument is in Country
-  continent: function( itemElem ) {
-    var continent = 
-    itemElem.querySelector('.continent').textContent;
-    return continent.match();
+var filterFns = {};
+
+// INITIATE BUTTON GROUP CONTINENT
+var filtersElem = document.querySelector('.button-group-continent'); //GET ELEMENTS FROM HTML
+filtersElem.addEventListener( 'click', function( event ) { 
+  if ( !matchesSelector( event.target, 'button' ) ) {
+    return;
   }
-}
+  var filterValue = event.target.getAttribute('data-filter');
+  filterValue = filterFns[ filterValue ] || filterValue;
+  iso.arrange({ filter: filterValue });
+});
+
+// INITIATE BUTTON GROUP STATUS
+var filtersElem = document.querySelector('.button-group-status');
+filtersElem.addEventListener( 'click', function( event ) {
+  if ( !matchesSelector( event.target, 'button' ) ) {
+    return;
+  }
+  var filterValue = event.target.getAttribute('data-filter');
+  filterValue = filterFns[ filterValue ] || filterValue;
+  iso.arrange({ filter: filterValue });
+});
+
+
+
 
 //status
 
