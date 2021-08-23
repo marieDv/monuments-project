@@ -16,13 +16,17 @@ chapterTemplate.innerHTML = allStyles + `
   background-color: #5C23FF;
   color: #fff;
   border-radius: 20px;
-  margin: 0 0 24px 0;
+  margin: 0 0 24px 0;  
+}
+.chapter-opened {
+  background: linear-gradient(180deg, rgba(92,35,240,1) 0%, rgba(92,35,240,0) 32%) !important;
 }
 .closed {
   height: 72px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  cursor: pointer;
 }
 .project-preview {
   background: #E2FA61;
@@ -33,6 +37,9 @@ chapterTemplate.innerHTML = allStyles + `
   border-radius: 20px;
   margin-bottom: 8px;
   
+}
+#text, h3, h4 {
+  color: #000000;
 }
 .project-preview-text {
   display: inline-block;
@@ -53,16 +60,20 @@ chapterTemplate.innerHTML = allStyles + `
   width: 200px;
   height: auto;
 }
-#open {
+#plus {
   font-size: 56px;
   position: absolute;
-  top: 0;
+  top: 20px;
   line-height: 0.8;
   right: 10px;
   cursor: pointer;
-  width; 46px;
-  height 46px;
-  z-index: 999;
+  width: 32px;
+  height: 32px;
+  background-image: url('../../../media/plus.svg');
+  background-size: cover;
+}
+.to-minus {
+  background-image: url('../../../media/minus.svg') !important;
 }
 .content {
   display: inline;
@@ -79,7 +90,7 @@ display: none;
 </style>
 
 <div id="chapter" class="container-fluid closed">
-<span id="open">+</span>
+<span id="plus"></span>
         <div id="close" class="content content-retracted col-12">
           <p id="headline"></p>
 
@@ -126,9 +137,14 @@ class chapterCard extends HTMLElement {
       if (!click) {
         this.shadowRoot.getElementById("expand").style.display = "block";
         this.shadowRoot.getElementById("chapter").classList.remove("closed");
+        this.shadowRoot.getElementById("chapter").classList.add("chapter-opened");
+        this.shadowRoot.getElementById("plus").classList.add("to-minus");
       } else {
         this.shadowRoot.getElementById("expand").style.display = "none";
         this.shadowRoot.getElementById("chapter").classList.add("closed");
+        this.shadowRoot.getElementById("chapter").classList.remove("chapter-opened");
+        this.shadowRoot.getElementById("plus").classList.remove("to-minus");
+        // this.shadowRoot.getElementById("chapter").classList.remove("chapter-opened");
       }
       click = !click;
     });
