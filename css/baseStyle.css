@@ -68,9 +68,17 @@ p {
   line-height: 14px;
 }
 
+
 #render-timeline-here {
   border: 1px solid black;
   height: 600px;
+}
+
+#intro-logo {
+  width: 79%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 30px;
 }
 
 .header-bg {

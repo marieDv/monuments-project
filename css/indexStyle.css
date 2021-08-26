@@ -1,5 +1,5 @@
 body {
-  margin-top: 72px;
+  margin-top: 100px;
 }
 
 #yellow-gradient {
@@ -8,16 +8,40 @@ body {
   z-index: -10;
   width: 100%;
   background: rgb(226, 250, 97);
-  background: linear-gradient(180deg, rgba(226, 250, 97, 1) 0%, rgba(226, 250, 97, 0) 100%);
+  background: linear-gradient(180deg, rgba(226, 250, 97, 0.4) 0%, rgba(226, 250, 97, 0) 60%);
 }
 
-#text-priority {
+/* #text-priority {
   font-size: 32px;
   font-family: "Redaction", serif;
   line-height: 38px;
   padding: 0 40px;
   text-align: center;
   margin: 100px;
+} */
+#text-priority {
+  color: #5c23ff;
+  font-family: "Redaction", serif;
+  font-style: italic;
+  font-size: 42px;
+  border: 1px solid #5c23ff;
+  padding: 56px 10px 10px 10px;
+  display: block;
+  text-align: center;
+  text-align: center;
+  max-width: 80%;
+  width: 84%;
+  margin: 0 auto;
+  border-radius: 48px;
+  margin-top: -63px;
+  line-height: 1;
+}
+#text-prio-two {
+  font-size: 24px;
+  line-height: 1;
+  width: 75%;
+  margin: 0 auto;
+  font-family: "Arial", sans-serif;
 }
 
 .headline-h1 {
@@ -29,13 +53,11 @@ body {
 }
 
 #section-chapters {
-  
-  background: #EEEEEE;
+  background: #eeeeee;
   width: 100%;
   height: auto;
   position: relative;
   padding: 2px 40px;
-
 }
 
 /*Isotope styling*/
@@ -52,7 +74,7 @@ body {
 .grid-item {
   float: left;
   height: 200px;
-  background: #0D8;
+  background: #0d8;
   border: 2px solid #333;
   border-color: hsla(0, 0%, 0%, 0.7);
 }
@@ -71,15 +93,17 @@ body {
 }
 
 .grid-item .country {
-  
 }
 
 .grid-item .year {
-  
 }
 
-.grid-item.in-place{ 
-  background: #F00; background: hsl(0, 100%, 50%); 
+.grid-item.in-place {
+  background: #f00;
+  background: hsl(0, 100%, 50%);
 }
 
-.grid-item.removed { background: #0FF; background: hsl( 180, 100%, 50%); }
+.grid-item.removed {
+  background: #0ff;
+  background: hsl(180, 100%, 50%);
+}
