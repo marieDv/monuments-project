@@ -36,6 +36,8 @@ body {
   margin-top: -63px;
   line-height: 1;
 }
+button:focus {outline:0;}
+
 #text-prio-two {
   font-size: 24px;
   line-height: 1;
@@ -44,7 +46,24 @@ body {
   font-family: "Arial", sans-serif;
   padding-bottom: 32px;
 }
-
+#archive {
+  background-color: #28252F;
+  color: #ffffff;
+  padding: 2px 40px;
+  min-height: 1200px;
+}
+#archive .button {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 2px 12px;
+  border-radius: 17px;
+}
+#archive .button.is-checked {
+  background-color: rgb(226, 250, 97);
+  color: #000000;
+  border: none;
+}
 .headline-h1 {
   margin-bottom: 46px;
   padding: 80px 40px 40px;
@@ -67,18 +86,28 @@ body {
   background: rgb(226, 250, 97);
 }
 
+.grid {
+  margin-top: 90px;
+}
+
 .grid-item,
 .grid-sizer {
-  width: 20%;
+  width: 19.5%;
 }
 
 .grid-item {
   float: left;
-  height: 200px;
-  background: #0d8;
-  border: 2px solid #333;
-  border-color: hsla(0, 0%, 0%, 0.7);
+  height: 260px;
+  border: 2px solid #E2FA61;
+  margin-bottom: 10px;
+  /* border-color: hsla(0, 0%, 0%, 0.7); */
+  display: flex;
 }
+.grid-item p {
+  align-self: flex-end;
+  padding-left: 14px;
+}
+
 
 #isotope {
   position: relative;
@@ -100,11 +129,9 @@ body {
 }
 
 .grid-item.in-place {
-  background: #f00;
-  background: hsl(0, 100%, 50%);
+  
 }
 
 .grid-item.removed {
-  background: #0ff;
-  background: hsl(180, 100%, 50%);
+
 }
