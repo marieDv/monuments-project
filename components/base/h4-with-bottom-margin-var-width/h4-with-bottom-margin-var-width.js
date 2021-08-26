@@ -13,7 +13,6 @@ h4WithBottomMarginVarWidth.innerHTML = allStyles + `
     width: 100%;
 }
 #h4-with-bottom-margin-var-width {
-    color: black;
     margin-bottom: 16px;
     font-size: 24px;
     text-transform: uppercase;

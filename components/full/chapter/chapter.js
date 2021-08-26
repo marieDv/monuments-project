@@ -22,7 +22,7 @@ chapterTemplate.innerHTML = allStyles + `
   background: linear-gradient(180deg, rgba(92,35,240,1) 0%, rgba(92,35,240,0) 32%) !important;
 }
 .closed {
-  height: 72px;
+  height: 120px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -38,8 +38,13 @@ chapterTemplate.innerHTML = allStyles + `
   margin-bottom: 8px;
   
 }
+
 #text, h3, h4 {
   color: #000000;
+}
+
+#h4-with-bottom-margin-var-width {
+  color: #ffffff !important;
 }
 .project-preview-text {
   display: inline-block;
@@ -65,7 +70,7 @@ chapterTemplate.innerHTML = allStyles + `
   position: absolute;
   top: 20px;
   line-height: 0.8;
-  right: 10px;
+  right: 25px;
   cursor: pointer;
   width: 32px;
   height: 32px;
@@ -86,6 +91,11 @@ display: none;
 }
 #headline {
   margin-top: -18px;
+  color: #ffffff;
+}
+#subheadline {
+  color: #ffffff;
+  font-style: italic;
 }
 </style>
 
@@ -93,7 +103,7 @@ display: none;
 <span id="plus"></span>
         <div id="close" class="content content-retracted col-12">
           <p id="headline"></p>
-
+          <p id="subheadline"></p>
         </div>
 
         <div id="expand" class="content content-expanded col-12 container container-fluid">
@@ -131,6 +141,7 @@ class chapterCard extends HTMLElement {
     super();
     setupComponent(this, chapterTemplate);
     createComponentFromSlot(this, 'headline');
+    createComponentFromSlot(this, 'subheadline');
     createComponentFromSlot(this, 'text');
     createVariableComponents(this, 'projects');
     this.shadowRoot.getElementById("chapter").addEventListener('click', () => {
