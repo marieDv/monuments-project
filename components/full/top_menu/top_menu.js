@@ -13,6 +13,9 @@ topMenu.innerHTML = allStyles + `
   width: 100%;
   height: 72px;
   background: #E2FA61;
+
+  padding-top: 14px;
+    height: 100px;
   -webkit-box-shadow: 0px 10px 24px -9px rgba(0,0,0,0.73); 
 box-shadow: 0px 10px 24px -9px rgba(0,0,0,0.73);
 }
@@ -44,7 +47,7 @@ a:hover {
       <div id="logo" class= "col-4">The After Monument</div>
       <div class= "col-4"></div>
       <a class= "col-2" id="itemOne" href=""></a>
-      <a class= "col-2" id="itemTwo" href=""></a>    
+      <a class= "col-2" id="itemTwo" href="../../../about/about.html"></a>    
       
     </div>
   </div>
@@ -61,10 +64,10 @@ class TopMenu extends HTMLElement {
     this.shadowRoot.querySelector('#itemThree').innerText = this.getAttribute("itemThreeName");
     this.shadowRoot.querySelector('#itemFour').innerText = this.getAttribute("itemFourName");
 
-    this.shadowRoot.querySelector('#itemOne').href = this.getAttribute("linkOne");
-    this.shadowRoot.querySelector('#itemTwo').href = this.getAttribute("linkTwo");
-    this.shadowRoot.querySelector('#itemThree').href = this.getAttribute("linkThree");
-    this.shadowRoot.querySelector('#itemFour').href = this.getAttribute("linkFour");
+    // this.shadowRoot.querySelector('#itemOne').href = this.getAttribute("linkOne");
+    // this.shadowRoot.querySelector('#itemTwo').href = this.getAttribute("linkTwo");
+    // this.shadowRoot.querySelector('#itemThree').href = this.getAttribute("linkThree");
+    // this.shadowRoot.querySelector('#itemFour').href = this.getAttribute("linkFour");
 
     
   }
