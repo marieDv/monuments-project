@@ -16,8 +16,8 @@ topMenu.innerHTML = allStyles + `
 
   padding-top: 14px;
     height: 100px;
-  -webkit-box-shadow: 0px 10px 24px -9px rgba(0,0,0,0.73); 
-box-shadow: 0px 10px 24px -9px rgba(0,0,0,0.73);
+  -webkit-box-shadow: 0px 10px 24px -9px rgba(0,0,0,0.10); 
+box-shadow: 0px 10px 24px -9px rgba(0,0,0,0.10);
 }
 
 a {
