@@ -5,7 +5,7 @@ var iso = new Isotope( '.grid', {
   itemSelector: '.grid-item',
   layoutMode: 'fitRows',
   getSortData: {
-    year: '.year parseInt',
+    year: '.date parseInt',
   }
 });
 
@@ -37,11 +37,17 @@ filtersElem.addEventListener( 'click', function( event ) {
   iso.arrange({ filter: filterValue });
 });
 
-
-
-
 //status
-
+var sortByGroup = document.querySelector('.button-group-date');
+sortByGroup.addEventListener('click', function ( event ) {
+  if ( !matchesSelector( event.target, 'button') ) {
+    return;
+  }
+var sortValue = event.target.getAttribute('.date');
+console.log('sorting')
+});
+//ascending is default (oldest first)
+//descending is change (newest first)
 
 // bind filter button click
 

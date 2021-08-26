@@ -262,32 +262,35 @@
       <!-- buttons for filtering on status-->
       <h4>Status</h4>
       <div id="status" class="filters button-group-status">
-        <button class="button is-checked" data-category="*">Show All</button>
+        <button class="button is-checked" data-filter="*">Show All</button>
         <button class="button" data-filter=".in-place">In Place</button>
         <button class="button" data-filter=".removed">Removed</button>
       </div>
       <!-- buttons for sorting by date-->
       <!-- buttons for sorting by date-->
       <h4>Date</h4>
-      <div class="sorts" class="button-group">
-        <button class="button is-checked" data-sort-by=".date-oldest-first">Oldest First</button>
-        <button class="button" data-sort-by=".date-newest-first">Newest First</button>
+      <div class="sorts" class="button-group-date">
+        <button class="button is-checked" data-sort-value="date" data-sort-direction="desc">Oldest First</button>
+        <button class="button" data-sort-value="date" data-sort-direction="asc">Newest First</button>
       </div>
 
       <div class="grid">
-        <div class="grid-item in-place europe" data-category="in-place">
+        <div class="grid-item in-place europe" date="1900">
           <p>This is a project in Europe</p>
+          <p>1900</p>
         </div>
-        <a href="./single/marie/index.html" target="_blank" class="grid-item in-place europe" data-category="in-place">
+        <a href="./single/marie/index.html" target="_blank" class="grid-item in-place europe" date="1905">
           <p>This is my link :)</p>
+          <p>Austria</p>
+          <p>1905</p>
         </a>
-        <div class="grid-item removed europe" data-category="in-place">
+        <div class="grid-item removed europe">
+          <p>This is a project is removed</p>
+        </div>
+        <div class="grid-item removed europe">
           <p>This is a project in Europe</p>
         </div>
-        <div class="grid-item removed europe" data-category="in-place">
-          <p>This is a project in Europe</p>
-        </div>
-        <div class="grid-item in-place europe" data-category="in-place">
+        <div class="grid-item in-place europe">
           <p>This is a project in Europe</p>
         </div>
         <div class="grid-item removed africa" data-category="in-place">first item</div>
