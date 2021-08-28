@@ -39,17 +39,28 @@ body {
 button:focus {
   outline: 0;
 }
-
-#text-prio-two {
+.grid-img {
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.text-prio-two {
   font-size: 24px;
   line-height: 1;
-  width: 75%;
-  margin: 0 auto;
+  /* width: 75%; */
+  /* margin: 0 auto; */
   font-family: "Arial", sans-serif;
   padding-bottom: 32px;
 }
+.landing-h2 {
+  font-size: 56px;
+  padding: 56px 0 24px;
+  display: block;
+}
 #archive {
-  background-color: #28252f;
+  background-color: #131214;
   color: #ffffff;
   padding: 2px 40px;
   min-height: 1200px;
@@ -57,9 +68,10 @@ button:focus {
 #archive .button {
   background-color: transparent;
   color: #ffffff;
-  border: 1px solid #ffffff;
+  border: 1px solid #ffffff63;
   padding: 2px 12px;
-  border-radius: 17px;
+  border-radius: 5px;
+  margin-right: 2px;
 }
 
 #archive .filters {
@@ -85,7 +97,8 @@ button:focus {
 }
 
 #section-chapters {
-  background: #eeeeee;
+  /* background: #eeeeee; */
+  border-top: solid #0000000e 1px;
   width: 100%;
   height: auto;
   position: relative;
@@ -114,10 +127,15 @@ button:focus {
   margin-bottom: 10px;
   /* border-color: hsla(0, 0%, 0%, 0.7); */
   display: flex;
+  flex-wrap: wrap;
 }
 .grid-item p {
   align-self: flex-end;
   padding-left: 14px;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 0;
+  line-height: 1.3;
 }
 
 #isotope {

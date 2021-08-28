@@ -16,7 +16,8 @@ chapterTemplate.innerHTML = allStyles + `
   background-color: #5C23FF;
   color: #fff;
   border-radius: 20px;
-  margin: 0 0 24px 0;  
+  width: 84%;
+  margin: 0 auto 24px auto;
 }
 .chapter-opened {
   background: linear-gradient(180deg, rgba(92,35,240,1) 0%, rgba(92,35,240,0) 32%) !important;

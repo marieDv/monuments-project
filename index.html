@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <div id="yellow-gradient"></div>
+  <!-- <div id="yellow-gradient"></div> -->
   <!-- <h1 class="headline-h1">The After<br>Monument</h1> -->
   <img id="intro-logo" src="./media/The_AFTER_Monument_Logo_FINAL.gif">
 
@@ -25,8 +25,7 @@
   <p id="text-priority">Debated or ignored. Protested or symbols of protest. Demolished or revered. Recognized as
     monuments or not.</p>
   <br><br>
-  <p id="text-prio-two">
-
+  <p class="text-prio-two pl-5 pr-5">
     This an archive of 16 controversial, localized monuments, each one a case study in the global practice of
     memorializing and constructing static history in an ever-evolving present.
   </p>
@@ -34,15 +33,12 @@
   <space-32></space-32>
   <section id="section-chapters">
 
-    <h2-section-title>
-      <span slot="title">Themes</span>
-    </h2-section-title>
 
-    <body-text colWidth="col-12">
-      <span slot="text">Through our research, themes arose that connect our monuments beyond their local contexts.
-
-        We explore these topics below in writing and audio.</span>
-    </body-text>
+    <h2 class="landing-h2">Themes</h2>
+    <p class="text-prio-two">
+      Through our research, themes arose that connect our monuments beyond their local contexts. We explore these topics
+      below in writing and audio.
+    </p>
 
     <space-32></space-32>
 
@@ -254,12 +250,13 @@
   <!-- END MARIES CODE -->
   <!-- ELISA YOUR CODE FOR THE ARCHIVE GOES HERE -->
   <section id="archive">
-    <h3-with-bottom-margin class="d-block mb-5 mt-2">
-      <span slot="title">The Archive</span>
-    </h3-with-bottom-margin>
-    <!-- <h2-section-title>
-      <span slot="title">The Archive</span>
-    </h2-section-title> -->
+
+
+    <h2 class="landing-h2">The After Monument archive</h2>
+    <p class="text-prio-two">
+      Explore and compare all 16 monuments
+    </p>
+
     <div id="isotope">
 
       <!-- buttons for filtering location-->
@@ -281,7 +278,6 @@
         <button class="button" data-filter=".removed">Removed</button>
       </div>
       <!-- buttons for sorting by date-->
-      <!-- buttons for sorting by date-->
       <h4>Date</h4>
       <div class="sorts" class="button-group-date">
         <button class="button is-checked" data-sort-value="date" data-sort-direction="desc">Oldest First</button>
@@ -290,8 +286,12 @@
 
       <div class="grid">
         <div class="grid-item in-place europe" date="1900">
-          <p>This is a project in Europe</p>
-          <p>1900</p>
+          <!-- <img src="single/marie/media/intro-img.png"> -->
+          <div class="grid-img" style="background-image: url('single/marie/media/intro-img.png')"></div>
+          <div>
+            <p>This is a project in Europe</p>
+            <p>1900</p>
+          </div>
         </div>
         <a href="./single/marie/index.html" target="_blank" class="grid-item in-place europe" date="1905">
           <p>This is my link :)</p>
