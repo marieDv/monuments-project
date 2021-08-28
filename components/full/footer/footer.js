@@ -224,7 +224,7 @@ function createTemplate(link) {
   template.innerHTML = styleFooter + bootstrapLink + `
   <style>
       #footer {
-        background-color: #E2FA61;
+       /** background-color: #E2FA61; **/
         font-family: "NotCourierSans", sans-serif;
         bottom: 0;
         padding: 36px 18px 18px;
