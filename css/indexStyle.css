@@ -20,21 +20,31 @@ body {
   margin: 100px;
 } */
 #text-priority {
-  color: #5c23ff;
+  /* color: #5c23ff; */
   font-family: "Redaction", serif;
-  font-style: italic;
+  /* font-style: italic; */
   font-size: 42px;
-  border: 1px solid #5c23ff;
+  /* border: 1px solid #5c23ff; */
   padding: 56px 10px 10px 10px;
   display: block;
-  text-align: center;
-  text-align: center;
+  text-align: right;
   max-width: 80%;
   width: 84%;
   margin: 0 auto;
   border-radius: 48px;
-  margin-top: -63px;
+  margin-top: -50px;
   line-height: 1;
+
+}
+@media only screen and (min-width: 2000px) {
+  #text-priority {
+  font-size: 70px;
+  }
+}
+
+.hr-strong {
+  background: #e4e4e4;
+  height: 1px;
 }
 button:focus {
   outline: 0;
@@ -58,6 +68,7 @@ button:focus {
   font-size: 56px;
   padding: 56px 0 24px;
   display: block;
+  font-family: "Redaction", serif;
 }
 #archive {
   background-color: #131214;
@@ -102,7 +113,10 @@ button:focus {
   width: 100%;
   height: auto;
   position: relative;
-  padding: 2px 40px 80px 40px;
+  /* padding: 2px 40px 80px 40px; */
+}
+#section-chapters .landing-h2, .text-prio-two {
+  padding: 2px 40px 0 40px;
 }
 
 /*Isotope styling*/
@@ -133,7 +147,7 @@ button:focus {
   align-self: flex-end;
   padding-left: 14px;
   font-size: 14px;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   margin-bottom: 0;
   line-height: 1.3;
 }

@@ -12,18 +12,17 @@ topMenu.innerHTML = allStyles + `
   left: 0;
   width: 100%;
   height: 72px;
-  background: #E2FA61;
-
+  background: white;
+border-bottom: 8px solid #E2FA61;
+z-index: 9999;
   padding-top: 14px;
-    height: 100px;
-  -webkit-box-shadow: 0px 10px 24px -9px rgba(0,0,0,0.10); 
-box-shadow: 0px 10px 24px -9px rgba(0,0,0,0.10);
+  /*-webkit-box-shadow: 0px 10px 24px -9px rgba(0,0,0,0.10); 
+box-shadow: 0px 10px 24px -9px rgba(0,0,0,0.10);*/
 }
 
 a {
   font-size: 14pt;
   cursor: pointer;
-  margin-top: 22px;
   color: #000000;
   font-family: "NotCourierSans", serif;
   text-transform: uppercase;
@@ -37,17 +36,21 @@ a:hover {
   font-family: "Redaction", serif;
   text-transform: uppercase;
   font-size: 24px;
-  margin-top: 20px;
+
+}
+
+#itemTwo {
+  text-align: right;
+  display: inline;
 }
 
   
 </style>
   <div id="top-menu-container" class= "container-fluid">
     <div class="row">
-      <div id="logo" class= "col-4">The After Monument</div>
+      <div id="logo" class= "col-6">The After Monument</div>
       <div class= "col-4"></div>
-      <a class= "col-2" id="itemOne" href=""></a>
-      <a class= "col-2" id="itemTwo" href="../../../about/about.html"></a>    
+      <a class= "col-2" id="itemTwo" href="../../../about/about.html">About</a>    
       
     </div>
   </div>
@@ -59,10 +62,10 @@ class TopMenu extends HTMLElement {
     super();
     setupComponent(this,topMenu);
 
-    this.shadowRoot.querySelector('#itemOne').innerText = this.getAttribute("itemOneName");
-    this.shadowRoot.querySelector('#itemTwo').innerText = this.getAttribute("itemTwoName");
-    this.shadowRoot.querySelector('#itemThree').innerText = this.getAttribute("itemThreeName");
-    this.shadowRoot.querySelector('#itemFour').innerText = this.getAttribute("itemFourName");
+    // this.shadowRoot.querySelector('#itemOne').innerText = this.getAttribute("itemOneName");
+    // this.shadowRoot.querySelector('#itemTwo').innerText = this.getAttribute("itemTwoName");
+    // this.shadowRoot.querySelector('#itemThree').innerText = this.getAttribute("itemThreeName");
+    // this.shadowRoot.querySelector('#itemFour').innerText = this.getAttribute("itemFourName");
 
     // this.shadowRoot.querySelector('#itemOne').href = this.getAttribute("linkOne");
     // this.shadowRoot.querySelector('#itemTwo').href = this.getAttribute("linkTwo");

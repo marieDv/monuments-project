@@ -76,7 +76,7 @@ p {
 }
 
 #intro-logo {
-  width: 79%;
+  width: calc(100% - 40px);
   display: block;
   margin: 0 auto;
   padding-top: 30px;
