@@ -1,0 +1,6 @@
+Monument title (official):
+Date built:
+Removed: yes or no
+Country:
+Continent:
+Image:
