@@ -1,6 +1,6 @@
-Monument title (official):
-Date built:
-Removed: yes or no
-Country:
-Continent:
+Monument title (official): A Painful Connection
+Date built: 1908
+Removed: no
+Country: Namibia
+Continent: Africa
 Image:
