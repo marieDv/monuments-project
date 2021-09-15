@@ -1,6 +1,6 @@
-Monument title (official):
-Date built:
-Removed: yes or no
-Country:
-Continent:
-Image:
+Monument title (official): Gathering the Stories at El Valle de los Caídos
+Date built: September 15, 2021
+Removed: No
+Country: Spain
+Continent: Europe
+Image: thumbnail.png
