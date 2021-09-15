@@ -12,7 +12,7 @@ topMenu.innerHTML = allStyles + `
   left: 0;
   width: 100%;
   height: 72px;
-  background: white;
+  background: #ffffff;
 border-bottom: 8px solid #E2FA61;
 z-index: 9999;
   padding-top: 14px;
@@ -36,7 +36,10 @@ a:hover {
   font-family: "Redaction", serif;
   text-transform: uppercase;
   font-size: 24px;
-
+  width: 20px;
+}
+#logo img {
+  width: 18%;
 }
 
 #itemTwo {
@@ -48,7 +51,9 @@ a:hover {
 </style>
   <div id="top-menu-container" class= "container-fluid">
     <div class="row">
-      <div id="logo" class= "col-6">The After Monument</div>
+
+      <div id="logo" class= "col-6">    <a class="" href="https://www.theaftermonument.com/"><img src="../../../media/The_AFTER_Monument_Logo_FINAL.gif"></a></div>
+
       <div class= "col-4"></div>
       <a class= "col-2" id="itemTwo" href="../../../about/about.html">About</a>    
       
@@ -60,7 +65,7 @@ a:hover {
 class TopMenu extends HTMLElement {
   constructor() {
     super();
-    setupComponent(this,topMenu);
+    setupComponent(this, topMenu);
 
     // this.shadowRoot.querySelector('#itemOne').innerText = this.getAttribute("itemOneName");
     // this.shadowRoot.querySelector('#itemTwo').innerText = this.getAttribute("itemTwoName");
@@ -72,7 +77,7 @@ class TopMenu extends HTMLElement {
     // this.shadowRoot.querySelector('#itemThree').href = this.getAttribute("linkThree");
     // this.shadowRoot.querySelector('#itemFour').href = this.getAttribute("linkFour");
 
-    
+
   }
 }
 window.customElements.define('top-menu', TopMenu);

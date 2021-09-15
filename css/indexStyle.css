@@ -10,7 +10,10 @@ body {
   background: rgb(226, 250, 97);
   background: linear-gradient(180deg, rgba(226, 250, 97, 0.4) 0%, rgba(226, 250, 97, 0) 60%);
 }
-
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+}
 /* #text-priority {
   font-size: 32px;
   font-family: "Redaction", serif;
@@ -34,14 +37,19 @@ body {
   border-radius: 48px;
   margin-top: -50px;
   line-height: 1;
-
+  font-size: 44px;
+  padding-right: 0;
 }
 @media only screen and (min-width: 2000px) {
   #text-priority {
-  font-size: 70px;
+    font-size: 70px;
   }
 }
-
+@media only screen and (max-width: 780) {
+  #text-priority {
+    font-size: 25px;
+  }
+}
 .hr-strong {
   background: #e4e4e4;
   height: 1px;
@@ -115,7 +123,8 @@ button:focus {
   position: relative;
   /* padding: 2px 40px 80px 40px; */
 }
-#section-chapters .landing-h2, .text-prio-two {
+#section-chapters .landing-h2,
+.text-prio-two {
   padding: 2px 40px 0 40px;
 }
 

@@ -3,7 +3,7 @@ HeaderTemplate.innerHTML = allStyles + `
 <style>
 
 .container-header {
-  
+  margin-top: 72px;
   width: 100%;
   margin-bottom: 160px;
   padding: 0;

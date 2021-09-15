@@ -24,11 +24,16 @@
 
   <p id="text-priority">Debated or ignored. Protested or symbols of protest. Demolished or revered. Recognized as
     monuments or not.</p>
-    <hr class="hr-strong">
+  <hr class="hr-strong">
   <br><br>
-  <p class="text-prio-two pl-5 pr-5 col-9">
-    This an archive of 16 controversial, localized monuments, each one a case study in the global practice of
-    memorializing and constructing static history in an ever-evolving present.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc gravida, sapien eu mollis mollis, lacus risus tempor velit, eget efficitur magna leo ut turpis. Pellentesque eleifend, tortor ac dictum dignissim, odio tellus accumsan lorem, id feugiat eros turpis id dolor. Etiam euismod elit turpis, quis pretium mauris porta eu. Curabitur consectetur consectetur justo non mattis. Praesent id sapien semper, auctor turpis pretium, gravida lacus. Etiam id neque id libero dictum congue id id felis. Donec volutpat dui ac enim maximus.
+  <p class="text-prio-two pl-5 pr-5 col-12 col-md-9">
+    The After Monument shares local stories of 17 controversial monuments in-depth, while connecting them to the
+    continuing global debates around memorialization, decolonization and public art. <br>
+
+
+    The archive can be accessed through the <strong>Themes</strong>, which highlights some of the key controversies with
+    the monuments as case studies and points of discussion. The <strong>Archive</strong> presents all the monuments
+    side-by-side. Through either section, you can access the individual stories of these fascinating monuments.
   </p>
   <hr class="hr-strong">
   <space-32></space-32>
@@ -36,10 +41,10 @@
 
 
     <h2 class="landing-h2">Themes</h2>
-    <p class="text-prio-two">
+    <!-- <p class="text-prio-two">
       Through our research, themes arose that connect our monuments beyond their local contexts. We explore these topics
       below in writing and audio.
-    </p>
+    </p> -->
 
     <space-32></space-32>
 
@@ -253,38 +258,42 @@
   <section id="archive">
 
 
-    <h2 class="landing-h2">The After Monument archive</h2>
-    <p class="text-prio-two">
+    <h2 class="landing-h2">The Archive</h2>
+    <!-- <p class="text-prio-two">
       Explore and compare all 16 monuments
-    </p>
+    </p> -->
 
     <div id="isotope">
 
-      <!-- buttons for filtering location-->
-      <!-- buttons for filtering location-->
-      <h4>Location</h4>
-      <div class="filters button-group-continent">
-        <button class="button is-checked" data-filter="*">Show All</button>
-        <button class="button" data-filter=".europe">Europe</button>
-        <button class="button" data-filter=".americas">Americas</button>
-        <button class="button" data-filter=".africa">Africa</button>
-        <button class="button" data-filter=".elsewhere">Elsewhere</button>
+      <div class="button-group">
+        <div>
+          <h4>Location</h4>
+          <div class="filters button-group-continent">
+            <button class="button is-checked" data-filter="*">Show All</button>
+            <button class="button" data-filter=".europe">Europe</button>
+            <button class="button" data-filter=".americas">Americas</button>
+            <button class="button" data-filter=".africa">Africa</button>
+            <button class="button" data-filter=".elsewhere">Elsewhere</button>
+          </div>
+        </div>
+        <!-- buttons for filtering on status-->
+        <div class="ml-md-5">
+          <h4>Status</h4>
+          <div id="status" class="filters button-group-status">
+            <button class="button is-checked" data-filter="*">Show All</button>
+            <button class="button" data-filter=".in-place">In Place</button>
+            <button class="button" data-filter=".removed">Removed</button>
+          </div>
+        </div>
+        <!-- buttons for sorting by date-->
+        <div class="ml-md-5">
+          <h4>Date</h4>
+          <div class="sorts" class="button-group-date">
+            <button class="button is-checked" data-sort-value="date" data-sort-direction="desc">Oldest First</button>
+            <button class="button" data-sort-value="date" data-sort-direction="asc">Newest First</button>
+          </div>
+        </div>
       </div>
-
-      <!-- buttons for filtering on status-->
-      <h4>Status</h4>
-      <div id="status" class="filters button-group-status">
-        <button class="button is-checked" data-filter="*">Show All</button>
-        <button class="button" data-filter=".in-place">In Place</button>
-        <button class="button" data-filter=".removed">Removed</button>
-      </div>
-      <!-- buttons for sorting by date-->
-      <h4>Date</h4>
-      <div class="sorts" class="button-group-date">
-        <button class="button is-checked" data-sort-value="date" data-sort-direction="desc">Oldest First</button>
-        <button class="button" data-sort-value="date" data-sort-direction="asc">Newest First</button>
-      </div>
-
       <div class="grid">
         <div class="grid-item in-place europe" date="1900">
           <!-- <img src="single/marie/media/intro-img.png"> -->

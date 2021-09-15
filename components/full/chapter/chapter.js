@@ -21,8 +21,11 @@ chapterTemplate.innerHTML = allStyles + `
   /*margin: 0 auto 24px auto;*/
   
 }
+
 .chapter-opened {
-  background: linear-gradient(180deg, rgba(92,35,240,1) 0%, rgba(92,35,240,0) 32%) !important;
+  //background: linear-gradient(180deg, rgba(92,35,240,1) 0%, rgba(92,35,240,0) 32%) !important;
+  background: rgba(92,35,240,1);
+  color: white;
 }
 .closed {
   height: 120px;
@@ -37,12 +40,14 @@ chapterTemplate.innerHTML = allStyles + `
   height: 140px;
   position: relative;
   display: table;
-  border-radius: 20px;
   margin-bottom: 8px;
   
 }
 
 #text, h3, h4 {
+  color: #ffffff;
+}
+.chapter-light #text, h3, h4 {
   color: #000000;
 }
 
@@ -82,6 +87,13 @@ chapterTemplate.innerHTML = allStyles + `
   background-image: url('../../../media/plus.svg');
   background-size: cover;
 }
+@media only screen and (max-width: 1200px) {
+  #plus {
+    left: inherit;
+    right: 26px;
+  }
+}
+
 .to-minus {
   cursor: pointer;
   background-image: url('../../../media/minus.svg') !important;
@@ -138,19 +150,27 @@ margin-top: 102px;
 .chapter-opened {
   height: 707px;
 }
-
-.chapter-opened #subheadline {
-  display: none;
+@media only screen and (max-width: 1200px) {
+.chapter-opened {
+    height: 1391px;
 }
+}
+
 .chapter-opened #headline {
   bottom: inherit;
   margin-top: 13px;
+}
+.chapter-opened #subheadline {
+  display: none !important;
 }
 .read-more {
   font-size: 16px;
   font-weight: 800;
   margin-bottom: 20px;
-  color: #000;
+  color: white;
+}
+.chapter-light .read-more {
+  color: black;
 }
 
 </style>
@@ -159,14 +179,14 @@ margin-top: 102px;
 <span id="plus"></span>
         <div id="close" class="content content-retracted col-12">
           <p id="headline"></p>
-          <p id="subheadline"></p>
+          <p id="subheadline" class="d-none d-xl-block"></p>
         </div>
 
         <div id="expand" class="content content-expanded col-12 container container-fluid">
         <div class="row">
 
         
-          <div class="col-6">
+          <div class="col-12 col-md-6">
             <p id="text"></p>
          
             <figure>
@@ -179,7 +199,7 @@ margin-top: 102px;
                 </audio>
             </figure>
           </div>
-           <div class="col-6">
+           <div class="col-12 col-md-6">
               
               <h4 class="read-more">Click to read more</h4>
               <p id="projects"></p>
@@ -202,7 +222,7 @@ class chapterCard extends HTMLElement {
     createVariableComponents(this, 'projects');
     chapterCounter++;
     console.log(chapterCounter)
-    if(chapterCounter % 2 === 0){
+    if (chapterCounter % 2 === 0) {
       this.shadowRoot.getElementById("chapter").classList.add("chapter-light");
     }
     this.shadowRoot.getElementById("chapter").addEventListener('click', () => {
