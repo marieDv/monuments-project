@@ -21,24 +21,32 @@ p {
 #container {
   margin-top: 36px;
 }
-
+#border {
+  position: absolute;
+  width: 1px;
+  height: 200px;
+  margin: 0 auto;
+  right: 0;
+  left: -1px;
+}
 </style>
 
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-4 col-sm-12">
-      <div id="headline1"></div>
-      <div id="variable-text-slot1"></div>
+      <div id="1-headline"></div>
+      <div id="1-variable-text-slot"></div>
     </div>
     <div class="col-md-2 col-sm-12">
-      <div id="img1"></div>
+      <div id="1-img"></div>
     </div>
+<div id="border" ></div>
     <div class="col-md-4 col-sm-12">
-      <div id="headline2"></div>
-      <div id="variable-text-slot2"></div>
+      <div id="2-headline"></div>
+      <div id="2-variable-text-slot"></div>
     </div>
     <div class="col-md-2 col-sm-12">
-      <div id="img2"></div>
+      <div id="2-img"></div>
     </div>
   <div>
 </div> 
@@ -51,12 +59,16 @@ class halvesMirrorH44columnText2columnImage extends HTMLElement {
     super();
     setupComponent(this, mirrorH44columnText2columnImage);
 
-    createComponentFromSlot(this, 'headline1');
-    createComponentFromSlot(this, 'img1');
-    createVariableComponents(this, 'variable-text-slot1');
-    createComponentFromSlot(this, 'headline2');
-    createComponentFromSlot(this, 'img2');
-    createVariableComponents(this, 'variable-text-slot2');
+    createComponentFromSlot(this, '1-headline');
+    createComponentFromSlot(this, '1-img');
+    createVariableComponents(this, '1-variable-text-slot');
+    createComponentFromSlot(this, '2-headline');
+    createComponentFromSlot(this, '2-img');
+    createVariableComponents(this, '2-variable-text-slot');
+
+    if (this.getAttribute('hasBorder') === "true") {
+      this.shadowRoot.getElementById('border').classList.add('applyBorder');
+    }
   }
 }
 window.customElements.define('halves-mirror-h4-4column-text-2column-image', halvesMirrorH44columnText2columnImage);
