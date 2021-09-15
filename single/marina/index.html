@@ -1,122 +1,39 @@
+<!-- ? HOW TO OPEN THE PAGE ? -->
+<!-- start the live server / view on: http://localhost:5500/single/test/index.html -->
+
+
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <title>Maries page</title>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--***********************************************************************************************-->
+  <!--TITLE OF YOUR PAGE (SHOWS IN TAB) -->
+  <title>MY PAGE NAME</title>
+  <!--***********************************************************************************************-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="../../css/baseStyle.css">
-
-
-  <!--***********************************************************************************************-->
-  <!--LINK TO YOUR LOCAL STYLESHEET-->
-  <link rel="stylesheet" href="./style.css">
-
+  <link rel="stylesheet" href="./css/style.css">
 </head>
-
 
 <body>
   <a class="link-back" href="../../index.html">back</a>
-
-  <header-single title="The dr.Karl Lueger memorial" creatorsName="Marie Dvorzak" colWidth="col-6"
+  <top-menu itemOneName="Chapters" linkOne="https://www.facebook.com/" itemTwoName="About" linkTwo="./about/about.html">
+  </top-menu>
+  <!--***********************************************************************************************-->
+  <!--HEADER START -->
+  <header-single title="Name of my project" creatorsName="My Name" colWidth="col-6"
     h2Title="this is the title for my h2" altImg="Intro img" imgPath="./media/test.png">
-    <span slot="text">While the figure of Dr Karl Lueger has already been critically discussed in the past few years a
-      recent artistic intervention on the <br>monument has sparked new controversy around his memorial in the center of
-      Vienna. Luegers raise to power was largely due to his use of anti-Semitic propaganda. His rhetoric and
-      anti-Semitic views have inspired the young Adolf Hitler and shaped his later raise to power. So how can it be that
-      the public is still splitting opinions on him?</span>
-    <span slot="caption">The Dr Karl Lueger statue in Vienna</span>
+    <span slot="text"> My project description </span>
+    <span slot="caption">image description</span>
   </header-single>
-
-
-
+  <!--HEADER END -->
+  <!--***********************************************************************************************-->
 
   <!--***********************************************************************************************-->
-  <!--YOUR COMPONENTS GO HERE-->
-  <space-32>
-  </space-32>
-
-  <space-120>
-  </space-120>
-
-  <space-360>
-  </space-360>
-
-  <halves-h3-headline-6column-image-body-text hasBorder="true">
-    <span slot="h3" id="1-h3">This is headline 3 to the left</span>
-    <span slot="img" id="img" imgPath='./media/test.png' altImg="This is my test image">This will be a caption</span>
-    <span slot="h3" id="2-h3">This is headline 3 to the right</span>
-    <div id="variable-text-slot">
-      <span slot="text">This is a lot of information</span>
-      <span slot="text">This is a lot of information</span>
-      <span slot="block-quote">This is a lot of information</span>
-      <span slot="text">This is a lot of information</span>
-      <span slot="pull-quote">This is a lot of information</span>
-      <span slot="text">This is a lot of information</span>
-      <span slot="text">This is a lot of information</span>
-    </div>
-  </halves-h3-headline-6column-image-body-text>
-
-
-
-
-
-<halves-h3-headlines-two-3column-image-body-text hasBorder="true">
-  <span slot="h3" id="1-h3">This is headline 3 to the left</span>
-  <span slot="img" id="img" imgPath='./media/test.png' altImg="This is my test image">This will be a caption</span>
-  <span slot="img" id="2-img" imgPath='./media/test.png' altImg="This is my test image">This will be a caption</span>
-  <span slot="h3" id="2-h3">This is headline 3 to the right</span>
-  <div id="variable-text-slot">
-    <span slot="text">This is a lot of information</span>
-    <span slot="text">This is a lot of information</span>
-    <span slot="block-quote">This is a lot of information</span>
-    <span slot="text">This is a lot of information</span>
-    <span slot="pull-quote">This is a lot of information</span>
-    <span slot="text">This is a lot of information</span>
-    <span slot="text">This is a lot of information</span>
-  </div>
-</halves-h3-headlines-two-3column-image-body-text>
-
-
-
-
-
-
-<halves-h3-headlines-2column-4column-image-body-text hasBorder="true">
-  <span slot="h3" id="1-h3">This is headline 3 to the left</span>
-  <span slot="img" id="img" imgPath='./media/test.png' altImg="This is my test image">This will be a caption</span>
-  <span slot="img" id="2-img" imgPath='./media/test.png' altImg="This is my test image">This will be a caption</span>
-  <span slot="h3" id="2-h3">This is headline 3 to the right</span>
-  <div id="variable-text-slot">
-    <span slot="text">This is a lot of information</span>
-    <span slot="text">This is a lot of information</span>
-    <span slot="block-quote">This is a lot of information</span>
-    <span slot="text">This is a lot of information</span>
-    <span slot="pull-quote">This is a lot of information</span>
-    <span slot="text">This is a lot of information</span>
-    <span slot="text">This is a lot of information</span>
-  </div>
-</halves-h3-headlines-2column-4column-image-body-text>
-
-
-<halves-h3-headlines-4column-2column-image-body-text hasBorder="true">
-  <span slot="h3" id="1-h3">This is headline 3 to the left</span>
-  <span slot="img" id="img" imgPath='./media/test.png' altImg="This is my test image">This will be a caption</span>
-  <span slot="img" id="2-img" imgPath='./media/test.png' altImg="This is my test image">This will be a caption</span>
-  <span slot="h3" id="2-h3">This is headline 3 to the right</span>
-  <div id="variable-text-slot">
-    <span slot="text">This is a lot of information</span>
-    <span slot="text">This is a lot of information</span>
-    <span slot="block-quote">This is a lot of information</span>
-    <span slot="text">This is a lot of information</span>
-    <span slot="pull-quote">This is a lot of information</span>
-    <span slot="text">This is a lot of information</span>
-    <span slot="text">This is a lot of information</span>
-  </div>
-</halves-h3-headlines-4column-2column-image-body-text>
+  <!--YOUR COMPONENTS GO INTO THIS SPACE -->
 
 
 
@@ -132,48 +49,24 @@
 
 
 
+  <!--END COMPONENT SPACE -->
+  <!--***********************************************************************************************-->
 
-
-
-
-<!--***********************************************************************************************-->
-<!--DONT PUT COMPONENTS AFTER THIS LINE :)-->
-
-
-
-    <top-menu itemOneName="Case Study" linkOne="https://www.facebook.com/" itemTwoName="Time of events"
-      linkTwo="https://www.google.com/" itemThreeName="Montage of history" linkThree="https://www.twitter.com/"
-      itemFourName="Stories" linkFour="https://www.youtube.com/"></top-menu>
-
-
-
-
-    <!--FOOTER COMPONENT-->
-    <m-footer base="false" title=""></m-footer>
+  <m-footer base="false"></m-footer>
 </body>
+
 <footer>
   <script>
-    // var currentTemplate = 'Arial';
-    // var currentTemplate = 'Visualization-Almendra-Display';
+    /***********************************************************************************************/
+    /**     VTCMartin     **/
+    /**     Almendra     **/
+    /**     Arial     **/
+    /**     Ortica     **/
+
+    /**     CHANGE THE TEMPLATE HERE     **/
     var currentTemplate = 'VTCMartin';
+    /***********************************************************************************************/
   </script>
   <script src="../../components/full/footer/footer.js"></script>
 </footer>
-
 </html>
-
-
-<!-- 
-
-   <halves-image-left-text-right imgPath="./media/imgGrid.png" altImg="/" caption="This is a lot of images" title="I am a header :)">
-    <span slot="h3">This is a headline</span>
-
-    <span slot="text">This question was part of the election program during the 2020 Viennese state election. All
-      candidates gave statements on the issue. Many groups, artists and activists contributed to this by adressing the
-      issue on social media and participating in guarding the artistic intervention on the memorial [1].
-    </span>
-    <span slot="block-quote">Many groups, artists and activists contributed to this by adressing the
-      issue on social media and participating in guarding the artistic intervention on the memorial [1].</span>
-
-  </halves-image-left-text-right>
- -->
