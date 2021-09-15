@@ -1,6 +1,6 @@
-Monument title (official):
-Date built:
-Removed: yes or no
-Country:
-Continent:
-Image:
+Monument title (official): Equestrian Statue of Sebastian de Belalcazar
+Date built: 1930's
+Removed: yes
+Country: Colombia
+Continent: Americas
+Image: - 
