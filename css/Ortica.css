@@ -18,7 +18,14 @@ h1,
 .header-text {
   color: #ffffff;
 }
-
+.button-style {
+  background: #5D23FF;
+  border: 1px solid #5D23FF !important;
+  color: white;
+}
+.button-style:hover {
+  border: 1px solid #000000 !important;
+}
 .name {
   font-family: "Arial", sans-serif;
 }
