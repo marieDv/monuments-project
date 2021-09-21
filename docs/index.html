@@ -30,7 +30,7 @@
 
   <h3>REQUIRED (3 in figma, 0 in dev?)
   </h3>
-  <doc-element>
+  <!-- <doc-element>
     <span slot="h3" id="headline">references*</span>
     <span slot="text" id="description">This is for a list of references</span>
     <span slot="text" id="names">Elisa / ??</span>
@@ -40,7 +40,7 @@
     <span slot="h3" id="code">
       &lt;TBD&gt;
     </span>
-  </doc-element>
+  </doc-element> -->
 
   <!-- <doc-element>
     <span slot="h3" id="headline">Header-Left</span>
@@ -340,12 +340,13 @@
     <div id="attributes">
       <span slot="text" id="attributes">title</span>
     </div>
-    <span slot="h3" id="code">
-      &lt;TBD&gt;
+    <span slot="text" id="code">
+      &ltimage-full-width-var-height imgPath="./media/test.png" altImg="*" caption="*"&gt
+      &lt/image-full-width-var-height&gt
     </span>
   </doc-element>
 
-  <doc-element>
+  <!-- <doc-element>
     <span slot="h3" id="headline">timeline</span>
     <span slot="text" id="description">This element creates a timeline with plugin(?)</span>
     <span slot="text" id="names">Elisa / Marie</span>
@@ -355,7 +356,7 @@
     <span slot="h3" id="code">
       &lt;TBD&gt;
     </span>
-  </doc-element>
+  </doc-element> -->
 
   <!-- <doc-element>
     <span slot="h3" id="headline">top_menu</span>
@@ -381,7 +382,13 @@
       <span slot="text" id="attributes">text / colWidth</span>
     </div>
     <span slot="text" id="code">
-      &lt;TBD&gt;
+      &lthalves-background-image-text-left&gt<br>
+      &ltspan id="img" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt<br>
+      &ltspan id="headline" slot="h3"&gt*&lt/span&gt<br>
+      &ltdiv id="4-variable-text-slot"&gt<br>
+        &ltspan slot="text"&gt&lt/span&gt<br>
+      &lt/div&gt<br>
+    &lt/halves-background-image-text-left&gt
     </span>
   </doc-element>
 
@@ -393,57 +400,16 @@
       <span slot="text" id="attributes">text / colWidth</span>
     </div>
     <span slot="text" id="code">
-      &lt;TBD&gt;
+      &lthalves-background-image-text-right&gt<br>
+      &ltspan id="img" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt<br>
+      &ltspan id="headline" slot="h3"&gt*&lt/span&gt<br>
+      &ltdiv id="4-variable-text-slot"&gt<br>
+        &ltspan slot="text"&gt&lt/span&gt<br>
+      &lt/div&gt<br>
+    &lt/halves-background-image-text-right&gt
     </span>
   </doc-element>
 
-  <doc-element>
-    <span slot="h3" id="headline">h3-headlines-2column-3column-image-body-text</span>
-    <span slot="text" id="description">This element creates...</span>
-    <span slot="text" id="names">Hannah / Maxine </span>
-    <div id="attributes">
-      <span slot="text" id="attributes">text / colWidth</span>
-    </div>
-    <span slot="text" id="code">
-      &lt;TBD&gt;
-    </span>
-  </doc-element>
-
-  <doc-element>
-    <span slot="h3" id="headline">h3-headlines-2column-4column-image-body-text</span>
-    <span slot="text" id="description">This element creates...</span>
-    <span slot="text" id="names">Hannah / Marina </span>
-    <div id="attributes">
-      <span slot="text" id="attributes">text / colWidth</span>
-    </div>
-    <span slot="text" id="code">
-      &lt;TBD&gt;
-    </span>
-  </doc-element>
-
-  <doc-element>
-    <span slot="h3" id="headline">h3-headlines-3column-2column-image-body-text</span>
-    <span slot="text" id="description">This element creates...</span>
-    <span slot="text" id="names">Hannah / Maxine </span>
-    <div id="attributes">
-      <span slot="text" id="attributes">text / colWidth</span>
-    </div>
-    <span slot="text" id="code">
-      &lt;TBD&gt;
-    </span>
-  </doc-element>
-
-  <doc-element>
-    <span slot="h3" id="headline">h3-headlines-4column-2column-image-body-text</span>
-    <span slot="text" id="description">This element creates...</span>
-    <span slot="text" id="names">Hannah / Marina </span>
-    <div id="attributes">
-      <span slot="text" id="attributes">text / colWidth</span>
-    </div>
-    <span slot="text" id="code">
-      &lt;TBD&gt;
-    </span>
-  </doc-element>
 
   <doc-element>
     <span slot="h3" id="headline">h3-headlines-6column-image-body-text</span>
@@ -492,7 +458,7 @@
   <doc-element>
     <span slot="h3" id="headline">halves-h3-headlines-3column-2column-image-body-text</span>
     <span slot="text" id="description"></span>
-    <span slot="text" id="names">?? / Marie</span>
+    <span slot="text" id="names">Hannah / Maxine</span>
     <div id="attributes">
       <span slot="text" id="attributes">title</span>
     </div>
@@ -531,7 +497,7 @@
   <doc-element>
     <span slot="h3" id="headline">halves-h3-headlines-2column-4column-image-body-text</span>
     <span slot="text" id="description"></span>
-    <span slot="text" id="names">?? / Marie</span>
+    <span slot="text" id="names">Hannah / Marina</span>
     <div id="attributes">
       <span slot="text" id="attributes">title</span>
     </div>
@@ -703,19 +669,9 @@
 
   <h3>QUARTERS (2 in figma, 2 in dev)</h3>
 
-  <doc-element>
-    <span slot="h3" id="headline">headlines-4-images-body-text</span>
-    <span slot="text" id="description">This element creates...</span>
-    <span slot="text" id="names">Lukas / Marie</span>
-    <div id="attributes">
-      <span slot="text" id="attributes">text / colWidth</span>
-    </div>
-    <span slot="text" id="code">
-      &lt;TBD&gt;
-    </span>
-  </doc-element>
 
-  <doc-element>
+
+  <!-- <doc-element>
     <span slot="h3" id="headline">headlines-eight-images (called headlines-8images in figma)</span>
     <span slot="text" id="description">This element creates...</span>
     <span slot="text" id="names">Lukas / Marie</span>
@@ -725,12 +681,12 @@
     <span slot="text" id="code">
       &lt;TBD&gt;
     </span>
-  </doc-element>
+  </doc-element> -->
 
   <doc-element>
     <span slot="h3" id="headline">quarters-headlines-4-images-body-text</span>
     <span slot="text" id="description"></span>
-    <span slot="text" id="names">?? / Marie</span>
+    <span slot="text" id="names">Lukas / Marie</span>
     <div id="attributes">
       <span slot="text" id="attributes">title</span>
     </div>
@@ -768,9 +724,9 @@
   </doc-element>
 
   <doc-element>
-    <span slot="h3" id="headline">quarters-headlines-4-images-body-text</span>
+    <span slot="h3" id="headline">quarters-headlines-4-images-body-text (called headlines-8images in figma)</span>
     <span slot="text" id="description"></span>
-    <span slot="text" id="names">?? / Marie</span>
+    <span slot="text" id="names">Lukas / Marie</span>
     <div id="attributes">
       <span slot="text" id="attributes">title</span>
     </div>
