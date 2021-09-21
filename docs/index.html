@@ -67,7 +67,8 @@
   </doc-element> -->
 
   <h3>BASE (17 in figma, 13 in dev)</h3>
-  <h4>missing from dev: image-6-columns-var-height, mystery-box, image-3-columns-var-height, image-9-columns-var-height, name, header-body-text-right</h4>
+  <h4>missing from dev: image-6-columns-var-height, mystery-box, image-3-columns-var-height, image-9-columns-var-height,
+    name, header-body-text-right</h4>
   <h4>in dev, not in base section in figma: h2-section-title, "variable-text"</h4>
   <doc-element>
     <span slot="h3" id="headline">h1-with-bottom-margin</span>
@@ -183,8 +184,8 @@
       &lt/body-text&gt
     </span>
   </doc-element>
-    <!-- ************************************************************* -->
-    <h2 style="font-size: 80px; text-align: center;">FULLS</h2>
+  <!-- ************************************************************* -->
+  <h2 style="font-size: 80px; text-align: center;">FULLS</h2>
 
 
 
@@ -195,14 +196,54 @@
   <doc-element>
     <span slot="h3" id="headline">button-component</span>
     <span slot="text" id="description">This element creates a button.</span>
-    <span slot="text" id="names">I and A / Anda</span>
+    <span slot="text" id="names">Elisa / Anda</span>
     <div id="attributes">
       <span slot="text" id="attributes">title</span>
     </div>
-    <span slot="h3" id="code">
-      &lt;TBD&gt;
+    <span slot="text" id="code">
+      &ltbutton-component link="*"&gt
+      &ltspan slot="title"&gtThis is a long button text&lt/span&gt
+    &lt/button-component&gt
     </span>
   </doc-element>
+
+  <doc-element>
+    <span slot="h3" id="headline">full-timeline-version-01</span>
+    <span slot="text" id="description">This element creates a button.</span>
+    <span slot="text" id="names">Hannah / Marie</span>
+    <div id="attributes">
+      <span slot="text" id="attributes">title</span>
+    </div>
+    <span slot="text" id="code">
+      &ltfull-timeline-version-01&gt
+      &ltspan id="timestamp" slot="h4"&gt1942&lt/span&gt
+      &ltspan id="img" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt
+      &ltdiv id="variable-text-slot"&gt
+        &ltspan slot="text"&gt*&lt/span&gt
+      &lt/div&gt
+    &lt/full-timeline-version-01&gt
+    </span>
+  </doc-element>
+  <doc-element>
+    <span slot="h3" id="headline">full-timeline-version-02</span>
+    <span slot="text" id="description">This element creates a button.</span>
+    <span slot="text" id="names">Hannah / Marie</span>
+    <div id="attributes">
+      <span slot="text" id="attributes">title</span>
+    </div>
+    <span slot="text" id="code">
+      &ltfull-timeline-version-02&gt <br>
+      &ltspan id="timestamp" slot="h4"&gt1942&lt/span&gt <br>
+      &ltdiv id="variable-text-slot"&gt<br>
+        &ltspan slot="text"&gt*&lt/span&gt<br>
+          &ltspan slot="button"&gti am a button&lt/span&gt<br>
+      &lt/div&gt<br>
+      &ltspan id="img" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt<br>
+    &lt/full-timeline-version-02&gt
+    </span>
+  </doc-element>
+
+
 
   <!-- <doc-element>
     <span slot="h3" id="headline">space-32</span>
@@ -330,7 +371,7 @@
 
   <h3>HALVES (14 in figma, 13 in dev)</h3>
   <h4>in dev, not in halves section in figma: </h4>
-  <h4>missing in dev halves folder: body-text (not sure what this is tbh)</h4> 
+  <h4>missing in dev halves folder: body-text (not sure what this is tbh)</h4>
 
   <doc-element>
     <span slot="h3" id="headline">background-image-text-left</span>
@@ -428,6 +469,174 @@
     </span>
   </doc-element>
 
+  <!-- NEW HALVES -->
+  <doc-element>
+    <span slot="h3" id="headline">halves-h3-headlines-2column-3column-image-body-text</span>
+    <span slot="text" id="description"></span>
+    <span slot="text" id="names">?? / Marie</span>
+    <div id="attributes">
+      <span slot="text" id="attributes">title</span>
+    </div>
+    <span slot="text" id="code">
+      &lthalves-h3-headlines-2column-3column-image-body-text hasBorder="true"&gt
+      &ltspan id="headline" slot="h3"&gt*&lt/span&gt
+      &ltspan id="1-img" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt
+      &ltspan id="2-img" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt
+      &ltdiv id="variable-text-slot"&gt
+      &ltspan slot="text"&gt*&lt/span&gt
+      &lt/div&gt
+      &lt/halves-h3-headlines-2column-3column-image-body-text&gt
+    </span>
+  </doc-element>
+
+  <doc-element>
+    <span slot="h3" id="headline">halves-h3-headlines-3column-2column-image-body-text</span>
+    <span slot="text" id="description"></span>
+    <span slot="text" id="names">?? / Marie</span>
+    <div id="attributes">
+      <span slot="text" id="attributes">title</span>
+    </div>
+    <span slot="text" id="code">
+      &lthalves-h3-headlines-3column-2column-image-body-text hasBorder="true"&gt
+      &ltspan id="headline" slot="h3"&gt*&lt/span&gt
+      &ltdiv id="variable-text-slot"&gt
+      &ltspan slot="text"&gt*&lt/span&gt
+      &lt/div&gt
+      &ltspan id="1-img" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt
+      &ltspan id="2-img" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt
+      &lt/halves-h3-headlines-3column-2column-image-body-text&gt
+    </span>
+  </doc-element>
+
+  <doc-element>
+    <span slot="h3" id="headline">halves-h3-headlines-2column-4column-image-body-text</span>
+    <span slot="text" id="description"></span>
+    <span slot="text" id="names">?? / Marie</span>
+    <div id="attributes">
+      <span slot="text" id="attributes">title</span>
+    </div>
+    <span slot="text" id="code">
+      &lthalves-h3-headlines-2column-4column-image-body-text hasBorder="true"&gt
+      &ltspan id="1-headline" slot="h3"&gt*&lt/span&gt
+      &ltspan id="1-img" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt
+      &ltspan id="2-img" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt
+      &ltspan id="2-headline" slot="h3"&gt*&lt/span&gt
+      &ltdiv id="variable-text-slot"&gt
+      &ltspan slot="text"&gt*&lt/span&gt
+      &lt/div&gt
+      &lt/halves-h3-headlines-2column-4column-image-body-text&gt
+    </span>
+  </doc-element>
+
+  <doc-element>
+    <span slot="h3" id="headline">halves-h3-headlines-2column-4column-image-body-text</span>
+    <span slot="text" id="description"></span>
+    <span slot="text" id="names">?? / Marie</span>
+    <div id="attributes">
+      <span slot="text" id="attributes">title</span>
+    </div>
+    <span slot="text" id="code">
+      &lthalves-h3-headlines-4column-2column-image-body-text hasBorder="true"&gt
+      &ltspan id="headline" slot="h3"&gt*&lt/span&gt
+      &ltdiv id="variable-text-slot"&gt
+      &ltspan slot="text"&gt*&lt/span&gt
+      &lt/div&gt
+      &ltspan id="1-img" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt
+      &ltspan id="2-img" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt
+      &lt/halves-h3-headlines-4column-2column-image-body-text&gt
+    </span>
+  </doc-element>
+
+  <doc-element>
+    <span slot="h3" id="headline">halves-h3-headline-6column-image-body-text</span>
+    <span slot="text" id="description"></span>
+    <span slot="text" id="names">?? / Marie</span>
+    <div id="attributes">
+      <span slot="text" id="attributes">title</span>
+    </div>
+    <span slot="text" id="code">
+      &lthalves-h3-headline-6column-image-body-text hasBorder="true"&gt
+      &ltspan id="img" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt
+      &ltspan id="1-headline" slot="h3"&gt*&lt/span&gt
+      &ltspan id="2-headline" slot="h3"&gt*&lt/span&gt
+      &ltdiv id="variable-text-slot"&gt
+      &ltspan slot="text"&gt*&lt/span&gt
+      &lt/div&gt
+      &lt/halves-h3-headline-6column-image-body-text&gt
+    </span>
+  </doc-element>
+
+  <doc-element>
+    <span slot="h3" id="headline">halves-h3-headlines-two-3column-image-body-text</span>
+    <span slot="text" id="description"></span>
+    <span slot="text" id="names">?? / Marie</span>
+    <div id="attributes">
+      <span slot="text" id="attributes">title</span>
+    </div>
+    <span slot="text" id="code">
+      &lthalves-h3-headlines-two-3column-image-body-text hasBorder="true"&gt
+      &ltspan id="1-img" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt
+      &ltspan id="2-img" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt
+      &ltspan id="1-headline" slot="h3"&gt*&lt/span&gt
+      &ltspan id="2-headline" slot="h3"&gt*&lt/span&gt
+      &ltdiv id="variable-text-slot"&gt
+      &ltspan slot="text"&gt*&lt/span&gt
+      &lt/div&gt
+      &lt/halves-h3-headlines-two-3column-image-body-text&gt
+    </span>
+  </doc-element>
+
+  <doc-element>
+    <span slot="h3" id="headline">halves-mirror-h3-headlines-6column-image-body-text</span>
+    <span slot="text" id="description"></span>
+    <span slot="text" id="names">?? / Marie</span>
+    <div id="attributes">
+      <span slot="text" id="attributes">title</span>
+    </div>
+    <span slot="text" id="code">
+      &lthalves-mirror-h3-headlines-6column-image-body-text hasBorder="true"&gt
+      &ltspan id="1-headline" slot="h3"&gt*&lt/span&gt
+      &ltspan id="1-img" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt
+      &ltdiv id="1-variable-text-slot"&gt
+      &ltspan slot="text"&gt*&lt/span&gt
+      &lt/div&gt
+      &ltspan id="2-img" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt
+      &ltspan id="2-headline" slot="h3"&gt*&lt/span&gt
+      &ltspan id="3-headline" slot="h4"&gt*&lt/span&gt
+      &ltdiv id="2-variable-text-slot"&gt
+      &ltspan slot="text"&gt*&lt/span&gt
+      &lt/div&gt
+      &lt/halves-mirror-h3-headlines-6column-image-body-text&gt
+    </span>
+  </doc-element>
+
+  <doc-element>
+    <span slot="h3" id="headline">halves-mirror-h4-4column-text-2column-image</span>
+    <span slot="text" id="description"></span>
+    <span slot="text" id="names">?? / Marie</span>
+    <div id="attributes">
+      <span slot="text" id="attributes">title</span>
+    </div>
+    <span slot="text" id="code">
+      &lthalves-mirror-h4-4column-text-2column-image hasBorder="true"&gt
+      &ltspan id="1-headline" slot="h3"&gt*&lt/span&gt
+      &ltspan id="1-img" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt
+      &ltdiv id="1-variable-text-slot"&gt
+        &ltspan slot="text"&gt*&lt/span&gt
+      &lt/div&gt
+      &ltspan id="2-img" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt
+      &ltspan id="2-headline" slot="h3"&gt*&lt/span&gt
+      &ltspan id="3-headline" slot="h4"&gt*&lt/span&gt
+      &ltdiv id="2-variable-text-slot"&gt
+        &ltspan slot="text"&gt*&lt/span&gt
+      &lt/div&gt
+    &lt/halves-mirror-h4-4column-text-2column-image&gt
+    </span>
+  </doc-element>
+
+
+
+
   <!-- <doc-element>
     <span slot="h3" id="headline">image-left-text-right</span>
     <span slot="text" id="description">This element creates...</span>
@@ -453,7 +662,8 @@
   </doc-element> -->
 
   <doc-element>
-    <span slot="h3" id="headline">mirror-h3-headlines-6-column-image-body-text (called mirror-h3-6-column-image-body-text in figma)</span>
+    <span slot="h3" id="headline">mirror-h3-headlines-6-column-image-body-text (called
+      mirror-h3-6-column-image-body-text in figma)</span>
     <span slot="text" id="description">This element creates...</span>
     <span slot="text" id="names">Hannah / Marie</span>
     <div id="attributes">
@@ -516,6 +726,95 @@
       &lt;TBD&gt;
     </span>
   </doc-element>
+
+  <doc-element>
+    <span slot="h3" id="headline">quarters-headlines-4-images-body-text</span>
+    <span slot="text" id="description"></span>
+    <span slot="text" id="names">?? / Marie</span>
+    <div id="attributes">
+      <span slot="text" id="attributes">title</span>
+    </div>
+    <span slot="text" id="code">
+      &ltquarters-headlines-4-images-body-text&gt
+      &ltspan id="1-headline" slot="h3"&gt*&lt/span&gt
+      &ltspan id="1-subheadline" slot="h4"&gt*&lt/span&gt
+      &ltspan id="1-img" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt
+      &ltdiv id="1-variable-text-slot"&gt
+        &ltspan slot="text"&gt*&lt/span&gt
+      &lt/div&gt
+    <br>
+      &ltspan id="2-headline" slot="h3"&gt*&lt/span&gt
+      &ltspan id="2-subheadline" slot="h4"&gt*&lt/span&gt
+      &ltspan id="2-img" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt
+      &ltdiv id="2-variable-text-slot"&gt
+        &ltspan slot="text"&gt*&lt/span&gt
+      &lt/div&gt
+      <br>
+      &ltspan id="3-headline" slot="h3"&gt*&lt/span&gt
+      &ltspan id="3-subheadline" slot="h4"&gt*&lt/span&gt
+      &ltspan id="3-img" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt
+      &ltdiv id="3-variable-text-slot"&gt
+        &ltspan slot="text"&gt*&lt/span&gt
+      &lt/div&gt
+      <br>
+      &ltspan id="4-headline" slot="h3"&gt*&lt/span&gt
+      &ltspan id="4-subheadline" slot="h4"&gt*&lt/span&gt
+      &ltspan id="4-img" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt
+      &ltdiv id="4-variable-text-slot"&gt
+        &ltspan slot="text"&gt*&lt/span&gt
+      &lt/div&gt
+    &lt/quarters-headlines-4-images-body-text&gt
+    </span>
+  </doc-element>
+
+  <doc-element>
+    <span slot="h3" id="headline">quarters-headlines-4-images-body-text</span>
+    <span slot="text" id="description"></span>
+    <span slot="text" id="names">?? / Marie</span>
+    <div id="attributes">
+      <span slot="text" id="attributes">title</span>
+    </div>
+    <span slot="text" id="code">
+      &ltquarters-headlines-eight-images&gt
+      &ltspan id="1-headline" slot="h3"&gt*&lt/span&gt
+      &ltspan id="1-subheadline" slot="h4"&gt*&lt/span&gt
+      &ltspan id="1-img" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt
+      &ltspan id="1-img-2" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt
+      &ltdiv id="1-variable-text-slot"&gt
+        &ltspan slot="text"&gt*&lt/span&gt
+      &lt/div&gt
+    <br>
+      &ltspan id="2-headline" slot="h3"&gt*&lt/span&gt
+      &ltspan id="2-subheadline" slot="h4"&gt*&lt/span&gt
+      &ltspan id="2-img" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt
+      &ltspan id="2-img-2" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt
+      &ltdiv id="2-variable-text-slot"&gt
+        &ltspan slot="text"&gt*&lt/span&gt
+      &lt/div&gt
+      <br>
+      &ltspan id="3-headline" slot="h3"&gt*&lt/span&gt
+      &ltspan id="3-subheadline" slot="h4"&gt*&lt/span&gt
+      &ltspan id="3-img" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt
+      &ltspan id="3-img-2" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt
+      &ltdiv id="3-variable-text-slot"&gt
+        &ltspan slot="text"&gt*&lt/span&gt
+      &lt/div&gt
+      <br>
+      &ltspan id="4-headline" slot="h3"&gt*&lt/span&gt
+      &ltspan id="4-subheadline" slot="h4"&gt*&lt/span&gt
+      &ltspan id="4-img" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt
+      &ltspan id="4-img-2" slot="img" imgPath="./media/test.png" altImg=""&gtcaption&lt/span&gt
+      &ltdiv id="4-variable-text-slot"&gt
+        &ltspan slot="text"&gt*&lt/span&gt
+      &lt/div&gt
+    &lt/quarters-headlines-eight-images&gt
+    </span>
+  </doc-element>
+
+
+
+
+
 
   <h3>THIRDS (8 in figma, 7 in dev)</h3>
   <doc-element>

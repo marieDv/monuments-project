@@ -74,6 +74,7 @@ function createVariableComponents(base, id) {
       slotsForTemplate += "<style>#imgPath{background-image: url("+span[i].getAttribute("path")+");}</style> <a class='project-preview' href="+span[i].getAttribute("link")+"><div>"+ span[i].innerHTML + "<div id='imgPath'></div><div class='project-preview-text'><h4>"+span[i].getAttribute("title")+"</h4><div id='country'><p>"+span[i].getAttribute("country")+"</p></div></div></div></a>";
     console.log(span[i].getAttribute("path"))
     }
+   
     if (tempText === "text") {
       slotsForTemplate += "<p>" + span[i].innerHTML + "</p>";
     }
