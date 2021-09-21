@@ -34,7 +34,7 @@ class H3Headlines6ColumnImageBodyText extends HTMLElement {
     createComponentFromSlot(this,'img');
     createComponentFromSlot(this,'2-headline');
     createVariableComponents(this,'variable-text-slot');
-
+    console.log("inside the component")
     if(this.getAttribute("hasBorder") === "true"){
         this.shadowRoot.getElementById('border').classList.add('applyBorder');
     }

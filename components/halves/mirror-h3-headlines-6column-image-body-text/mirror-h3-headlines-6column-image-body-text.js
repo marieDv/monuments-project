@@ -1,5 +1,5 @@
-const MirrorH3Headlines6ColumnImageBodyTextTemplate = document.createElement("template");
-MirrorH3Headlines6ColumnImageBodyTextTemplate.innerHTML = allStyles + `
+var mirrorH3Headlines6ColumnImageBodyTextTemplate = document.createElement("template");
+mirrorH3Headlines6ColumnImageBodyTextTemplate.innerHTML = allStyles + `
 
 <style>
 #border {
@@ -32,7 +32,7 @@ MirrorH3Headlines6ColumnImageBodyTextTemplate.innerHTML = allStyles + `
 class MirrorH3Headlines6ColumnImageBodyText extends HTMLElement {
   constructor() {
     super();
-    setupComponent(this, MirrorH3Headlines6ColumnImageBodyTextTemplate);
+    setupComponent(this, mirrorH3Headlines6ColumnImageBodyTextTemplate);
     createComponentFromSlot(this, '1-headline');
     createComponentFromSlot(this, '1-img');
     createComponentFromSlot(this, '2-img');

@@ -172,6 +172,11 @@ scriptHeadlines4ImagesBodyText.src = '/components/quarters/headlines-4-images-bo
 document.head.appendChild(scriptHeadlines4ImagesBodyText);
 
 makeScript('/components/quarters/headlines-eight-images/headlines-eight-images.js');
+makeScript('/components/quarters/left-6column-text-right-3column-images-text/left-6column-text-right-3column-images-text.js');
+makeScript('/components/quarters/right-6column-text-left-3column-images-text/right-6column-text-left-3column-images-text.js');
+makeScript('/components/quarters/left-6column-image-right-3column-texts/left-6column-image-right-3column-texts.js');
+makeScript('/components/quarters/right-6column-image-left-3column-texts/right-6column-image-left-3column-texts.js');
+
 
 // ******************************************************************************************************************************************************
 // IMPORT DOCS
