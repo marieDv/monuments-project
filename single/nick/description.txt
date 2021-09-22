@@ -1,6 +1,6 @@
-Monument title (official):
-Date built:
-Removed: yes or no
-Country:
-Continent:
-Image:
+Monument title (official): The Forgotten Monuments of Vienna
+Date built: 1945
+Removed: no
+Country: Austria
+Continent: Europe
+Image: 
