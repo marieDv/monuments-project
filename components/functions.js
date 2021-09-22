@@ -78,6 +78,9 @@ function createVariableComponents(base, id) {
     if (tempText === "text") {
       slotsForTemplate += "<p>" + span[i].innerHTML + "</p>";
     }
+    if (tempText === "space") {
+      slotsForTemplate += "<space-32></space-32>";
+    }
     if (tempText === "h2") {
       slotsForTemplate += "<h2-section-title><span slot='title'>" + span[i].innerHTML + "</span></h2-section-title>";
     }
