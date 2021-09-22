@@ -74,7 +74,9 @@ p {
   height: 600px;
 
 }
-
+.applyBorder {
+  border-right: 1px solid black;
+}
 #intro-logo {
   width: calc(100% - 40px);
   display: block;

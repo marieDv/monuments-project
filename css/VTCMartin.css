@@ -29,6 +29,14 @@ h3,
   font-family: "Arial", sans-serif;
   text-transform: uppercase;
 }
+.button-style {
+  background: #8f7b21;
+  border: 1px solid #8f7b21 !important;
+}
+.button-style:hover {
+  border: 1px solid #000000 !important;
+}
+
 #style-blockquote {
   font-family: "Arial", sans-serif;
 }
