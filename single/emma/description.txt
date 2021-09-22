@@ -1,6 +1,6 @@
-Monument title (official):
-Date built:
+Monument title (official): Þórfinnur Karlsefni
+Date built: 1920
 Removed: yes or no
-Country:
-Continent:
+Country: Iceland, N-America
+Continent: Europe, Americas
 Image:
