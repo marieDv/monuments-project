@@ -27,12 +27,12 @@ p {
 
   <div class="row">
 
-      <div class="col-md-6 col-sm-12">
+      <div class="col-md-5 col-sm-12">
         <div id="1-headline"></div>
         <div id="1-subheadline"></div>
         <div id="1-variable-text-slot"></div>
       </div>
-
+      <div class="col-md-1"></div>
       <div class="col-md-3 col-sm-12">
         <div id="2-headline"></div>
         <div id="2-subheadline"></div>
