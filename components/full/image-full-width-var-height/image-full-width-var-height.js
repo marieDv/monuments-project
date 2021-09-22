@@ -40,12 +40,12 @@ p {
 
 //initializing our class
 class ImgFullWidthVarHeight extends HTMLElement {
-  constructor(){
+  constructor() {
     super();
     setupComponent(this, imgFullWidthVarHeight);
 
     this.shadowRoot.querySelector('#img').src = this.getAttribute('imgPath');
-    
+
     this.shadowRoot.querySelector('#img').alt = this.getAttribute('altImg');
   }
 }
