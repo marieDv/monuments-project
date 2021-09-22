@@ -689,7 +689,7 @@
       <span slot="text" id="attributes">text / colWidth</span>
     </div>
     <span slot="text" id="code">
-      &lttwo-images-same-width-var-height&gt<br>
+      &lttwo-images-same-width-var-height hasBorder="true" &gt<br>
       &ltspan id="1-img" slot="img" imgPath="./media/test.png" altImg="" &gt*&lt/span&gt<br>
       &ltspan id="2-img" slot="img" imgPath="./media/test.png" altImg="" &gt*&lt/span&gt<br>
       &lt/two-images-same-width-var-height&gt<br>
@@ -959,6 +959,9 @@
   </doc-element>
 
 
+
+
+
   <doc-element>
     <span slot="h3" id="headline">halves-image-left-text-right</span>
     <span slot="text" id="description"></span>
@@ -1038,7 +1041,25 @@
 
     </span>
   </doc-element>
-
+  <doc-element>
+    <span slot="h3" id="headline">thirds-text-4-images</span>
+    <span slot="text" id="description"></span>
+    <span slot="text" id="names"></span>
+    <div id="attributes">
+      <span slot="text" id="attributes"></span>
+    </div>
+    <span slot="text" id="code">
+      &ltthirds-text-4-images&gt<br>
+      &ltdiv id="variable-text-slot"&gt<br>
+        &ltspan slot="text"&gt*&lt/span&gt<br>
+      &lt/div&gt<br>
+      &ltspan id="1-img" slot="img" imgpath="./media/test.png" altimg=""&gtcaption&lt/span&gt<br>
+      &ltspan id="2-img" slot="img" imgpath="./media/test.png" altimg=""&gtcaption&lt/span&gt<br>
+      &ltspan id="3-img" slot="img" imgpath="./media/test.png" altimg=""&gtcaption&lt/span&gt<br>
+      &ltspan id="4-img" slot="img" imgpath="./media/test.png" altimg=""&gtcaption&lt/span&gt<br>
+    &lt/thirds-text-4-images&gt
+    </span>
+  </doc-element>
 
 
   <doc-element>
@@ -1120,7 +1141,7 @@
     <div id="attributes">
     </div>
     <span slot="text" id="code">
-      &ltspace-64&gt&lt/space-64&gt
+      &ltspace-64 hasBorder="true" &gt&lt/space-64&gt
     </span>
   </doc-element>
   <doc-element>
