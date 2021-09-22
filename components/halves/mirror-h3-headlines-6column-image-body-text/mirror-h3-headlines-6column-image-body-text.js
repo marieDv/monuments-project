@@ -1,5 +1,5 @@
-const MirrorH3Headlines6ColumnImageBodyTextTemplate = document.createElement("template");
-MirrorH3Headlines6ColumnImageBodyTextTemplate.innerHTML = allStyles + `
+var mirrorH3Headlines6ColumnImageBodyTextTemplate = document.createElement("template");
+mirrorH3Headlines6ColumnImageBodyTextTemplate.innerHTML = allStyles + `
 
 <style>
 #border {
@@ -13,12 +13,15 @@ MirrorH3Headlines6ColumnImageBodyTextTemplate.innerHTML = allStyles + `
 <div class="container-fluid">
 <div class="row">
 <div id="border" class="col-md-6">
-  <span id="2-h3"></span>
-<span id="variable-text-slot"></span>
+  <span id="1-headline"></span>
+  <span id="1-img"></span>
+<span id="1-variable-text-slot"></span>
 </div>
   <div class="col-md-6">
-    <span id="1-h3"></span>
-    <span id="img"></span>
+    <span id="2-headline"></span>
+    <span id="3-headline"></span>
+    <span id="2-img"></span>
+    <span id="2-variable-text-slot"></span>
   </div>
 </div>
 </div> 
@@ -29,18 +32,21 @@ MirrorH3Headlines6ColumnImageBodyTextTemplate.innerHTML = allStyles + `
 class MirrorH3Headlines6ColumnImageBodyText extends HTMLElement {
   constructor() {
     super();
-    setupComponent(this, MirrorH3Headlines6ColumnImageBodyTextTemplate);
-    createComponentFromSlot(this, '1-h3');
-    createComponentFromSlot(this, 'img');
-    createComponentFromSlot(this, '2-h3');
-    createVariableComponents(this, 'variable-text-slot');
+    setupComponent(this, mirrorH3Headlines6ColumnImageBodyTextTemplate);
+    createComponentFromSlot(this, '1-headline');
+    createComponentFromSlot(this, '1-img');
+    createComponentFromSlot(this, '2-img');
+    createComponentFromSlot(this, '2-headline');
+    createComponentFromSlot(this, '3-headline');
+    createVariableComponents(this, '1-variable-text-slot');
+    createVariableComponents(this, '2-variable-text-slot');
 
     if (this.getAttribute('hasBorder') === "true") {
       this.shadowRoot.getElementById('border').classList.add('applyBorder');
     }
   }
 }
-window.customElements.define('halves-mirror-h3-headline-6column-image-body-text', MirrorH3Headlines6ColumnImageBodyText);
+window.customElements.define('halves-mirror-h3-headlines-6column-image-body-text', MirrorH3Headlines6ColumnImageBodyText);
 
 
 

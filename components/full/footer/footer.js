@@ -70,6 +70,8 @@ makeScript('/components/base/space-360/space-360.js');
 // ******************************
 
 makeScript('/components/full/chapter/chapter.js');
+makeScript('/components/full/timeline-version-01/timeline-version-01.js');
+makeScript('/components/full/timeline-version-02/timeline-version-02.js');
 
 
 // IMPORT image-full-width-var-height
@@ -144,6 +146,9 @@ makeScript('/components/halves/h3-headlines-2column-3column-image-body-text/h3-h
 
 makeScript('/components/halves/h3-headlines-3column-2column-image-body-text/h3-headlines-3column-2column-image-body-text.js');
 
+makeScript('/components/halves/h3-headlines-2column-3column-image-body-text/h3-headlines-2column-3column-image-body-text.js')
+
+makeScript('/components/halves/mirror-h3-headlines-6column-image-body-text/mirror-h3-headlines-6column-image-body-text.js')
 // ******************************************************************************************************************************************************
 // IMPORT THIRDS COMPONENTS
 
@@ -167,6 +172,11 @@ scriptHeadlines4ImagesBodyText.src = '/components/quarters/headlines-4-images-bo
 document.head.appendChild(scriptHeadlines4ImagesBodyText);
 
 makeScript('/components/quarters/headlines-eight-images/headlines-eight-images.js');
+makeScript('/components/quarters/left-6column-text-right-3column-images-text/left-6column-text-right-3column-images-text.js');
+makeScript('/components/quarters/right-6column-text-left-3column-images-text/right-6column-text-left-3column-images-text.js');
+makeScript('/components/quarters/left-6column-image-right-3column-texts/left-6column-image-right-3column-texts.js');
+makeScript('/components/quarters/right-6column-image-left-3column-texts/right-6column-image-left-3column-texts.js');
+
 
 // ******************************************************************************************************************************************************
 // IMPORT DOCS
