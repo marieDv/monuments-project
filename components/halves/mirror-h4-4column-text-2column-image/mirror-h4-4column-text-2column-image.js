@@ -21,13 +21,17 @@ p {
 #container {
   margin-top: 36px;
 }
-#border {
+/*#border {
   position: absolute;
   width: 1px;
   height: 200px;
   margin: 0 auto;
   right: 0;
   left: -1px;
+}*/
+.applyBorder {
+  border-left: 1px solid black;
+  border-right: none;
 }
 </style>
 
@@ -40,8 +44,8 @@ p {
     <div class="col-md-2 col-sm-12">
       <div id="1-img"></div>
     </div>
-<div id="border" ></div>
-    <div class="col-md-4 col-sm-12">
+
+    <div id="border" class="col-md-4 col-sm-12">
       <div id="2-headline"></div>
       <div id="2-variable-text-slot"></div>
     </div>
