@@ -5,6 +5,17 @@ Space64Template.innerHTML = allStyles + `
   width: 100%;
   height: 64px;
 }
+#mySpace.applyBorder::after {
+  content:"";
+  position: absolute;
+  width: 1px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background: black;
+}
+
 </style>
 <div id="mySpace">
 </div>
@@ -14,6 +25,9 @@ class Space64 extends HTMLElement {
   constructor() {
     super();
     setupComponent(this, Space64Template);
+    if (this.getAttribute("hasBorder") === "true") {
+      this.shadowRoot.getElementById('mySpace').classList.add('applyBorder');
+    }
   }
 }
 
