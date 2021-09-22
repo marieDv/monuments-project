@@ -3,8 +3,8 @@
 // components nested: variable text slots
 
 
-const h3Headlines2Column3ColumnImageBodyText = document.createElement("template");
-h3Headlines2Column3ColumnImageBodyText.innerHTML = allStyles + `
+let h3Headlines2Column3ColumnImageBodyTextTemplate = document.createElement("template");
+h3Headlines2Column3ColumnImageBodyTextTemplate.innerHTML = allStyles + `
 
 <style>
 img {
@@ -56,7 +56,7 @@ p {
 class halvesH3Headlines2Column3ColumnImageBodyText extends HTMLElement {
   constructor() {
     super();
-    setupComponent(this, h3Headlines2Column3ColumnImageBodyText);
+    setupComponent(this, h3Headlines2Column3ColumnImageBodyTextTemplate);
 
     createComponentFromSlot(this, 'headline');
     createVariableComponents(this, 'variable-text-slot');

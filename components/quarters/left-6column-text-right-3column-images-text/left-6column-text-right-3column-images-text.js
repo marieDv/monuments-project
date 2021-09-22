@@ -27,12 +27,12 @@ p {
 
   <div class="row">
 
-      <div class="col-md-6 col-sm-12">
+      <div class="col-md-5 col-sm-12">
         <div id="1-headline"></div>
         <div id="1-subheadline"></div>
         <div id="1-variable-text-slot"></div>
       </div>
-
+      <div class="col-md-1"></div>
       <div class="col-md-3 col-sm-12">
         <div id="2-headline"></div>
         <div id="2-subheadline"></div>
@@ -75,7 +75,7 @@ class left6ColumnTextRight3ColumnImagesText extends HTMLElement {
     createComponentFromSlot(this, '3-subheadline');
     createVariableComponents(this, '3-variable-text-slot');
     createComponentFromSlot(this, '2-img');
-    createComponentFromSlot(this, 'a-button');
+    // createComponentFromSlot(this, 'a-button');
     //createVariableComponents(this, '3-freeText');
 
   }
