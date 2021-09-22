@@ -51,7 +51,7 @@ function createVariableComponents(base, id) {
   let containerTemp = base.getElementsByTagName('div');
   let container;
   for (let i = 0; i < containerTemp.length; i++) {
-    console.log(containerTemp[i].id)
+    // console.log(containerTemp[i].id)
     if (containerTemp[i].id === id) {
       container = containerTemp[i];
     }
@@ -74,6 +74,7 @@ function createVariableComponents(base, id) {
       slotsForTemplate += "<style>#imgPath{background-image: url("+span[i].getAttribute("path")+");}</style> <a class='project-preview' href="+span[i].getAttribute("link")+"><div>"+ span[i].innerHTML + "<div id='imgPath'></div><div class='project-preview-text'><h4>"+span[i].getAttribute("title")+"</h4><div id='country'><p>"+span[i].getAttribute("country")+"</p></div></div></div></a>";
     console.log(span[i].getAttribute("path"))
     }
+   
     if (tempText === "text") {
       slotsForTemplate += "<p>" + span[i].innerHTML + "</p>";
     }
@@ -97,10 +98,10 @@ function createVariableComponents(base, id) {
     }
 
   }
-  console.log(slotsForTemplate)
+  // console.log(slotsForTemplate)
   base.shadowRoot.getElementById(id).innerHTML = String(slotsForTemplate);
   base.shadowRoot.getElementById(id).classList.add(base.getAttribute("colWidth"));
-  console.log(base.shadowRoot.getElementById(id).innerHTML)
+  // console.log(base.shadowRoot.getElementById(id).innerHTML)
   slotsForTemplate = '';
 }
 
@@ -139,7 +140,7 @@ function createNestedComponent(base, name, attributes, col, slots) {
     }
   }
   string += "</" + name + ">";
-  console.log(string)
+  // console.log(string)
   //** CREATE A NEW ELEMENT **/
   createElementFromString(base, string, name);
 

@@ -2,7 +2,7 @@
 // Attributes: altimg, imgPath, caption, variable text slots
 
 
-const ThirdsImageWide3ColumnTextTemplate = document.createElement("template");
+let ThirdsImageWide3ColumnTextTemplate = document.createElement("template");
 ThirdsImageWide3ColumnTextTemplate.innerHTML = allStyles + `
 
 <style>
