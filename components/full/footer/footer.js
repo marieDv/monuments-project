@@ -176,6 +176,10 @@ makeScript('/components/quarters/left-6column-text-right-3column-images-text/lef
 makeScript('/components/quarters/right-6column-text-left-3column-images-text/right-6column-text-left-3column-images-text.js');
 makeScript('/components/quarters/left-6column-image-right-3column-texts/left-6column-image-right-3column-texts.js');
 makeScript('/components/quarters/right-6column-image-left-3column-texts/right-6column-image-left-3column-texts.js');
+makeScript('/components/quarters/left-9column-image-right-3column-text/left-9column-image-right-3column-text.js');
+makeScript('/components/quarters/right-9column-image-left-3column-text/right-9column-image-left-3column-text.js');
+
+
 
 
 // ******************************************************************************************************************************************************
