@@ -13,12 +13,12 @@ H3HeadlinesTwo3ColumnImageBodyTextTemplate.innerHTML = allStyles + `
 <div class="container-fluid">
     <div class='row'>
         <div class='col-md-6' id='border'>
-        <span id='1-h3'></span>
+        <span id='1-headline'></span>
 
 <div class="container">
     <div class='row'>
     <div class='col-md-6' id='border'>
-        <span id='img'></span>
+        <span id='1-img'></span>
     </div>
     <div class='col-md-6' id='border'>
 
@@ -28,7 +28,7 @@ H3HeadlinesTwo3ColumnImageBodyTextTemplate.innerHTML = allStyles + `
     </div>
 </div>
 <div class='col-md-6'>
-<span id='2-h3'></span>
+<span id='2-headline'></span>
 <span id='variable-text-slot'></span>
 </div>
 </div>
@@ -41,17 +41,14 @@ class H3HeadlinesTwo3ColumnImageBodyText extends HTMLElement {
   constructor() {
     super();
     setupComponent(this, H3HeadlinesTwo3ColumnImageBodyTextTemplate);
-    createComponentFromSlot(this,'1-h3');
-    createComponentFromSlot(this,'img');
-    createComponentFromSlot(this,'2-h3');
+    createComponentFromSlot(this,'1-headline');
+    createComponentFromSlot(this,'1-img');
+    createComponentFromSlot(this,'2-headline');
     createComponentFromSlot(this,'2-img');
     createVariableComponents(this,'variable-text-slot');
 
     if(this.getAttribute("hasBorder") === "true"){
         this.shadowRoot.getElementById('border').classList.add('applyBorder');
-
-
-console.log("There is a border")
     }
     console.log(this.getAttribute('hasBorder'))
   }

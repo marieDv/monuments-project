@@ -20,6 +20,14 @@ h3{
   font-family: "Redaction", sans-serif;
   text-transform: uppercase;
 }
+.button-style {
+  background: #e24e43;
+  border: 1px solid #e24e43 !important;
+  /* color: white; */
+}
+.button-style:hover {
+  border: 1px solid #ffffff !important;
+}
 #style-blockquote {
   font-family: "Redaction", sans-serif;
 }
