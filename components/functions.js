@@ -14,7 +14,7 @@ function createVariableText(base, id, position, container) {
         tempText = ((span[i].slot).split('-'))[1];
 
       }
- 
+
       if (tempText === "text") {
         slotsForTemplate += "<p>" + span[i].innerHTML + "</p>";
       }
@@ -68,13 +68,10 @@ function createVariableComponents(base, id) {
       tempText = ((span[i].slot).split('-'))[1];
     }
     if (tempText === "project") {
-      // console.log(span[i].getAttribute("path"))
-      // let tempPath =`background-image: url(`+span[i].getAttribute("path")+`)`;
-      // alert(tempPath)
-      slotsForTemplate += "<style>#imgPath{background-image: url("+span[i].getAttribute("path")+");}</style> <a class='project-preview' href="+span[i].getAttribute("link")+"><div>"+ span[i].innerHTML + "<div id='imgPath'></div><div class='project-preview-text'><h4>"+span[i].getAttribute("title")+"</h4><div id='country'><p>"+span[i].getAttribute("country")+"</p></div></div></div></a>";
-    console.log(span[i].getAttribute("path"))
+      slotsForTemplate += "<style>#imgPath{background-image: url(" + span[i].getAttribute("path") + ");}</style> <a class='project-preview' href=" + span[i].getAttribute("link") + "><div>" + span[i].innerHTML + "<div id='imgPath'></div><div class='project-preview-text'><h4>" + span[i].getAttribute("title") + "</h4><div id='country'><p>" + span[i].getAttribute("country") + "</p></div></div></div></a>";
+      console.log(span[i].getAttribute("path"))
     }
-   
+
     if (tempText === "text") {
       slotsForTemplate += "<p>" + span[i].innerHTML + "</p>";
     }
@@ -95,6 +92,11 @@ function createVariableComponents(base, id) {
     }
     if (tempText === "h3") {
       slotsForTemplate += "<h3-with-bottom-margin><span slot='title'>" + span[i].innerHTML + "</span></h3-with-bottom-margin>";
+    }
+    if (tempText === "h4") {
+      console.log("INSIDE FUNCTION")
+      slotsForTemplate += "<h4-with-bottom-margin-var-width><span slot='title'>" + span[i].innerHTML + "</span></h4-with-bottom-margin-var-width>";
+      console.log(slotsForTemplate)
     }
     if (tempText === "block-quote") {
       slotsForTemplate += "<block-quote-width-left-and-bottom-margin-var-width><span slot='text'>" + span[i].innerHTML + "</span></block-quote-width-left-and-bottom-margin-var-width>";
