@@ -5,6 +5,8 @@ h1 {
   text-align: center;
   margin-bottom: 46px;
   text-transform: uppercase;
+  font-size: 120px;
+  line-height: 100px;
 }
 @media only screen and (max-width: 720px) {
   h1 {
