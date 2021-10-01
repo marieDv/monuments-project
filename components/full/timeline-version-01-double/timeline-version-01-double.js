@@ -13,11 +13,7 @@ fullTimelineVersion01DoubleTemplate.innerHTML = allStyles + `
   border-right: none;*/
 }
 #timeline::after {
-content:"";
-position: absolute;
-height: 100%;
-width: 2px;
-background: black;
+
 }
 #border-box {
   position: relative;
