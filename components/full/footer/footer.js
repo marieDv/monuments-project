@@ -71,6 +71,7 @@ makeScript('/components/base/space-360/space-360.js');
 
 makeScript('/components/full/chapter/chapter.js');
 makeScript('/components/full/timeline-version-01/timeline-version-01.js');
+makeScript('/components/full/timeline-version-01-double/timeline-version-01-double.js');
 makeScript('/components/full/timeline-version-02/timeline-version-02.js');
 
 
