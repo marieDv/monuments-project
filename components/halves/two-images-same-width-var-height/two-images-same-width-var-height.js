@@ -28,7 +28,9 @@ p {
 .no {
   display:none;
 }
-
+.applyBorder {
+  border-left: 1px solid black;
+}
 .row {
   position: relative;
 }
@@ -52,7 +54,7 @@ p {
 
     <!-- <div id="line"></div> -->
 
-    <div class="col-6">
+    <div id="border" class="col-6">
     <span id='2-img'></span>
     </div>
   </div>
@@ -67,9 +69,9 @@ class TwoImgsSameWidthVarHeight extends HTMLElement {
     super();
     setupComponent(this, twoImgsSameWidthVarHeightTemplate);
     
-    //LINE OR NO LINE? 
-    // this.shadowRoot.getElementById('line').classList.add(this.getAttribute("Line?"));
-  
+    if(this.getAttribute("hasBorder") === "true"){
+      this.shadowRoot.getElementById('border').classList.add('applyBorder');
+  }
 
     createComponentFromSlot(this, '1-img');
     createComponentFromSlot(this, '2-img');

@@ -1,6 +1,6 @@
 //CREATING THE VARIABLE THAT HOLDS THE TEMPLATE
 var click = false;
-
+var srcArray = [];
 
 const chapterTemplate = document.createElement("template");
 
@@ -61,6 +61,42 @@ chapterTemplate.innerHTML = allStyles + `
   margin: 20px 18px;
 }
 #imgPath {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  display: inline-block;
+  margin: 20px 18px;
+}
+#imgPath0 {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  display: inline-block;
+  margin: 20px 18px;
+}
+#imgPath1 {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  display: inline-block;
+  margin: 20px 18px;
+}
+#imgPath2 {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  display: inline-block;
+  margin: 20px 18px;
+}
+#imgPath3 {
   width: 100px;
   height: 100px;
   background-size: cover;
