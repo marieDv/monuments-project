@@ -60,7 +60,7 @@ button:focus {
 .grid-img {
   background-size: cover;
   width: 100%;
-  height: 200px;
+  /* height: 200px; */
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
@@ -81,26 +81,27 @@ button:focus {
 #archive {
   background-color: #131214;
   color: #ffffff;
-  padding: 2px 40px;
-  min-height: 1200px;
+  padding: 2px 16px 120px;
 }
 #archive .button {
   background-color: transparent;
   color: #ffffff;
-  border: 1px solid #ffffff63;
-  padding: 2px 12px;
-  border-radius: 5px;
+  border: 0px solid #ffffff63;
+  padding: 2px 6px;
+  /* border-radius: 5px; */
   margin-right: 2px;
+  font-size: 14px;
 }
 
 #archive .filters {
   padding: 10px 0 30px;
 }
 #archive h4 {
-  font-size: 14px;
-  text-transform: uppercase;
+  font-size: 18px;
+  /* text-transform: uppercase; */
   letter-spacing: 0.7px;
   padding-left: 3px;
+  margin-left: -5px;
 }
 #archive .button.is-checked {
   background-color: rgb(226, 250, 97);
@@ -113,9 +114,10 @@ button:focus {
   text-transform: uppercase;
   font-size: 142px !important;
   line-height: 114px !important;
-
 }
-
+.button-group-container {
+  width: 33.3333%;
+}
 #section-chapters {
   /* background: #eeeeee; */
   border-top: solid #0000000e 1px;
@@ -126,7 +128,7 @@ button:focus {
 }
 #section-chapters .landing-h2,
 .text-prio-two {
-  padding: 2px 40px 0 40px;
+  padding: 2px 16px 0 16px;
 }
 
 /*Isotope styling*/
@@ -137,29 +139,40 @@ button:focus {
 
 .grid {
   margin-top: 32px;
+  width: 33.3333%;
+  padding: 0 8px;
+}
+
+#grid-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-items a {
+  color: white;
+  /* margin-bottom: 10px; */
+  font-size: 14px;
+  /* border-bottom: 1px solid #ffffff0a; */
+  margin-bottom: 4px;
+  /* text-transform: uppercase; */
 }
 
 .grid-item,
 .grid-sizer {
-  width: 19.5%;
+  /* width: 19.5%; */
+  width: 100%;
 }
 
 .grid-item {
   float: left;
-  height: 260px;
-  border: 1px solid #e2fa61;
-  margin-bottom: 10px;
-  /* border-color: hsla(0, 0%, 0%, 0.7); */
   display: flex;
   flex-wrap: wrap;
 }
 .grid-item p {
-  align-self: flex-end;
-  padding-left: 14px;
-  font-size: 14px;
-  font-family: "Arial", sans-serif;
-  margin-bottom: 0;
-  line-height: 1.3;
+
+  margin-bottom: 4px;
+  font-family: "Arial";
+  text-transform: uppercase;
 }
 
 #isotope {
