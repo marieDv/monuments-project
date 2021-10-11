@@ -12,8 +12,8 @@ topMenu.innerHTML = allStyles + `
   left: 0;
   width: 100%;
   height: 72px;
-  background: #ffffff;
-border-bottom: 8px solid #E2FA61;
+  /*background: #ffffff;*/
+/*border-bottom: 8px solid #E2FA61;*/
 z-index: 9999;
   padding-top: 14px;
   /*-webkit-box-shadow: 0px 10px 24px -9px rgba(0,0,0,0.10); 
