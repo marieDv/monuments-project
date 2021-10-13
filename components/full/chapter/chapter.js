@@ -53,7 +53,6 @@ chapterTemplate.innerHTML = allStyles + `
   height: 140px;
   position: relative;
   display: table;
-  margin-bottom: 8px;
 }
 .project-preview:last-child {
   border-bottom: transparent;
@@ -75,6 +74,7 @@ chapterTemplate.innerHTML = allStyles + `
   color: black;
   margin: 20px 18px;
   font-family: 'Arial', sans-serif;
+  margin: 20px 18px 0 156px;
 }
 #country p {
   display: inline;
@@ -89,50 +89,38 @@ chapterTemplate.innerHTML = allStyles + `
   margin-top: 5px;
     margin-left: 8px;
 }
-#imgPath {
-  width: 100px;
-  height: 100px;
+
+.imgPath {
+  width: 140px;
+  height: 140px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 0;
   display: inline-block;
-  margin: 20px 18px;
 }
 #imgPath0 {
-  width: 100px;
-  height: 100px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 0;
   display: inline-block;
-  margin: 20px 18px;
 }
 #imgPath1 {
-  width: 100px;
-  height: 100px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 0;
   display: inline-block;
-  margin: 20px 18px;
 }
 #imgPath2 {
-  width: 100px;
-  height: 100px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 0;
   display: inline-block;
-  margin: 20px 18px;
 }
 #imgPath3 {
-  width: 100px;
-  height: 100px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 0;
   display: inline-block;
-  margin: 20px 18px;
 }
 .project-preview img {
   width: 200px;
@@ -159,7 +147,9 @@ chapterTemplate.innerHTML = allStyles + `
     right: 26px;
   }
 }
-
+#projects {
+  margin-top: -118px;
+}
 .to-minus {
   cursor: pointer;
   background-image: url('../../../media/minus.svg') !important;
@@ -189,8 +179,8 @@ margin-top: 102px;
   text-transform: uppercase;
 }
 #subheadline {
-  // color: #ffffff;
-  // font-style: italic;
+  
+  font-style: italic;
   right: 0;
   margin-top: -10px;
   position: absolute;
@@ -221,7 +211,7 @@ margin-top: 102px;
   // top: 8px;
 }
 .chapter-opened {
-  height: 707px;
+  height: 424px;
 }
 @media only screen and (max-width: 1200px) {
 .chapter-opened {
@@ -287,7 +277,7 @@ margin-top: 102px;
                 </audio>
             </figure>
           </div>
-           <div class="col-12 col-md-6">
+           <div class="col-12 col-md-5">
               
               <!--<h4 class="read-more">Click to read more</h4>-->
               <p id="projects"></p>
