@@ -4,6 +4,7 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
@@ -26,15 +27,26 @@
   <!--HEADER START -->
   <header-single title="A hidden memory" creatorsName="Othmane Taki" colWidth="col-6"
     h2Title="this is the title for my h2" altImg="Intro img" imgPath="./media/archive-casa-statue-placem5.jpg">
-    <span slot="text"> March 1912, the Sultan of Morocco, Moulay Hafid signed the protectorate treaty with France. Two months later, Hubert Lyautey arrived in Casablanca to become the first general resident of France in Morocco. He will remain in this function for twelve years, a sufficient to the shape the colonisation and transform the country in depth.
+    <span slot="text"> March 1912, the Sultan of Morocco, Moulay Hafid signed the protectorate treaty with France. Two
+      months later, Hubert Lyautey arrived in Casablanca to become the first general resident of France in Morocco. He
+      will remain in this function for twelve years, a sufficient to the shape the colonisation and transform the
+      country in depth.
 
-      His equestrian statue has been envisaged upon his death in 1934, and was inaugurated in 1938 in the center of the Place de la Victoire also called the Administrative Square, the current Place Mohammed V. As for the former royal places, the ordering of the Place de la Victoire brings the axes and the monuments into harmony. The monumental facades and the axes of the square converged on the equestrian statue of Marshal Lyautey. In one night of 1959, after Morocco officially gained independence on 2 March 1956, and due to a lot of pressure from certain Moroccan political and trade union groups, the government will move the sculpture to the gardens of the future Consulate General of France, moving it from public to private space. 
-      
-      With this project I want to give a good sense of the location and what happened in this time, during and after the colonial era, and also highlight the fact that this is not only a story about a statue but also a story about space.
-       </span>
+      His equestrian statue has been envisaged upon his death in 1934, and was inaugurated in 1938 in the center of the
+      Place de la Victoire also called the Administrative Square, the current Place Mohammed V. As for the former royal
+      places, the ordering of the Place de la Victoire brings the axes and the monuments into harmony. The monumental
+      facades and the axes of the square converged on the equestrian statue of Marshal Lyautey. In one night of 1959,
+      after Morocco officially gained independence on 2 March 1956, and due to a lot of pressure from certain Moroccan
+      political and trade union groups, the government will move the sculpture to the gardens of the future Consulate
+      General of France, moving it from public to private space.
+
+      With this project I want to give a good sense of the location and what happened in this time, during and after the
+      colonial era, and also highlight the fact that this is not only a story about a statue but also a story about
+      space.
+    </span>
     <span slot="caption">image description</span>
 
-      
+
   </header-single>
   <!--HEADER END -->
   <!--***********************************************************************************************-->
@@ -42,12 +54,69 @@
   <!--***********************************************************************************************-->
   <!--YOUR COMPONENTS GO INTO THIS SPACE -->
 
-  <image-full-width-var-height imgpath="./media/lyautey-screen-images-1.jpg" altimg="*">
-    <span slot="caption">*</span>
-    </image-full-width-var-height>
+  
+    <!-- <image-full-width-var-height imgpath="./media/lyautey-screen-images-1.jpg" altimg="*">
+      <span slot="caption">*</span>
+    </image-full-width-var-height> -->
 
 
 
+
+  <style>
+    #custom-app {
+      position: relative;
+      height: 120vh;
+    }
+
+    #link-list {
+      /* display: flex;
+      flex-wrap: wrap; */
+      position: absolute;
+      top: 0;
+      left: 2.8vw;
+    }
+
+    #image-container {
+      width: 100%;
+      height: 100vh;
+    }
+
+    #image-container img {
+      width: 100%;
+      height: auto;
+    }
+
+    .year {
+      display: block;
+      height: calc((100vh/6.8));
+      font-family: 'Ortica', sans-serif;
+      font-size: 19px;
+      height: 20px;
+      position: absolute;
+      cursor: pointer;
+    }
+  </style>
+
+
+
+  <div id="custom-app">
+    <div id="image-container">
+      <img id="replace-img" src="./media/lyautey-screen-images-start.jpg" alt="image-1">
+    </div>
+    <div id="link-list">
+
+      <span style="        margin-top: 4.5vw;
+      position: absolute;" id="changeToImg1" class="year">1912</span>
+      <span style="margin-top: 8vw;" id="changeToImg2" class="year">1916</span>
+      <span style="margin-top: 13vw;" id="changeToImg3" class="year">1922</span>
+      <span style="margin-top: 18vw;" id="changeToImg4" class="year">1936</span>
+      <span style="margin-top: 21.5vw;" id="changeToImg5" class="year">1938</span>
+      <span style="       margin-top: 31.3vw;
+" id="changeToImg6" class="year">1959</span>
+      <span style="           margin-top: 46vw;
+" id="changeToImg7" class="year">2020</span>
+    </div>
+  </div>
 
 
 
@@ -78,4 +147,28 @@
   </script>
   <script src="../../components/full/footer/footer.js"></script>
 </footer>
+
 </html>
+
+
+
+<script>
+
+  document.getElementById("changeToImg1").addEventListener("click", onClickYear);
+  document.getElementById("changeToImg2").addEventListener("click", onClickYear);
+  document.getElementById("changeToImg3").addEventListener("click", onClickYear);
+  document.getElementById("changeToImg4").addEventListener("click", onClickYear);
+  document.getElementById("changeToImg5").addEventListener("click", onClickYear);
+  document.getElementById("changeToImg6").addEventListener("click", onClickYear);
+  document.getElementById("changeToImg7").addEventListener("click", onClickYear);
+
+  function onClickYear(event) {
+    let chooseImg = event.target.id.slice(event.target.id.length - 1);
+    let replaceImg = document.getElementById("replace-img");
+    let newPath = "./media/lyautey-screen-images-" + chooseImg + ".jpg"
+    replaceImg.src = newPath;
+    console.log(event.target.id.slice(event.target.id.length - 1));
+
+
+  }
+</script>
