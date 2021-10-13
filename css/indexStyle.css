@@ -23,19 +23,13 @@ body {
   margin: 100px;
 } */
 #text-priority {
-  /* color: #5c23ff; */
   font-family: "Redaction", serif;
-  /* font-style: italic; */
   font-size: 42px;
-  /* border: 1px solid #5c23ff; */
-  padding: 56px 10px 10px 16px;
+  padding: 56px 10px 0 16px;
   display: block;
-  /* text-align: right; */
   max-width: 80%;
   width: 84%;
-  /* margin: 0 auto; */
   border-radius: 48px;
-  margin-top: -50px;
   line-height: 1;
   font-size: 44px;
   padding-right: 0;
@@ -154,8 +148,7 @@ button:focus {
 }
 #section-chapters .landing-h2,
 .text-prio-two {
-  padding: 2px 16px 0 16px;
-  padding: 34px 16px 0 16px;
+  padding: 9px 16px 185px 0;
 }
 
 /*Isotope styling*/
@@ -217,6 +210,7 @@ button:focus {
 
 #isotope {
   position: relative;
+  border-top: solid #e7e7e7 2px;
 }
 
 .grid-item .name {
