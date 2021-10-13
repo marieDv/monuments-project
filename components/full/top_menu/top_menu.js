@@ -41,6 +41,11 @@ a:hover {
 #logo img {
   width: 18%;
 }
+@media only screen and (max-width: 780px) {
+  #logo img {
+    width: 61%;
+  }
+}
 
 #itemTwo {
   text-align: right;

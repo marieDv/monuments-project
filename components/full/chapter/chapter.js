@@ -3,6 +3,16 @@ var click = false;
 var srcArray = [];
 
 const chapterTemplate = document.createElement("template");
+function randomIntFromInterval(min, max) { // min and max included 
+  return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+
+
+
+
+
+
 
 
 // TEMPLATE FOR OUR COMPONENT
@@ -188,6 +198,7 @@ margin-top: 102px;
 }
 .chapter-light {
 
+  background-image: url('../../../media/intro-image-statue-cutout.png');
   border-top: 2px solid #f0f0f0;
 
 }
@@ -205,7 +216,7 @@ margin-top: 102px;
   background-image: url('../../../media/plus-inverted.svg');
   // top: 8px;
 }
-.chapter-light #plus.to-minus {
+#plus.to-minus {
   background-image: url('../../../media/minus-inverted.svg') !important;
   // top: 8px;
 }
@@ -214,7 +225,7 @@ margin-top: 102px;
 }
 @media only screen and (max-width: 1200px) {
 .chapter-opened {
-    height: 1391px;
+  /*  height: 1391px;*/
 }
 }
 
@@ -293,14 +304,11 @@ class chapterCard extends HTMLElement {
   constructor() {
     super();
     setupComponent(this, chapterTemplate);
-    // createComponentFromSlot(this, 'headline');
     createComponentFromSlot(this, 'subheadline');
     createComponentFromSlot(this, 'text');
     createVariableComponents(this, 'projects');
     chapterCounter++;
-    // console.log(chapterCounter)
-    // console.log(document.get.getAttribute("path"))
-    console.log(this.getElementsByTagName("div")[0].children[0].getAttribute("path"))
+    console.log(chapterCounter)
 
     let allPaths = [];
     let newImageString = "";
@@ -308,8 +316,14 @@ class chapterCard extends HTMLElement {
       allPaths[i] = this.getElementsByTagName("div")[0].children[i].getAttribute("path");
       newImageString += "<div class='preview-image' style='background-image: url("+allPaths[i]+");'></div>";
     }
-    console.log(newImageString)
     this.shadowRoot.getElementById("preview-images").innerHTML =newImageString;
+
+
+    let randomPositionBackgroundImage = [randomIntFromInterval(-30, 100), randomIntFromInterval(-30, 100), randomIntFromInterval(1, 100), randomIntFromInterval(1, 100), randomIntFromInterval(1, 100), randomIntFromInterval(1, 100), randomIntFromInterval(1, 100)]
+    this.shadowRoot.getElementById("chapter").style.backgroundPosition = randomPositionBackgroundImage[chapterCounter]+"%"+randomPositionBackgroundImage[chapterCounter]+"%";
+
+
+
 
 
     if (chapterCounter % 2 === 0) {

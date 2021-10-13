@@ -101,6 +101,7 @@ p {
   text-align: left !important;
 }
 .link-back {
+  display: none;
   position: absolute;
   color: black;
   text-decoration: underline;
