@@ -25,15 +25,17 @@ function enableIsotope() {
       // change selected
       $buttonGroup.find('.active').removeClass('active');
       $this.addClass('active');
-console.log($this.target)
-      removeFocus("button-group-continent");
-      $this.target.classList.add("is-checked");
+      // console.log($this[0].parentElement.classList[2])
+      let removeFocusClass = $this[0].parentElement.classList[2];
+      removeFocus(removeFocusClass);
+      // $this.target.classList.add("is-checked");
+      $this.classList.add("is-checked");
     });
   });
   function removeFocus(className) {
     let archive = document.getElementsByClassName(className)[0];
     let archiveButtons = archive.querySelectorAll('button');
-    console.log(archiveButtons);
+    // console.log(archive);
     for (let i = 0; i < archiveButtons.length; i++) {
       if (archiveButtons[i].classList.contains('is-checked')) {
         archiveButtons[i].classList.remove('is-checked');

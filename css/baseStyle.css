@@ -78,10 +78,11 @@ p {
   border-right: 1px solid black;
 }
 #intro-logo {
-  width: calc(100% - 40px);
+  /* width: calc(100% - 40px); */
+  width: calc(100% - -10px);
   display: block;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 130px;
 }
 
 .header-bg {
