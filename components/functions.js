@@ -14,7 +14,7 @@ function createVariableText(base, id, position, container) {
         tempText = ((span[i].slot).split('-'))[1];
 
       }
- 
+
       if (tempText === "text") {
         slotsForTemplate += "<p>" + span[i].innerHTML + "</p>";
       }
@@ -51,7 +51,7 @@ function createVariableComponents(base, id) {
   let containerTemp = base.getElementsByTagName('div');
   let container;
   for (let i = 0; i < containerTemp.length; i++) {
-    console.log(containerTemp[i].id)
+    // console.log(containerTemp[i].id)
     if (containerTemp[i].id === id) {
       container = containerTemp[i];
     }
@@ -68,14 +68,25 @@ function createVariableComponents(base, id) {
       tempText = ((span[i].slot).split('-'))[1];
     }
     if (tempText === "project") {
+      let tempImgClass = "imgPath"+i;
+      // console.log("tempimgclass");
+      // console.log(tempImgClass);
+      slotsForTemplate += "<style>#"+tempImgClass+"{background-image: url(" + span[i].getAttribute("path") + ");}</style> <a class='project-preview' href=" + span[i].getAttribute("link") + "><div style='display: flex;'>" + span[i].innerHTML + "<div class='imgPath' id='"+tempImgClass+"'></div><div class='project-preview-text'><h4>" + span[i].getAttribute("title") + "</h4><div id='country'><p>" + span[i].getAttribute("country") + "</p></div></div></div></a>";
       // console.log(span[i].getAttribute("path"))
-      // let tempPath =`background-image: url(`+span[i].getAttribute("path")+`)`;
-      // alert(tempPath)
-      slotsForTemplate += "<style>#imgPath{background-image: url("+span[i].getAttribute("path")+");}</style> <a class='project-preview' href="+span[i].getAttribute("link")+"><div>"+ span[i].innerHTML + "<div id='imgPath'></div><div class='project-preview-text'><h4>"+span[i].getAttribute("title")+"</h4><div id='country'><p>"+span[i].getAttribute("country")+"</p></div></div></div></a>";
-    console.log(span[i].getAttribute("path"))
+      // console.log(span[i].getAttribute("link"))
     }
+
     if (tempText === "text") {
       slotsForTemplate += "<p>" + span[i].innerHTML + "</p>";
+    }
+    if (tempText === "space-32") {
+      slotsForTemplate += "<space-32></space-32>";
+    }
+    if (tempText === "space-64") {
+      slotsForTemplate += "<space-64></space-64>";
+    }
+    if (tempText === "space-120") {
+      slotsForTemplate += "<space-120></space-120>";
     }
     if (tempText === "h2") {
       slotsForTemplate += "<h2-section-title><span slot='title'>" + span[i].innerHTML + "</span></h2-section-title>";
@@ -85,6 +96,11 @@ function createVariableComponents(base, id) {
     }
     if (tempText === "h3") {
       slotsForTemplate += "<h3-with-bottom-margin><span slot='title'>" + span[i].innerHTML + "</span></h3-with-bottom-margin>";
+    }
+    if (tempText === "h4") {
+      
+      slotsForTemplate += "<h4-with-bottom-margin-var-width><span slot='title'>" + span[i].innerHTML + "</span></h4-with-bottom-margin-var-width>";
+      // console.log(slotsForTemplate)
     }
     if (tempText === "block-quote") {
       slotsForTemplate += "<block-quote-width-left-and-bottom-margin-var-width><span slot='text'>" + span[i].innerHTML + "</span></block-quote-width-left-and-bottom-margin-var-width>";
@@ -97,10 +113,10 @@ function createVariableComponents(base, id) {
     }
 
   }
-  console.log(slotsForTemplate)
+  // console.log(slotsForTemplate)
   base.shadowRoot.getElementById(id).innerHTML = String(slotsForTemplate);
   base.shadowRoot.getElementById(id).classList.add(base.getAttribute("colWidth"));
-  console.log(base.shadowRoot.getElementById(id).innerHTML)
+  // console.log(base.shadowRoot.getElementById(id).innerHTML)
   slotsForTemplate = '';
 }
 
@@ -139,7 +155,7 @@ function createNestedComponent(base, name, attributes, col, slots) {
     }
   }
   string += "</" + name + ">";
-  console.log(string)
+  // console.log(string)
   //** CREATE A NEW ELEMENT **/
   createElementFromString(base, string, name);
 

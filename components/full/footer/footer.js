@@ -70,6 +70,10 @@ makeScript('/components/base/space-360/space-360.js');
 // ******************************
 
 makeScript('/components/full/chapter/chapter.js');
+makeScript('/components/full/references/references.js');
+makeScript('/components/full/timeline-version-01/timeline-version-01.js');
+makeScript('/components/full/timeline-version-01-double/timeline-version-01-double.js');
+makeScript('/components/full/timeline-version-02/timeline-version-02.js');
 
 
 // IMPORT image-full-width-var-height
@@ -144,6 +148,9 @@ makeScript('/components/halves/h3-headlines-2column-3column-image-body-text/h3-h
 
 makeScript('/components/halves/h3-headlines-3column-2column-image-body-text/h3-headlines-3column-2column-image-body-text.js');
 
+makeScript('/components/halves/h3-headlines-2column-3column-image-body-text/h3-headlines-2column-3column-image-body-text.js')
+
+makeScript('/components/halves/mirror-h3-headlines-6column-image-body-text/mirror-h3-headlines-6column-image-body-text.js')
 // ******************************************************************************************************************************************************
 // IMPORT THIRDS COMPONENTS
 
@@ -167,6 +174,15 @@ scriptHeadlines4ImagesBodyText.src = '/components/quarters/headlines-4-images-bo
 document.head.appendChild(scriptHeadlines4ImagesBodyText);
 
 makeScript('/components/quarters/headlines-eight-images/headlines-eight-images.js');
+makeScript('/components/quarters/left-6column-text-right-3column-images-text/left-6column-text-right-3column-images-text.js');
+makeScript('/components/quarters/right-6column-text-left-3column-images-text/right-6column-text-left-3column-images-text.js');
+makeScript('/components/quarters/left-6column-image-right-3column-texts/left-6column-image-right-3column-texts.js');
+makeScript('/components/quarters/right-6column-image-left-3column-texts/right-6column-image-left-3column-texts.js');
+makeScript('/components/quarters/left-9column-image-right-3column-text/left-9column-image-right-3column-text.js');
+makeScript('/components/quarters/right-9column-image-left-3column-text/right-9column-image-left-3column-text.js');
+
+
+
 
 // ******************************************************************************************************************************************************
 // IMPORT DOCS
@@ -250,11 +266,10 @@ function createTemplate(link) {
   </style>
   <div id="footer">
   <div>
-    <a href="">Resources</a>
-    <a href="">idididid Radio</a>
-    <a href="">Instagram</a>
+    <a target="_blank" href="https://ididididid.club/">idididid Radio</a>
+    <a target="_blank" href="https://www.instagram.com/idididididradio/">Instagram</a>
 
-    <p id="contact">Contact Us: <a href="mailto:theaftermonument@gmail.co">theaftermonument@gmail.com</a></p>
+    <!--<p id="contact">Contact Us: <a href="mailto:theaftermonument@gmail.co">theaftermonument@gmail.com</a></p>-->
     </div>
   </div>
   `;
