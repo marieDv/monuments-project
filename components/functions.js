@@ -68,8 +68,12 @@ function createVariableComponents(base, id) {
       tempText = ((span[i].slot).split('-'))[1];
     }
     if (tempText === "project") {
-      slotsForTemplate += "<style>#imgPath{background-image: url(" + span[i].getAttribute("path") + ");}</style> <a class='project-preview' href=" + span[i].getAttribute("link") + "><div>" + span[i].innerHTML + "<div id='imgPath'></div><div class='project-preview-text'><h4>" + span[i].getAttribute("title") + "</h4><div id='country'><p>" + span[i].getAttribute("country") + "</p></div></div></div></a>";
-      console.log(span[i].getAttribute("path"))
+      let tempImgClass = "imgPath"+i;
+      // console.log("tempimgclass");
+      // console.log(tempImgClass);
+      slotsForTemplate += "<style>#"+tempImgClass+"{background-image: url(" + span[i].getAttribute("path") + ");}</style> <a class='project-preview' href=" + span[i].getAttribute("link") + "><div style='display: flex;'>" + span[i].innerHTML + "<div class='imgPath' id='"+tempImgClass+"'></div><div class='project-preview-text'><h4>" + span[i].getAttribute("title") + "</h4><div id='country'><p>" + span[i].getAttribute("country") + "</p></div></div></div></a>";
+      // console.log(span[i].getAttribute("path"))
+      // console.log(span[i].getAttribute("link"))
     }
 
     if (tempText === "text") {
@@ -94,9 +98,9 @@ function createVariableComponents(base, id) {
       slotsForTemplate += "<h3-with-bottom-margin><span slot='title'>" + span[i].innerHTML + "</span></h3-with-bottom-margin>";
     }
     if (tempText === "h4") {
-      console.log("INSIDE FUNCTION")
+      
       slotsForTemplate += "<h4-with-bottom-margin-var-width><span slot='title'>" + span[i].innerHTML + "</span></h4-with-bottom-margin-var-width>";
-      console.log(slotsForTemplate)
+      // console.log(slotsForTemplate)
     }
     if (tempText === "block-quote") {
       slotsForTemplate += "<block-quote-width-left-and-bottom-margin-var-width><span slot='text'>" + span[i].innerHTML + "</span></block-quote-width-left-and-bottom-margin-var-width>";
