@@ -70,6 +70,7 @@ makeScript('/components/base/space-360/space-360.js');
 // ******************************
 
 makeScript('/components/full/chapter/chapter.js');
+makeScript('/components/full/references/references.js');
 makeScript('/components/full/timeline-version-01/timeline-version-01.js');
 makeScript('/components/full/timeline-version-01-double/timeline-version-01-double.js');
 makeScript('/components/full/timeline-version-02/timeline-version-02.js');
@@ -265,11 +266,10 @@ function createTemplate(link) {
   </style>
   <div id="footer">
   <div>
-    <a href="">Resources</a>
-    <a href="">idididid Radio</a>
-    <a href="">Instagram</a>
+    <a target="_blank" href="https://ididididid.club/">idididid Radio</a>
+    <a target="_blank" href="https://www.instagram.com/idididididradio/">Instagram</a>
 
-    <p id="contact">Contact Us: <a href="mailto:theaftermonument@gmail.co">theaftermonument@gmail.com</a></p>
+    <!--<p id="contact">Contact Us: <a href="mailto:theaftermonument@gmail.co">theaftermonument@gmail.com</a></p>-->
     </div>
   </div>
   `;
