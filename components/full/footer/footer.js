@@ -266,11 +266,10 @@ function createTemplate(link) {
   </style>
   <div id="footer">
   <div>
-    <a href="">Resources</a>
-    <a href="">idididid Radio</a>
-    <a href="">Instagram</a>
+    <a target="_blank" href="https://ididididid.club/">idididid Radio</a>
+    <a target="_blank" href="https://www.instagram.com/idididididradio/">Instagram</a>
 
-    <p id="contact">Contact Us: <a href="mailto:theaftermonument@gmail.co">theaftermonument@gmail.com</a></p>
+    <!--<p id="contact">Contact Us: <a href="mailto:theaftermonument@gmail.co">theaftermonument@gmail.com</a></p>-->
     </div>
   </div>
   `;
