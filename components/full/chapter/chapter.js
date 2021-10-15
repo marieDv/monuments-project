@@ -269,7 +269,7 @@ margin-top: 102px;
          
             <figure>
           <!--  <figcaption><h4 class="read-more">Listen to the conversation</h4></figcaption>-->
-               <audio
+               <audio id="audiofile"
                  controls
                  src="/media/cc0-audio/t-rex-roar.mp3">
                   Your browser does not support the
@@ -300,17 +300,21 @@ class chapterCard extends HTMLElement {
     chapterCounter++;
     console.log(chapterCounter)
 
+    console.log(this.getAttribute("audioLink"));
+    this.shadowRoot.getElementById("audiofile").src = this.getAttribute("audioLink");
+    console.log(this.shadowRoot.getElementById("audioFile"))
+
     let allPaths = [];
     let newImageString = "";
     for (let i = 0; i < this.getElementsByTagName("div")[0].children.length; i++) {
       allPaths[i] = this.getElementsByTagName("div")[0].children[i].getAttribute("path");
-      newImageString += "<div class='preview-image' style='background-image: url("+allPaths[i]+");'></div>";
+      newImageString += "<div class='preview-image' style='background-image: url(" + allPaths[i] + ");'></div>";
     }
-    this.shadowRoot.getElementById("preview-images").innerHTML =newImageString;
+    this.shadowRoot.getElementById("preview-images").innerHTML = newImageString;
 
 
     let randomPositionBackgroundImage = [randomIntFromInterval(-30, 100), randomIntFromInterval(-30, 100), randomIntFromInterval(1, 100), randomIntFromInterval(1, 100), randomIntFromInterval(1, 100), randomIntFromInterval(1, 100), randomIntFromInterval(1, 100)]
-    this.shadowRoot.getElementById("chapter").style.backgroundPosition = randomPositionBackgroundImage[chapterCounter]+"%"+randomPositionBackgroundImage[chapterCounter]+"%";
+    this.shadowRoot.getElementById("chapter").style.backgroundPosition = randomPositionBackgroundImage[chapterCounter] + "%" + randomPositionBackgroundImage[chapterCounter] + "%";
 
 
 
