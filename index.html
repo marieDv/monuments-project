@@ -7,7 +7,8 @@
 
   <title>The After Monument</title>
   <script src=""></script>
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -17,30 +18,38 @@
 </head>
 
 <body>
-  <!-- <div id="yellow-gradient"></div> -->
-  <!-- <h1 class="headline-h1">The After<br>Monument</h1> -->
-  <img id="intro-logo" src="./media/The_AFTER_Monument_Logo_FINAL.gif">
+  <section id="section-intro">
+    <img id="intro-logo" src="./media/The_AFTER_Monument_Logo_FINAL.gif">
 
 
-  <p id="text-priority">Debated or ignored. Protested or symbols of protest. Demolished or revered. Recognized as
-    monuments or not.</p>
-  <hr class="hr-strong">
-  <br><br>
-  <p class="text-prio-two pl-5 pr-5 col-12 col-md-9">
-    The After Monument shares local stories of 17 controversial monuments in-depth, while connecting them to the
-    continuing global debates around memorialization, decolonization and public art. <br>
+    <p id="text-priority">Debated or ignored. Protested or symbols of protest. Demolished or revered. Recognized as
+      monuments or not.</p>
+    <!-- <hr class="hr-strong"> -->
 
 
-    The archive can be accessed through the <strong>Themes</strong>, which highlights some of the key controversies with
-    the monuments as case studies and points of discussion. The <strong>Archive</strong> presents all the monuments
-    side-by-side. Through either section, you can access the individual stories of these fascinating monuments.
-  </p>
-  <hr class="hr-strong">
+  </section>
+  <div class="container container-fluid" style="max-width: inherit;">
+<div class="row">
+    <div class="col-md-4"></div>
+    <p class="text-prio-two col-12 col-md-8">
+      The After Monument shares local stories of 17 controversial monuments in-depth, while connecting them to the
+      continuing global debates around memorialization, decolonization and public art.
+
+
+      The archive can be accessed through the Themes, which highlights some of the key controversies with
+      the monuments as case studies and points of discussion. The Archive presents all the monuments
+      side-by-side. Through either section, you can access the individual stories of these fascinating monuments.
+    </p>
+  </div>
+  </div>
+  <!-- <hr class="hr-strong"> -->
   <space-32></space-32>
+
+
   <section id="section-chapters">
 
 
-    <h2 class="landing-h2">Themes</h2>
+    <!-- <h2 class="landing-h2">Themes</h2> -->
     <!-- <p class="text-prio-two">
       Through our research, themes arose that connect our monuments beyond their local contexts. We explore these topics
       below in writing and audio.
@@ -50,27 +59,27 @@
 
 
 
-    <chapter-card>
-      <span slot="h4" id="headline">Colonizer’s statue in the colony</span>
+    <chapter-card audioLink="./media/audio/ColonizerInColony_LouisaOthmaneSanti.mp3">
+      <span slot="headline" id="headline">Colonizer’s statue in the colony</span>
       <span slot="text" id="subheadline">How are colonialists represented in the places they colonized?</span>
       <span slot="text" id="text"> 250 words</span>
 
-      <span slot="audio" link="./"></span>
+      <span slot="audio" link="./media/audio/ColonizerInColony_LouisaOthmaneSanti.mp3"></span>
 
       <div id="projects">
         <span slot="project" link="./single/santiago/index.html" title="Equestrian Statue of Sebastian de Belalcazar"
           path="./single/santiago/thumbnail.png" country="Colombia"></span>
         <span slot="project" link="./single/othmane/index.html" title="A hidden memory"
           path="./single/othmane/statuelyautey-archive.png" country="Morocco, Africa"></span>
-        <span slot="project" link="./single/marie/index.html" title="Louisas Project"
-          path="./single/louisa/thumbnail.png" country="Eindhoven, Netherlands"></span>
+        <span slot="project" link="./single/louisa/index.html" title="A Painful Connection"
+          path="./single/louisa/thumbnail.png" country="Namibia, Africa"></span>
       </div>
 
     </chapter-card>
 
-    <chapter-card>
-      <span slot="h4" id="headline">COLONIAL FIGURES AT HOME</span>
-      <span slot="text" id="subheadline">How are colonialists represented in the places they colonized?</span>
+    <chapter-card audioLink="./media/audio/ColonialStatuesAtHomeElisaAfonsoLukas.mp3">
+      <span slot="headline" id="headline">Colonial figures at home</span>
+      <span slot="text" id="subheadline">How are colonial figures represented in their "home" countries?</span>
       <span slot="text" id="text"> 250 words: adipiscing enim eu turpis egestas pretium aenean pharetra magna ac
         placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut ornare lectus sit amet
       </span>
@@ -80,16 +89,16 @@
       <div id="projects">
         <span slot="project" link="./single/afonsoines/index.html" title="Matters of Representation"
           path="./single/afonsoines/thumbnail.png" country="Portugal"></span>
-        <span slot="project" link="./single/lukas/index.html" title="/ Lukas page"
-          path="./single/lukas/thumbnail.png" country="Eindhoven, Netherlands"></span>
+        <span slot="project" link="./single/lukas/index.html" title="/ Lukas page" path="./single/lukas/thumbnail.png"
+          country="Eindhoven, Netherlands"></span>
         <span slot="project" link="./single/elisa/index.html" title="The Monument and the Museum"
           path="./single/elisa/thumbnail.png" country="Eindhoven, Netherlands"></span>
       </div>
 
     </chapter-card>
-    <chapter-card>
-      <span slot="h4" id="headline">modern symbols of white supremacy</span>
-      <span slot="text" id="subheadline">How are colonialists represented in the places they colonized?</span>
+    <chapter-card audioLink="./media/audio/Dictators_AndaSerraMarina.mp3">
+      <span slot="headline" id="headline">Modern symbols of white supremacy</span>
+      <span slot="text" id="subheadline">Why do some monuments become symbols for white supremacist groups?</span>
       <span slot="text" id="text"> 250 words</span>
 
       <span slot="audio" link="./"></span>
@@ -97,34 +106,18 @@
       <div id="projects">
         <span slot="project" link="./single/marina/index.html" title="Gathering the Stories at El Valle de los Caídos"
           path="./single/marina/thumbnail.png" country="Spain, Europe"></span>
-        <span slot="project" link="./single/anda/index.html" title="/ Andas Project"
-          path="./single/anda/thumbnail.png" country="Eindhoven, Netherlands"></span>
+        <span slot="project" link="./single/anda/index.html" title="/ Andas Project" path="./single/anda/thumbnail.png"
+          country="Eindhoven, Netherlands"></span>
         <span slot="project" link="./single/vitor/index.html" title="The Fascist Weaponizing of Guimarães’ History"
           path="./single/vitor/thumbnail.png" country="Portugal, Europe"></span>
       </div>
 
     </chapter-card>
 
-    <chapter-card>
-      <span slot="h4" id="headline">Dictators’ Visions and Values</span>
-      <span slot="text" id="subheadline">How are colonialists represented in the places they colonized?</span>
-      <span slot="text" id="text"> 250 words: adipiscing enim eu turpis egestas pretium aenean pharetra magna ac
-        placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut ornare lectus sit amet
-        est placerat in egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor leo a diam
-        sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget
-        felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor nec feugiat nisl pretium fusce id velit
-        ut tortor pretium viverra giat nisl pretium fusce id velit ut tortor pretium viverra .
-        potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac
-        habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis
-        feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et
-        molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa
-        eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu
-        bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra
-        ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam
-        pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet
-        sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae
-        semper quis lectus nulla at volutpat diam ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet
-        proin fermentum leo</span>
+    <chapter-card audioLink="./media/audio/EmmaHannahMarie_WhiteSupremecy.mp3">
+      <span slot="headline" id="headline">Dictators’ Visions and Values</span>
+      <span slot="text" id="subheadline">What can we understand about dictators by looking at the monuments they construct?</span>
+      <span slot="text" id="text"> 250 words</span>
 
       <span slot="audio" link="./"></span>
 
@@ -139,31 +132,32 @@
 
     </chapter-card>
 
-    <chapter-card>
-      <span slot="h4" id="headline">PERSONIFYING VICTIMS</span>
-      <span slot="text" id="subheadline">How are colonialists represented in the places they colonized?</span>
+    <chapter-card audioLink="./media/audio/">
+      <span slot="headline" id="headline">PERSONIFYING VICTIMS</span>
+      <span slot="text" id="subheadline">How do monuments to victims differ from glorifying heroes?</span>
       <span slot="text" id="text"> asdasd</span>
 
       <span slot="audio" link="./"></span>
 
       <div id="projects">
         <span slot="project" link="./single/maxine/index.html" title="Statue of Peace"
-          path="./single/maxine/thumbnail.png" country="South-Korea & China & Taiwan & Germany & United States of America, Asia & Europe & Americas"></span>
+          path="./single/maxine/thumbnail.png"
+          country="South-Korea & China & Taiwan & Germany & United States of America, Asia & Europe & Americas"></span>
         <span slot="project" link="./single/johanna/index.html" title="Memorial Against War and Fascism"
           path="./single/johanna/thumbnail.png" country="Austria, Europe"></span>
-        
+
       </div>
 
     </chapter-card>
 
-    <chapter-card>
-      <span slot="h4" id="headline">REMNANTS OF CONFLICT</span>
-      <span slot="text" id="subheadline">How are colonialists represented in the places they colonized?</span>
+    <chapter-card audioLink="./media/audio/NickArian.mp3">
+      <span slot="headline" id="headline">REMNANTS OF CONFLICT</span>
+      <span slot="text" id="subheadline">How do military structures become monuments? should they?</span>
       <span slot="text" id="text"> 250 words</span>
 
       <span slot="audio" link="./"></span>
 
-      <div id="projects">
+      <div id="projects" paths="[]">
         <span slot="project" link="./single/nick/index.html" title="The Forgotten Monuments of Vienna"
           path="./single/nick/thumbnail.png" country="Austria, Europe"></span>
         <span slot="project" link="./single/arian/index.html" title="The 'Monument' Between Us"
@@ -177,67 +171,189 @@
   <section id="archive">
 
 
-    <h2 class="landing-h2">The Archive</h2>
-    <!-- <p class="text-prio-two">
-      Explore and compare all 16 monuments
-    </p> -->
-
+    <!-- <h2 class="landing-h2">The Archive</h2> -->
     <div id="isotope">
 
       <div class="button-group">
-        <div>
+        <div class="button-group-container">
           <h4>Location</h4>
-          <div class="filters button-group-continent">
+          <div class="filters button-group-small button-group-continent" data-target=".grid-1">
             <button class="button is-checked" data-filter="*">Show All</button>
             <button class="button" data-filter=".europe">Europe</button>
             <button class="button" data-filter=".americas">Americas</button>
             <button class="button" data-filter=".africa">Africa</button>
-            <button class="button" data-filter=".elsewhere">Elsewhere</button>
+            <button class="button" data-filter=".asia">Asia</button>
           </div>
         </div>
         <!-- buttons for filtering on status-->
-        <div class="ml-md-5">
+        <div class="button-group-container">
           <h4>Status</h4>
-          <div id="status" class="filters button-group-status">
+          <div id="status" class="button-group-small filters button-group-status" data-target=".grid-2">
             <button class="button is-checked" data-filter="*">Show All</button>
             <button class="button" data-filter=".in-place">In Place</button>
             <button class="button" data-filter=".removed">Removed</button>
           </div>
         </div>
         <!-- buttons for sorting by date-->
-        <div class="ml-md-5">
+        <!-- <div class="button-group-container">
           <h4>Date</h4>
-          <div class="sorts" class="button-group-date">
+          <div class="sorts" class="button-group-small button-group-date" data-target=".grid-3">
             <button class="button is-checked" data-sort-value="date" data-sort-direction="desc">Oldest First</button>
             <button class="button" data-sort-value="date" data-sort-direction="asc">Newest First</button>
           </div>
-        </div>
+        </div> -->
       </div>
-      <div class="grid">
-        <div class="grid-item in-place europe" date="1900">
-          <!-- <img src="single/marie/media/intro-img.png"> -->
-          <div class="grid-img" style="background-image: url('single/marie/media/intro-img.png')"></div>
-          <div>
-            <p>This is a project in Europe</p>
-            <p>1900</p>
-          </div>
+
+
+      <div id="grid-container">
+        <div class="grid grid-1 grid-items">
+          <a href="./single/santiago/index.html" target="_blank" class="grid-item in-place americas" date="1905">
+            <p>Equestrian Statue of Sebastian de Belalcazar</p>
+          </a>
+          <a href="./single/othmane/index.html" target="_blank" class="grid-item in-place africa" date="1905">
+            <p>A hidden memory</p>
+          </a>
+          <a href="./single/afonsoines/index.html" target="_blank" class="grid-item in-place europe" date="1905">
+            <p>Matters of Representation</p>
+          </a>
+          <a href="./single/elisa/index.html" target="_blank" class="grid-item in-place americas" date="1905">
+            <p>The monument and the museum</p>
+          </a>
+          <a href="./single/louisa/index.html" target="_blank" class="grid-item in-place africa" date="1908">
+            <p>A Painful Connection</p>
+          </a>
+          <a href="./single/marina/index.html" target="_blank" class="grid-item in-place europe" date="1905">
+            <p>Gathering the Stories at El Valle de los Caídos</p>
+          </a>
+          <a href="./single/vitor/index.html" target="_blank" class="grid-item in-place europe" date="1905">
+            <p>The Fascist Weaponizing of Guimarães’ History</p>
+          </a>
+
+          <a href="./single/marie/index.html" target="_blank" class="grid-item in-place europe" date="1905">
+            <p>The instrumentalization of Dr Karl Lueger</p>
+          </a>
+          <a href="./single/hannah/index.html" target="_blank" class="grid-item in-place europe" date="1905">
+            <p>Wissmann momuments</p>
+          </a>
+          <a href="./single/emma/index.html" target="_blank" class="grid-item in-place europe americas" date="1905">
+            <p>Þórfinnur Karlsefni</p>
+          </a>
+          <a href="./single/maxine/index.html" target="_blank" class="grid-item in-place europe americas asia elsewhere"
+            date="1905">
+            <p>Statue of Peace</p>
+          </a>
+
+          <a href="./single/johanna/index.html" target="_blank" class="grid-item in-place europe" date="1905">
+            <p>Memorial Against War and Fascism</p>
+          </a>
+
+          <a href="./single/nick/index.html" target="_blank" class="grid-item in-place europe " date="1905">
+            <p>The Forgotten Monuments of Vienna</p>
+          </a>
+
+          <a href="./single/arian/index.html" target="_blank" class="grid-item in-place europe" date="1905">
+            <p>The 'Monument' between us</p>
+          </a>
         </div>
-        <a href="./single/marie/index.html" target="_blank" class="grid-item in-place europe" date="1905">
-          <p>This is my link :)</p>
-          <p>Austria</p>
-          <p>1905</p>
-        </a>
-        <div class="grid-item removed europe">
-          <p>This is a project is removed</p>
+
+        <!-- NEXT GRID -->
+        <div class="grid grid-2 grid-items">
+          <a href="./single/santiago/index.html" target="_blank" class="grid-item removed" date="1905">
+            <p>Equestrian Statue of Sebastian de Belalcazar</p>
+          </a>
+          <a href="./single/othmane/index.html" target="_blank" class="grid-item in-place" date="1905">
+            <p>A hidden memory</p>
+          </a>
+          <a href="./single/afonsoines/" target="_blank" class="grid-item in-place" date="2017">
+            <p>Matters of Representation</p>
+          </a>
+          <a href="./single/elisa/index.html" target="_blank" class="grid-item americas" date="1905">
+            <p>The monument and the museum</p>
+          </a>
+          <a href="./single/louisa/index.html" target="_blank" class="grid-item in-place africa" date="1908">
+            <p>A Painful Connection</p>
+          </a>
+          <a href="./single/marina/index.html" target="_blank" class="grid-item in-place" date="2021">
+            <p>Gathering the Stories at El Valle de los Caídos</p>
+          </a>
+          <a href="./single/vitor/index.html" target="_blank" class="grid-item in-place" date="1938">
+            <p>The Fascist Weaponizing of Guimarães’ History</p>
+          </a>
+
+          <a href="./single/marie/index.html" target="_blank" class="grid-item in-place" date="1924">
+            <p>The instrumentalization of Dr Karl Lueger</p>
+          </a>
+          <a href="./single/hannah/index.html" target="_blank" class="grid-item in-place removed" date="1908">
+            <p>Wissmann momuments</p>
+          </a>
+          <a href="./single/emma/index.html" target="_blank" class="grid-item in-place removed" date="1920">
+            <p>Þórfinnur Karlsefni</p>
+          </a>
+          <a href="./single/maxine/index.html" target="_blank" class="grid-item in-place removed " date="/">
+            <p>Statue of Peace</p>
+          </a>
+
+          <a href="./single/johanna/index.html" target="_blank" class="grid-item in-place" date="1988">
+            <p>Memorial Against War and Fascism</p>
+          </a>
+
+          <a href="./single/nick/index.html" target="_blank" class="grid-item in-place " date="1945">
+            <p>The Forgotten Monuments of Vienna</p>
+          </a>
+
+          <a href="./single/arian/index.html" target="_blank" class="grid-item in-place" date="1969">
+            <p>The 'Monument' between us</p>
+          </a>
         </div>
-        <div class="grid-item removed europe">
-          <p>This is a project in Europe</p>
-        </div>
-        <div class="grid-item in-place europe">
-          <p>This is a project in Europe</p>
-        </div>
-        <div class="grid-item removed africa" data-category="in-place">first item</div>
+        <!-- <div class="grid grid-3 grid-items">
+          <a href="./single/afonsoines/index.html" target="_blank" class="grid-item in-place america" date="1905">
+            <p>Equestrian Statue of Sebastian de Belalcazar</p>
+          </a>
+          <a href="./single/othmane/index.html" target="_blank" class="grid-item in-place africa" date="1905">
+            <p>A hidden memory</p>
+          </a>
+          <a href="./single/marie/index.html" target="_blank" class="grid-item in-place europe" date="1905">
+            <p>Matters of Representation</p>
+          </a>
+          <a href="./single/elisa/index.html" target="_blank" class="grid-item in-place america" date="1905">
+            <p>The monument and the museum</p>
+          </a>
+          <a href="./single/marina/index.html" target="_blank" class="grid-item in-place europe" date="1905">
+            <p>Gathering the Stories at El Valle de los Caídos</p>
+          </a>
+          <a href="./single/vitor/index.html" target="_blank" class="grid-item in-place europe" date="1905">
+            <p>The Fascist Weaponizing of Guimarães’ History</p>
+          </a>
+
+          <a href="./single/marie/index.html" target="_blank" class="grid-item in-place europe" date="1905">
+            <p>The instrumentalization of Dr Karl Lueger</p>
+          </a>
+          <a href="./single/hannah/index.html" target="_blank" class="grid-item in-place europe" date="1905">
+            <p>Wissmann momuments</p>
+          </a>
+          <a href="./single/emma/index.html" target="_blank" class="grid-item in-place europe america" date="1905">
+            <p>Þórfinnur Karlsefni</p>
+          </a>
+          <a href="./single/maxine/index.html" target="_blank" class="grid-item in-place europe america asia "
+            date="1905">
+            <p>Statue of Peace</p>
+          </a>
+
+          <a href="./single/johanna/index.html" target="_blank" class="grid-item in-place europe" date="1905">
+            <p>Memorial Against War and Fascism</p>
+          </a>
+
+          <a href="./single/nick/index.html" target="_blank" class="grid-item in-place europe " date="1905">
+            <p>The Forgotten Monuments of Vienna</p>
+          </a>
+
+          <a href="./single/arian/index.html" target="_blank" class="grid-item in-place europe" date="1905">
+            <p>The 'Monument' between us</p>
+          </a>
+        </div> -->
+
       </div>
+
 
 
   </section>

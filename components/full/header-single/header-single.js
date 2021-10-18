@@ -3,16 +3,20 @@ HeaderTemplate.innerHTML = allStyles + `
 <style>
 
 .container-header {
-  margin-top: 72px;
+  // margin-top: 72px;
   width: 100%;
   margin-bottom: 160px;
   padding: 0;
+
 }
 .header-box {
   height: 100vh;
   width: 100%;
   position: absolute;
   left: 0;
+}
+.header-bg {
+  padding-top: 72px;
 }
 #full-bleed-column {
   min-height: 100vh;
