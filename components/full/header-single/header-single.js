@@ -3,16 +3,25 @@ HeaderTemplate.innerHTML = allStyles + `
 <style>
 
 .container-header {
-  margin-top: 72px;
+  // margin-top: 72px;
   width: 100%;
   margin-bottom: 160px;
   padding: 0;
+
 }
 .header-box {
   height: 100vh;
   width: 100%;
   position: absolute;
   left: 0;
+}
+
+.header-bg {
+  padding-top: 72px;
+}
+.yellow-bg {
+  // background: rgb(226, 250, 97);
+  background: linear-gradient(180deg,rgb(226, 250, 97) 85.78%, rgba(226, 250, 97,0) 94.11%);
 }
 #full-bleed-column {
   min-height: 100vh;
@@ -85,6 +94,12 @@ class HeaderSingle extends HTMLElement {
 
     this.shadowRoot.querySelector('#imgOne').src = this.getAttribute('ImgPath');
     this.shadowRoot.querySelector('#imgOne').alt = this.getAttribute('AltImg');
+
+    console.log(this.getAttribute("about"));
+    if (this.getAttribute("about") === "true") {
+      console.log(this.shadowRoot.querySelector(".header-box"))
+      this.shadowRoot.querySelector(".header-bg").classList.add("yellow-bg");
+    }
 
     createNestedComponent(this, 'h1-with-bottom-margin', ['', ''], 'col-12', ['title']);//this, name, [array with attributes], columns, [text slot]
 

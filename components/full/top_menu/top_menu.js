@@ -12,8 +12,8 @@ topMenu.innerHTML = allStyles + `
   left: 0;
   width: 100%;
   height: 72px;
-  background: #ffffff;
-border-bottom: 8px solid #E2FA61;
+  /*background: #ffffff;*/
+/*border-bottom: 8px solid #E2FA61;*/
 z-index: 9999;
   padding-top: 14px;
   /*-webkit-box-shadow: 0px 10px 24px -9px rgba(0,0,0,0.10); 
@@ -41,6 +41,11 @@ a:hover {
 #logo img {
   width: 18%;
 }
+@media only screen and (max-width: 780px) {
+  #logo img {
+    width: 61%;
+  }
+}
 
 #itemTwo {
   text-align: right;
@@ -54,7 +59,7 @@ a:hover {
 
       <div id="logo" class= "col-6">    <a class="" href="https://www.theaftermonument.com/"><img src="../../../media/The_AFTER_Monument_Logo_FINAL.gif"></a></div>
 
-      <div class= "col-4"></div>
+      <div class= "col-3 col-md-4"></div>
       <a class= "col-2" id="itemTwo" href="../../../about/about.html">About</a>    
       
     </div>

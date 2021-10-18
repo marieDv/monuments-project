@@ -78,10 +78,11 @@ p {
   border-right: 1px solid black;
 }
 #intro-logo {
-  width: calc(100% - 40px);
+  /* width: calc(100% - 40px); */
+  width: calc(100% - -10px);
   display: block;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 130px;
 }
 
 .header-bg {
@@ -100,6 +101,7 @@ p {
   text-align: left !important;
 }
 .link-back {
+  display: none;
   position: absolute;
   color: black;
   text-decoration: underline;
@@ -128,4 +130,20 @@ p {
 }
 .vis-item-content img {
   max-height: 80px;
+}
+
+@media only screen and (min-width: 1450px) {
+  p {
+    font-size: 1.3rem !important;
+    line-height: 1.3 !important;
+  }
+  #text-priority {
+    font-size: 4rem !important;
+  }
+  p.text-prio-two {
+    font-size: 1.7rem !important;
+  }
+  #itemTwo {
+    font-size: 1.7rem;
+  }
 }
