@@ -47,6 +47,7 @@ chapterTemplate.innerHTML = allStyles + `
   // align-items: center;
   cursor: pointer;
 }
+
 .project-preview {
   border-bottom: 1.5px solid #e7e7e7;
   width: 100%;
@@ -72,12 +73,19 @@ chapterTemplate.innerHTML = allStyles + `
   display: inline-block;
   position: absolute;
   color: black;
-  margin: 20px 18px;
   font-family: 'Arial', sans-serif;
-  margin: 20px 18px 0 177px;
+  padding: 20px 18px 0 177px;
+  height: 157px;
+}
+.project-preview-text h4 {
+  margin-bottom: 0;
 }
 #country p {
   display: inline;
+}
+#country p:first-child {
+  font-family: 'Arial';
+  font-size: 16px;
 }
 #country::after {
   content: "";
@@ -89,7 +97,12 @@ chapterTemplate.innerHTML = allStyles + `
   margin-top: 5px;
     margin-left: 8px;
 }
-
+.author {
+  margin-top: 68px;
+  display: block !important;
+  position: absolute;
+    bottom: 0;
+}
 .imgPath {
   width: 140px;
   height: 140px;
@@ -249,6 +262,30 @@ margin-top: 102px;
   display: flex;
   padding-top: 30px;
 
+}
+@media only screen and (max-width: 750px) {
+  .closed {
+    height: 250px;
+}
+#headline {
+  line-height: 1;
+}
+#subheadline {
+  line-height: 1;
+    margin-top: 9px;
+    display: block;
+    padding-left: 10px;
+    padding-right: 40px;
+}
+#preview-images {
+  padding-top: 57px;
+}
+.chapter-opened {
+  height: 1300px;
+}
+#projects {
+margin-top: 0;
+}
 }
 </style>
 
