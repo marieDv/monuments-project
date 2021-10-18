@@ -74,7 +74,7 @@ chapterTemplate.innerHTML = allStyles + `
   color: black;
   margin: 20px 18px;
   font-family: 'Arial', sans-serif;
-  margin: 20px 18px 0 156px;
+  margin: 20px 18px 0 177px;
 }
 #country p {
   display: inline;
@@ -93,6 +93,8 @@ chapterTemplate.innerHTML = allStyles + `
 .imgPath {
   width: 140px;
   height: 140px;
+  width: 157px;
+  height: 157px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -211,7 +213,7 @@ margin-top: 102px;
   // top: 8px;
 }
 .chapter-opened {
-  height: 424px;
+  height: 474px;
 }
 @media only screen and (max-width: 1200px) {
 .chapter-opened {
