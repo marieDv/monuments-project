@@ -148,7 +148,7 @@ button:focus {
 }
 #section-chapters .landing-h2,
 .text-prio-two {
-  padding: 9px 16px 185px 0;
+  padding: 9px 16px 185px 16px;
 }
 
 /*Isotope styling*/
