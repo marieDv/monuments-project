@@ -60,7 +60,7 @@ a:hover {
       <div id="logo" class= "col-6">    <a class="" href="https://www.theaftermonument.com/"><img src="../../../media/The_AFTER_Monument_Logo_FINAL.gif"></a></div>
 
       <div class= "col-3 col-md-4"></div>
-      <a class= "col-2" id="itemTwo" href="../../../about/about.html">About</a>    
+      <a target="_blank" class= "col-2" id="itemTwo" href="../../../about/about.html">About</a>    
       
     </div>
   </div>

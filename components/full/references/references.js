@@ -22,12 +22,12 @@ span {
 <div class="container container-fluid">
 <div id="headline"></div>
 <div class="row">
-<div class="text-block col-2"><slot name="3-text"></slot></div>
-<div class="text-block col-2"><slot name="1-text"></slot></div>
-<div class="text-block col-2"><slot name="2-text"></slot></div>
-<div class="text-block col-2"><slot name="4-text"></slot></div>
-<div class="text-block col-2"><slot name="5-text"></slot></div>
-<div class="text-block col-2"><slot name="6-text"></slot></div>
+<div class="text-block col-12 mb-5 mb-md-0 col-md-2"><slot name="3-text"></slot></div>
+<div class="text-block col-12 mb-5 mb-md-0 col-md-2"><slot name="1-text"></slot></div>
+<div class="text-block col-12 mb-5 mb-md-0 col-md-2"><slot name="2-text"></slot></div>
+<div class="text-block col-12 mb-5 mb-md-0 col-md-2"><slot name="4-text"></slot></div>
+<div class="text-block col-12 mb-5 mb-md-0 col-md-2"><slot name="5-text"></slot></div>
+<div class="text-block col-12 mb-5 mb-md-0 col-md-2"><slot name="6-text"></slot></div>
 </div>
 </div> 
 `;
