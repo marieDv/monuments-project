@@ -71,7 +71,7 @@ function createVariableComponents(base, id) {
       let tempImgClass = "imgPath"+i;
       // console.log("tempimgclass");
       // console.log(tempImgClass);
-      slotsForTemplate += "<style>#"+tempImgClass+"{background-image: url(" + span[i].getAttribute("path") + ");}</style> <a class='project-preview' href=" + span[i].getAttribute("link") + "><div style='display: flex;'>" + span[i].innerHTML + "<div class='imgPath' id='"+tempImgClass+"'></div><div class='project-preview-text'><h4>" + span[i].getAttribute("title") + "</h4><div id='country'><p>" + span[i].getAttribute("country") + "</p></div><p class='author'>" + span[i].getAttribute("name") + "</p></div></div></a>";
+      slotsForTemplate += "<style>#"+tempImgClass+"{background-image: url(" + span[i].getAttribute("path") + ");}</style> <a target='_blank' class='project-preview' href=" + span[i].getAttribute("link") + "><div style='display: flex;'>" + span[i].innerHTML + "<div class='imgPath' id='"+tempImgClass+"'></div><div class='project-preview-text'><h4>" + span[i].getAttribute("title") + "</h4><div id='country'><p>" + span[i].getAttribute("country") + "</p></div><p class='author'>" + span[i].getAttribute("name") + "</p></div></div></a>";
       // console.log(span[i].getAttribute("path"))
       // console.log(span[i].getAttribute("link"))
     }

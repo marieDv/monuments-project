@@ -9,9 +9,10 @@ span {
   padding: 40px 16px;
 }
 .text-block {
-  font-size: 12px;
+    font-size: 12px;
     line-height: 14px;
     font-weight: 600;
+    line-break: anywhere;
 }
 #headline {
   text-indent: 40px;
@@ -41,8 +42,6 @@ class References extends HTMLElement {
     
     setupComponent(this, ReferencesTemplate);
     createComponentFromSlot(this,'headline');
-    // createVariableText(this, 'variable-text-base');
-    // this.shadowRoot.getElementById('variable-text-base').classList.add(this.getAttribute("colWidth"));
 
   }
 }
