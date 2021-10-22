@@ -17,8 +17,15 @@ h2SectionTitle.innerHTML = allStyles + `
 #h2-section-tile {
     color: black;
     font-size: 54px;
+
 }
 
+@media only screen and (max-width: 720px){
+    #h2-section-tile {
+
+            font-size: 32px;
+        }
+}
 
 </style>
       <div id="container" class="col-md-8 col-sm-12">
