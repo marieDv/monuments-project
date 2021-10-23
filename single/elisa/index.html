@@ -27,15 +27,13 @@
   <!--HEADER START -->
   <header-single title="The Monument and the Museum" creatorsName="Elisa Mirkil" colWidth="col-6"
     h2Title="this is the title for my h2" altImg="Intro img" imgPath="thumbnail.png">
-    <span slot="text"> First there is the figure of Theodore Roosevelt, New York asthmatic rich kid, turned North Dakota
-      cowboy, and then one of the most revered American presidents. He is a complicated turn-of-the-century
-      figure—conservationist, adventurer, military hawk, known both for inspiring the name Teddy Bear and the numerous
-      axioms, most famously for his praise of the `man who is actually in the arena, whose face is marred by dust and
-      sweat and blood; who strives valianty; who errs, who comes short again and again…” Roosevelt, sits astride the
-      horse, sleeves rolled up to show giant forearms, reins in hand, his other hand resting on a pistol looking the
-      manly hero. If this were the extent of the statue, it would probably be left alone. Another white man of
-      historical prominence and long-debated legacy elevated and enlarged. </span>
-    <span slot="caption">image description</span>
+    <span slot="text">The American Museum of Natural History has promised to remove the Equestrian Statue of Theodore
+      Roosevelt because of its white supremacist composition. However, problematic features of the statue can be found
+      throughout the museum’s own exhibitions. This project brings the problematic practices in the depths of the museum
+      out in front of the monument. It turns to anthropological tone and diorama-format, used extensively in the museum,
+      as further critique of its practices.</span>
+    <span slot="caption">The Equestrian Statue of Theodore Roosevelt, American Museum of Natural Histroy, New York, NY;
+      erected in 1940</span>
   </header-single>
   <!--HEADER END -->
   <!--***********************************************************************************************-->
@@ -43,19 +41,68 @@
   <!--***********************************************************************************************-->
   <!--YOUR COMPONENTS GO INTO THIS SPACE -->
 
-  <h2-section-title>
-    <span slot="title">This is an important section</span>
-    </h2-section-title>
+  <thirds-text-4-images>
+    <div id="variable-text-slot">
+      <span slot="text">
+        <h3>Walking up to the monument</h3>
+        First there is the figure of Theodore Roosevelt, New York asthmatic rich kid, turned North
+        Dakota cowboy, who grew up to become one of the most revered American presidents. He is a complicated
+        turn-of-the-century figure—conservationist, adventurer, military hawk, known both for inspiring the name Teddy
+        Bear and the numerous axioms, most famously for his praise of the `man who is actually in the arena, whose face
+        is marred by dust and sweat and blood; who strives valiantly; who errs, who comes short again and again…”
+        <br>
+        <br>
+        In this monument, erected 22 years after his death, Roosevelt, sits astride the horse, sleeves rolled up to show
+        giant forearms, reins in hand, his other hand resting on a pistol looking the manly hero. If this were the
+        extent of the statue, it would probably be left alone. Another white man of historical prominence and
+        long-debated legacy elevated and enlarged.
+        <br>
+        <br>
+        However, Theodore Roosevelt is not alone. Standing alongside his horse are two figures whose heads reach his
+        waist. On the left is a figure understood to be Native American with a feathered headdress, braids, and a
+        necklace. On the right is a half-naked man, with braids and a shield on his back—the African. Both figures are
+        draped in almost toga-like clothing and they stare straight ahead with blank expressions. These figures do not
+        represent individuals, they are allegorical—standing for their respective lands. So in a word, Roosevelt is not
+        just leading two figures in this arrangement, he is bridging two lands: North America and Africa. They are
+        accessories to the Roosevelt narrative of exploration, expansion, and strength.
+        <br>
+        <br>
+        While it would be hard to see all this detail from the angle of the visitor—whose head barely reaches the top of
+        the pedestal—after spending a few minutes contemplating the close-up images, printed at the base of the statue,
+        the values are clear and repulsive. This is a depiction we would not make today and there are unusual points of
+        care and neglect at the artistic level. Care in the rendering, neglect in the narrative.
+        <br>
+        <br>
+        While this statue will be removed, as requested by the museum and long demanded by local activist groups, it
+        cannot be solitary act. The hierarchy and attributes that render the monument unacceptable are found throughout
+        the present and past of the museum. If the removal is a solitary act, the same values, obscured by technical
+        language and scientific rendering, will continue to impact the museum’s visitors, without clear opening for
+        critique.
+      </span>
+    </div>
+    <span id="1-img" slot="img" imgpath="./media/taxi.jpg" altimg="">View through traffic</span>
+    <span id="2-img" slot="img" imgpath="./media/crowd.jpg" altimg="">View across the street</span>
+    <span id="3-img" slot="img" imgpath="./media/side.jpg" altimg="">View up-close</span>
+    <span id="4-img" slot="img" imgpath="./media/plaque-crop1.jpg" altimg="">Informative plaque</span>
+  </thirds-text-4-images>
 
-    <halves-h3-headlines-two-3column-image-body-text hasborder="false">
-      <span id="1-headline" slot="h3">*</span>
-  
-      <span id="2-headline" slot="h3">*</span>
-      <span id="2-img" slot="img" imgpath="./media/test.png" altimg="">caption</span>
-      <div id="variable-text-slot">
-      <span slot="text">*</span>
-      </div>
-      </halves-h3-headlines-two-3column-image-body-text>
+  <halves-left-text-right-image>
+    <span id="headline" slot="h1"></span>
+    <span id="img" slot="img" imgpath="./media/founders.jpg" altimg="/">Honoring the museums's benefactors in the
+      Founders Corridor</span>
+    <div id="variable-text-slot">
+      <span slot="text">
+        <h3>Flipping the Diorama</h3>
+        It can be challenging to see the inherent bias in the AMNH museum exhibitions. They awe us with their craft and
+        contents; however, they neglect to articulate time periods or question their own observations. However, littered
+        throughout the musuem are plaques thanking and honoring the trustees. What if we were to place them in the glass
+        boxes? How could we understand their "otherness"?
+      </span>
+    </div>
+  </halves-left-text-right-image>
+
+  <image-full-width-var-height imgpath="./media/dioramas.jpg" altimg="*">
+  </image-full-width-var-height>
 
 
 
@@ -83,7 +130,7 @@
     /**     Ortica     **/
 
     /**     CHANGE THE TEMPLATE HERE     **/
-    var currentTemplate = 'Arial';
+    var currentTemplate = 'Ortica';
     /***********************************************************************************************/
   </script>
   <script src="../../components/full/footer/footer.js"></script>
