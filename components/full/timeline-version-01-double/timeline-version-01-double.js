@@ -40,30 +40,35 @@ fullTimelineVersion01DoubleTemplate.innerHTML = allStyles + `
 
 <div id="timeline" class="container-fluid">
 <div class="row">
-
-    <div class=" col-md-1">
-              <div id="timestamp"></div>
+  <div class="container-fluid  col-6">
+    <div class="row">
+      <div class=" col-md-2">
+        <div id="timestamp"></div>
+      </div>
+      <div class=" d-md-block col-md-4">
+        <div id="img"></div>
+      </div>
+      <div class=" col-md-6">
+        <div id="variable-text-slot"></div>
+      </div>
     </div>
-    <div class="col-2 d-none d-md-block col-md-2">
-             <div id="img"></div>
+  </div>
+  <div id="border-box">
+      <span id="inside-border"></span>
     </div>
-    <div class="col-4 col-md-3">
-              <div id="variable-text-slot"></div>
+  <div class="container-fluid col-6">
+    <div class="row">
+      <div class=" col-md-2">
+        <div id="2-timestamp"></div>
+      </div>
+      <div class=" d-md-block  col-md-4">
+        <div id="2-img"></div>
+      </div>
+      <div class=" col-md-6">
+        <div id="2-variable-text-slot"></div>
+      </div>
     </div>
-    
-    <div id="border-box">
-            <span id="inside-border"></span>
-    </div>
-    
-    <div class=" col-md-1">
-              <div id="2-timestamp"></div>
-    </div>
-    <div class="col-2 d-none d-md-block  col-md-2">
-             <div id="2-img"></div>
-    </div>
-    <div class="col-4 col-md-3">
-              <div id="2-variable-text-slot"></div>
-    </div>
+  </div>
 </div>
 </div>
 
