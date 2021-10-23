@@ -264,6 +264,14 @@ margin-top: 102px;
 
 }
 @media only screen and (max-width: 750px) {
+  .project-preview-text h4 {  
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+
+
   .closed {
     height: 250px;
 }
