@@ -176,7 +176,7 @@ chapterTemplate.innerHTML = allStyles + `
 #expand {
 display: none;
 position: absolute;
-margin-top: 102px;
+padding-top: 102px;
 }
 #variable-column {
   padding: 0;
@@ -269,9 +269,28 @@ margin-top: 102px;
   line-height: 1;
   font-weight: 700;
 }
-
-
-
+#chapter {
+  padding: 0;
+  padding-top: 16px;
+}
+.text-block {
+  padding: 16px;
+}
+#close {
+  // padding: 0;
+  max-width: 87%;
+}
+#close #subheadline {
+  padding: 0 16px;
+}
+#headline {
+  // padding: 16px 0 0;
+    // display: block;
+}
+#plus {
+  height: 26px;
+  width: 26px;
+}
   .closed {
     height: 250px;
 }
@@ -311,7 +330,7 @@ margin-top: 0;
         <div class="row">
 
         
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 text-block">
             <p id="text"></p>
          
             <figure>
@@ -366,26 +385,34 @@ class chapterCard extends HTMLElement {
 
 
 
-
     if (chapterCounter % 2 === 0) {
       this.shadowRoot.getElementById("chapter").classList.add("chapter-light");
     }
     this.shadowRoot.getElementById("chapter").addEventListener('click', () => {
+
+
       if (!click) {
         this.shadowRoot.getElementById("expand").style.display = "block";
         this.shadowRoot.getElementById("chapter").classList.remove("closed");
         this.shadowRoot.getElementById("chapter").classList.add("chapter-opened");
         this.shadowRoot.getElementById("plus").classList.add("to-minus");
         this.shadowRoot.getElementById("preview-images").style.display = "none";
+        let tempHeight = this.shadowRoot.getElementById("expand").clientHeight;
+        this.shadowRoot.getElementById("chapter").style.height = tempHeight +"px";
+        console.log(this.shadowRoot.getElementById("expand").clientHeight)
       } else {
         this.shadowRoot.getElementById("expand").style.display = "none";
         this.shadowRoot.getElementById("chapter").classList.add("closed");
         this.shadowRoot.getElementById("chapter").classList.remove("chapter-opened");
         this.shadowRoot.getElementById("plus").classList.remove("to-minus");
         this.shadowRoot.getElementById("preview-images").style.display = "flex";
+        this.shadowRoot.getElementById("chapter").style.height = 200 +"px";
         // this.shadowRoot.getElementById("chapter").classList.remove("chapter-opened");
       }
       click = !click;
+
+
+ 
     });
 
     // this.shadowRoot.querySelector('#img').src = this.getAttribute('imgPath');
