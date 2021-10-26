@@ -8,6 +8,12 @@ PullQuoteTemplate.innerHTML = allStyles + `
   text-transform: uppercase;
   text-align: center;
 }
+@media only screen and (max-width: 720px) {
+  #pull-quote {
+    font-size: 27px;
+  }
+}
+
 </style>
 
 <div id="variable-column" class="container-fluid d-flex justify-content-center">

@@ -1,125 +1,528 @@
+<!-- ? HOW TO OPEN THE PAGE ? -->
+<!-- start the live server / view on: http://localhost:5500/single/test/index.html -->
+
+
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <title>Anda's Sandbox</title>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--***********************************************************************************************-->
+  <!--TITLE OF YOUR PAGE (SHOWS IN TAB) -->
+  <title>Concrete Dreams</title>
+  <!--***********************************************************************************************-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-
-  <!-- <link rel="stylesheet" href="../../css/Visualization-Almendra-Display.css"> -->
-  <!-- LINK TO MAIN STYLESHEET-->
   <link rel="stylesheet" href="../../css/baseStyle.css">
-  <!--LINK TO LOCAL STYLESHEET-->
-  <link rel="stylesheet" href="./style.css">
-
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
-
 <body>
+  <a class="link-back" href="../../index.html">back</a>
+  <top-menu itemOneName="Chapters" linkOne="https://www.facebook.com/" itemTwoName="About" linkTwo="./about/about.html">
+  </top-menu>
+  <!--***********************************************************************************************-->
+  <!--HEADER START -->
+  <header-single title="CONCRETE DREAMS" creatorsName="Anda Lupascu" colWidth="col-6"
+    h2Title="this is the title for my h2" altImg="Intro img" imgPath="./media/cover.png">
+    <span slot="text"> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+      A case study of abstraction and reinvention in the monuments of the former Yugoslavia.
+      <br>
+      <br> The only constant is that everything changes. Monuments outlive us all. This is their defining characteristic.
+      They therefore, should exist as markers of the space between lives, of peoples' dreams rather than memories. 
+      Dreams and memories, the two are somewhat interchangeable anyway. </span>
+    <span slot="caption">0 -- Freedom Hill Monument in Ilirska Bistrica. Archival image spomenikdatabase.org </span>
+  </header-single>
+  <!--HEADER END -->
+  <!--***********************************************************************************************-->
 
-  <!-- <a href="../../index.html">back</a> -->
+  <!--***********************************************************************************************-->
+  <!--YOUR COMPONENTS GO INTO THIS SPACE -->
 
-<!-- FIRST component -->
-  <!-- <pull-quote-with-bottom-margin-var-width pull-quote="This is a pull quote. USE IT TO CALL ATTENTION TO IMPORTANT POINTS OR CATCHY PHRASES IN YOUR ARTICLE. IT IS CENTER- aligned and as wide as the body text that surrounds it." 
-  colWidth="col-5"></pull-quote-with-bottom-margin-var-width> -->
 
-  <!-- SECOND component -->
-  <!-- <a-button> 
-    <span slot="button-name">I am a button</span>
-  </a-button> -->
+<!-- <p>&#169;</p> -->
 
-  <!-- THIRD component -->
-  <!-- <h4-with-bottom-margin-var-width colWidth="col-3"> 
-    <span slot="title"> This is H4 With Bottom Margin Var Width....This is a headline H4 ... this instance can have varied widths and no defined indent</span>
-  </h4-with-bottom-margin-var-width> -->
+<space-64 hasborder="true" ></space-64>
+<space-64 hasborder="true" ></space-64>
+<space-64 hasborder="true" ></space-64>
+<space-64 hasborder="true" ></space-64>
 
-  <!-- FOURTH Component -->
-<thirds-images-left-2-columns-text>
-  <div id="image-column">
-    <span slot="1-img" id="1-img" imgPath="./media/car.png">C1 — This is a caption for a 6 column-wide image. If the image occupies up to 4 columns, the caption accompanies it in terms of width. Beyond 4 columns, it stops at the fourth.</span>
-    <span slot="2-img" id="2-img" imgPath="./media/vienna.png">C2 — This is a caption for a 6 column-wide image. If the image occupies up to 4 columns, the caption accompanies it in terms of width. Beyond 4 columns, it stops at the fourth.</span>
-    <span slot="3-img" id="3-img" imgPath="./media/car.png">C3 — This is a caption for a 6 column-wide image. If the image occupies up to 4 columns, the caption accompanies it in terms of width. Beyond 4 columns, it stops at the fourth.</span>
-  </div>
 
+<space-120></space-120>
+
+
+<full-timeline-version-02>
+  <span id="timestamp" slot="h4">
+    When we think of monuments too often we think of singularity. 
+  </span>
   <div id="variable-text-slot">
-    <span slot="h3">This is Headline 1</span>
-    <div id="1-freetext"> 
-      <span slot="text">
-        paragraoh (1) Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        In massa nulla, fringilla et est vitae, elementum vehicula velit. 
-        Praesent at sem ipsum. Quisque interdum erat mauris, at tincidunt lorem 
-        cursus ut. Morbi in magna non urna sagittis consequat. Integer vulputate dolor
-      </span>
-    </div>
-    <span slot="block-quote">
-      This is a block quote. This is a block quote. 
-      This is a block quote. This is a block quote. 
-    </span>
-    <div id="1-freetext"> 
-      <span slot="text">paragraph (2) Lorem ipsum dolor sit amet, consectetur 
-        adipiscing elit. In massa nulla, fringilla et est vitae, elementum vehicula 
-        velit. Praesent at sem ipsum. Quisque interdum erat mauris, at tincidunt lorem 
-        cursus ut. Morbi in magna non urna sagittis consequat. Integer vulputate dolor
-      </span>
-    </div>
-    <span slot="pull-quote">
-      This is a PULL QUOTE This is a PULL QUOTE 
-    </span>
+  <span slot="text">
+    Monumentality is synonymous with grandiosity, and fame, and oftentimes the grandiosity and fame of particular individuals. 
+    But monuments can be other things too. In this library, The After Monument, there are a wide variety of examples that go into 
+    fantastic detail on the background, history, intentionality, and various past and present realities of monuments from all around the world. 
+  <br><br>
+    This particular case study is an at-times naive, wholly fascinated, and hopefully widely researched account of one individual’s 
+    fascination (mine) with the abstract concrete otherworldly figures scattered around the Balkan region -- <br> the former Yugoslavia -- 
+    known as the Spomeniks. </span>
+  <!-- <span slot="button">i am a button</span> -->
   </div>
+  <!-- <span id="img" slot="img" imgpath="./media/test.png" altimg="">caption</span> -->
+</full-timeline-version-02>
 
-  <div id="variable-text-slot-2">
-    <span slot="h3">This is Headline 2</span>
-    <div id="2-freetext"> 
-      <span slot="text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        In massa nulla, fringilla et est vitae, elementum vehicula velit. 
-        Praesent at sem ipsum. Quisque interdum erat mauris, at tincidunt lorem 
-        cursus ut. Morbi in magna non urna sagittis consequat. Integer vulputate dolor
-      </span>
-    </div>
-    <span slot="block-quote">
-      Block Quote --- Lorem ipsum dolor sit amet, consectetur adipiscing elit. In massa nulla, 
-      fringilla et est vitae, elementum vehicula velit. 
-    </span>
-    <div id="2-freetext"> 
-      <span slot="text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        In massa nulla, fringilla et est vitae, elementum vehicula velit. 
-        Praesent at sem ipsum. Quisque interdum erat mauris, at tincidunt lorem 
-        cursus ut. Morbi in magna non urna sagittis consequat. Integer vulputate dolor
-      </span>
-    </div>
-    <span slot="pull-quote">
-      This is a PULL QUOTE
-    </span>
+
+<space-120></space-120>
+
+
+<image-full-width-var-height imgpath="./media/bistrica-02.jpg" altimg="*">
+  <span slot="caption">-- 1 -- Freedom Hill Monument in Ilirska Bistrica. Photograph by Jan Kempenaers, Spomeniks 2006-2009 </span>
+</image-full-width-var-height>
+
+
+<space-120></space-120>
+
+
+
+<full-timeline-version-01-double>
+  <span id="timestamp" slot="h4"> </span>
+  <span id="img" slot="img" imgpath="./media/tito.png" altimg=""> Josip Boroz Tito at the opening of the Tjentište monument. spomenikdatabase.org </span>
+  <div id="variable-text-slot">
+  <span slot="text"> 
+    The monuments of the former Yugoslavia were mostly built during the peaceful period following the Second World War, between the 1950-1980s, 
+    under the watchful eye of Josip Broz Tito. Within this case study they are the concrete dreams of a Soviet dictator, who, like other Soviet leaders 
+    tried to unite the diverse regions under his control by bypassing the individual histories and traumas of the people, and instead tightening an iron 
+    fist and pouring concrete on the wound. It worked while he was alive, but it failed tremendously, after his death in 1980. 
+    <br><br>
+    The history of the Balkans is 
+    immensely complicated and complex, and it is not the angle of the story this case study focuses upon. However it is important to note that the 
+    context and reading of the Spomeniks changed fundamentally after the dissolution of the former Yugoslavia. In some regions they became the symbols of all
+    had gone wrong, massive reminders of an experiment gone wrong, while in other areas they are seen as symbols of nationalistic pride. </span>
   </div>
+  
+  <span id="2-timestamp" slot="h4"> </span>
+  <span id="2-img" slot="img" imgpath="./media/arna.png" altimg="">  If you would like to know more about the history of the Balkans, I would recommend the following resources: 
+    <br><br>
+    <a href="https://www.imdb.com/title/tt0114787/">UNDERGROUND (1995) <br> a film by director Emir Kusturica </a> <br><br>
+    <a href="https://www.bol.com/nl/nl/p/mortal-cities-forgotten-monuments/9200000054316784/"> MORTAL CITIES (2017) <br> a book by architect Arna Mackic </a> <br><br>
+    <a href="https://cargocollective.com/mortalcitiesforgottenmonuments/On-the-Forgotten-Monuments-1"> FORGOTTEN MONUMENTS MORTAL CITIES <br> web compilation by architect Arna Mackic </a> <br><br>
+    <a href="https://www.youtube.com/watch?v=u4NIfMc3onY&ab_channel=TheRadicalRevolution">THE IDEOLOGY OF YUGOSLAVIA (2019) <br> short clip of Slavoj Zizek </a> </span>
+  <div id="2-variable-text-slot">
+  <span slot="text"> 
+   </span>
+  </div>
+</full-timeline-version-01-double>
 
-</thirds-images-left-2-columns-text>
 
-<!-- test marie's component - 4 images thirds -->
-<!-- <thirds-4-images-text>
-  <div id="variable-text-slot"> 
-    <span slot="h3">Headline</span>
-    <span slot="block-quote"> this is the content stuff here</span>
-    <span slot="block-quote"> blockquote </span>
-  </div> -->
+<space-64 hasborder="true" ></space-64>
+<space-64 hasborder="true" ></space-64>
+<space-64 hasborder="true" ></space-64>
+<space-64 hasborder="true" ></space-64>
+<space-64 hasborder="true" ></space-64>
+<space-64 hasborder="true" ></space-64>
+<!-- 
+<space-120></space-120> -->
 
-  <!-- <span slot="img" imgPath="media/car.png" altImg="alt text" id="1-img"> </span>
-</thirds-4-images-text> -->
 
+<halves-background-image-text-left>
+  <span id="img" slot="img" imgpath="./media/mayalin-2.png" altimg="">-- 2 -- Overhead of Vietnam Veterans War Memorial, Washington DC</span>
+  <span id="headline" slot="h3"> <br> <br> A MONUMENT IS <br> A SPACE WHERE...</span>
+  <div id="variable-text-slot">
+  <span slot="text"> 
+    Maya Lin’s Vietnam Veterans memorial in Washington DC set the scene for <br>
+    a new kind of monument, a memorial that truly caters to memory, <br> 
+    to space making for grief and loss, as well as living humans experiencing <br> 
+    the act of remembering. Built in 1982 it challenged many notions <br>
+    of what a monument could and should be. 
+
+    <br><br> 
+
+    In a similar vein, when the monuments of the former Yugoslavia <br> 
+    were being built, many of them, especially those designed by Bogdan Bogdanovic, <br> 
+    were envisioned, out of necessity, not as grandiose awe-inspiring centerpieces, <br> 
+    nor necessarily like scars in the earth either. His, as well as others’ <br> 
+    approach was driven by the need to commemorate both failure and success, both loss and retribution. 
+     </span>
+  </div>
+</halves-background-image-text-left>
+
+
+<space-120></space-120>
+
+
+<space-64 hasborder="true" ></space-64>
+<space-64 hasborder="true" ></space-64>
+<space-64 hasborder="true" ></space-64>
+
+
+<full-timeline-version-01-double>
+  <span id="timestamp" slot="h4"> </span>
+  <span id="img" slot="img" imgpath="./media/mostar2.png" altimg="">The Partisan Necropilis, Mostar, Bosnia</span>
+  <div id="variable-text-slot">
+  <span slot="text"></span>
+  </div>
+  
+  <span id="2-timestamp" slot="h4"> ... </span>
+  <span id="2-img" slot="img" imgpath="./media/mostar3.jpg" altimg="">Bogdan Bogdanovic in front of the Partisan monument. failedarchitecture.com</span>
+  <div id="2-variable-text-slot">
+  <span slot="text">
+    The monument 'The Partisan Metropolis' at Mostar in Bosnia, designed by Bogdanovic, carries the most similarities with 
+    Lin’s Vietnam memorial. It too, is deep-set into a hill, overlooking the city it reflects. 
+    Natural elements like water fountains are present as points of focus. However the monument was 
+    meant also as a meeting place, a watering hole. While on the one hand commemorating a nightmare, 
+    it also offered the transformation into a dream. The stone city, haunted by or haunting the real city it faces. 
+    The real Mostar and the dream Mostar, both made of stone. This ambiguity creates space not only physically, 
+    but mentally as well. Like interpreting any dream, it asks, what can it mean? No dream has only one meaning. </span>
+  </div>
+</full-timeline-version-01-double>
+
+<space-120></space-120>
+
+
+<image-full-width-var-height imgpath="./media/necropolis-2.png" altimg="*">
+  <span slot="caption">-- 3 -- The Partisan Necropolis in Mostar, Bosnia, includes an entire 'city of the dead' overlooking the city of the living. Designed by Bogdan Bogdanovic -- Image: spomenikdatabase.org </span>
+</image-full-width-var-height>
+
+
+<space-120></space-120>
+
+
+<space-120></space-120>
+
+
+<image-full-width-var-height imgpath="./media/bihac.png" altimg="*">
+  <span slot="caption">-- 4 -- A monument is a space where people could come together, not only to grieve. A monumental community space. Image: spomenikdatabase.org, Garavice Memorial Park of the victims of Fascist Terror, Bihać, Bosnia. Designed by Bogdan Bogdanovic </span>
+</image-full-width-var-height>
+
+
+<space-120></space-120>
+
+
+<!-- <full-timeline-version-01-double>
+  <span id="timestamp" slot="h4"> title here or big caption  </span>
+  <span id="img" slot="img" imgpath="./media/cover-bw.png" altimg=""> captioncaptioncaptioncaptioncaption </span>
+  <div id="variable-text-slot">
+  <span slot="text"> bodytextbodytextbodytextbodytextbodytext </span>
+  </div>
+  
+  <span id="2-timestamp" slot="h4"> </span>
+  <span id="2-img" slot="img" imgpath="./media/cover-bw.png" altimg=""></span>
+  <div id="2-variable-text-slot">
+  <span slot="text"></span>
+  </div>
+</full-timeline-version-01-double> -->
+
+<full-timeline-version-02>
+  <span id="timestamp" slot="h4">
+    After the death of Tito, the age of the Spimenik came to an end. 
+  </span>
+  <div id="variable-text-slot">
+  <span slot="text">
+    After the death of Josip Boroz Titio, in 1980, the country dissolved and the region broke out into a brutal civil war in the early 1990s'.
+    Many people throughout the region turned their frustrations on the monuments, as they represented an ideology, a dream, that was forced upon them. 
+    It needed to fall. However, due to their massive stature, it was more costly to destroy them than to leave them alone. And so, a vast majority of them
+    were simply abandoned, and fell into disarray. 
+  <br><br>
+    More than 1000 'spomenik' were built during the 1950-1980s, and today a few hundred of them still exist, scattered throughtout the seven Balkan countries.
+    Once images of them started appearing on the internet, people from around the world became fascinated with their alienesque shapes and ambiguous symbolism. 
+    While largely forgotten or ignored in the Balkans, due to their complicated history, the rest of the world embraced them... </span>
+  <!-- <span slot="button">i am a button</span> -->
+  </div>
+  <!-- <span id="img" slot="img" imgpath="./media/test.png" altimg="">caption</span> -->
+</full-timeline-version-02>
+
+
+<space-120></space-120>
+
+
+<image-full-width-var-height imgpath="./media/spo12.png" altimg="*">
+  <span slot="caption">-- 5 -- Abandoned Spomenik, location unknown. Photograph by Jan Kempenaers, Spomeniks 2006-2009 </span>
+</image-full-width-var-height>
+
+
+<space-120></space-120>
+
+
+<image-full-width-var-height imgpath="./media/stonecircle-2.png" altimg="*">
+  <span slot="caption">-- 6 -- Stone circle, date, location, use, meaning, purpose unkown. </span>
+</image-full-width-var-height>
+
+
+<space-120></space-120>
+
+
+<space-64 hasborder="true" ></space-64>
+<space-64 hasborder="true" ></space-64>
+<space-64 hasborder="true" ></space-64>
+<space-64 hasborder="true" ></space-64>
+<space-64 hasborder="true" ></space-64>
+
+<h2-section-title>
+  <span slot="title">↙ FAME & FAILURE ↘</span>
+</h2-section-title>
+
+<space-64 hasborder="true" ></space-64>
+<space-64 hasborder="true" ></space-64>
+<space-64 hasborder="true" ></space-64>
+<space-64 hasborder="true" ></space-64>
+<space-64 hasborder="true" ></space-64>
+
+
+<space-120></space-120>
+
+
+<full-timeline-version-02>
+  <span id="timestamp" slot="h4">
+    When we think of the Spomeniks there's simply so much history we, as outsiders, cannot know.
+  </span>
+  <div id="variable-text-slot">
+  <span slot="text">
+    In 2010, on the newly launched image-sharing platform, Instagram, a series of images taken by Belgian photographer Jan Kampenaers went viral.
+  It was early days, there were no hashtags back then, but eventually the images became a huge part of a movement of appreciation around old soviet-style architecture, 
+concrete-poured megaliths, and other such otherworldly (to Western eyes) forms. The style is known as Brutalism - from the French, 'beton brut' meaning poured concrete. 
+Many of the spomeniks were built in pure concrete with rebar and steel skeletons. They became almost the mascots of the movement. 
+<br>
+<br> 
+But of course, with the proliferation of their photographs, their essence, history, the complex world from which they really came (not outer space) was conveniently left behind. 
+<br>
+<br>
+<br>
+<i>"The Spomeniks were places of forgetting, while they should have been places of remembering.
+The fury unleashed upon the Spomeniks after 1992 was not merely settling the score with the old socialist system, 
+but was also exposing that hidden history that had led to the reopening of Pandora’s box in the first place.
+We see the powerful beauty of the monumental sculptures and we catch ourselves forgetting the victims in whose name they were built. 
+<br><br>
+The photographs raise the question of whether a former monument can ever function as a pure sculpture, an autonomous work of art, 
+detached from its original meaning. In their dilapidated condition, they are no longer symbols of victory, but for the first time, 
+true symbols of a newfound mourning.” </i>
+<br><br>
+-- Willem Jan Neutelings, <i>Spomenik, The Monuments of Former Yugoslavia</i>
+
+</span>
+  <!-- <span slot="button">i am a button</span> -->
+  </div>
+  <!-- <span id="img" slot="img" imgpath="./media/test.png" altimg="">caption</span> -->
+</full-timeline-version-02>
+
+
+<thirds-3-headlines-3-images>
+  <span slot="h4" id="1-title">Podgarić</span>
+  <span slot="img" imgpath="./media/1podgaric.jpg" altimg="alternative text" id="1-img">Croatia</span>
+  <span slot="h4" id="2-title">Kosmaj</span>
+  <span slot="img" imgpath="./media/3kosmaj.jpg" altimg="alternative text" id="2-img">Serbia</span>
+  <span slot="h4" id="3-title">Kuršhevo</span>
+  <span slot="img" imgpath="./media/5kurshevo.jpg" altimg="alternative text" id="3-img">Macedonia</span>
+</thirds-3-headlines-3-images>
+
+<thirds-3-headlines-3-images>
+  <span slot="h4" id="1-title">Bistrica</span>
+  <span slot="img" imgpath="./media/8bistrica.jpg" altimg="alternative text" id="1-img">Slovenia</span>
+  <span slot="h4" id="2-title">Tjentište</span>
+  <span slot="img" imgpath="./media/16tjentiste.jpg" altimg="alternative text" id="2-img">Bosnia</span>
+  <span slot="h4" id="3-title">Mitrovica</span>
+  <span slot="img" imgpath="./media/19mitrovica.jpg" altimg="alternative text" id="3-img">Kosovo</span>
+</thirds-3-headlines-3-images>
+
+<thirds-3-headlines-3-images>
+  <span slot="h4" id="1-title">Nikšić</span>
+  <span slot="img" imgpath="./media/24niksic.jpg" altimg="alternative text" id="1-img">Montenegro</span>
+  <span slot="h4" id="2-title">Petrova Gora</span>
+  <span slot="img" imgpath="./media/02.jpg" altimg="alternative text" id="2-img">Unknown</span>
+  <span slot="h4" id="3-title">Ostra</span>
+  <span slot="img" imgpath="./media/22.jpg" altimg="alternative text" id="3-img">Unknown. All images by Jan Kaempenaers 2006-2009</span>
+</thirds-3-headlines-3-images>
+
+
+<space-64 hasborder="true" ></space-64>
+<space-64 hasborder="true" ></space-64>
+<space-64 hasborder="true" ></space-64>
+<space-64 hasborder="true" ></space-64>
+<space-64 hasborder="true" ></space-64>
+
+
+<space-120></space-120>
+
+
+<full-timeline-version-02>
+  <span id="timestamp" slot="h4">
+    Do concrete dreams change shape?
+  </span>
+  <div id="variable-text-slot">
+  <span slot="text">
+    After closely researching these monuments, I couldn't help but feel confused. They are beautiful but complicated. The symbolism and intention that is built into them
+    by brilliant and forward-thinking architects like Bogdan Bogdanovic is lost in a mess of history. The dreams of the dictator, Tito, of a united Yugoslavia - dreams that 
+    are still dreamed of by many individuals to this day, were too hard. Hard on the people and hard to manifest. But they were built first and foremost to inspire people to 
+    accept the difficulty of the past, and to look to the future with hope and determination. This was the concrete dream - forward together. 
+    <br><br>
+    Today, the internet has made them into anyone's guess, anyone's interpretation. The shapes still inspire, but what they inspire is no longer up to any one individual.
+    Curious about by the very rich and active community that the Spomenik have on Instagram, in particular through the use of hashtags (#antifascistmemorial, #spimenik, #brutalism), 
+    I reached out to a number of people that have posted popular images inspired by the monuments to comment on the possibility of re-invention. 
+    
+    <br><br>The answers are anonymous and not connected to the images shown.</span>
+  <!-- <span slot="button">i am a button</span> -->
+  </div>
+  <!-- <span id="img" slot="img" imgpath="./media/test.png" altimg="">caption</span> -->
+</full-timeline-version-02>
+
+
+<quarters-headlines-4-images-body-text>
+  <span id="1-headline" slot="h3"> </span>
+  <span id="1-subheadline" slot="h4"></span>
+  <span id="1-img" slot="img" imgpath="./media/insta-04.png" altimg="">@mireldy</span>
+  <div id="1-variable-text-slot">
+  <span slot="text"> 
+    q. How did you discover the Spomenik? 
+  <br><br>
+    a. I live in one of the countries of former Yugoslavia so I know about them from my earliest childhoood. <br><br>
+    a. Pictures & videos from the internet.<br><br>
+    a. I am born and raised in Serbia and Yugoslav history was always a part of my upbringing. Coming from a family of proud fighters of NOB 
+    (National Liberation Struggle in WW2) and of a historian father and art-historian mother, I was introduced to these monuments even before 
+    my architecture studies that I finished abroad.<br><br>
+    a. As a gift to myself after escaping a long and abusive relationship I booked a group trip through several countries in the Balkans in 2019. 
+    I made a local friend and we stay in touch. I came home feeling gutted and haunted and planned to return to Belgrade for a month in 2020. 
+    The pandemic intervened. I have an art background and I dream of going back and seeing what local librarians can help me find about the 
+    methods of each monument’s construction. This seems to be information largely missing from the internet, at least in English. Ne razumem Srpski.</span>
+  </div>
+  
+  <span id="2-headline" slot="h3"></span>
+  <span id="2-subheadline" slot="h4"></span>
+  <span id="2-img" slot="img" imgpath="./media/insta-02.png" altimg="">@ostvarivanje_potreba</span>
+  <div id="2-variable-text-slot">
+  <span slot="text"></span>
+  </div>
+  <span id="3-headline" slot="h3"></span>
+  <span id="3-subheadline" slot="h4"></span>
+  <span id="3-img" slot="img" imgpath="./media/insta-03.png" altimg="">@nebo.olous</span>
+  <div id="3-variable-text-slot">
+  <span slot="text">
+    q. Do you consider the monuments controversial? <br><br>
+    a. Depending on a point of view but yes. <br><br>
+    a. Yes / Partly <br><br>
+    a. No! And I dont see how they could be. <br><br>
+    a. For some local people I know that they are, but for some local people they are not. 
+    I think that among the global audience the controversy is largely aesthetic. I’m not a stranger to wanting a monument removed. 
+    If the local people decide they do not want their monuments I hope they find homes in museums, but if they prefer to dynamite them it is their right.
+  </span>
+  </div>
+  
+  <span id="4-headline" slot="h3"></span>
+  <span id="4-subheadline" slot="h4"></span>
+  <span id="4-img" slot="img" imgpath="./media/insta-08.png" altimg="">@brutalizam_i_renesana</span>
+  <div id="4-variable-text-slot">
+  <span slot="text">
+    q. Do you feel that tourists have a responsibility to be informed on the history of these monuments? <br><br>
+    a. Not strictly to be informed about the monuments, their names etc. as what they represent, what happened in past 
+    (starting from WW1 'till late 90s) that is related not just to Balkan but also related to whole Europe. <br><br>
+    a. Not necessarily <br><br>
+    a. Not necessarily but they would have a greater meaning to them if they would. <br><br>
+    a. I think there are few tourists who visit places like the environs of many of the monuments without an interest in history. 
+    But responsibility, for a visit, I’m not sure. For the many monuments purposefully recontextualizing places of horror as places of leisure, 
+    I did wonder how locals felt. People toss frisbees for dogs in the shadows of Niš. In some documentary I saw a man bouldering on 
+    “Broken Wings” and that did make me feel disgust.
+  </span>
+  </div>
+</quarters-headlines-4-images-body-text>
+
+<quarters-headlines-4-images-body-text>
+  <span id="1-headline" slot="h3"></span>
+  <span id="1-subheadline" slot="h4"></span>
+  <span id="1-img" slot="img" imgpath="./media/insta-05.png" altimg="">@cardula</span>
+  <div id="1-variable-text-slot">
+  <span slot="text"></span>
+  </div>
+  
+  <span id="2-headline" slot="h3"></span>
+  <span id="2-subheadline" slot="h4"></span>
+  <span id="2-img" slot="img" imgpath="./media/insta-06.png" altimg="">@nebo.olous</span>
+  <div id="2-variable-text-slot">
+  <span slot="text">
+    q. Can you think of any ways for locals and tourists to have constructive conversations around these monuments? <br><br>
+    a. Of course, many ways. It all depends from actual people and their interest. Somebody will want to know all about them. 
+    Others will just look at it from architectural point and/or many other different interests. <br><br>
+    a. Yes. <br><br>
+    a. If you mean that the shift in political views the way they see history of some of the ex-Yugoslav republics after the 90s 
+    war and their relationship with Yugoslav history and Spomenik as their reliquas, that conversation would be very constructive 
+    but I don't see how could tourist contribute to this. Comunication of locals and tourists about Spomenik can be constructive on 
+    educational level so that they can understand them and local history and culture more.<br><br>
+    a. I fear that locals around each monument would find it tiring to endlessly play tour guide — or find it more convenient to put only a 
+    certain image forward. I didn’t find it to be in the nature of the local people I met to be as concerned with appropriation as 
+    the modern leftist is today. But that may have just been them being kind to a tourist... I may never know. But I would like 
+    to hear more from locals, maybe in documentaries, about what the monuments mean to them. I especially wonder if this differs 
+    for those who are too young to remember life under Tito.
+  </span>
+  </div>
+  <span id="3-headline" slot="h3"></span>
+  <span id="3-subheadline" slot="h4"></span>
+  <span id="3-img" slot="img" imgpath="./media/insta-07.png" altimg="">@czbzz</span>
+  <div id="3-variable-text-slot">
+  <span slot="text">
+    q. Is there any other perspective/resource you think should be taken into account? <br><br>
+    a. There is a lot wider background story, why are they abstract (or at least look like they are). <br><br>
+    It's also interesting story about carefully chosen places where they will be builted. What the local folk think about them 
+    (there are interesting stories in those informations even for tourists) and so on. <br><br>
+    a. Monuments often have not only WW2-related history and architectural value and that should be explored more 
+    (ex.Kosmaj monument location and Greek/Roman/Celtic mitology). <br><br>
+    a. After a while I would say SPOMENIKS should be taken more as unique art objects <br><br>
+    a. As a local I wold like to know more about this controvercial and complicated history of (some?) Spomeniks you mention in the survey.
+  </span>
+  </div>
+  
+  <span id="4-headline" slot="h3"></span>
+  <span id="4-subheadline" slot="h4"></span>
+  <span id="4-img" slot="img" imgpath="./media/insta-01.png" altimg="">@at.illustrator</span>
+  <div id="4-variable-text-slot">
+  <span slot="text">
+    q. In your opinion, should monuments with a complicated history be allowed to have a second life divorced from their past? <br><br>
+    a. This one is difficult. I think there’s something in your phrase, “divorced”, which may be of use. An attractive stranger may 
+    catch our eye on the street, and is it appropriate for us to look and enjoy without knowing them, without knowing their 
+    dreams and the traumas they have endured and inflicted? It would be disingenuous to claim that we know them, or know anything 
+    of how the people around them feel towards them. But if we meet this person, if we befriend and love them, what we should know 
+    and understand increases. We should know who they were before their divorce, and who they hurt along the way, and who they want to be. 
+    Or perhaps I anthropomorphise too easily. <br><br>
+    a. If you put them in any second or other form where they are separated from history they will lose their main symbol why are they 
+    there from the beginning. And why are they there in those exact shapes. Nothing is accidental in their appearance.<br><br>
+    a. Again, it looks like you don't have clear picture what these monuments represent, 
+    they are symbols of fight against nazicsm and fascism and only far right movements have something against them.  <br><br>
+    a. Its not complicated history, interpretations are complicated. I dont think its possible to divorce object from its meaning. 
+  </span>
+  </div>
+</quarters-headlines-4-images-body-text>
+
+
+<image-full-width-var-height imgpath="./media/insta-00.png" altimg="*">
+  <span slot="caption">-- 7 -- Pocket Spimeniks from @yunicornsi </span>
+</image-full-width-var-height>
+
+
+
+<full-references>
+  <span id="headline" slot="h3">Sources</span>
+  <span slot="3-text">spomenikdatabase.org <br> @spomenikdatabase</span>
+  <span slot="1-text">cargocollective.com/mortalcitiesforgottenmonuments and Mortal Cities (2017) by Arna Mackic</span>
+  <span slot="2-text">jankempenaers.info/texts <br> images used throughout the case study</span>
+  <span slot="4-text">failedarchitecture.com <br> series on Spomenik</span>
+  <span slot="5-text">Architectural Heritage Of Yugoslav Socialist Character Ideology Memory And Identity (2018), Nina Stevanovic</span>
+  <span slot="6-text">Big thank you to all who participated in my Instagram suvey!</span>
+</full-references>
+
+
+  <!--END COMPONENT SPACE -->
+  <!--***********************************************************************************************-->
+
+  <m-footer base="false"></m-footer>
 </body>
 
 <footer>
-  <!--FOOTER COMPONENT MUST BE INCLUDED HERE-->
   <script>
-    var currentTemplate = 'Arial'; //Visualization-Almendra-Display Arial
-  </script>
+    /***********************************************************************************************/
+    /**     VTCMartin     **/
+    /**     Almendra     **/
+    /**     Arial     **/
+    /**     Ortica     **/
 
+    /**     CHANGE THE TEMPLATE HERE     **/
+    var currentTemplate = 'Arial';
+    /***********************************************************************************************/
+  </script>
   <script src="../../components/full/footer/footer.js"></script>
 </footer>
-
 </html>

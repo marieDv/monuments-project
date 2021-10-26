@@ -9,9 +9,10 @@ span {
   padding: 40px 16px;
 }
 .text-block {
-  font-size: 12px;
+    font-size: 12px;
     line-height: 14px;
     font-weight: 600;
+    line-break: anywhere;
 }
 #headline {
   text-indent: 40px;
@@ -21,12 +22,12 @@ span {
 <div class="container container-fluid">
 <div id="headline"></div>
 <div class="row">
-<div class="text-block col-2"><slot name="3-text"></slot></div>
-<div class="text-block col-2"><slot name="1-text"></slot></div>
-<div class="text-block col-2"><slot name="2-text"></slot></div>
-<div class="text-block col-2"><slot name="4-text"></slot></div>
-<div class="text-block col-2"><slot name="5-text"></slot></div>
-<div class="text-block col-2"><slot name="6-text"></slot></div>
+<div class="text-block col-12 mb-5 mb-md-0 col-md-2"><slot name="3-text"></slot></div>
+<div class="text-block col-12 mb-5 mb-md-0 col-md-2"><slot name="1-text"></slot></div>
+<div class="text-block col-12 mb-5 mb-md-0 col-md-2"><slot name="2-text"></slot></div>
+<div class="text-block col-12 mb-5 mb-md-0 col-md-2"><slot name="4-text"></slot></div>
+<div class="text-block col-12 mb-5 mb-md-0 col-md-2"><slot name="5-text"></slot></div>
+<div class="text-block col-12 mb-5 mb-md-0 col-md-2"><slot name="6-text"></slot></div>
 </div>
 </div> 
 `;
@@ -41,8 +42,6 @@ class References extends HTMLElement {
     
     setupComponent(this, ReferencesTemplate);
     createComponentFromSlot(this,'headline');
-    // createVariableText(this, 'variable-text-base');
-    // this.shadowRoot.getElementById('variable-text-base').classList.add(this.getAttribute("colWidth"));
 
   }
 }

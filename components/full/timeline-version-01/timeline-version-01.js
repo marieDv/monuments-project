@@ -12,6 +12,12 @@ FullTimelineVersion01Template.innerHTML = allStyles + `
   border-left: 1px solid black;
   border-right: none;
 }
+
+@media only screen and (max-width: 750px) {
+#variable-text-slot {
+  font-size: 13px;
+}
+}
 </style>
 
 <div class="container-fluid">

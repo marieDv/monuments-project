@@ -47,6 +47,7 @@ chapterTemplate.innerHTML = allStyles + `
   // align-items: center;
   cursor: pointer;
 }
+
 .project-preview {
   border-bottom: 1.5px solid #e7e7e7;
   width: 100%;
@@ -72,12 +73,19 @@ chapterTemplate.innerHTML = allStyles + `
   display: inline-block;
   position: absolute;
   color: black;
-  margin: 20px 18px;
   font-family: 'Arial', sans-serif;
-  margin: 20px 18px 0 156px;
+  padding: 20px 18px 0 177px;
+  height: 157px;
+}
+.project-preview-text h4 {
+  margin-bottom: 0;
 }
 #country p {
   display: inline;
+}
+#country p:first-child {
+  font-family: 'Arial';
+  font-size: 16px;
 }
 #country::after {
   content: "";
@@ -89,10 +97,17 @@ chapterTemplate.innerHTML = allStyles + `
   margin-top: 5px;
     margin-left: 8px;
 }
-
+.author {
+  margin-top: 68px;
+  display: block !important;
+  position: absolute;
+    bottom: 0;
+}
 .imgPath {
   width: 140px;
   height: 140px;
+  width: 157px;
+  height: 157px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -161,7 +176,7 @@ chapterTemplate.innerHTML = allStyles + `
 #expand {
 display: none;
 position: absolute;
-margin-top: 102px;
+padding-top: 102px;
 }
 #variable-column {
   padding: 0;
@@ -211,7 +226,7 @@ margin-top: 102px;
   // top: 8px;
 }
 .chapter-opened {
-  height: 424px;
+  height: 474px;
 }
 @media only screen and (max-width: 1200px) {
 .chapter-opened {
@@ -248,6 +263,57 @@ margin-top: 102px;
   padding-top: 30px;
 
 }
+@media only screen and (max-width: 750px) {
+  .project-preview-text h4 {  
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+}
+#chapter {
+  padding: 0;
+  padding-top: 16px;
+}
+.text-block {
+  padding: 16px;
+}
+#close {
+  // padding: 0;
+  max-width: 87%;
+}
+#close #subheadline {
+  padding: 0 16px;
+}
+#headline {
+  // padding: 16px 0 0;
+    // display: block;
+}
+#plus {
+  height: 26px;
+  width: 26px;
+}
+  .closed {
+    height: 250px;
+}
+#headline {
+  line-height: 1;
+}
+#subheadline {
+  line-height: 1;
+    margin-top: 9px;
+    display: block;
+    padding-left: 10px;
+    padding-right: 40px;
+}
+#preview-images {
+  padding-top: 57px;
+}
+.chapter-opened {
+  height: 1300px;
+}
+#projects {
+margin-top: 0;
+}
+}
 </style>
 
 <div id="chapter" class="container-fluid closed">
@@ -264,12 +330,12 @@ margin-top: 102px;
         <div class="row">
 
         
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 text-block">
             <p id="text"></p>
          
             <figure>
           <!--  <figcaption><h4 class="read-more">Listen to the conversation</h4></figcaption>-->
-               <audio
+               <audio id="audiofile"
                  controls
                  src="/media/cc0-audio/t-rex-roar.mp3">
                   Your browser does not support the
@@ -300,18 +366,21 @@ class chapterCard extends HTMLElement {
     chapterCounter++;
     console.log(chapterCounter)
 
+    console.log(this.getAttribute("audioLink"));
+    this.shadowRoot.getElementById("audiofile").src = this.getAttribute("audioLink");
+    console.log(this.shadowRoot.getElementById("audioFile"))
+
     let allPaths = [];
     let newImageString = "";
     for (let i = 0; i < this.getElementsByTagName("div")[0].children.length; i++) {
       allPaths[i] = this.getElementsByTagName("div")[0].children[i].getAttribute("path");
-      newImageString += "<div class='preview-image' style='background-image: url("+allPaths[i]+");'></div>";
+      newImageString += "<div class='preview-image' style='background-image: url(" + allPaths[i] + ");'></div>";
     }
-    this.shadowRoot.getElementById("preview-images").innerHTML =newImageString;
+    this.shadowRoot.getElementById("preview-images").innerHTML = newImageString;
 
 
     let randomPositionBackgroundImage = [randomIntFromInterval(-30, 100), randomIntFromInterval(-30, 100), randomIntFromInterval(1, 100), randomIntFromInterval(1, 100), randomIntFromInterval(1, 100), randomIntFromInterval(1, 100), randomIntFromInterval(1, 100)]
-    this.shadowRoot.getElementById("chapter").style.backgroundPosition = randomPositionBackgroundImage[chapterCounter]+"%"+randomPositionBackgroundImage[chapterCounter]+"%";
-
+    this.shadowRoot.getElementById("chapter").style.backgroundPosition = randomPositionBackgroundImage[chapterCounter] + "%" + randomPositionBackgroundImage[chapterCounter] + "%";
 
 
 
@@ -320,21 +389,30 @@ class chapterCard extends HTMLElement {
       this.shadowRoot.getElementById("chapter").classList.add("chapter-light");
     }
     this.shadowRoot.getElementById("chapter").addEventListener('click', () => {
+
+
       if (!click) {
         this.shadowRoot.getElementById("expand").style.display = "block";
         this.shadowRoot.getElementById("chapter").classList.remove("closed");
         this.shadowRoot.getElementById("chapter").classList.add("chapter-opened");
         this.shadowRoot.getElementById("plus").classList.add("to-minus");
         this.shadowRoot.getElementById("preview-images").style.display = "none";
+        let tempHeight = this.shadowRoot.getElementById("expand").clientHeight;
+        this.shadowRoot.getElementById("chapter").style.height = tempHeight +"px";
+        console.log(this.shadowRoot.getElementById("expand").clientHeight)
       } else {
         this.shadowRoot.getElementById("expand").style.display = "none";
         this.shadowRoot.getElementById("chapter").classList.add("closed");
         this.shadowRoot.getElementById("chapter").classList.remove("chapter-opened");
         this.shadowRoot.getElementById("plus").classList.remove("to-minus");
         this.shadowRoot.getElementById("preview-images").style.display = "flex";
+        this.shadowRoot.getElementById("chapter").style.height = 200 +"px";
         // this.shadowRoot.getElementById("chapter").classList.remove("chapter-opened");
       }
       click = !click;
+
+
+ 
     });
 
     // this.shadowRoot.querySelector('#img').src = this.getAttribute('imgPath');

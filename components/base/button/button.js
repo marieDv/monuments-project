@@ -12,6 +12,7 @@ button.innerHTML = allStyles + `
     font-size: 16px;
     border: 1px solid #048D3B;
     display: block;
+    background-color: #048d3b;
 }
 .button-style:hover {
     border: 1px solid black;
@@ -23,7 +24,7 @@ a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
 
 </style>
-<a id="link" target="_blank" href="">
+<a target="_blank" id="link" target="_blank" href="">
 <button class="button-style">
     <slot name="title"></slot>
 </button>

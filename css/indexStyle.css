@@ -116,8 +116,7 @@ button:focus {
   line-height: 114px !important;
 }
 .button-group-container {
-  width: 33.3333%;
-  width: 50%;
+width: 100%;
   text-align: center;
 }
 #section-chapters {
@@ -148,7 +147,7 @@ button:focus {
 }
 #section-chapters .landing-h2,
 .text-prio-two {
-  padding: 9px 16px 185px 0;
+  padding: 9px 16px 185px 16px;
 }
 
 /*Isotope styling*/
@@ -162,8 +161,8 @@ button:focus {
 }
 .grid {
   margin-top: 32px;
-  width: 33.3333%;
-  width: 50%;
+  /* width: 33.3333%; */
+  /* width: 50%; */
   padding: 0 8px;
 }
 
@@ -203,7 +202,8 @@ button:focus {
 
 @media only screen and (max-width: 780px) {
   .grid-item p {
-    font-size: 14px;
+    font-size: 18px;
+
   }
   
 }
@@ -220,6 +220,11 @@ button:focus {
   font-size: 42px;
   font-weight: bold;
   color: white;
+}
+@media only screen and (max-width: 750px) {
+  .text-prio-two {
+    padding: 9px 16px 18px 16px;
+  }
 }
 
 .grid-item .country {
