@@ -68,11 +68,9 @@ p {
   line-height: 14px;
 }
 
-
 #render-timeline-here {
   border: 1px solid black;
   height: 600px;
-
 }
 .applyBorder {
   border-right: 1px solid black;
@@ -83,6 +81,7 @@ p {
   display: block;
   margin: 0 auto;
   padding-top: 130px;
+  width: 100%;
 }
 
 .header-bg {

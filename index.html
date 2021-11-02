@@ -57,7 +57,7 @@
 
     <space-32></space-32>
 
-    <chapter-card audioLink="./media/audio/EmmaHannahMarie_WhiteSupremecy.mp3">
+    <chapter-card audioLink="./media/audio/files/EmmaHannahMarie_WhiteSupremecy.mp3">
       <span slot="headline" id="headline">Modern symbols of white supremacy</span>
       <span slot="text" id="subheadline">Why do some monuments become symbols for white supremacist groups?</span>
       <span slot="text" id="text"> Some statues become objects imbued with significance beyond the figures they
@@ -83,7 +83,7 @@
 
     </chapter-card>
 
-    <chapter-card audioLink="./media/audio/NickArian.mp3">
+    <chapter-card audioLink="./media/audio/files/NickArian.mp3">
       <span slot="headline" id="headline">REMNANTS OF CONFLICT</span>
       <span slot="text" id="subheadline">How do military structures become monuments? Should they?</span>
       <span slot="text" id="text">
@@ -109,7 +109,7 @@
 
     </chapter-card>
 
-    <chapter-card audioLink="./media/audio/ColonizerInColony_LouisaOthmaneSanti.mp3">
+    <chapter-card audioLink="./media/audio/files/ColonizerInColony_LouisaOthmaneSanti.mp3">
       <span slot="headline" id="headline">Colonizer’s statue in the colony</span>
       <span slot="text" id="subheadline">How are colonialists represented in the places they colonized?</span>
       <span slot="text" id="text">
@@ -130,14 +130,14 @@
         <span slot="project" link="./single/santiago/index.html" title="Equestrian Statue of Sebastian de Belalcazar"
           path="./single/santiago/thumbnail.png" country="Colombia" name="Santiago Gómez"></span>
         <span slot="project" link="./single/othmane/index.html" title="A hidden memory"
-          path="./single/othmane/statuelyautey-archive.png" country="Morocco, Africa" name="Othmane Taki"></span>
+          path="./single/othmane/thumbnail.png" country="Morocco, Africa" name="Othmane Taki"></span>
         <span slot="project" link="./single/louisa/index.html" title="A Painful Connection"
           path="./single/louisa/thumbnail.png" country="Namibia, Africa" name="Louisa Wolf"></span>
       </div>
 
     </chapter-card>
 
-    <chapter-card audioLink="./media/audio/ColonialStatuesAtHomeElisaAfonsoLukas.mp3">
+    <chapter-card audioLink="./media/audio/files/ColonialStatuesAtHomeElisaAfonsoLukas.mp3">
       <span slot="headline" id="headline">Colonial figures at home</span>
       <span slot="text" id="subheadline">How are colonial figures represented in their "home" countries?</span>
       <span slot="text" id="text"> From the perspective of a colonial power, there is an inherent hierarchy: us
@@ -167,7 +167,7 @@
 
 
 
-    <chapter-card audioLink="./media/audio/Dictators_AndaSerraMarina.mp3">
+    <chapter-card audioLink="./media/audio/files/Dictators_AndaSerraMarina.mp3">
       <span slot="headline" id="headline">Dictators’ Visions and Values</span>
       <span slot="text" id="subheadline">What can we understand about dictators by looking at the monuments they
         construct?</span>
@@ -198,25 +198,38 @@
 
     </chapter-card>
 
-    <chapter-card audioLink="./media/audio/Monument_05_Johanna_Maxine.mp3">
+    <chapter-card audioLink="./media/audio/files/Monument_05_Johanna_Maxine.mp3">
       <span slot="headline" id="headline">PERSONIFYING VICTIMS</span>
       <span slot="text" id="subheadline">How do monuments to victims differ from glorifying heroes?</span>
       <span slot="text" id="text">
+        These monuments honor victims, bringing painful and shameful history to light. The Statue of Peace, honoring
+        South Korean comfort women, depicts a young girl sitting stoically by herself. Through its simple existence, the
+        monument challenges a history not acknowledged by the Japanese and proves the innocence and strength of the
+        victims. In contrast, the Memorial against War and Fascism in Vienna depicts the suffering of World War II, in
+        an abstracted human form. Its raw but incomplete depiction of Jewish humiliation at the hands of Austrians
+        offers no opportunity for reflection or mourning.
+        <br><br>
+        These monuments show that depicting victimhood can be as controversial and misleading as placing someone on a
+        pedestal, especially when placed in the country where such acts were committed and where many people were
+        complicit.
       </span>
 
       <span slot="audio" link="./"></span>
 
       <div id="projects">
         <span slot="project" link="./single/maxine/index.html" title="Statue of Peace"
-          path="./single/maxine/thumbnail.png"
-          country="South-Korea & China & Taiwan & Germany & United States of America, Asia & Europe & Americas"
-          name="Maxine Oosterholt"></span>
+          path="./single/maxine/thumbnail.png" country="Most of the world" name="Maxine Oosterholt"></span>
         <span slot="project" link="./single/johanna/index.html" title="Memorial Against War and Fascism"
           path="./single/johanna/thumbnail.png" country="Austria" name="Johanna Gschwandtl"></span>
 
       </div>
 
     </chapter-card>
+
+
+
+
+
 
 
   </section>
@@ -228,193 +241,146 @@
     <!-- <h2 class="landing-h2">The Archive</h2> -->
     <div id="isotope">
 
-      <div class="button-group">
-        <div class="button-group-container">
-          <h4>Location</h4>
-          <div class="filters button-group-small button-group-continent" data-target=".grid-1">
-            <button class="button is-checked" data-filter="*">Show All</button>
-            <button class="button" data-filter=".europe">Europe</button>
-            <button class="button" data-filter=".americas">Americas</button>
-            <button class="button" data-filter=".africa">Africa</button>
-            <button class="button" data-filter=".asia">Asia</button>
+
+
+
+      <div id="grid-container container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="button-group">
+              <div class="button-group-container">
+                <h4>Location</h4>
+                <div class="filters button-group-small button-group-continent" data-target=".grid-1">
+                  <button class="button is-checked" data-filter="*">Show All</button>
+                  <button class="button" data-filter=".europe">Europe</button>
+                  <button class="button" data-filter=".americas">Americas</button>
+                  <button class="button" data-filter=".africa">Africa</button>
+                  <button class="button" data-filter=".asia">Asia</button>
+                </div>
+              </div>
+            </div>
+            <div class="grid grid-1 grid-items">
+              <a href="./single/santiago/index.html" target="_blank" class="grid-item in-place americas" date="1905">
+                <p>Equestrian Statue of Sebastian de Belalcazar</p>
+              </a>
+              <a href="./single/othmane/index.html" target="_blank" class="grid-item in-place africa" date="1905">
+                <p>A hidden memory</p>
+              </a>
+              <a href="./single/afonsoines/index.html" target="_blank" class="grid-item in-place europe" date="1905">
+                <p>Matters of Representation</p>
+              </a>
+              <a href="./single/elisa/index.html" target="_blank" class="grid-item in-place americas" date="1905">
+                <p>The monument and the museum</p>
+              </a>
+              <a href="./single/louisa/index.html" target="_blank" class="grid-item in-place africa" date="1908">
+                <p>A Painful Connection</p>
+              </a>
+              <a href="./single/marina/index.html" target="_blank" class="grid-item in-place europe" date="1905">
+                <p>Gathering the Stories at El Valle de los Caídos</p>
+              </a>
+              <a href="./single/vitor/index.html" target="_blank" class="grid-item in-place europe" date="1905">
+                <p>Guimarães as a far-right symbol</p>
+              </a>
+
+              <a href="./single/marie/index.html" target="_blank" class="grid-item in-place europe" date="1905">
+                <p>The 'Schande' of Dr Karl Lueger</p>
+              </a>
+              <a href="./single/hannah/index.html" target="_blank" class="grid-item in-place europe" date="1905">
+                <p>Wissmann momuments</p>
+              </a>
+              <a href="./single/emma/index.html" target="_blank" class="grid-item in-place europe americas" date="1905">
+                <p>Þórfinnur Karlsefni</p>
+              </a>
+              <a href="./single/maxine/index.html" target="_blank"
+                class="grid-item in-place europe americas asia elsewhere" date="1905">
+                <p>Statue of Peace</p>
+              </a>
+
+              <a href="./single/johanna/index.html" target="_blank" class="grid-item in-place europe" date="1905">
+                <p>Memorial Against War and Fascism</p>
+              </a>
+
+              <a href="./single/nick/index.html" target="_blank" class="grid-item in-place europe " date="1905">
+                <p>The Forgotten Monuments of Vienna</p>
+              </a>
+              <a href="./single/anda/index.html" target="_blank" class="grid-item in-place europe removed"
+                date="1950s-1990">
+                <p>Various Names (Collectively Spomeniks) </p>
+              </a>
+
+              <a href="./single/arian/index.html" target="_blank" class="grid-item in-place europe" date="1905">
+                <p>The 'Monument' between us</p>
+              </a>
+            </div>
           </div>
-        </div>
-        <!-- buttons for filtering on status-->
-        <div class="button-group-container">
-          <h4>Status</h4>
-          <div id="status" class="button-group-small filters button-group-status" data-target=".grid-2">
-            <button class="button is-checked" data-filter="*">Show All</button>
-            <button class="button" data-filter=".in-place">In Place</button>
-            <button class="button" data-filter=".removed">Removed</button>
+
+
+          <div class="col-12 col-md-6">
+            <div class="button-group-container">
+              <h4>Status</h4>
+              <div id="status" class="button-group-small filters button-group-status" data-target=".grid-2">
+                <button class="button is-checked" data-filter="*">Show All</button>
+                <button class="button" data-filter=".in-place">In Place</button>
+                <button class="button" data-filter=".removed">Removed</button>
+              </div>
+            </div>
+            <!-- NEXT GRID -->
+            <div class="grid grid-2 grid-items">
+              <a href="./single/santiago/index.html" target="_blank" class="grid-item removed" date="1905">
+                <p>Equestrian Statue of Sebastian de Belalcazar</p>
+              </a>
+              <a href="./single/othmane/index.html" target="_blank" class="grid-item in-place" date="1905">
+                <p>A hidden memory</p>
+              </a>
+              <a href="./single/afonsoines/" target="_blank" class="grid-item in-place" date="2017">
+                <p>Matters of Representation</p>
+              </a>
+              <a href="./single/elisa/index.html" target="_blank" class="grid-item americas" date="1905">
+                <p>The monument and the museum</p>
+              </a>
+              <a href="./single/louisa/index.html" target="_blank" class="grid-item in-place africa" date="1908">
+                <p>A Painful Connection</p>
+              </a>
+              <a href="./single/marina/index.html" target="_blank" class="grid-item in-place" date="2021">
+                <p>Gathering the Stories at El Valle de los Caídos</p>
+              </a>
+              <a href="./single/vitor/index.html" target="_blank" class="grid-item in-place" date="1938">
+                <p>Guimarães as a far-right symbol</p>
+              </a>
+
+              <a href="./single/marie/index.html" target="_blank" class="grid-item in-place" date="1924">
+                <p>The 'Schande' of Dr Karl Lueger</p>
+              </a>
+              <a href="./single/hannah/index.html" target="_blank" class="grid-item in-place removed" date="1908">
+                <p>Wissmann momuments</p>
+              </a>
+              <a href="./single/emma/index.html" target="_blank" class="grid-item in-place removed" date="1920">
+                <p>Þórfinnur Karlsefni</p>
+              </a>
+              <a href="./single/maxine/index.html" target="_blank" class="grid-item in-place removed " date="/">
+                <p>Statue of Peace</p>
+              </a>
+
+              <a href="./single/johanna/index.html" target="_blank" class="grid-item in-place" date="1988">
+                <p>Memorial Against War and Fascism</p>
+              </a>
+
+              <a href="./single/nick/index.html" target="_blank" class="grid-item in-place " date="1945">
+                <p>The Forgotten Monuments of Vienna</p>
+              </a>
+
+              <a href="./single/anda/index.html" target="_blank" class="grid-item in-place europe removed"
+                date="1950s-1990">
+                <p>Various Names (Collectively Spomeniks) </p>
+              </a>
+
+              <a href="./single/arian/index.html" target="_blank" class="grid-item in-place" date="1969">
+                <p>The 'Monument' between us</p>
+              </a>
+            </div>
           </div>
+
         </div>
-        <!-- buttons for sorting by date-->
-        <!-- <div class="button-group-container">
-          <h4>Date</h4>
-          <div class="sorts" class="button-group-small button-group-date" data-target=".grid-3">
-            <button class="button is-checked" data-sort-value="date" data-sort-direction="desc">Oldest First</button>
-            <button class="button" data-sort-value="date" data-sort-direction="asc">Newest First</button>
-          </div>
-        </div> -->
-      </div>
-
-
-      <div id="grid-container">
-        <div class="grid grid-1 grid-items">
-          <a href="./single/santiago/index.html" target="_blank" class="grid-item in-place americas" date="1905">
-            <p>Equestrian Statue of Sebastian de Belalcazar</p>
-          </a>
-          <a href="./single/othmane/index.html" target="_blank" class="grid-item in-place africa" date="1905">
-            <p>A hidden memory</p>
-          </a>
-          <a href="./single/afonsoines/index.html" target="_blank" class="grid-item in-place europe" date="1905">
-            <p>Matters of Representation</p>
-          </a>
-          <a href="./single/elisa/index.html" target="_blank" class="grid-item in-place americas" date="1905">
-            <p>The monument and the museum</p>
-          </a>
-          <a href="./single/louisa/index.html" target="_blank" class="grid-item in-place africa" date="1908">
-            <p>A Painful Connection</p>
-          </a>
-          <a href="./single/marina/index.html" target="_blank" class="grid-item in-place europe" date="1905">
-            <p>Gathering the Stories at El Valle de los Caídos</p>
-          </a>
-          <a href="./single/vitor/index.html" target="_blank" class="grid-item in-place europe" date="1905">
-            <p>Guimarães as a far-right symbol</p>
-          </a>
-
-          <a href="./single/marie/index.html" target="_blank" class="grid-item in-place europe" date="1905">
-            <p>The 'Schande' of Dr Karl Lueger</p>
-          </a>
-          <a href="./single/hannah/index.html" target="_blank" class="grid-item in-place europe" date="1905">
-            <p>Wissmann momuments</p>
-          </a>
-          <a href="./single/emma/index.html" target="_blank" class="grid-item in-place europe americas" date="1905">
-            <p>Þórfinnur Karlsefni</p>
-          </a>
-          <a href="./single/maxine/index.html" target="_blank" class="grid-item in-place europe americas asia elsewhere"
-            date="1905">
-            <p>Statue of Peace</p>
-          </a>
-
-          <a href="./single/johanna/index.html" target="_blank" class="grid-item in-place europe" date="1905">
-            <p>Memorial Against War and Fascism</p>
-          </a>
-
-          <a href="./single/nick/index.html" target="_blank" class="grid-item in-place europe " date="1905">
-            <p>The Forgotten Monuments of Vienna</p>
-          </a>
-          <a href="./single/anda/index.html" target="_blank" class="grid-item in-place europe removed"
-            date="1950s-1990">
-            <p>Various Names (Collectively Spomeniks) </p>
-          </a>
-
-          <a href="./single/arian/index.html" target="_blank" class="grid-item in-place europe" date="1905">
-            <p>The 'Monument' between us</p>
-          </a>
-        </div>
-
-        <!-- NEXT GRID -->
-        <div class="grid grid-2 grid-items">
-          <a href="./single/santiago/index.html" target="_blank" class="grid-item removed" date="1905">
-            <p>Equestrian Statue of Sebastian de Belalcazar</p>
-          </a>
-          <a href="./single/othmane/index.html" target="_blank" class="grid-item in-place" date="1905">
-            <p>A hidden memory</p>
-          </a>
-          <a href="./single/afonsoines/" target="_blank" class="grid-item in-place" date="2017">
-            <p>Matters of Representation</p>
-          </a>
-          <a href="./single/elisa/index.html" target="_blank" class="grid-item americas" date="1905">
-            <p>The monument and the museum</p>
-          </a>
-          <a href="./single/louisa/index.html" target="_blank" class="grid-item in-place africa" date="1908">
-            <p>A Painful Connection</p>
-          </a>
-          <a href="./single/marina/index.html" target="_blank" class="grid-item in-place" date="2021">
-            <p>Gathering the Stories at El Valle de los Caídos</p>
-          </a>
-          <a href="./single/vitor/index.html" target="_blank" class="grid-item in-place" date="1938">
-            <p>Guimarães as a far-right symbol</p>
-          </a>
-
-          <a href="./single/marie/index.html" target="_blank" class="grid-item in-place" date="1924">
-            <p>The 'Schande' of Dr Karl Lueger</p>
-          </a>
-          <a href="./single/hannah/index.html" target="_blank" class="grid-item in-place removed" date="1908">
-            <p>Wissmann momuments</p>
-          </a>
-          <a href="./single/emma/index.html" target="_blank" class="grid-item in-place removed" date="1920">
-            <p>Þórfinnur Karlsefni</p>
-          </a>
-          <a href="./single/maxine/index.html" target="_blank" class="grid-item in-place removed " date="/">
-            <p>Statue of Peace</p>
-          </a>
-
-          <a href="./single/johanna/index.html" target="_blank" class="grid-item in-place" date="1988">
-            <p>Memorial Against War and Fascism</p>
-          </a>
-
-          <a href="./single/nick/index.html" target="_blank" class="grid-item in-place " date="1945">
-            <p>The Forgotten Monuments of Vienna</p>
-          </a>
-
-          <a href="./single/anda/index.html" target="_blank" class="grid-item in-place europe removed"
-            date="1950s-1990">
-            <p>Various Names (Collectively Spomeniks) </p>
-          </a>
-
-          <a href="./single/arian/index.html" target="_blank" class="grid-item in-place" date="1969">
-            <p>The 'Monument' between us</p>
-          </a>
-        </div>
-        <!-- <div class="grid grid-3 grid-items">
-          <a href="./single/afonsoines/index.html" target="_blank" class="grid-item in-place america" date="1905">
-            <p>Equestrian Statue of Sebastian de Belalcazar</p>
-          </a>
-          <a href="./single/othmane/index.html" target="_blank" class="grid-item in-place africa" date="1905">
-            <p>A hidden memory</p>
-          </a>
-          <a href="./single/marie/index.html" target="_blank" class="grid-item in-place europe" date="1905">
-            <p>Matters of Representation</p>
-          </a>
-          <a href="./single/elisa/index.html" target="_blank" class="grid-item in-place america" date="1905">
-            <p>The monument and the museum</p>
-          </a>
-          <a href="./single/marina/index.html" target="_blank" class="grid-item in-place europe" date="1905">
-            <p>Gathering the Stories at El Valle de los Caídos</p>
-          </a>
-          <a href="./single/vitor/index.html" target="_blank" class="grid-item in-place europe" date="1905">
-            <p>Guimarães as a far-right symbol</p>
-          </a>
-
-          <a href="./single/marie/index.html" target="_blank" class="grid-item in-place europe" date="1905">
-            <p>The instrumentalization of Dr Karl Lueger</p>
-          </a>
-          <a href="./single/hannah/index.html" target="_blank" class="grid-item in-place europe" date="1905">
-            <p>Wissmann momuments</p>
-          </a>
-          <a href="./single/emma/index.html" target="_blank" class="grid-item in-place europe america" date="1905">
-            <p>Þórfinnur Karlsefni</p>
-          </a>
-          <a href="./single/maxine/index.html" target="_blank" class="grid-item in-place europe america asia "
-            date="1905">
-            <p>Statue of Peace</p>
-          </a>
-
-          <a href="./single/johanna/index.html" target="_blank" class="grid-item in-place europe" date="1905">
-            <p>Memorial Against War and Fascism</p>
-          </a>
-
-          <a href="./single/nick/index.html" target="_blank" class="grid-item in-place europe " date="1905">
-            <p>The Forgotten Monuments of Vienna</p>
-          </a>
-
-          <a href="./single/arian/index.html" target="_blank" class="grid-item in-place europe" date="1905">
-            <p>The 'Monument' between us</p>
-          </a>
-        </div> -->
-
       </div>
 
 
